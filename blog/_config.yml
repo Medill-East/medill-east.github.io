@@ -7,7 +7,7 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Haodong Liao
 language: en
 timezone: ''
 
@@ -115,3 +115,31 @@ deploy:
   type: git
   repository: git@github.com:Medill-East/haodong.github.io.git
   branch: master
+
+# search
+search:
+  path: search.xml
+  field: post
+
+# convert of chinese to pinyin
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
+# word count
+wordCount:
+  enable: true # 将这个值设置为 true 即可.
+  postWordCount: true
+  min2read: true
+  totalCount: true
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
