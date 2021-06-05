@@ -38,7 +38,7 @@
 <% if (theme.banner.enable) { %>
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + getMod((Date().getSeconds()),26) + '.jpg';
+    var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + getMod((Date.getSeconds()),26) + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 <% } else { %>
