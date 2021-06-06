@@ -1,9 +1,18 @@
 ---
 title: Hexo + Github 搭建 Blog (MacOS)
 date: 2021-05-24 12:31:17
-categories: Blog
-tags: blog-building
+top: false
+cover: false
+password:
+toc: true
+mathjax: true
+summary: 最近在学产品经理的课，有了呈现作品集的需求，遂在网上寻找教程搭建 Blog，在此记录搭建过程。
+tags:blog-building
+categories:Blog
+
 ---
+
+
 
 ---
 
@@ -11,7 +20,7 @@ tags: blog-building
 
 ---
 
-# 20210524 
+# 20210524
 
 ## Why
 
