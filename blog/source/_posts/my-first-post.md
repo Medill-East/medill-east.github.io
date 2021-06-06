@@ -20,7 +20,7 @@ categories: Blog
 
 ---
 
-# 20210524
+# 20210524 Start to build
 
 ## Why
 
@@ -247,7 +247,7 @@ root: /
 
 # 20210527 更换主题
 
-这里和 [超详细Hexo+Github博客搭建小白教程](https://zhuanlan.zhihu.com/p/35668237) 中一样，采用的是 [Hexo博客主题之hexo-theme-matery的介绍](http://blinkfox.com/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/) 该主题。
+这里和 [超详细Hexo+Github博客搭建小白教程](https://zhuanlan.zhihu.com/p/35668237) 中一样，采用的是 [blinkfox](https://blinkfox.github.io/) 的 [Hexo博客主题之hexo-theme-matery的介绍](http://blinkfox.com/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/) 该主题。
 
 以下为过程记录。
 
@@ -622,9 +622,30 @@ tags:
 ---
 ```
 
+### 自动添加文章头
+
+这里参考 [超详细Hexo+Github博客搭建小白教程](https://zhuanlan.zhihu.com/p/35668237) 中所写，把 `/scaffolds/post.md` 修改为如下代码，这样创建新 `post` 的时候就不用手动填充，只需要修改对应信息了：
+
+```
+---
+title: {{ title }}
+date: {{ date }}
+top: false
+cover: false
+password:
+toc: true
+mathjax: true
+summary:
+tags:
+categories:
+---
+```
+
 ---
 
-## 自定制修改
+# 20210605 
+
+### 自定制修改
 
 在本主题的 `_config.yml` 中可以修改部分自定义信息，有以下几个部分：
 
@@ -647,6 +668,8 @@ tags:
 - 不蒜子统计和谷歌分析（Google Analytics）
 - 默认特色图的集合。当文章没有设置特色图时，本主题会根据文章标题的 hashcode 值取余，来选择展示对应的特色图
 
+
+
 ### 更多修改可能性
 
 #### 修改主题颜色
@@ -656,7 +679,7 @@ tags:
 ```
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #373B44 0%, #4286f4 100%);
 }
 
 @-webkit-keyframes rainbow {
@@ -670,14 +693,68 @@ tags:
 
 #### 修改 banner 图和文章特色图
 
-可以直接在 `/source/medias/banner` 文件夹中更换喜欢的 `banner` 图片，主题代码中是每天动态切换一张，只需 7 张即可。如果你会 `JavaScript` 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，`banner` 切换的代码位置在 `/layout/_partial/bg-cover-content.ejs` 文件的 `<script></script>` 代码中：
+可以直接在 `/source/medias/banner` 文件夹中更换喜欢的 `banner` 图片，原教程中主题代码中是每天动态切换一张，只需 7 张即可。
+这里我从自己照的照片找了 26 张出来，所以稍微做了一些更改：
+找到 `banner` 切换的  `JavaScript` 代码位置 `/layout/_partial/bg-cover-content.ejs` 文件的 `<script></script>` 代码中：
 
 ```
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    var num = new Date().getSeconds() % 26;
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + num + '.jpg)');
+
 ```
 
-在 `/source/medias/featureimages` 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 `_config.yml` 做同步修改。
+`/source/medias/featureimages` 文件夹中默认有 24 张图片，我也将其改为了 26 张图片，并在主题文件夹下的 `_config.yml` 的 `featureImages` 部分做同步修改。
 
+#### 修改了主页的打字效果相关文字
+
+主题文件夹下的 `_config.yml` 中找到 `sutitle` 部分的 `sub` 部分可以对文字进行相应修改
+
+#### 更改了 myGallery 
+
+`关于` 页面的 `我的相册` 部分可以展示图片，这里我也是把所有的图片都摆上来了：
+
+```
+myGallery:
+  enable: true
+  data:
+    - /medias/featureimages/0.jpg
+    - /medias/featureimages/1.jpg
+    - /medias/featureimages/2.jpg
+    - /medias/featureimages/3.jpg
+    - /medias/featureimages/4.jpg
+    - /medias/featureimages/5.jpg
+    - /medias/featureimages/6.jpg
+    - /medias/featureimages/7.jpg
+    - /medias/featureimages/8.jpg
+    - /medias/featureimages/9.jpg
+    - /medias/featureimages/10.jpg
+    - /medias/featureimages/11.jpg
+    - /medias/featureimages/12.jpg
+    - /medias/featureimages/13.jpg
+    - /medias/featureimages/14.jpg
+    - /medias/featureimages/15.jpg
+    - /medias/featureimages/16.jpg
+    - /medias/featureimages/17.jpg
+    - /medias/featureimages/18.jpg
+    - /medias/featureimages/19.jpg
+    - /medias/featureimages/20.jpg
+    - /medias/featureimages/21.jpg
+    - /medias/featureimages/22.jpg
+    - /medias/featureimages/23.jpg
+    - /medias/featureimages/24.jpg
+    - /medias/featureimages/25.jpg
+    - /medias/featureimages/26.jpg
+```
+
+#### 其余更改
+
+- 更改 favicon
+- 更改 logo
+- 更改 githubLink 为 false
+- 更新 profile
+- 把 my projects 和 my skills 暂时留空
+- 更改了 根目录 `_config.yml` 文件中的 `description`
+- 因为出现了 `can not get /` 问题，所以暂时删掉了 contact 页面
 
 
 ---
