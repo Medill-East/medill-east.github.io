@@ -7,8 +7,8 @@ password:
 toc: true
 mathjax: true
 summary: 最近在学产品经理的课，有了呈现作品集的需求，遂在网上寻找教程搭建 Blog，在此记录搭建过程。
-tags:blog-building
-categories:Blog
+tags: blog-building
+categories: Blog
 
 ---
 
