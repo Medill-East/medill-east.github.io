@@ -1,4 +1,6 @@
 https://medill-east.github.io/2022/08/31/20220900-toc/
+https://medill-east.github.io/2025/03/02/20250302-k05/
+https://medill-east.github.io/2024/07/28/20240728-k04/
 https://medill-east.github.io/2024/10/27/20250223-b14/
 https://medill-east.github.io/2025/02/16/20250216-m16/
 https://medill-east.github.io/2025/01/19/20250119-f07/
@@ -39,7 +41,6 @@ https://medill-east.github.io/2024/09/01/20240901-a10/
 https://medill-east.github.io/2024/08/24/20240824-b12/
 https://medill-east.github.io/2024/08/18/20240818-m13/
 https://medill-east.github.io/2024/08/04/20240804-c11/
-https://medill-east.github.io/2024/07/28/20240728-k04/
 https://medill-east.github.io/2024/07/21/20240721-j05/
 https://medill-east.github.io/2024/07/14/20240714-n08/
 https://medill-east.github.io/2024/07/07/20240707-thinking-on-game-production-workflow/
