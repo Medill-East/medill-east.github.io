@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>20250323 - G09 - Squashing and Scaling</title>
+      <link href="2025/03/23/20250323-g09/"/>
+      <url>2025/03/23/20250323-g09/</url>
+      
+        <content type="html"><![CDATA[<h2 id="What"><a href="#What" class="headerlink" title="What"></a>What</h2><p>观看 Masahiro Sakurai on Creating Games 的视频，了解 scaling 的重要性！</p><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231113606.png" alt="|404x209"></p><p>G09 - Squashing and Scaling</p><p>【动画中的挤压与缩放（Squashing and Scaling）】<br>(00:04) 在动画中，模型的放大缩小被称为 Scaling（缩放）。在计算机图形学中，多边形模型及其运动本质上由三个基础要素构成：Scaling（缩放）、Rotation（旋转）和 Translation（平移）。</p><p>不要低估了 scaling 的效果，它可能为结果增色不少！</p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231135394.gif"></p><p>当制作球体弹跳动画时，例如这个简易 GIF，虽然普通版本尚可，但结合 Scaling 缩放后效果截然不同——质感显著提升，甚至能传递出物体的触感。</p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231138438.gif"></p><p>(01:09) 这种扁平化缩放被称为 Squash &amp; Stretch（挤压与拉伸），它能有效增强物体的质感与动势。实现这类动画时需遵循”质量守恒”原则：纵向压缩时横向应同步扩展。</p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231139989.png"></p><p>例如《星之卡比》的下蹲和落地动作，若仅简单扁平化会显得单薄，需通过椭圆形轮廓保持体积感（类似像素动画的处理方式）。</p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231140340.png"></p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231140672.png"></p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231145203.gif"></p><p>(02:12) 马里奥出拳时的放大属于夸张表现手法，与此类基础形变不同。当动画表现力不足时，不妨尝试强化 Scaling 的应用。</p><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202503231141735.png"></p><ol start="2"><li>方法论总结：</li></ol><p>动画质感提升四步法</p><p>1️⃣ <strong>基础形变三要素</strong></p><ul><li>始终围绕 Scaling（缩放）、Rotation（旋转）、Translation（平移）构建基础运动</li></ul><p>2️⃣ <strong>挤压拉伸原则</strong></p><ul><li>物体受冲击时：纵向压缩（Squash）+ 横向伸展（Stretch）</li><li>保持体积守恒（如：压扁高度 20%则拓宽宽度 20%）</li></ul><p>3️⃣ <strong>细节量感控制</strong></p><ul><li>避免简单扁平化：通过椭圆轮廓/混合形状（Blend Shape）保留边缘体积感</li><li>参考案例：星之卡比落地时采用椭圆形变形而非纯垂直压缩</li></ul><p>4️⃣ <strong>动态强化技巧</strong></p><ul><li>夸张表现法：对关键帧进行适度放大（如马里奥出拳时拳头尺寸增大）</li><li>质感暗示：通过形变传递材质特性（弹性/重量/柔软度）</li></ul><p><em>实践工具建议</em></p><ul><li>2D 动画：逐帧调整关键点缩放比例</li><li>3D 动画：使用混合形状控制器/骨骼驱动形变</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study-Game-Notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Game </tag>
+            
+            <tag> Learning </tag>
+            
+            <tag> Notes </tag>
+            
+            <tag> Masahiro-Sakurai-on-Creating-Games </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>20250316 - The Fun in Picking Sides</title>
       <link href="2025/03/16/20250316-c14/"/>
       <url>2025/03/16/20250316-c14/</url>
