@@ -1,4 +1,6 @@
 https://medill-east.github.io/2022/08/31/20220900-toc/
+https://medill-east.github.io/2025/04/13/20250413-m17/
+https://medill-east.github.io/2025/02/16/20250216-m16/
 https://medill-east.github.io/2025/04/06/20250406-e06/
 https://medill-east.github.io/2025/03/30/20250330-l03/
 https://medill-east.github.io/2025/03/23/20250323-g09/
@@ -7,7 +9,6 @@ https://medill-east.github.io/2025/03/09/20250309-d09/
 https://medill-east.github.io/2025/03/02/20250302-k05/
 https://medill-east.github.io/2024/07/28/20240728-k04/
 https://medill-east.github.io/2024/10/27/20250223-b14/
-https://medill-east.github.io/2025/02/16/20250216-m16/
 https://medill-east.github.io/2025/01/19/20250119-f07/
 https://medill-east.github.io/2025/01/12/20250112-e05/
 https://medill-east.github.io/2025/01/05/20250105-use-obsidian-clipper-with-deepseek/
