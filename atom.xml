@@ -6,10 +6,41 @@
   <link href="https://medill-east.github.io/atom.xml" rel="self"/>
   
   <link href="https://medill-east.github.io/"/>
-  <updated>2025-04-27T06:21:16.048Z</updated>
+  <updated>2025-05-02T01:50:22.963Z</updated>
   <id>https://medill-east.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20250502 - Arranging Music</title>
+    <link href="https://medill-east.github.io/2025/05/02/20250502-i07/"/>
+    <id>https://medill-east.github.io/2025/05/02/20250502-i07/</id>
+    <published>2025-05-02T01:49:46.000Z</published>
+    <updated>2025-05-02T01:50:22.963Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;What&quot;&gt;&lt;a href=&quot;#What&quot; class=&quot;headerlink&quot; title=&quot;What&quot;&gt;&lt;/a&gt;What&lt;/h2&gt;&lt;p&gt;观看 Masahiro Sakurai on Creating Games</summary>
+        
+      
+    
+    
+    
+    <category term="Study-Game-Notes" scheme="https://medill-east.github.io/categories/Study-Game-Notes/"/>
+    
+    
+    <category term="Game" scheme="https://medill-east.github.io/tags/Game/"/>
+    
+    <category term="Learning" scheme="https://medill-east.github.io/tags/Learning/"/>
+    
+    <category term="Notes" scheme="https://medill-east.github.io/tags/Notes/"/>
+    
+    <category term="Masahiro-Sakurai-on-Creating-Games" scheme="https://medill-east.github.io/tags/Masahiro-Sakurai-on-Creating-Games/"/>
+    
+  </entry>
   
   <entry>
     <title>20250427 - A13 - Broad Input, Broad Output</title>
@@ -596,32 +627,6 @@
     <category term="Notes" scheme="https://medill-east.github.io/tags/Notes/"/>
     
     <category term="Masahiro-Sakurai-on-Creating-Games" scheme="https://medill-east.github.io/tags/Masahiro-Sakurai-on-Creating-Games/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20241123 - 情感化游戏设计系统 - 3 - BOSS 战设计框架</title>
-    <link href="https://medill-east.github.io/2024/11/23/20241123-emotional-game-design-system-3-boss-fight-design-structure/"/>
-    <id>https://medill-east.github.io/2024/11/23/20241123-emotional-game-design-system-3-boss-fight-design-structure/</id>
-    <published>2024-11-23T08:06:46.000Z</published>
-    <updated>2024-11-24T12:58:43.116Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202411242058969.JPG&quot;&gt;&lt;/p&gt;
-&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="Thinking" scheme="https://medill-east.github.io/categories/Thinking/"/>
-    
-    
-    <category term="Thinking" scheme="https://medill-east.github.io/tags/Thinking/"/>
     
   </entry>
   
