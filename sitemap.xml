@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2025/05/11/2025-0511-after-playing-33-expedition/</loc>
+    
+    <lastmod>2025-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/2022/04/28/index-thinking/</loc>
+    
+    <lastmod>2025-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2025/05/11/20250511-b15/</loc>
     
     <lastmod>2025-05-11</lastmod>
@@ -156,15 +174,6 @@
   
   <url>
     <loc>https://medill-east.github.io/2025/01/05/20250105-use-obsidian-clipper-with-deepseek/</loc>
-    
-    <lastmod>2025-01-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2022/04/28/index-thinking/</loc>
     
     <lastmod>2025-01-05</lastmod>
     
