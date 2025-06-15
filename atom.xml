@@ -6,10 +6,42 @@
   <link href="https://medill-east.github.io/atom.xml" rel="self"/>
   
   <link href="https://medill-east.github.io/"/>
-  <updated>2025-06-08T03:35:46.623Z</updated>
+  <updated>2025-06-15T02:58:15.856Z</updated>
   <id>https://medill-east.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20250615 - J07 - Color-Coding Your Game</title>
+    <link href="https://medill-east.github.io/2025/06/15/20250615-j07/"/>
+    <id>https://medill-east.github.io/2025/06/15/20250615-j07/</id>
+    <published>2025-06-15T02:57:46.000Z</published>
+    <updated>2025-06-15T02:58:15.856Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;What&quot;&gt;&lt;a href=&quot;#What&quot; class=&quot;headerlink&quot; title=&quot;What&quot;&gt;&lt;/a&gt;What&lt;/h2&gt;&lt;p&gt;观看 Masahiro Sakurai on Creating Games 的视频，了解游戏的色彩编码！&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Study-Game-Notes" scheme="https://medill-east.github.io/categories/Study-Game-Notes/"/>
+    
+    
+    <category term="Game" scheme="https://medill-east.github.io/tags/Game/"/>
+    
+    <category term="Learning" scheme="https://medill-east.github.io/tags/Learning/"/>
+    
+    <category term="Notes" scheme="https://medill-east.github.io/tags/Notes/"/>
+    
+    <category term="Masahiro-Sakurai-on-Creating-Games" scheme="https://medill-east.github.io/tags/Masahiro-Sakurai-on-Creating-Games/"/>
+    
+  </entry>
   
   <entry>
     <title>20250608 - M18 - The Team Behind Super Smash Bros. Brawl</title>
@@ -598,31 +630,6 @@
     <category term="Notes" scheme="https://medill-east.github.io/tags/Notes/"/>
     
     <category term="Masahiro-Sakurai-on-Creating-Games" scheme="https://medill-east.github.io/tags/Masahiro-Sakurai-on-Creating-Games/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20250105 - 利用 Deepseek 结合 Obsidian Web Clipper 实现快速剪藏及内容总结</title>
-    <link href="https://medill-east.github.io/2025/01/05/20250105-use-obsidian-clipper-with-deepseek/"/>
-    <id>https://medill-east.github.io/2025/01/05/20250105-use-obsidian-clipper-with-deepseek/</id>
-    <published>2025-01-05T06:20:46.000Z</published>
-    <updated>2025-01-05T07:18:43.442Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;想法来源&quot;&gt;&lt;a href=&quot;#想法来源&quot; class=&quot;headerlink&quot; title=&quot;想法来源&quot;&gt;&lt;/a&gt;想法来源&lt;/h2&gt;&lt;h3 id=&quot;以前的稍后读的问题&quot;&gt;&lt;a href=&quot;#以前的稍后读的问题&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="PKM" scheme="https://medill-east.github.io/categories/PKM/"/>
-    
-    
-    <category term="PKM" scheme="https://medill-east.github.io/tags/PKM/"/>
     
   </entry>
   
