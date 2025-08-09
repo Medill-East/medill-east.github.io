@@ -1,3 +1,5 @@
+https://medill-east.github.io/2022/04/28/index-showcase/
+https://medill-east.github.io/2025/08/09/2025-0809-after-finishing-gmtk-game-jam-2025/
 https://medill-east.github.io/2022/08/31/20220900-toc/
 https://medill-east.github.io/2025/07/27/20250727-m19/
 https://medill-east.github.io/2025/07/20/20250720-f09/
@@ -92,7 +94,6 @@ https://medill-east.github.io/2024/03/17/20240317-g06/
 https://medill-east.github.io/2024/03/10/20240310-c09/
 https://medill-east.github.io/2024/03/03/20240303-b09/
 https://medill-east.github.io/2024/03/01/20240301-thinking-on-game-replayability/
-https://medill-east.github.io/2022/04/28/index-showcase/
 https://medill-east.github.io/2024/02/25/20240225-n07/
 https://medill-east.github.io/2023/11/05/20231105-cfgd-chap3-challenge1-bomb/
 https://medill-east.github.io/2023/09/24/20230924-cfgd-chap2-challenge3-exploration/
