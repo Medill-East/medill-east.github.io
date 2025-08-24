@@ -1,3 +1,5 @@
+https://medill-east.github.io/2022/04/28/index-notes/
+https://medill-east.github.io/2025/08/24/20250824-how-to-run-a-good-playtest/
 https://medill-east.github.io/2022/08/31/20220900-toc/
 https://medill-east.github.io/2025/08/24/20250824-l04/
 https://medill-east.github.io/2025/08/17/20250817-g10/
@@ -62,7 +64,6 @@ https://medill-east.github.io/2022/05/03/20220503-leveldesignbook-combat/
 https://medill-east.github.io/2022/05/04/20220504-leveldesignbook-combat-enemydesign/
 https://medill-east.github.io/2022/05/05/20220505-leveldesignbook-combat-encounter/
 https://medill-east.github.io/2022/05/06/20220506-leveldesignbook-combat-balance/
-https://medill-east.github.io/2022/04/28/index-notes/
 https://medill-east.github.io/2022/07/30/20220730-why-i-think-elden-ring-is-attractive/
 https://medill-east.github.io/2022/06/05/20220605-theartofgamedesign-chap11/
 https://medill-east.github.io/2024/06/23/20240908-f06/

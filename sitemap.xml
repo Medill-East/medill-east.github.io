@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2022/04/28/index-notes/</loc>
+    
+    <lastmod>2025-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/2025/08/24/20250824-how-to-run-a-good-playtest/</loc>
+    
+    <lastmod>2025-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2022/08/31/20220900-toc/</loc>
     
     <lastmod>2025-08-24</lastmod>
@@ -570,15 +588,6 @@
   
   <url>
     <loc>https://medill-east.github.io/2022/05/06/20220506-leveldesignbook-combat-balance/</loc>
-    
-    <lastmod>2024-09-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2022/04/28/index-notes/</loc>
     
     <lastmod>2024-09-14</lastmod>
     
