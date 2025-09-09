@@ -1,3 +1,4 @@
+https://medill-east.github.io/2024/01/07/20240107-cfgd-chap3-challenge3-password/
 https://medill-east.github.io/2025/09/07/2025-0907-after-playing-the-beginner-guide/
 https://medill-east.github.io/2022/08/31/20220900-toc/
 https://medill-east.github.io/2025/09/07/20250907-k06/
@@ -114,7 +115,6 @@ https://medill-east.github.io/2024/01/28/20240128-m10/
 https://medill-east.github.io/2024/01/21/20240121-cfgd-chap3-challenge4-electricity/
 https://medill-east.github.io/2024/01/21/20240121-b08/
 https://medill-east.github.io/2024/01/14/20240114-a08/
-https://medill-east.github.io/2024/01/07/20240107-cfgd-chap3-challenge3-password/
 https://medill-east.github.io/2024/01/07/20240107-i04/
 https://medill-east.github.io/2022/09/06/20220906-bayonetta-design-document/
 https://medill-east.github.io/2022/09/06/20220906-bayonetta-toc/
