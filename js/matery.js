@@ -72,6 +72,26 @@ $(function () {
     let articleInit = function () {
         $('#articleContent a').attr('target', '_blank');
 
+        // 渲染 Obsidian 风格 [[content]] 链接为带浅灰底的 span
+        function renderObsidianLinks() {
+            var ac = document.getElementById('articleContent');
+            if (!ac) return;
+            // 只处理文本节点，避免破坏已有 HTML
+            var walker = document.createTreeWalker(ac, NodeFilter.SHOW_TEXT, null, false);
+            var nodes = [];
+            while (walker.nextNode()) nodes.push(walker.currentNode);
+            nodes.forEach(function(node) {
+                var replaced = node.nodeValue.replace(/\[\[([^\[\]]+)\]\]/g, function(_, content) {
+                    return '<span class="obsidian-link">' + content + '</span>';
+                });
+                if (replaced !== node.nodeValue) {
+                    var span = document.createElement('span');
+                    span.innerHTML = replaced;
+                    node.parentNode.replaceChild(span, node);
+                }
+            });
+        }
+
         // 图片添加字幕（改进：忽略仅表示尺寸的部分，例如 "900x506"，并在 "Caption | 900x506" 这种写法中只保留 caption）
         function extractCaption(text) {
             if (typeof text === 'undefined' || text === null) return '';
@@ -122,6 +142,7 @@ $(function () {
                 progressElement.style.width = y * 100 + '%';
             });
         }
+        renderObsidianLinks();
     };
     articleInit();
 
