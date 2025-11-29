@@ -79,7 +79,9 @@ $(function () {
             if (text.trim() === '') return '';
             // 以 | 分割并 trim 每段，优先返回第一个既非空又不是尺寸的段
             var parts = text.split('|').map(function (s) { return s.trim(); });
-            var sizeRegex = /^\d+\s*x\s*\d+$/i;
+            // Match single numbers (e.g. "900"), dimension pairs ("900x506", "900×506")
+            // and optional units like px/em/rem/% so they are treated as size-only tokens.
+            var sizeRegex = /^\d+\s*(?:[x×]\s*\d+)?\s*(?:px|em|rem|%)?$/i;
             for (var i = 0; i < parts.length; i++) {
                 var p = parts[i];
                 if (p && !sizeRegex.test(p)) return p;
