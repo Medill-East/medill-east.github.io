@@ -72,23 +72,30 @@ $(function () {
     let articleInit = function () {
         $('#articleContent a').attr('target', '_blank');
 
+        // 图片添加字幕（改进：忽略仅表示尺寸的部分，例如 "900x506"，并在 "Caption | 900x506" 这种写法中只保留 caption）
+        function extractCaption(text) {
+            if (typeof text === 'undefined' || text === null) return '';
+            text = String(text);
+            if (text.trim() === '') return '';
+            // 以 | 分割并 trim 每段，优先返回第一个既非空又不是尺寸的段
+            var parts = text.split('|').map(function (s) { return s.trim(); });
+            var sizeRegex = /^\d+\s*x\s*\d+$/i;
+            for (var i = 0; i < parts.length; i++) {
+                var p = parts[i];
+                if (p && !sizeRegex.test(p)) return p;
+            }
+            return '';
+        }
+
         $('#articleContent img').each(function () {
             let imgPath = $(this).attr('src');
             $(this).wrap('<div class="img-item" data-src="' + imgPath + '" data-sub-html=".caption"></div>');
             // 图片添加阴影
             $(this).addClass("img-shadow img-margin");
-            // 图片添加字幕
+            // 图片添加字幕（优先 alt，再 fallback 到 title），并过滤尺寸-only 文本
             let alt = $(this).attr('alt');
             let title = $(this).attr('title');
-            let captionText = "";
-            // 如果alt为空，title来替
-            if (alt === undefined || alt === "") {
-                if (title !== undefined && title !== "") {
-                    captionText = title;
-                }
-            } else {
-                captionText = alt;
-            }
+            let captionText = extractCaption(alt) || extractCaption(title);
             // 字幕不空，添加之
             if (captionText !== "") {
                 let captionDiv = document.createElement('div');
@@ -97,7 +104,7 @@ $(function () {
                 captionEle.className = 'center-caption';
                 captionEle.innerText = captionText;
                 captionDiv.appendChild(captionEle);
-                this.insertAdjacentElement('afterend', captionDiv)
+                this.insertAdjacentElement('afterend', captionDiv);
             }
         });
         $('#articleContent, #myGallery').lightGallery({
