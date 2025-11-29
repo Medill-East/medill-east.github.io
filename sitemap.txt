@@ -1,4 +1,6 @@
 https://medill-east.github.io/2022/04/28/index-thinking/
+https://medill-east.github.io/2025/11/29/2025-1129-after-playing-the-alters/
+https://medill-east.github.io/2022/04/28/index-gameanalysis/
 https://medill-east.github.io/2025/11/23/20251123-a15/
 https://medill-east.github.io/2022/08/31/20220900-toc/
 https://medill-east.github.io/2025/11/16/20251116-d11/
@@ -246,7 +248,6 @@ https://medill-east.github.io/2023/06/15/20230615-theartofgamedesign-chap33/
 https://medill-east.github.io/2023/06/16/20230616-theartofgamedesign-chap34/
 https://medill-east.github.io/2023/06/17/20230617-theartofgamedesign-chap35/
 https://medill-east.github.io/2023/06/18/20230618-why-does-elden-ring-offer-me-the-best-offline-gaming-experience/
-https://medill-east.github.io/2022/04/28/index-gameanalysis/
 https://medill-east.github.io/2023/05/10/20230510-theartofgamedesign-chap16/
 https://medill-east.github.io/2023/01/02/20230102-gdc-building-a-living-world-from-ancient-ruins-in-assasins-creed-odyssey/
 https://medill-east.github.io/2022/12/19/20221219-gdc-invisible-intuition-blockmesh/
