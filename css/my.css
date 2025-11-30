@@ -2,9 +2,9 @@
 
 /* Obsidian 风格链接样式 */
 .obsidian-link {
-  background: #f5f5f5;
+  background: #2d2d2d;
   border-radius: 4px;
   padding: 0 4px;
-  color: #393939ff;
+  color: #555;
   font-style: normal;
 }
