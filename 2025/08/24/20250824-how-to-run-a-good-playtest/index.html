@@ -406,21 +406,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2025-09-28
+                    2025-11-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.1k
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    7 Min
+                    15 Min
                 </div>
                 
 
@@ -443,9 +443,215 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="WHY"><a href="#WHY" class="headerlink" title="WHY"></a>WHY</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241558524.png" alt="|723x408"></p>
+                <h1 id="ENGLISH"><a href="#ENGLISH" class="headerlink" title="ENGLISH"></a>ENGLISH</h1><h2 id="WHY"><a href="#WHY" class="headerlink" title="WHY"></a>WHY</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241558524.png" alt="|723x408"></p>
+<p>I recently ran a [[design discussion]] on the topic of “How to run good playtests.”<br>This post is a summary of that discussion.</p>
+<h2 id="WHAT"><a href="#WHAT" class="headerlink" title="WHAT"></a>WHAT</h2><p>The material here comes from several different sources, which are listed on the last slide as references:</p>
+<ul>
+<li>Valve’s “Secret Weapon“<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=9Yomqk0C6kE">https://www.youtube.com/watch?v=9Yomqk0C6kE</a></li>
+</ul>
+</li>
+<li>Don’t make this assumption about your players<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=2G84mU3WPaE">https://www.youtube.com/watch?v=2G84mU3WPaE</a></li>
+</ul>
+</li>
+<li>Valve’s Design Process for Creating Half-Life 2<ul>
+<li><a target="_blank" rel="noopener" href="https://cdn.akamai.steamstatic.com/apps/valve/2006/GDC2006_HL2DesignProcess.pdf">https://cdn.akamai.steamstatic.com/apps/valve/2006/GDC2006_HL2DesignProcess.pdf</a></li>
+<li><a target="_blank" rel="noopener" href="https://gdcvault.com/browse?keyword=Valve%27s+Design+Process+for+Creating+Half-Life+2">https://gdcvault.com/browse?keyword=Valve%27s+Design+Process+for+Creating+Half-Life+2</a></li>
+</ul>
+</li>
+<li>MasterClass - Will Wright - Game Design and Theory  <ul>
+<li>#13 - Playtesting</li>
+</ul>
+</li>
+</ul>
+<h2 id="CONTENT"><a href="#CONTENT" class="headerlink" title="CONTENT"></a>CONTENT</h2><h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202509282237144.pdf">Check PDF</a></li>
+</ul>
+<h3 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241618625.png"></p>
+<p>This discussion covers:</p>
+<ul>
+<li>The process of [[Playtest]]</li>
+<li>Principles for [[Playtest]]</li>
+<li>Some lessons learned from shares</li>
+<li>And a brief summary</li>
+</ul>
+<h3 id="The-PLAYTEST-Process"><a href="#The-PLAYTEST-Process" class="headerlink" title="The PLAYTEST Process"></a>The PLAYTEST Process</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241619712.png"></p>
+<p>As [[Valve]] describes it, playtesting can be treated as an engineering method for iterative improvement.<br>The process is basically the same as running experiments:</p>
+<ul>
+<li>Identify the problem (Goal)  </li>
+<li>Form a hypothesis (Design)  </li>
+<li>Run the experiment (Playtest)  </li>
+<li>Iterate based on the results (Iterate)</li>
+</ul>
+<h3 id="Some-Principles-of-PLAYTEST"><a href="#Some-Principles-of-PLAYTEST" class="headerlink" title="Some Principles of PLAYTEST"></a>Some Principles of PLAYTEST</h3><h4 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241621152.png"></p>
+<ul>
+<li>You should always set clear and measurable goals.<ul>
+<li>In the early stages of playtesting, the main focus is <strong>understanding</strong> – whether players understand what the designer intends.</li>
+<li>In later stages, the focus shifts to <strong>engagement</strong> – whether players are actually having fun – as well as <strong>debugging</strong>, i.e., finding potential issues and bugs.</li>
+</ul>
+</li>
+</ul>
+<h4 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241623595.png"></p>
+<p>You need to build the right test environment based on the design goal, and avoid interference from irrelevant factors.</p>
+<h4 id="Playtest"><a href="#Playtest" class="headerlink" title="Playtest"></a>Playtest</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241624553.png"></p>
+<ul>
+<li>Find the right testers<ul>
+<li>Ideally, recruit players from your <em>target audience</em>:<ul>
+<li>People who might actually buy and play the game after launch – they best represent the “player voice.”</li>
+<li>For example, [[Valve]] saw people playing shooters in internet cafés as potential target players.</li>
+</ul>
+</li>
+<li>Involve players of different skill levels<ul>
+<li>You need clarity on who the game is really for. Balancing difficulty is hard, so it’s better to let players of different skill levels test it, and make sure the difficulty curve is reasonable.</li>
+</ul>
+</li>
+<li>Kleenex testing<ul>
+<li>Unless you have specific long-term testing needs, testers should ideally only participate once.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241628645.png"></p>
+<ul>
+<li>Test early<ul>
+<li>Valve starts testing as soon as the game is playable, even when everything is still in grey-box.</li>
+<li>Of course, this depends on genre and can be costly that early – but it’s still a useful reference.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241634846.png"></p>
+<ul>
+<li>Test frequently<ul>
+<li>Valve basically tests every one or two weeks – you could say their development is driven by iterative playtest feedback.</li>
+<li>Filter out outliers<ul>
+<li>Only when the sample size is large enough can the data truly reflect reality.</li>
+<li>If I remember correctly, they usually had around five testers per session.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241636661.png"></p>
+<ul>
+<li>Unbiased testing<ul>
+<li>Get as close as possible to a real play environment<ul>
+<li>It’s ideal if you can simulate the final conditions players will experience, though that’s often hard. Still, it’s worth treating as a refernce.</li>
+</ul>
+</li>
+<li>Give players time to practice<ul>
+<li>Especially if you’re testing mid- or late-game content, you <em>must</em> give players time to get familiar with the 3Cs and any ingredients they’ll need.<br>Otherwise they’ll underperform simply due to unfamiliarity, and the results will be misleading.</li>
+</ul>
+</li>
+<li>Shut up and watch<ul>
+<li>During tests, apart from necessary help (such as warning about known critical bugs or helping when the player is completely stuck), developers should mostly just watch and not comment.<ul>
+<li>Only then can you see the most realistic player behavior.</li>
+<li>And if watching the session feels painful, that usually means the test is valuable – it’s revealing real problems and motivating you to iterate.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241642130.png"></p>
+<ul>
+<li>Involve the key stakeholders in PLAYTEST<ul>
+<li>Let the leads and owners watch together.</li>
+<li>Everyone can form their own conclusions.</li>
+<li>Then you can discuss and align on concrete iteration plans.</li>
+<li>This has many benefits:<ul>
+<li>Simplifies the evaluation process.</li>
+<li>Helps define priorities.</li>
+<li>And motivates the whole team to keep improving.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Iterate"><a href="#Iterate" class="headerlink" title="Iterate"></a>Iterate</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241644143.png" alt="|723x407"></p>
+<ul>
+<li>Question your assumptions<ul>
+<li>Make sure players truly understand, rather than just “getting lucky.”</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241645971.png"></p>
+<ul>
+<li>Trust trends, not outliers<ul>
+<li>Iteration should target the confusion shared by many players.</li>
+<li>Or focus on issues where the dev team has reached consensus.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241646037.png"></p>
+<ul>
+<li>Some notes for iteration:<ul>
+<li>Iterate in order of priority<ul>
+<li>That way you can address the biggest pain points fastest.</li>
+<li>Some low-priority issues may even disappear once the major problems are fixed.</li>
+</ul>
+</li>
+<li>Prefer cheap and fast hacks (1 day of work for 60/100 of value) over expensive and “perfect” solutions (5 day of work for 80/100 of value)<ul>
+<li>This is especially important early on, when many things are not yet set stable.<br>If you can patch things with a quick-and-dirty fix, do that first and avoid heavy investment in something that might be cut later.</li>
+<li>That said, in later stages when the game is more mature, quick hacks may no longer be enough – you’ll have to decide when it’s time for higher-quality solutions.</li>
+</ul>
+</li>
+<li>Make bold changes<ul>
+<li>This mainly applies to tuning parameters. If the trend clearly shows that some values need changing, adjust them by a noticeable amount – “double it” style.<br>Otherwise the change might be imperceptible, and you risk wasting the next test.</li>
+</ul>
+</li>
+<li>Acceptance criteria – until it is not painful to watch<ul>
+<li>When the devs can watch players without pain, you’ve probably reached the bar for that part and can move on to the next module.</li>
+</ul>
+</li>
+<li>If necessary, cut your losses and restart<ul>
+<li>When the direction itself is wrong, further iteration may be meaningless. In that case, long-term pain is worse than short-term pain – fail fast, learn fast.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="A-Few-Lessons-from-Past-Projects"><a href="#A-Few-Lessons-from-Past-Projects" class="headerlink" title="A Few Lessons from Past Projects"></a>A Few Lessons from Past Projects</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241654067.png"></p>
+<ul>
+<li>Players struggle to learn under pressure<ul>
+<li>I think I saw this in a GDC talk about [[Destiny]] at some point…</li>
+</ul>
+</li>
+<li>Players never look up<ul>
+<li>This sounds like a joke, but it’s true for many players: most of them focus on what’s at eye level and rarely look upward.</li>
+<li>You can also <em>use</em> this: for example, hide secrets or jump scares above the player’s line of sight.</li>
+<li>Different genres train different player behaviors. Souls-like players, for instance, are used to checking behind doors, above them, and peeking over edges.<br>These habits come from their past experiences and need to be handled specifically.</li>
+</ul>
+</li>
+<li>The feelings are always real, but the feedback might not be<ul>
+<li>This idea shows up in many domains, from many masters.</li>
+<li>[[Neil Gaiman]] once said something similar: “When people tell you something’s wrong or doesn’t work for them, they are almost always right.<br>When they tell you exactly what they think is wrong and how to fix it, they are almost always wrong.”</li>
+<li>Henry Ford’s quote – “If I had asked people what they wanted, they would have said faster horses” – points to the same thing.</li>
+<li>We also extended this point a bit during the discussion:<ul>
+<li><strong>Experts as playtesters</strong><ul>
+<li>They’re much more sensitive to hidden problems and may be better at pinpointing the core issue.</li>
+<li>But they might not represent the broader player base.</li>
+</ul>
+</li>
+<li><strong>Customers as playtesters</strong><ul>
+<li>Players may often fail to express their true feelings – out of respect for the devs, or simply because it’s hard to articulate.</li>
+<li>That’s why it’s crucial to carefully observe their reactions while playing and treat that as your primary source of truth.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241704669.png"></p>
+<p>This mind map is a condensed summary of everything mentioned above.</p>
+<h2 id="Closing-Thoughts"><a href="#Closing-Thoughts" class="headerlink" title="Closing Thoughts"></a>Closing Thoughts</h2><p>It’s always valuable to compare and synthesize shared experiences from different developers.<br>But how you actually apply them still depends on your own project and context.</p>
+<p>Keep learning, keep moving forward!</p>
+<h1 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h1><h2 id="WHY-1"><a href="#WHY-1" class="headerlink" title="WHY"></a>WHY</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241558524.png" alt="|723x408"></p>
 <p>最近以“如何进行好的 Playtest”为主题进行了一次 [[design discussion]]，这里将内容进行一下汇总。</p>
-<h2 id="WHAT"><a href="#WHAT" class="headerlink" title="WHAT"></a>WHAT</h2><p>这次的的内容是从不同地方学习到的，在最后一页中也标注了 References：</p>
+<h2 id="WHAT-1"><a href="#WHAT-1" class="headerlink" title="WHAT"></a>WHAT</h2><p>这次的的内容是从不同地方学习到的，在最后一页中也标注了 References：</p>
 <ul>
 <li>Valve’s “Secret Weapon“<ul>
 <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=9Yomqk0C6kE">https://www.youtube.com/watch?v=9Yomqk0C6kE</a></li>
@@ -465,7 +671,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="CONTENT"><a href="#CONTENT" class="headerlink" title="CONTENT"></a>CONTENT</h2><h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><ul>
+<h2 id="CONTENT-1"><a href="#CONTENT-1" class="headerlink" title="CONTENT"></a>CONTENT</h2><h3 id="PDF-1"><a href="#PDF-1" class="headerlink" title="PDF"></a>PDF</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202509282237144.pdf">Check PDF</a></li>
 </ul>
 <h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241618625.png"></p>
@@ -484,7 +690,7 @@
 <li>进行实验（Playtest） </li>
 <li>根据结果进行迭代（Iterate）</li>
 </ul>
-<h3 id="PLAYTEST-的一些原则"><a href="#PLAYTEST-的一些原则" class="headerlink" title="PLAYTEST 的一些原则"></a>PLAYTEST 的一些原则</h3><h4 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241621152.png"></p>
+<h3 id="PLAYTEST-的一些原则"><a href="#PLAYTEST-的一些原则" class="headerlink" title="PLAYTEST 的一些原则"></a>PLAYTEST 的一些原则</h3><h4 id="Goal-1"><a href="#Goal-1" class="headerlink" title="Goal"></a>Goal</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241621152.png"></p>
 <ul>
 <li>应该设立明确且可量化的目标<ul>
 <li>在早期的 PLAYTEST 中应该关注的是 understanding - 即玩家是否理解设计者的意图</li>
@@ -492,9 +698,9 @@
 </ul>
 </li>
 </ul>
-<h4 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241623595.png"></p>
+<h4 id="Design-1"><a href="#Design-1" class="headerlink" title="Design"></a>Design</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241623595.png"></p>
 <p>需要根据设计的目标来创建合适的测试环境，避免无关因素的干扰</p>
-<h4 id="Playtest"><a href="#Playtest" class="headerlink" title="Playtest"></a>Playtest</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241624553.png"></p>
+<h4 id="Playtest-1"><a href="#Playtest-1" class="headerlink" title="Playtest"></a>Playtest</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241624553.png"></p>
 <ul>
 <li>需要找到合适的测试玩家<ul>
 <li>最好能找到目标受众<ul>
@@ -570,7 +776,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="Iterate"><a href="#Iterate" class="headerlink" title="Iterate"></a>Iterate</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241644143.png" alt="|723x407"></p>
+<h4 id="Iterate-1"><a href="#Iterate-1" class="headerlink" title="Iterate"></a>Iterate</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241644143.png" alt="|723x407"></p>
 <ul>
 <li>质疑你的预期<ul>
 <li>要确保玩家是真的理解而不是“撞大运”</li>
@@ -645,7 +851,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241704669.png"></p>
+<h3 id="Summary-1"><a href="#Summary-1" class="headerlink" title="Summary"></a>Summary</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202508241704669.png"></p>
 <p>这是一份总结的思维导图，涵盖了前面所提到的所有内容</p>
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>总结不同的开发者们的共同经验总是有益处的，但最终如何落地，还是要结合具体情况具体分析。</p>
 <p>持续学习，继续前进！</p>
@@ -1170,7 +1376,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">531.4k</span>
+                        class="white-color">532.7k</span>
             
             
             

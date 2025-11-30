@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2025/08/24/20250824-how-to-run-a-good-playtest/</loc>
+    
+    <lastmod>2025-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2025/11/29/2025-1129-after-playing-the-alters/</loc>
     
     <lastmod>2025-11-30</lastmod>
@@ -113,15 +122,6 @@
     <loc>https://medill-east.github.io/2025/10/06/20251006-m20/</loc>
     
     <lastmod>2025-10-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2025/08/24/20250824-how-to-run-a-good-playtest/</loc>
-    
-    <lastmod>2025-09-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
