@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2024/07/07/20240707-thinking-on-game-production-workflow/</loc>
+    
+    <lastmod>2025-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2025/08/24/20250824-how-to-run-a-good-playtest/</loc>
     
     <lastmod>2025-11-30</lastmod>
@@ -842,15 +851,6 @@
     <loc>https://medill-east.github.io/2024/07/14/20240714-n08/</loc>
     
     <lastmod>2024-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2024/07/07/20240707-thinking-on-game-production-workflow/</loc>
-    
-    <lastmod>2024-07-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -1,3 +1,4 @@
+https://medill-east.github.io/2024/07/07/20240707-thinking-on-game-production-workflow/
 https://medill-east.github.io/2025/08/24/20250824-how-to-run-a-good-playtest/
 https://medill-east.github.io/2025/11/29/2025-1129-after-playing-the-alters/
 https://medill-east.github.io/2022/08/31/20220900-toc/
@@ -92,7 +93,6 @@ https://medill-east.github.io/2024/08/18/20240818-m13/
 https://medill-east.github.io/2024/08/04/20240804-c11/
 https://medill-east.github.io/2024/07/21/20240721-j05/
 https://medill-east.github.io/2024/07/14/20240714-n08/
-https://medill-east.github.io/2024/07/07/20240707-thinking-on-game-production-workflow/
 https://medill-east.github.io/2024/06/30/20240630-g07/
 https://medill-east.github.io/2024/06/23/20240623-f05/
 https://medill-east.github.io/2024/06/16/20240616-i05/

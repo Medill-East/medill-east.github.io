@@ -394,7 +394,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-07
+                    2025-11-30
                 </div>
                 
 
@@ -431,8 +431,417 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h1><p><strong>English version see below</strong> 😀</p>
+                <hr>
+<h1 id="English-Version"><a href="#English-Version" class="headerlink" title="English Version"></a>English Version</h1><p><strong>中文版本见后文 😀</strong> </p>
 <p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062343205.png"></p>
+<p>The theme of this Design Discussion is “Questions that bother me along the way: how to implement a feature from A to Z together with ALL job families”</p>
+<h2 id="Problems-I-met-and-how-I-resolve-them"><a href="#Problems-I-met-and-how-I-resolve-them" class="headerlink" title="Problems I met and how I resolve them"></a>Problems I met and how I resolve them</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062348438.PNG"></p>
+<p>Before the discussion, I will start with the actual problems I encountered during my work and my personal solutions:</p>
+<ul>
+<li>How to deliver the design clearly</li>
+<li>How to enable everyone aware of current status</li>
+<li>How to enable QC to know the flow easily</li>
+<li>How to connect all job families together</li>
+<li>How to track production status</li>
+</ul>
+<h3 id="How-to-deliver-the-design-clearly"><a href="#How-to-deliver-the-design-clearly" class="headerlink" title="How to deliver the design clearly"></a>How to deliver the design clearly</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062354764.PNG"></p>
+<ul>
+<li>How to deliver the design clearly<ul>
+<li>Before, we use the following tools<ul>
+<li>Confluence - deliver the design</li>
+<li>Jira - track the mission</li>
+<li>Excel - jira epic countdown</li>
+</ul>
+</li>
+<li>Pros<ul>
+<li>Structured</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Not good at visualization</li>
+<li>Hard to make you aware of the connections between your work and others’ work<ul>
+<li>What may happen is that you take a jira from the JIRA board and start to implement directly, without actually knowing the context, where it will be used, or how others’ work will be connected with your work</li>
+</ul>
+</li>
+<li>Hard to track as a whole picture</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062359591.PNG"></p>
+<ul>
+<li>How to deliver the design clearly<ul>
+<li>Inspired by [[Stone Librande]], I start to use <a target="_blank" rel="noopener" href="https://gdcvault.com/play/1012356/One-Page">One Page Design</a> to deliver my design (i.e., to visualize your design with the format of cards)<ul>
+<li>Visualization makes it be more efficient on delivering info</li>
+<li>Easier to read compared with pure text</li>
+<li>Encourage comment</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070001292.PNG"></p>
+<ul>
+<li>如何清晰传 How to deliver the design clearly<ul>
+<li>I introduce Miro into the workflow<ul>
+<li>Miro - all-in-one place to check info</li>
+<li>Confluence - storage, and facilitate the search across teams</li>
+<li>Jira - track the mission</li>
+<li>Excel - jira epic countdown</li>
+</ul>
+</li>
+<li>Pros<ul>
+<li>Convenient to check at one place</li>
+<li>Good visualization</li>
+<li>Easy to understand the connections between all job families</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>More requirements for PM and QC to use correct labels</li>
+<li>Manual maintain takes time (so we introduced auto update jira-structure) </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="How-to-enable-everyone-aware-of-current-status"><a href="#How-to-enable-everyone-aware-of-current-status" class="headerlink" title="How to enable everyone aware of current status"></a>How to enable everyone aware of current status</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070005355.PNG"></p>
+<ul>
+<li>Introduced weekly QC smoke test during a specific production period<ul>
+<li>Let QC test the entire process of the feature to find problems</li>
+</ul>
+</li>
+<li>Introduced weekly review meetings (later switched to roundtable playtest)<ul>
+<li>The roundtable playtest allows everyone involved to experience it as a player, so that they could<ul>
+<li>Get a full picture of the feature</li>
+<li>Provide feedback easily</li>
+<li>Clearly understand the reasons for some design decisions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="How-to-enable-QC-to-know-the-flow-easily"><a href="#How-to-enable-QC-to-know-the-flow-easily" class="headerlink" title="How to enable QC to know the flow easily"></a>How to enable QC to know the flow easily</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070009273.PNG"></p>
+<ul>
+<li>How to enable QC to know the flow easily<ul>
+<li>Introduced a logical flow chart to clearly define expected input and expected output</li>
+<li>This not only helps QC, but also helps everyone involved in the design to clearly understand how the design is presented</li>
+</ul>
+</li>
+</ul>
+<h3 id="How-to-connect-all-job-families-together"><a href="#How-to-connect-all-job-families-together" class="headerlink" title="How to connect all job families together"></a>How to connect all job families together</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070012729.PNG"></p>
+<ul>
+<li>The previous method made it difficult to know how everyone’s work was combined with the work of others (especially for job families other than Designer, it was easy to only do the work directly after getting the jira as mentioned above)</li>
+<li>The LoQ-JobFamily table was introduced<ul>
+<li>The design details on the left itself correspond to the situation at the L3 stage</li>
+<li>This table lists the goals of different jobs at different levels of quality corresponding to the design details, so that members involved in this part can clearly know how their work is combined with the work of others</li>
+</ul>
+</li>
+</ul>
+<h3 id="How-to-track-production-status"><a href="#How-to-track-production-status" class="headerlink" title="How to track production status"></a>How to track production status</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070017516.PNG"></p>
+<ul>
+<li>How to track production status<ul>
+<li>Introduced jira-structure<ul>
+<li>The cost of manual maintenance is relatively high, so the auto filter in jira-structure is used to automatically classify and display the corresponding jiras</li>
+<li>This allows the production progress of each part to be displayed in the corresponding position in the LoQ-JobFamily table</li>
+</ul>
+</li>
+<li>Another benefit is that during the review meeting, you can easily know the difference between the current version and the previous version by viewing the “jiras closed in the last x days”</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070022887.PNG"></p>
+<h3 id="Quick-summary"><a href="#Quick-summary" class="headerlink" title="Quick summary"></a>Quick summary</h3><ul>
+<li>To clearly communicate the design<ul>
+<li>Introduced the visual presentation method of One page design</li>
+</ul>
+</li>
+<li>To enable everyone to clearly understand the current production situation<ul>
+<li>Introduced weekly QC smoke test</li>
+<li>Introduced weekly review meetings (later switched to roundtable playtest)</li>
+</ul>
+</li>
+<li>To allow QC to better understand the test process<ul>
+<li>Introduced a logical flow chart to clearly define expected inputs and expected outputs</li>
+</ul>
+</li>
+<li>To bring all members involved in the implementation together<ul>
+<li>Introduced the LoQ-JobFamily table to let everyone know how their work is combined with others’ work</li>
+</ul>
+</li>
+<li>To better track production progress<ul>
+<li>Introduced an automated jira-structure</li>
+</ul>
+</li>
+</ul>
+<h2 id="Understand-the-core-behind-the-collaboration"><a href="#Understand-the-core-behind-the-collaboration" class="headerlink" title="Understand the core behind the collaboration"></a>Understand the core behind the collaboration</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070025608.PNG"></p>
+<ul>
+<li>Responsibility &amp; Participation</li>
+<li>Communication &amp; Iteration</li>
+</ul>
+<h3 id="Responsibility-amp-Participation"><a href="#Responsibility-amp-Participation" class="headerlink" title="Responsibility &amp; Participation"></a>Responsibility &amp; Participation</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070027775.PNG"></p>
+<ul>
+<li>Understand the essence behind collaboration<ul>
+<li>Responsibility &amp; participation<ul>
+<li>Designers should be responsible for their designs<ul>
+<li>This is not just a seemingly useless nonsense. Only when designers are truly responsible for their own designs can they inspire every member involved in the design implementation and let them be responsible for the design together</li>
+</ul>
+</li>
+<li>My personal opinion is that everyone owns the design, and designers are just the driving force to push it forward<ul>
+<li>It is true that designers integrate the design, but the design should belong to each participant, and everyone should be critical of it, rather than just accepting and completing the task in a waterfall manner</li>
+</ul>
+</li>
+<li>Let all implementers participate in the design itself so that all people share the design and contribute to it<ul>
+<li>Designers should try to understand all the background, limitations (i.e., what can’t be done), constraints (i.e., things that can only be done under certain conditions) related to the design before everything starts, and collect possible directions from everyone (a kind of brainstorming), and then produce the first draft of the design based on this</li>
+<li>Implement</li>
+<li>Organize everyone to playtest</li>
+<li>Iterate the design based on the results of playtest, and repeat the above steps</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Communication-amp-Iteration"><a href="#Communication-amp-Iteration" class="headerlink" title="Communication &amp; Iteration"></a>Communication &amp; Iteration</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070036189.PNG"></p>
+<ul>
+<li>Understand the essence behind cooperation<ul>
+<li>Communication &amp; iteration<ul>
+<li>Design should not be waterfall-like or fixed, but should be continuously iterated based on playtest results<ul>
+<li>All participants’ feelings during playtest are valid and can help improve the design</li>
+<li>Sometimes some design trade-offs may be required, but each member involved in the implementation should clearly know the reasons behind them</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Takeaways"><a href="#Takeaways" class="headerlink" title="Takeaways"></a>Takeaways</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071328431.png"></p>
+<h2 id="Comparisons-between-different-workflow"><a href="#Comparisons-between-different-workflow" class="headerlink" title="Comparisons between different workflow"></a>Comparisons between different workflow</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070045970.PNG"></p>
+<p>Later we discussed the pros and cons of different tool flows in more detail:</p>
+<ul>
+<li>Feature Sign-off<ul>
+<li>Tools<ul>
+<li>Excel - Break down the design line by line</li>
+<li>Jira - Task tracking</li>
+</ul>
+</li>
+<li>Props<ul>
+<li>Because everyone uses the same format, so it can be considered that it is friendly to less-experienced designers</li>
+<li>Very friendly to programmers &amp; qc, because they can implement/check line by line</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Difficult to maintain<ul>
+<li>Especially when the feature becomes complex and there are more and more things to maintain</li>
+</ul>
+</li>
+<li>Difficult to retrieve content across teams<ul>
+<li>Because all designs are stored separately in different excels, it is difficult to do global retrieval</li>
+</ul>
+</li>
+<li>The granularity requirements for different job families are consistent, which is unpractical<ul>
+<li>Especially for design, for some designs that conform to common sense, such as a puppy needs to be able to swim, everyone may be able to think of the final desired results, but if it is the swimming behavior of a fantasy creature that has never been seen, it may take many lines to define it well (and because it is difficult to express visually, many details may be missed and can only be communicated verbally)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Web-based<ul>
+<li>Tools<ul>
+<li>Confluence - all-in-one design presentation/storage solution</li>
+<li>Jira - task tracking</li>
+</ul>
+</li>
+<li>Pros<ul>
+<li>Easy to search for content<ul>
+<li>Thanks to the built-in search tool in confluence, you can search by keywords more easily</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Not good at visualization</li>
+<li>Difficult to know the connection between your work and others’ work. <ul>
+<li>What may happen is that you take a jira directly from the JIRA board and directly implement it, but you don’t actually know where this thing will be used, nor do you know how the work of others’ work is combined with yours</li>
+</ul>
+</li>
+<li>It is difficult to have a global perspective on the implementation of the entire feature</li>
+<li>The page will load more slowly when the content grows, and you often need to log in again</li>
+<li>Because there is no unified template, the presentation results depends on the designers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>One-page (visual design)<ul>
+<li>Tools<ul>
+<li>Miro - all-in-one place</li>
+<li>Confluence - Information storage, also easy to search</li>
+<li>Jira - task tracking</li>
+<li>Excel - jira epic countdown</li>
+</ul>
+</li>
+<li>Props<ul>
+<li>Convenient to check at one place</li>
+<li>Good visualization</li>
+<li>Easy to understand the connections between all job families</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>More requirements for PM and QC to use correct tags</li>
+<li>Manual maintain takes time, need automation setting</li>
+<li>Can not search content from other teams directly</li>
+<li>Depends on the user, could make it good or bad</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Feedbacks-from-different-job-family-members"><a href="#Feedbacks-from-different-job-family-members" class="headerlink" title="Feedbacks from different job family members"></a>Feedbacks from different job family members</h2><ul>
+<li>QC<ul>
+<li>Jira-structure can automatically link and update the corresponding bugs, without switching between pages many times, which is very convenient</li>
+<li>And miro can easily view the design</li>
+<li>As long as you are familiar with the logic flow chart, you can use it smoothly</li>
+</ul>
+</li>
+<li>VFX<ul>
+<li>Miro has no format restrictions and is easy to edit</li>
+<li>For simpler features, weekly reviews may be more effective because you can see the latest progress easily, but for more complex features, the review time may need to be adjusted</li>
+</ul>
+</li>
+<li>VFX<ul>
+<li>The current one page version has a better global perspective</li>
+<li>And basically there is no need to switch frequently between multiple pages, the experience is better than confluence</li>
+<li>It is also easier to read after the information is put together</li>
+<li>I prefer the round-table playtest format, which allows everyone to participate and look at their work from different perspectives. All members should have a better experience as participants, rather than sitting and watching for an hour and then getting a new task, so the new format is better</li>
+</ul>
+</li>
+<li>Programmer<ul>
+<li>No special feeling</li>
+<li>What is more important is the communication between people on details</li>
+<li>Documents are more of a checking tool for implementation, and I will only look at them if forget</li>
+<li>Weekly reviews can ensure quality progress</li>
+<li>Pressure comes from changes in quality requirements</li>
+<li>It may not be suitable for everyone</li>
+</ul>
+</li>
+<li>Animator<ul>
+<li>It is important to allow more people to participate, and roundtable testing together is a good form</li>
+<li>And I hope that QC can go a step further as QA to assist in the advancement of design</li>
+<li>It should not be just the leaders who participate in the meeting, but the animators and even everyone involved should also participate in the playtest, otherwise the information will be lost in the communication</li>
+</ul>
+</li>
+<li>Audio<ul>
+<li>I hope to receive more scenario-based and emotion-oriented sound requirements, rather than functional descriptions - “I hope there is a sound here that can attract the player’s attention”</li>
+<li>The current workflow allows sound designers to better understand the specific scenarios and requirements, which is conducive to sound design</li>
+<li>Sometimes I feel that there is too much information on the page and I don’t know where to start</li>
+</ul>
+</li>
+</ul>
+<h2 id="Discussions-based-on-this"><a href="#Discussions-based-on-this" class="headerlink" title="Discussions based on this"></a>Discussions based on this</h2><ul>
+<li>Q Sometimes I feel that the info on the page is too dense, and I hope to improve the organization of the information.<ul>
+<li>A more prominent start view needs to be added, supplemented with clear jump links to help navigation</li>
+<li>It is not necessary to lay out the content flat, and the content can also be organized in a web page-like format (i.e. a clearer top-to-bottom structure)</li>
+</ul>
+</li>
+<li>Q How should designers work well with all job families to avoid waterfall-style, task-oriented designs?<ul>
+<li>This is actually mentioned in the previous section on the core behind the collaboration. Designers should fully communicate with members of different job families based on the design intent to achieve the results expected by both parties as much as possible, and iterate based on the playtest results after implementation. Because each member participates in playtest, they can clearly understand the reasons behind the design decisions, and sometimes they can even make suggestions for improvement themselves.</li>
+<li>This is where the needs of creating the <a href="https://medill-east.github.io/2024/04/14/20240414-emotional-game-design-system-1-create-the-system/">Emotional Game Design System (EGDS)</a> comes from. The way a Game Designer grows is to become an Experience Designer. Although it may not be possible to as capable as other job families in their expertise, designers should be clear of the help that others can provide. This can not only communicate efficiently, but also have better chance to improve a design.</li>
+</ul>
+</li>
+<li>Q How to determine the scope of the content to be included in the page (such as whether to put all related content in it)<ul>
+<li>As mentioned earlier, you can create a miro page based on Jira Epic. Ideally, all the information on the current page is directly related and belongs to you. The remaining parts that are related but not your team is not directly responsible for production can be posted as external links at the bottom of the page, this part of the content is mainly used by designers to track related progress and does not need to take up too much space.</li>
+</ul>
+</li>
+<li>Q Regarding document editing permissions<ul>
+<li>Ideally, it should be a collaborative page, but in order to avoid miss-editing, current way is for designers to maintain and grant the page comment permissions, so that other members can also easily comment on the page, and the designer can maintain and iterate it.</li>
+</ul>
+</li>
+<li>Q Will it increase the workload of designers?<ul>
+<li>What we are doing now is actually presenting the original content on Confluence in Miro. If we want to achieve better visual communication, the presentation difficulty will be higher, but it is more convenient for maintenance.</li>
+<li>Info needs to be presented one way or another, but it needs to be organized in a good way.</li>
+<li>Unconverted meeting recap should not be directly be part of the page content, but should be converted first</li>
+</ul>
+</li>
+<li>Q Different job families have different needs, how to handle this? <ul>
+<li>There are three needs<ul>
+<li>The needs of the production team<ul>
+<li>Everyone needs to know how their work contributes to the feature</li>
+<li>It is also better to know how their work is connected to others’ work, which can also inspire creativity</li>
+</ul>
+</li>
+<li>The needs of the user team<ul>
+<li>For example, for an ingredient, when the level designer reads the document, they are more concerned about “what is it” and “how to use it”. They may don’t need to know too much about the current production progress (the designer needs to update the current progress and iteration status with the user team timely)</li>
+<li>Then it is necessary to divide the content appropriately based on such needs, such as providing “1 min overview (what and possible gameplay scenarios)” and “how to use (metrics and tips)” sections to meet their needs</li>
+</ul>
+</li>
+<li>The need for anyone to take over<ul>
+<li>In fact, the goal is to be self-explained </li>
+<li>Templates should be provided to help everyone reach a consensus and better understand the role of each part.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Other-topics-may-be-extended-in-the-future"><a href="#Other-topics-may-be-extended-in-the-future" class="headerlink" title="Other topics may be extended in the future"></a>Other topics may be extended in the future</h2><ul>
+<li>How to do playtest in an appropriate way<ul>
+<li>The EOTA (Experience observation theory advice) method was mentioned in the meeting<ul>
+<li>E - No discussion</li>
+<li>O – what did you find</li>
+<li>T – problems to be addressed</li>
+<li>A – how to address</li>
+</ul>
+</li>
+<li>Different type of features have different suitable playtest methods, which need to be discussed in detail in the future</li>
+</ul>
+</li>
+<li>How to become a better game designer<ul>
+<li>A part about experience designer was mentioned above, and this is to be discussed in the future</li>
+</ul>
+</li>
+</ul>
+<h2 id="A-possible-new-workflow"><a href="#A-possible-new-workflow" class="headerlink" title="A possible new workflow"></a>A possible new workflow</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071301118.png"></p>
+<p>① To improve readability</p>
+<ul>
+<li>Provide a large and eye-catching start view</li>
+<li>Provide a table of content mind map that can be used for navigation</li>
+<li>Provide a 1min overview for people to quickly understand this feature (including possible gameplay scenarios)</li>
+<li>Create a new page based on jira epic (you can put the relevant jiras at the bottom)<br>② To help people find the information they need</li>
+<li>Split the content based on needs (consider who will be the reader)<ul>
+<li>For the production team<ul>
+<li>The designer will walk them through the design, so they may use the Logic Flow part heavily</li>
+</ul>
+</li>
+<li>For the user team (such as the Level Designer who uses this feature)<ul>
+<li>In theory, the designer also needs to walk them through the design, so the How to use part may be useful to them</li>
+</ul>
+</li>
+<li>To make the entire design self-explanatory (so that anyone can take over)<ul>
+<li>This requires the designer to better present the Design Detail part</li>
+<li>And if everyone can present information based on the same template, the cost of understanding will be reduced</li>
+<li>Use jump links to allow readers to quickly return to the TOC part<br>③ To present information more clearly</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>That is, Design Detail part requires good presentation<br>④ How to let QC know how to test clearly</li>
+<li>That is, the Logic Flow part</li>
+<li>Hope to involve them not only as quality control, but also as quality assurance<br>⑤ How to bring together all members involved in the production</li>
+<li>Introduce the LoQ-JobFamily table to let everyone know how their work is connected to others’ work<br>⑥ How to track production</li>
+<li>Introduce an automatically updated jira-structure (use the correct labels to achieve this)<br>How to let everyone know the current status clearly</li>
+<li>(Optional) Introduce a weekly QC smoke test</li>
+<li>Organize review meetings based on needs (such as roundtable playtests)<ul>
+<li>Organize playtests in an appropriate form (not every feature is suitable for the form of roundtable playtests)</li>
+</ul>
+</li>
+</ul>
+<p>Thanks for your watching, looking forward to your comment 😀</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071413500.PNG"></p>
+<h1 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h1><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062343205.png"></p>
 <p>这次的 Design Discussion 的主题是“一路走来困扰我的问题之如何和所有的工种一起从无到有推进 功能落地”。（本文中的“功能”用于指代 Feature）</p>
 <h2 id="工作中实际遇到的问题以及个人解决方案"><a href="#工作中实际遇到的问题以及个人解决方案" class="headerlink" title="工作中实际遇到的问题以及个人解决方案"></a>工作中实际遇到的问题以及个人解决方案</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062348438.PNG"></p>
 <p>讨论之前我先以我在工作过程中所实际碰到的问题以及我个人的解决方案作为引子：</p>
@@ -876,415 +1285,6 @@
 </li>
 </ul>
 <p>感谢您的阅读，欢迎大家批评指正！ </p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071413500.PNG"></p>
-<hr>
-<h1 id="English-Version"><a href="#English-Version" class="headerlink" title="English Version"></a>English Version</h1><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062343205.png"></p>
-<p>The theme of this Design Discussion is “Questions that bother me along the way: how to implement a feature from A to Z together with ALL job families”</p>
-<h2 id="Problems-I-met-and-how-I-resolve-them"><a href="#Problems-I-met-and-how-I-resolve-them" class="headerlink" title="Problems I met and how I resolve them"></a>Problems I met and how I resolve them</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062348438.PNG"></p>
-<p>Before the discussion, I will start with the actual problems I encountered during my work and my personal solutions:</p>
-<ul>
-<li>How to deliver the design clearly</li>
-<li>How to enable everyone aware of current status</li>
-<li>How to enable QC to know the flow easily</li>
-<li>How to connect all job families together</li>
-<li>How to track production status</li>
-</ul>
-<h3 id="How-to-deliver-the-design-clearly"><a href="#How-to-deliver-the-design-clearly" class="headerlink" title="How to deliver the design clearly"></a>How to deliver the design clearly</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062354764.PNG"></p>
-<ul>
-<li>How to deliver the design clearly<ul>
-<li>Before, we use the following tools<ul>
-<li>Confluence - deliver the design</li>
-<li>Jira - track the mission</li>
-<li>Excel - jira epic countdown</li>
-</ul>
-</li>
-<li>Pros<ul>
-<li>Structured</li>
-</ul>
-</li>
-<li>Cons<ul>
-<li>Not good at visualization</li>
-<li>Hard to make you aware of the connections between your work and others’ work<ul>
-<li>What may happen is that you take a jira from the JIRA board and start to implement directly, without actually knowing the context, where it will be used, or how others’ work will be connected with your work</li>
-</ul>
-</li>
-<li>Hard to track as a whole picture</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407062359591.PNG"></p>
-<ul>
-<li>How to deliver the design clearly<ul>
-<li>Inspired by [[Stone Librande]], I start to use <a target="_blank" rel="noopener" href="https://gdcvault.com/play/1012356/One-Page">One Page Design</a> to deliver my design (i.e., to visualize your design with the format of cards)<ul>
-<li>Visualization makes it be more efficient on delivering info</li>
-<li>Easier to read compared with pure text</li>
-<li>Encourage comment</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070001292.PNG"></p>
-<ul>
-<li>如何清晰传 How to deliver the design clearly<ul>
-<li>I introduce Miro into the workflow<ul>
-<li>Miro - all-in-one place to check info</li>
-<li>Confluence - storage, and facilitate the search across teams</li>
-<li>Jira - track the mission</li>
-<li>Excel - jira epic countdown</li>
-</ul>
-</li>
-<li>Pros<ul>
-<li>Convenient to check at one place</li>
-<li>Good visualization</li>
-<li>Easy to understand the connections between all job families</li>
-</ul>
-</li>
-<li>Cons<ul>
-<li>More requirements for PM and QC to use correct labels</li>
-<li>Manual maintain takes time (so we introduced auto update jira-structure) </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="How-to-enable-everyone-aware-of-current-status"><a href="#How-to-enable-everyone-aware-of-current-status" class="headerlink" title="How to enable everyone aware of current status"></a>How to enable everyone aware of current status</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070005355.PNG"></p>
-<ul>
-<li>Introduced weekly QC smoke test during a specific production period<ul>
-<li>Let QC test the entire process of the feature to find problems</li>
-</ul>
-</li>
-<li>Introduced weekly review meetings (later switched to roundtable playtest)<ul>
-<li>The roundtable playtest allows everyone involved to experience it as a player, so that they could<ul>
-<li>Get a full picture of the feature</li>
-<li>Provide feedback easily</li>
-<li>Clearly understand the reasons for some design decisions</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="How-to-enable-QC-to-know-the-flow-easily"><a href="#How-to-enable-QC-to-know-the-flow-easily" class="headerlink" title="How to enable QC to know the flow easily"></a>How to enable QC to know the flow easily</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070009273.PNG"></p>
-<ul>
-<li>How to enable QC to know the flow easily<ul>
-<li>Introduced a logical flow chart to clearly define expected input and expected output</li>
-<li>This not only helps QC, but also helps everyone involved in the design to clearly understand how the design is presented</li>
-</ul>
-</li>
-</ul>
-<h3 id="How-to-connect-all-job-families-together"><a href="#How-to-connect-all-job-families-together" class="headerlink" title="How to connect all job families together"></a>How to connect all job families together</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070012729.PNG"></p>
-<ul>
-<li>The previous method made it difficult to know how everyone’s work was combined with the work of others (especially for job families other than Designer, it was easy to only do the work directly after getting the jira as mentioned above)</li>
-<li>The LoQ-JobFamily table was introduced<ul>
-<li>The design details on the left itself correspond to the situation at the L3 stage</li>
-<li>This table lists the goals of different jobs at different levels of quality corresponding to the design details, so that members involved in this part can clearly know how their work is combined with the work of others</li>
-</ul>
-</li>
-</ul>
-<h3 id="How-to-track-production-status"><a href="#How-to-track-production-status" class="headerlink" title="How to track production status"></a>How to track production status</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070017516.PNG"></p>
-<ul>
-<li>How to track production status<ul>
-<li>Introduced jira-structure<ul>
-<li>The cost of manual maintenance is relatively high, so the auto filter in jira-structure is used to automatically classify and display the corresponding jiras</li>
-<li>This allows the production progress of each part to be displayed in the corresponding position in the LoQ-JobFamily table</li>
-</ul>
-</li>
-<li>Another benefit is that during the review meeting, you can easily know the difference between the current version and the previous version by viewing the “jiras closed in the last x days”</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070022887.PNG"></p>
-<h3 id="Quick-summary"><a href="#Quick-summary" class="headerlink" title="Quick summary"></a>Quick summary</h3><ul>
-<li>To clearly communicate the design<ul>
-<li>Introduced the visual presentation method of One page design</li>
-</ul>
-</li>
-<li>To enable everyone to clearly understand the current production situation<ul>
-<li>Introduced weekly QC smoke test</li>
-<li>Introduced weekly review meetings (later switched to roundtable playtest)</li>
-</ul>
-</li>
-<li>To allow QC to better understand the test process<ul>
-<li>Introduced a logical flow chart to clearly define expected inputs and expected outputs</li>
-</ul>
-</li>
-<li>To bring all members involved in the implementation together<ul>
-<li>Introduced the LoQ-JobFamily table to let everyone know how their work is combined with others’ work</li>
-</ul>
-</li>
-<li>To better track production progress<ul>
-<li>Introduced an automated jira-structure</li>
-</ul>
-</li>
-</ul>
-<h2 id="Understand-the-core-behind-the-collaboration"><a href="#Understand-the-core-behind-the-collaboration" class="headerlink" title="Understand the core behind the collaboration"></a>Understand the core behind the collaboration</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070025608.PNG"></p>
-<ul>
-<li>Responsibility &amp; Participation</li>
-<li>Communication &amp; Iteration</li>
-</ul>
-<h3 id="Responsibility-amp-Participation"><a href="#Responsibility-amp-Participation" class="headerlink" title="Responsibility &amp; Participation"></a>Responsibility &amp; Participation</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070027775.PNG"></p>
-<ul>
-<li>Understand the essence behind collaboration<ul>
-<li>Responsibility &amp; participation<ul>
-<li>Designers should be responsible for their designs<ul>
-<li>This is not just a seemingly useless nonsense. Only when designers are truly responsible for their own designs can they inspire every member involved in the design implementation and let them be responsible for the design together</li>
-</ul>
-</li>
-<li>My personal opinion is that everyone owns the design, and designers are just the driving force to push it forward<ul>
-<li>It is true that designers integrate the design, but the design should belong to each participant, and everyone should be critical of it, rather than just accepting and completing the task in a waterfall manner</li>
-</ul>
-</li>
-<li>Let all implementers participate in the design itself so that all people share the design and contribute to it<ul>
-<li>Designers should try to understand all the background, limitations (i.e., what can’t be done), constraints (i.e., things that can only be done under certain conditions) related to the design before everything starts, and collect possible directions from everyone (a kind of brainstorming), and then produce the first draft of the design based on this</li>
-<li>Implement</li>
-<li>Organize everyone to playtest</li>
-<li>Iterate the design based on the results of playtest, and repeat the above steps</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="Communication-amp-Iteration"><a href="#Communication-amp-Iteration" class="headerlink" title="Communication &amp; Iteration"></a>Communication &amp; Iteration</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070036189.PNG"></p>
-<ul>
-<li>Understand the essence behind cooperation<ul>
-<li>Communication &amp; iteration<ul>
-<li>Design should not be waterfall-like or fixed, but should be continuously iterated based on playtest results<ul>
-<li>All participants’ feelings during playtest are valid and can help improve the design</li>
-<li>Sometimes some design trade-offs may be required, but each member involved in the implementation should clearly know the reasons behind them</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Takeaways"><a href="#Takeaways" class="headerlink" title="Takeaways"></a>Takeaways</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071328431.png"></p>
-<h2 id="Comparisons-between-different-workflow"><a href="#Comparisons-between-different-workflow" class="headerlink" title="Comparisons between different workflow"></a>Comparisons between different workflow</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407070045970.PNG"></p>
-<p>Later we discussed the pros and cons of different tool flows in more detail:</p>
-<ul>
-<li>Feature Sign-off<ul>
-<li>Tools<ul>
-<li>Excel - Break down the design line by line</li>
-<li>Jira - Task tracking</li>
-</ul>
-</li>
-<li>Props<ul>
-<li>Because everyone uses the same format, so it can be considered that it is friendly to less-experienced designers</li>
-<li>Very friendly to programmers &amp; qc, because they can implement/check line by line</li>
-</ul>
-</li>
-<li>Cons<ul>
-<li>Difficult to maintain<ul>
-<li>Especially when the feature becomes complex and there are more and more things to maintain</li>
-</ul>
-</li>
-<li>Difficult to retrieve content across teams<ul>
-<li>Because all designs are stored separately in different excels, it is difficult to do global retrieval</li>
-</ul>
-</li>
-<li>The granularity requirements for different job families are consistent, which is unpractical<ul>
-<li>Especially for design, for some designs that conform to common sense, such as a puppy needs to be able to swim, everyone may be able to think of the final desired results, but if it is the swimming behavior of a fantasy creature that has never been seen, it may take many lines to define it well (and because it is difficult to express visually, many details may be missed and can only be communicated verbally)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Web-based<ul>
-<li>Tools<ul>
-<li>Confluence - all-in-one design presentation/storage solution</li>
-<li>Jira - task tracking</li>
-</ul>
-</li>
-<li>Pros<ul>
-<li>Easy to search for content<ul>
-<li>Thanks to the built-in search tool in confluence, you can search by keywords more easily</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Cons<ul>
-<li>Not good at visualization</li>
-<li>Difficult to know the connection between your work and others’ work. <ul>
-<li>What may happen is that you take a jira directly from the JIRA board and directly implement it, but you don’t actually know where this thing will be used, nor do you know how the work of others’ work is combined with yours</li>
-</ul>
-</li>
-<li>It is difficult to have a global perspective on the implementation of the entire feature</li>
-<li>The page will load more slowly when the content grows, and you often need to log in again</li>
-<li>Because there is no unified template, the presentation results depends on the designers</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>One-page (visual design)<ul>
-<li>Tools<ul>
-<li>Miro - all-in-one place</li>
-<li>Confluence - Information storage, also easy to search</li>
-<li>Jira - task tracking</li>
-<li>Excel - jira epic countdown</li>
-</ul>
-</li>
-<li>Props<ul>
-<li>Convenient to check at one place</li>
-<li>Good visualization</li>
-<li>Easy to understand the connections between all job families</li>
-</ul>
-</li>
-<li>Cons<ul>
-<li>More requirements for PM and QC to use correct tags</li>
-<li>Manual maintain takes time, need automation setting</li>
-<li>Can not search content from other teams directly</li>
-<li>Depends on the user, could make it good or bad</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Feedbacks-from-different-job-family-members"><a href="#Feedbacks-from-different-job-family-members" class="headerlink" title="Feedbacks from different job family members"></a>Feedbacks from different job family members</h2><ul>
-<li>QC<ul>
-<li>Jira-structure can automatically link and update the corresponding bugs, without switching between pages many times, which is very convenient</li>
-<li>And miro can easily view the design</li>
-<li>As long as you are familiar with the logic flow chart, you can use it smoothly</li>
-</ul>
-</li>
-<li>VFX<ul>
-<li>Miro has no format restrictions and is easy to edit</li>
-<li>For simpler features, weekly reviews may be more effective because you can see the latest progress easily, but for more complex features, the review time may need to be adjusted</li>
-</ul>
-</li>
-<li>VFX<ul>
-<li>The current one page version has a better global perspective</li>
-<li>And basically there is no need to switch frequently between multiple pages, the experience is better than confluence</li>
-<li>It is also easier to read after the information is put together</li>
-<li>I prefer the round-table playtest format, which allows everyone to participate and look at their work from different perspectives. All members should have a better experience as participants, rather than sitting and watching for an hour and then getting a new task, so the new format is better</li>
-</ul>
-</li>
-<li>Programmer<ul>
-<li>No special feeling</li>
-<li>What is more important is the communication between people on details</li>
-<li>Documents are more of a checking tool for implementation, and I will only look at them if forget</li>
-<li>Weekly reviews can ensure quality progress</li>
-<li>Pressure comes from changes in quality requirements</li>
-<li>It may not be suitable for everyone</li>
-</ul>
-</li>
-<li>Animator<ul>
-<li>It is important to allow more people to participate, and roundtable testing together is a good form</li>
-<li>And I hope that QC can go a step further as QA to assist in the advancement of design</li>
-<li>It should not be just the leaders who participate in the meeting, but the animators and even everyone involved should also participate in the playtest, otherwise the information will be lost in the communication</li>
-</ul>
-</li>
-<li>Audio<ul>
-<li>I hope to receive more scenario-based and emotion-oriented sound requirements, rather than functional descriptions - “I hope there is a sound here that can attract the player’s attention”</li>
-<li>The current workflow allows sound designers to better understand the specific scenarios and requirements, which is conducive to sound design</li>
-<li>Sometimes I feel that there is too much information on the page and I don’t know where to start</li>
-</ul>
-</li>
-</ul>
-<h2 id="Discussions-based-on-this"><a href="#Discussions-based-on-this" class="headerlink" title="Discussions based on this"></a>Discussions based on this</h2><ul>
-<li>Q Sometimes I feel that the info on the page is too dense, and I hope to improve the organization of the information.<ul>
-<li>A more prominent start view needs to be added, supplemented with clear jump links to help navigation</li>
-<li>It is not necessary to lay out the content flat, and the content can also be organized in a web page-like format (i.e. a clearer top-to-bottom structure)</li>
-</ul>
-</li>
-<li>Q How should designers work well with all job families to avoid waterfall-style, task-oriented designs?<ul>
-<li>This is actually mentioned in the previous section on the core behind the collaboration. Designers should fully communicate with members of different job families based on the design intent to achieve the results expected by both parties as much as possible, and iterate based on the playtest results after implementation. Because each member participates in playtest, they can clearly understand the reasons behind the design decisions, and sometimes they can even make suggestions for improvement themselves.</li>
-<li>This is where the needs of creating the <a href="https://medill-east.github.io/2024/04/14/20240414-emotional-game-design-system-1-create-the-system/">Emotional Game Design System (EGDS)</a> comes from. The way a Game Designer grows is to become an Experience Designer. Although it may not be possible to as capable as other job families in their expertise, designers should be clear of the help that others can provide. This can not only communicate efficiently, but also have better chance to improve a design.</li>
-</ul>
-</li>
-<li>Q How to determine the scope of the content to be included in the page (such as whether to put all related content in it)<ul>
-<li>As mentioned earlier, you can create a miro page based on Jira Epic. Ideally, all the information on the current page is directly related and belongs to you. The remaining parts that are related but not your team is not directly responsible for production can be posted as external links at the bottom of the page, this part of the content is mainly used by designers to track related progress and does not need to take up too much space.</li>
-</ul>
-</li>
-<li>Q Regarding document editing permissions<ul>
-<li>Ideally, it should be a collaborative page, but in order to avoid miss-editing, current way is for designers to maintain and grant the page comment permissions, so that other members can also easily comment on the page, and the designer can maintain and iterate it.</li>
-</ul>
-</li>
-<li>Q Will it increase the workload of designers?<ul>
-<li>What we are doing now is actually presenting the original content on Confluence in Miro. If we want to achieve better visual communication, the presentation difficulty will be higher, but it is more convenient for maintenance.</li>
-<li>Info needs to be presented one way or another, but it needs to be organized in a good way.</li>
-<li>Unconverted meeting recap should not be directly be part of the page content, but should be converted first</li>
-</ul>
-</li>
-<li>Q Different job families have different needs, how to handle this? <ul>
-<li>There are three needs<ul>
-<li>The needs of the production team<ul>
-<li>Everyone needs to know how their work contributes to the feature</li>
-<li>It is also better to know how their work is connected to others’ work, which can also inspire creativity</li>
-</ul>
-</li>
-<li>The needs of the user team<ul>
-<li>For example, for an ingredient, when the level designer reads the document, they are more concerned about “what is it” and “how to use it”. They may don’t need to know too much about the current production progress (the designer needs to update the current progress and iteration status with the user team timely)</li>
-<li>Then it is necessary to divide the content appropriately based on such needs, such as providing “1 min overview (what and possible gameplay scenarios)” and “how to use (metrics and tips)” sections to meet their needs</li>
-</ul>
-</li>
-<li>The need for anyone to take over<ul>
-<li>In fact, the goal is to be self-explained </li>
-<li>Templates should be provided to help everyone reach a consensus and better understand the role of each part.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Other-topics-may-be-extended-in-the-future"><a href="#Other-topics-may-be-extended-in-the-future" class="headerlink" title="Other topics may be extended in the future"></a>Other topics may be extended in the future</h2><ul>
-<li>How to do playtest in an appropriate way<ul>
-<li>The EOTA (Experience observation theory advice) method was mentioned in the meeting<ul>
-<li>E - No discussion</li>
-<li>O – what did you find</li>
-<li>T – problems to be addressed</li>
-<li>A – how to address</li>
-</ul>
-</li>
-<li>Different type of features have different suitable playtest methods, which need to be discussed in detail in the future</li>
-</ul>
-</li>
-<li>How to become a better game designer<ul>
-<li>A part about experience designer was mentioned above, and this is to be discussed in the future</li>
-</ul>
-</li>
-</ul>
-<h2 id="A-possible-new-workflow"><a href="#A-possible-new-workflow" class="headerlink" title="A possible new workflow"></a>A possible new workflow</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071301118.png"></p>
-<p>① To improve readability</p>
-<ul>
-<li>Provide a large and eye-catching start view</li>
-<li>Provide a table of content mind map that can be used for navigation</li>
-<li>Provide a 1min overview for people to quickly understand this feature (including possible gameplay scenarios)</li>
-<li>Create a new page based on jira epic (you can put the relevant jiras at the bottom)<br>② To help people find the information they need</li>
-<li>Split the content based on needs (consider who will be the reader)<ul>
-<li>For the production team<ul>
-<li>The designer will walk them through the design, so they may use the Logic Flow part heavily</li>
-</ul>
-</li>
-<li>For the user team (such as the Level Designer who uses this feature)<ul>
-<li>In theory, the designer also needs to walk them through the design, so the How to use part may be useful to them</li>
-</ul>
-</li>
-<li>To make the entire design self-explanatory (so that anyone can take over)<ul>
-<li>This requires the designer to better present the Design Detail part</li>
-<li>And if everyone can present information based on the same template, the cost of understanding will be reduced</li>
-<li>Use jump links to allow readers to quickly return to the TOC part<br>③ To present information more clearly</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>That is, Design Detail part requires good presentation<br>④ How to let QC know how to test clearly</li>
-<li>That is, the Logic Flow part</li>
-<li>Hope to involve them not only as quality control, but also as quality assurance<br>⑤ How to bring together all members involved in the production</li>
-<li>Introduce the LoQ-JobFamily table to let everyone know how their work is connected to others’ work<br>⑥ How to track production</li>
-<li>Introduce an automatically updated jira-structure (use the correct labels to achieve this)<br>How to let everyone know the current status clearly</li>
-<li>(Optional) Introduce a weekly QC smoke test</li>
-<li>Organize review meetings based on needs (such as roundtable playtests)<ul>
-<li>Organize playtests in an appropriate form (not every feature is suitable for the form of roundtable playtests)</li>
-</ul>
-</li>
-</ul>
-<p>Thanks for your watching, looking forward to your comment 😀</p>
 <p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202407071413500.PNG"></p>
 
                 
