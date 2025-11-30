@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2025/11/29/2025-1129-after-playing-the-alters/</loc>
+    
+    <lastmod>2025-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2022/08/31/20220900-toc/</loc>
     
     <lastmod>2025-11-30</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://medill-east.github.io/2025/11/30/20251130-b18/</loc>
     
     <lastmod>2025-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2025/11/29/2025-1129-after-playing-the-alters/</loc>
-    
-    <lastmod>2025-11-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
