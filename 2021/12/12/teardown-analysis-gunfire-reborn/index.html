@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="20220502 - GDC2017 塞尔达：旷野之息的三角之力, 無涘">
+    <meta name="keywords" content="枪火重生 Teardown Analysis, 無涘">
     <meta name="description" content="Whatever will be, will be.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -28,7 +28,7 @@
 
 
 
-    <title>20220502 - GDC2017 塞尔达：旷野之息的三角之力 | 無涘</title>
+    <title>枪火重生 Teardown Analysis | 無涘</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -239,12 +239,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220503000611.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cover.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">20220502 - GDC2017 塞尔达：旷野之息的三角之力</h1>
+                    <h1 class="description center-align post-title">枪火重生 Teardown Analysis</h1>
                 </div>
             </div>
         </div>
@@ -366,14 +366,6 @@
                                 <span class="chip bg-color">Game</span>
                             </a>
                         
-                            <a href="/tags/GDC/">
-                                <span class="chip bg-color">GDC</span>
-                            </a>
-                        
-                            <a href="/tags/Learning-Notes/">
-                                <span class="chip bg-color">Learning Notes</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -382,8 +374,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Study-Game-Notes/" class="post-category">
-                                Study-Game-Notes
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                Study-Game-Analysis
                             </a>
                         
                     </div>
@@ -395,28 +387,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-05-03
+                    2021-12-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-05-03
+                    2022-04-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.8k
+                    393
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    6 Min
+                    1 Min
                 </div>
                 
 
@@ -439,227 +431,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="塞尔达：旷野之息的三角之力"><a href="#塞尔达：旷野之息的三角之力" class="headerlink" title="塞尔达：旷野之息的三角之力"></a>塞尔达：旷野之息的三角之力</h2><p> 虽然以前已经看过一次视频，但所谓好记性不如烂笔头，这里重新复习一下最出色的开放世界的设计理念，本文基本整理自参考文章 <a target="_blank" rel="noopener" href="https://cowlevel.net/article/2091350">荒野之息-用乘法打造开放世界玩法</a>，也感谢作者 <a target="_blank" rel="noopener" href="https://cowlevel.net/people/ThouSun">ThouSun</a> 的辛苦整理。</p>
-<p>原视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=QyMsF31NdNc">Breaking Conventions with The Legend of Zelda: Breath of the Wild</a></p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502224332.png" alt="三角之力"></p>
+                <h2 id="《枪火重生》-Teardown-Analysis"><a href="#《枪火重生》-Teardown-Analysis" class="headerlink" title="《枪火重生》 Teardown Analysis"></a>《枪火重生》 Teardown Analysis</h2><p>最近在 B 站上看 <a target="_blank" rel="noopener" href="https://space.bilibili.com/618369?spm_id_from=333.788.b_765f7570696e666f.1">鱼一元 001</a> 大大的相关视频，并在 <a target="_blank" rel="noopener" href="https://space.bilibili.com/618369/channel/detail?cid=96395">挺进游戏公司</a> 系列下学到了 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1GJ411y7fj?spm_id_from=333.999.0.0">Teardown Analysis</a> 这一游戏拆解方法，现动手实践之！</p>
+<h3 id="Keynote-展示"><a href="#Keynote-展示" class="headerlink" title="Keynote 展示"></a>Keynote 展示</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.001.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.002.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.003.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.004.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.005.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.006.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.007.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.008.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.009.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.010.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.011.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.012.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.013.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/TeardownAnalysis-GunfireReborn.014.jpeg"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>第一次做 Teardown Analysis，全部算下来应该花了快有十二个小时左右…推翻重画了好几次，期间也有一些疑惑、反思或是延伸思考：</p>
 <ul>
-<li>the wisdom to make - Takuhiro Dohta</li>
-<li>the power to show - Satoru Takizawa</li>
-<li>the courage to say - Hidemaro Fujibayashi</li>
+<li>Core Loop 按理来说应该是围绕资源进行绘制，但总会牵涉到一些无法进行资源展示的系统，如何合理引入是一个需要考虑的问题</li>
+<li>Teardown Analysis 的目的应该是为了帮助我们更好理解游戏资源流向及设计目的，本次分析中其实在 Core Loop 之后更多是对于系统的描述以及设计概述，对设计目的的反思还不够深入</li>
+<li>一开始直接在 PPT/Keynote 上对线框图进行绘制，后觉麻烦，改用飞书云文档中的流程图工具（我将其当做免费版的  ProcessOn）进行绘制，顺畅许多</li>
+<li>感觉下次再分析的时候，可以将目标体验作为设计反思的重点，但届时势必会出现更加纷繁的走线，需要好好思考如何合理结合</li>
 </ul>
-<h2 id="P1-旷野之息设计核心-乘法式玩法"><a href="#P1-旷野之息设计核心-乘法式玩法" class="headerlink" title="P1 旷野之息设计核心-乘法式玩法"></a>P1 旷野之息设计核心-乘法式玩法</h2><p>Hidemaro Fujibayashi</p>
-<h3 id="立项之初的两个核心问题"><a href="#立项之初的两个核心问题" class="headerlink" title="立项之初的两个核心问题"></a>立项之初的两个核心问题</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502233204.png" alt="立项之初的核心问题"></p>
-<ol>
-<li><p>塞尔达系列游戏最重要的核心是什么</p>
-<ul>
-<li>让玩家自由选择<ul>
-<li>自由决定去哪里</li>
-<li>自由决定干什么</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>如何打破塞尔达常规，挖掘新内容</p>
-<ul>
-<li>之前作品中的相同点<ul>
-<li>空气墙的存在阻碍了玩家移动</li>
-<li>线性推进的剧情和流程</li>
-<li>事先设计好的游戏体验</li>
-<li>所有谜题都能在网上找到答案</li>
-</ul>
-</li>
-<li>如何打破<ul>
-<li>被动游玩 -&gt; 玩家主导的主动游玩（active game）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502224615.png" alt="具有启发意义的地图"><br>来自地图的启发：玩家起初对整个世界是无知的，通过一步步探索，发现这个世界的美妙之处。</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502233754.png" alt="打破前作的限制"></p>
-<h3 id="Active-Game"><a href="#Active-Game" class="headerlink" title="Active Game"></a>Active Game</h3><p>怎么做</p>
-<ul>
-<li>移除空气墙，并且添加攀爬能力<ul>
-<li>原本阻碍玩家前进的墙现在成为了可选择的新道路</li>
-<li>这样玩家在游玩时会不断问自己：你要选哪条路</li>
-</ul>
-</li>
-<li>有了攀爬后，玩家爬到顶端会想干什么呢？——跳下去，所以引入滑翔能力</li>
-</ul>
-<h3 id="乘法式游戏"><a href="#乘法式游戏" class="headerlink" title="乘法式游戏"></a>乘法式游戏</h3><p>前作的设计</p>
-<ul>
-<li>使用自然理论或简单科学知识创造谜题</li>
-<li>在每个谜题中独立运用知识作为谜题提示</li>
-<li>很多道具/机制是专属于谜题的<ul>
-<li>可以严格把控游戏体验细节</li>
-<li>消耗很多开发资源</li>
-<li>不适合开放世界</li>
-</ul>
-</li>
-</ul>
-<p>旷野之息的设计</p>
-<ul>
-<li><p>行为（Action） x 场景（Field）</p>
-<ul>
-<li><p>让每个行为在不同场景下有不同用途</p>
-</li>
-<li><p>玩家可以自由组合</p>
-</li>
-<li><p>让物品对玩家行为做出反应</p>
-</li>
-<li><p>物品与物品也能相互影响</p>
-</li>
-<li><p>例子</p>
-<ul>
-<li><p>攻击</p>
-<ul>
-<li>对敌人造成伤害</li>
-<li>对树，砍倒</li>
-</ul>
-<p>  <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/log.gif" alt="用攻击砍倒树木"></p>
-</li>
-<li><p>火把</p>
-<ul>
-<li>点燃物体</li>
-</ul>
-<p>  <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fire.gif" alt="用火点燃物体"></p>
-</li>
-<li><p>扇子</p>
-<ul>
-<li>吹飞</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/defence.gif" alt="打回怪物投掷的石块" style="zoom:70%;" />
-
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/timestop.gif" alt="“发射”经过时停蓄力的炸药桶"></p>
-<p>想法验证：2D Demo</p>
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/2d2.gif" alt = "用弓箭穿过火焰来点燃木质物品" style="zoom:90%;" />
-
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/2d3.gif" alt= "砍倒树木后利用浮木过河" style="zoom:90%;" />
-
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/2d4.gif" alt= "点燃火把后用其点燃其他可燃烧物体" style="zoom:90%;" />
-
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502225648.png" alt= "动作 x 处境 x 物体的无限可能" style="zoom:105%;" />
-
-<p>Player Action x Field x Object</p>
-<p>游戏中玩家在面对一个处境以及相应的目标时，可以充分组合自身行为以及场景物体，并基于交互逻辑自由游玩，从而实现了玩家主导（active game）</p>
-<h2 id="P2-乘法式玩法的技术实现"><a href="#P2-乘法式玩法的技术实现" class="headerlink" title="P2 乘法式玩法的技术实现"></a>P2 乘法式玩法的技术实现</h2><p>Satoru Takizawa</p>
-<h3 id="游戏物理"><a href="#游戏物理" class="headerlink" title="游戏物理"></a>游戏物理</h3><p>塞尔达作为一款动作游戏，其最重要的部分是什么呢？</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502235706.png" alt="处理碰撞和移动的物理引擎"></p>
-<p>动作游戏 = 碰撞+人物移动+物体状态</p>
-<ul>
-<li>游戏物理<br>碰撞和移动的核心都是物理<br>游戏中，为了得到更好的操纵性，更好的反馈以及充分满足游戏设计的需求，需要的不是真实世界中的物理，而是游戏物理。</li>
-</ul>
-<p> havoc 引擎为游戏物理提供了可行性</p>
-<p>物理为塞尔达创造的行为（action）</p>
-<ul>
-<li>爬墙，墙的陡峭程度会影响体力消耗<ul>
-<li>可以爬墙，那可不可以爬怪？</li>
-<li>爬蓄力后的箱子？<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502230231.png" alt="利用经过时停蓄力后的箱子移动到对岸"></li>
-</ul>
-</li>
-<li>用磁力操纵金属物体</li>
-<li>砍树，树会倒下变成木头</li>
-<li>让时间停止，反复敲打以积攒能量</li>
-</ul>
-<p>游戏物理支撑了玩家的可能行为</p>
-<h3 id="化学引擎"><a href="#化学引擎" class="headerlink" title="化学引擎"></a>化学引擎</h3><p>物理引擎解决了移动规则（碰撞和移动），化学引擎用于解决状态变化</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502230406.png" alt="处理状态变化的化学引擎"></p>
-<p>核心定义</p>
-<ul>
-<li>元素<ul>
-<li>火</li>
-<li>水</li>
-<li>风</li>
-<li>电</li>
-</ul>
-</li>
-<li>材质<ul>
-<li>木</li>
-<li>铁</li>
-<li>角色</li>
-</ul>
-</li>
-</ul>
-<p>化学引擎的三条核心规则</p>
-<ul>
-<li>元素可以改变材质状态<ul>
-<li>如火将青葱大树变为光秃树干</li>
-</ul>
-</li>
-<li>元素可以改变元素状态<ul>
-<li>如水可以灭火</li>
-</ul>
-</li>
-<li>材质和材质无法相互影响</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/chem1.gif" alt="火燃木，水灭火"></p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/chem2.gif" alt="导电现象"></p>
-<p>化学引擎就是状态计算器，处理状态变化。之所以叫做化学引擎就是希望它能做游戏中创造“化学反应”：游戏规则由物理、化学引擎统一管理，直观理解的同时可以通过 action x field x object 创造无限可能，也希望玩家能主动发掘有趣的行为。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>如何做出乘法玩法——通过物理和化学来连接游戏中的所有东西</p>
-<p>物体/玩家行为/元素等都经过精心设计，可以相互产生影响</p>
-<p>物体之间的相互影响又与常见物理/化学现象相关，从而创造出旷野之息的有趣开放世界</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502231706.png" alt="物理+化学引擎所创造的无限可能"></p>
-<h3 id="乘法玩法在开放世界中的应用"><a href="#乘法玩法在开放世界中的应用" class="headerlink" title="乘法玩法在开放世界中的应用"></a>乘法玩法在开放世界中的应用</h3><p>旷野之息与前作不同，一般不会有明显谜题摆在玩家面前，那么如何利用乘法玩法创造谜题呢？</p>
-<p>答案是 处境 x 目标</p>
-<ul>
-<li>玩家可能面对的小目标<ul>
-<li>打败敌人</li>
-<li>到达目的地</li>
-</ul>
-</li>
-<li>玩家需要做的<ul>
-<li>在当前处境下探索实现目标的方法</li>
-</ul>
-</li>
-<li>体验目标<ul>
-<li>无限选择</li>
-<li>让玩家感到“我真是个天才”</li>
-</ul>
-</li>
-<li>为实现体验目标所做的<ul>
-<li>为其提供充分的物体<ul>
-<li>河边的石头<ul>
-<li>静止 蓄力 飞到对岸</li>
-</ul>
-</li>
-<li>沟壑边的大树<ul>
-<li>砍倒成为桥</li>
-</ul>
-</li>
-<li>沟壑两旁的草<ul>
-<li>点燃后乘风而起</li>
-</ul>
-</li>
-<li>在地图上各个地方放宝箱以引导玩家到达 主动创造产生“天才”时刻的机会</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/wind2.gif" alt= "乘着火焰燃烧处而生成的风起飞" style="zoom:85%;" />
-
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/wind.gif" alt="乘风破浪"></p>
-<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/mag.gif" alt= "电引雷" style="zoom:85%;" />
-
-
-<h2 id="P3-为玩法打造的艺术风格"><a href="#P3-为玩法打造的艺术风格" class="headerlink" title="P3 为玩法打造的艺术风格"></a>P3 为玩法打造的艺术风格</h2><h3 id="旷野之息艺术风格的探索"><a href="#旷野之息艺术风格的探索" class="headerlink" title="旷野之息艺术风格的探索"></a>旷野之息艺术风格的探索</h3><p>塞尔达系列一贯的标准：在充分满足玩法需求前提下，尽可能满足真实感。</p>
-<p>这也意味着，艺术为玩法服务是第一优先级，让风格尽可能真实是次要的。</p>
-<p>制作了历代塞尔达的高清重置 Demo 后选择了风之杖的风格：保持一定真实感的同时，可以更轻松地实现为玩法服务的动作/画面。并且这种风格也有较高独特性和辨识度。</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502232523.png" alt="塞尔达：风之杖"></p>
-<h3 id="旷野之息画风如何满足玩法设计需要"><a href="#旷野之息画风如何满足玩法设计需要" class="headerlink" title="旷野之息画风如何满足玩法设计需要"></a>旷野之息画风如何满足玩法设计需要</h3><p>为了让玩家直观理解前面所提到的基于物理和化学变化所实现的玩法，不能在美术表现上完全不重视真实感。</p>
-<p>风之杖的画面风格可能过于卡通画，会让玩家觉得游戏是面向小孩子的，这并非我们所愿。</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502232705.png" alt="美术风格的平衡"></p>
-<p>于是决定取中间值：满足风之杖中的玩法易于落地的特点，同时加入更多真实感。</p>
-<p>例子：旷野之息中将树砍倒的动作很真实，但再砍一下地上的树木，就会噗地一下变成整理好的树枝。这些是精心考虑了玩法和真实性之间的平衡之后的结果：尽可能提供直观理解的同时（充分真实性），也保障了流畅操作性（玩法）。</p>
-<p>做饭，滑翔，滑盾等行为也同理。</p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cook.gif" alt="做饭"></p>
-<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fly.gif" alt="滑翔和滑盾"></p>
+<p>综上，本文借助 Teardown Analysis 方法对游戏《枪火重生》进行了分析，而后阐述了此次分析期间的一些疑惑、反思、延伸思考。</p>
+<p>感谢您的阅读，欢迎大家批评指正！</p>
 
                 
             </div>
@@ -686,7 +481,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://medill-east.github.io/2022/05/03/20220502-gdc2017-zelda/">https://medill-east.github.io/2022/05/03/20220502-gdc2017-zelda/</a>
+                    <a href="https://medill-east.github.io/2021/12/12/teardown-analysis-gunfire-reborn/">https://medill-east.github.io/2021/12/12/teardown-analysis-gunfire-reborn/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -726,14 +521,6 @@
                             
                                 <a href="/tags/Game/">
                                     <span class="chip bg-color">Game</span>
-                                </a>
-                            
-                                <a href="/tags/GDC/">
-                                    <span class="chip bg-color">GDC</span>
-                                </a>
-                            
-                                <a href="/tags/Learning-Notes/">
-                                    <span class="chip bg-color">Learning Notes</span>
                                 </a>
                             
                         </div>
@@ -909,30 +696,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/05/03/20220503-leveldesignbook-combat/">
+                <a href="/2022/03/06/teardown-analysis-diabolo/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220503233523.png" class="responsive-img" alt="20220503 - Level Design Book - BOOK 1. PROCESS - Combat">
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306001035.png" class="responsive-img" alt="暗黑破坏神 3 拆解分析">
                         
-                        <span class="card-title">20220503 - Level Design Book - BOOK 1. PROCESS - Combat</span>
+                        <span class="card-title">暗黑破坏神 3 拆解分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            designing physical conflict between player(s) and/or NPCs
+                            这是一份由我写于 2022 年 3 月对游戏《暗黑破坏神 3》的 Teardown Analysis。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
-                                    Study-Game-LevelDesign
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
                                 </a>
                             
                             
@@ -944,10 +731,6 @@
                     
                     <a href="/tags/Game/">
                         <span class="chip bg-color">Game</span>
-                    </a>
-                    
-                    <a href="/tags/Game-Level-Design/">
-                        <span class="chip bg-color">Game Level Design</span>
                     </a>
                     
                 </div>
@@ -961,30 +744,30 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/02/20220502-leveldesignbook-pre-production-scope/">
+                <a href="/2021/11/16/thinking-of-the-florence/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220502112605.png" class="responsive-img" alt="20220502 - Level Design Book - BOOK 1. PROCESS - Pre-production - Scope">
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20211116163215.png" class="responsive-img" alt="Florence 目标体验及设计反思">
                         
-                        <span class="card-title">20220502 - Level Design Book - BOOK 1. PROCESS - Pre-production - Scope</span>
+                        <span class="card-title">Florence 目标体验及设计反思</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            General size and complexity of a project; validated through prototyping
+                            这是一份由我写于 2021 年 11 月对游戏《Florence》的目标体验及设计反思。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
-                                    Study-Game-LevelDesign
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
                                 </a>
                             
                             
@@ -996,10 +779,6 @@
                     
                     <a href="/tags/Game/">
                         <span class="chip bg-color">Game</span>
-                    </a>
-                    
-                    <a href="/tags/Game-Level-Design/">
-                        <span class="chip bg-color">Game Level Design</span>
                     </a>
                     
                 </div>
