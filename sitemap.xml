@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2022/04/28/index-showcase/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/2026/01/11/2026-0111-after-finishing-thatgamejam01/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2022/08/31/20220900-toc/</loc>
     
     <lastmod>2026-01-11</lastmod>
@@ -221,15 +239,6 @@
     <loc>https://medill-east.github.io/2025/09/21/20250921-j08/</loc>
     
     <lastmod>2025-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2022/04/28/index-showcase/</loc>
-    
-    <lastmod>2025-09-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
