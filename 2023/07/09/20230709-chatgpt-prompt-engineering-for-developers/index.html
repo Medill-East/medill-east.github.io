@@ -1,0 +1,1499 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220709 - ChatGPT Prompt Engineering for Developers, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220709 - ChatGPT Prompt Engineering for Developers | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091706946.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220709 - ChatGPT Prompt Engineering for Developers</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Learning-Notes/">
+                                <span class="chip bg-color">Learning Notes</span>
+                            </a>
+                        
+                            <a href="/tags/GCORES/">
+                                <span class="chip bg-color">GCORES</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2023-07-09
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2023-07-09
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    2.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    12 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Why-Note"><a href="#Why-Note" class="headerlink" title="Why Note"></a>Why Note</h2><p>开发过程中如果能够使用大规模语言模型（Large Language Model, LLM，如 ChatGPT）来快速构建应用是一件很棒的事！所以就有了这篇与 DeepLearning 和 OpenAI 一起学习如何使用 LLM 为开发过程助力的笔记！</p>
+<h2 id="What"><a href="#What" class="headerlink" title="What"></a>What</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091709315.png"></p>
+<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><ul>
+<li>官网链接：<br><a target="_blank" rel="noopener" href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/">https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/</a></li>
+</ul>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><ul>
+<li>重要的是使用 gpt api 来快速构建应用</li>
+<li>两种类型的 LLM<ul>
+<li><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307081715572.png"></li>
+<li>Base LLM<ul>
+<li>基于文本训练的数据来预测下一个词</li>
+</ul>
+</li>
+<li>Instruction Tuned LLM (course focus)<ul>
+<li>被训练用于跟随指示</li>
+<li>如果觉得其回答得不好，可能是因为给的问题不够准确</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Guidelines-for-Prompting"><a href="#Guidelines-for-Prompting" class="headerlink" title="Guidelines for Prompting"></a>Guidelines for Prompting</h2><h3 id="两个原则"><a href="#两个原则" class="headerlink" title="两个原则"></a>两个原则</h3><h4 id="1-Write-clear-and-specific-instructions"><a href="#1-Write-clear-and-specific-instructions" class="headerlink" title="1. Write clear and specific instructions"></a>1. Write clear and specific instructions</h4><h5 id="Tactics-1-Use-delimiters-to-clearly-indicate-distinct-parts-of-the-input"><a href="#Tactics-1-Use-delimiters-to-clearly-indicate-distinct-parts-of-the-input" class="headerlink" title="Tactics 1 - Use delimiters to clearly indicate distinct parts of the input"></a>Tactics 1 - Use delimiters to clearly indicate distinct parts of the input</h5><pre class="line-numbers language-none"><code class="language-none">Delimiters can be anything like: &#96;&#96;&#96;, &quot;&quot;&quot;, &lt; &gt;, &#96;&lt;tag&gt; &lt;&#x2F;tag&gt;&#96;, &#96;:&#96;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">text &#x3D; f&quot;&quot;&quot;
+You should express what you want a model to do by \ 
+providing instructions that are as clear and \ 
+specific as you can possibly make them. \ 
+This will guide the model towards the desired output, \ 
+and reduce the chances of receiving irrelevant \ 
+or incorrect responses. Don&#39;t confuse writing a \ 
+clear prompt with writing a short prompt. \ 
+In many cases, longer prompts provide more clarity \ 
+and context for the model, which can lead to \ 
+more detailed and relevant outputs.
+&quot;&quot;&quot;
+prompt &#x3D; f&quot;&quot;&quot;
+Summarize the text delimited by triple backticks \ 
+into a single sentence.
+&#96;&#96;&#96;&#123;text&#125;&#96;&#96;&#96;
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">To guide a model towards the desired output and reduce irrelevant or incorrect responses, it is important to provide clear and specific instructions, which can be achieved through longer prompts that offer more clarity and context.
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307082014721.png"></p>
+<h5 id="Tactic-2-Ask-for-a-structured-output"><a href="#Tactic-2-Ask-for-a-structured-output" class="headerlink" title="Tactic 2: Ask for a structured output"></a>Tactic 2: Ask for a structured output</h5><p>HTML/JSON</p>
+<pre class="line-numbers language-none"><code class="language-none">prompt &#x3D; f&quot;&quot;&quot;
+Generate a list of three made-up book titles along \ 
+with their authors and genres. 
+Provide them in JSON format with the following keys: 
+book_id, title, author, genre.
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">&#123;
+  &quot;books&quot;: [
+    &#123;
+      &quot;book_id&quot;: 1,
+      &quot;title&quot;: &quot;The Enigma of Elysium&quot;,
+      &quot;author&quot;: &quot;Evelyn Sinclair&quot;,
+      &quot;genre&quot;: &quot;Mystery&quot;
+    &#125;,
+    &#123;
+      &quot;book_id&quot;: 2,
+      &quot;title&quot;: &quot;Whispers in the Wind&quot;,
+      &quot;author&quot;: &quot;Nathaniel Blackwood&quot;,
+      &quot;genre&quot;: &quot;Fantasy&quot;
+    &#125;,
+    &#123;
+      &quot;book_id&quot;: 3,
+      &quot;title&quot;: &quot;Echoes of the Past&quot;,
+      &quot;author&quot;: &quot;Amelia Hart&quot;,
+      &quot;genre&quot;: &quot;Romance&quot;
+    &#125;
+  ]
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="Tactic-3-Ask-the-model-to-check-whether-conditions-are-satisfied"><a href="#Tactic-3-Ask-the-model-to-check-whether-conditions-are-satisfied" class="headerlink" title="Tactic 3: Ask the model to check whether conditions are satisfied"></a>Tactic 3: Ask the model to check whether conditions are satisfied</h5><pre class="line-numbers language-none"><code class="language-none">text_1 &#x3D; f&quot;&quot;&quot;
+Making a cup of tea is easy! First, you need to get some \ 
+water boiling. While that&#39;s happening, \ 
+grab a cup and put a tea bag in it. Once the water is \ 
+hot enough, just pour it over the tea bag. \ 
+Let it sit for a bit so the tea can steep. After a \ 
+few minutes, take out the tea bag. If you \ 
+like, you can add some sugar or milk to taste. \ 
+And that&#39;s it! You&#39;ve got yourself a delicious \ 
+cup of tea to enjoy.
+&quot;&quot;&quot;
+prompt &#x3D; f&quot;&quot;&quot;
+You will be provided with text delimited by triple quotes. 
+If it contains a sequence of instructions, \ 
+re-write those instructions in the following format:
+
+Step 1 - ...
+Step 2 - …
+…
+Step N - …
+
+If the text does not contain a sequence of instructions, \ 
+then simply write \&quot;No steps provided.\&quot;
+
+\&quot;\&quot;\&quot;&#123;text_1&#125;\&quot;\&quot;\&quot;
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt)
+print(&quot;Completion for Text 1:&quot;)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">Completion for Text 1:
+Step 1 - Get some water boiling.
+Step 2 - Grab a cup and put a tea bag in it.
+Step 3 - Once the water is hot enough, pour it over the tea bag.
+Step 4 - Let the tea sit for a bit to steep.
+Step 5 - After a few minutes, take out the tea bag.
+Step 6 - Add sugar or milk to taste, if desired.
+Step 7 - Enjoy your delicious cup of tea.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="Tactic-4-“Few-shot”-prompting"><a href="#Tactic-4-“Few-shot”-prompting" class="headerlink" title="Tactic 4: “Few-shot” prompting"></a>Tactic 4: “Few-shot” prompting</h5><p>Give successful examples of completing tasks then ask model to perform the task</p>
+<pre class="line-numbers language-none"><code class="language-none">prompt &#x3D; f&quot;&quot;&quot;
+Your task is to answer in a consistent style.
+
+&lt;child&gt;: Teach me about patience.
+
+&lt;grandparent&gt;: The river that carves the deepest \ 
+valley flows from a modest spring; the \ 
+grandest symphony originates from a single note; \ 
+the most intricate tapestry begins with a solitary thread.
+
+&lt;child&gt;: Teach me about resilience.
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;grandparent&gt;: Resilience is like a mighty oak tree that withstands the strongest storms, bending but never breaking. It is the unwavering determination to rise again after every fall, and the ability to find strength in the face of adversity. Just as a diamond is formed under immense pressure, resilience is forged through challenges and hardships, making us stronger and more resilient in the process.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="2-Give-the-model-time-to-think"><a href="#2-Give-the-model-time-to-think" class="headerlink" title="2. Give the model time to think"></a>2. Give the model time to think</h4><h5 id="Tactic-1-Specify-the-steps-required-to-complete-a-task"><a href="#Tactic-1-Specify-the-steps-required-to-complete-a-task" class="headerlink" title="Tactic 1: Specify the steps required to complete a task"></a>Tactic 1: Specify the steps required to complete a task</h5><pre class="line-numbers language-none"><code class="language-none">text &#x3D; f&quot;&quot;&quot;
+In a charming village, siblings Jack and Jill set out on \ 
+a quest to fetch water from a hilltop \ 
+well. As they climbed, singing joyfully, misfortune \ 
+struck—Jack tripped on a stone and tumbled \ 
+down the hill, with Jill following suit. \ 
+Though slightly battered, the pair returned home to \ 
+comforting embraces. Despite the mishap, \ 
+their adventurous spirits remained undimmed, and they \ 
+continued exploring with delight.
+&quot;&quot;&quot;
+# example 1
+prompt_1 &#x3D; f&quot;&quot;&quot;
+Perform the following actions: 
+1 - Summarize the following text delimited by triple \
+backticks with 1 sentence.
+2 - Translate the summary into French.
+3 - List each name in the French summary.
+4 - Output a json object that contains the following \
+keys: french_summary, num_names.
+
+Separate your answers with line breaks.
+
+Text:
+&#96;&#96;&#96;&#123;text&#125;&#96;&#96;&#96;
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt_1)
+print(&quot;Completion for prompt 1:&quot;)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">Completion for prompt 1:
+1 - Jack and Jill, siblings, go on a quest to fetch water from a hilltop well, but encounter misfortune when Jack trips on a stone and tumbles down the hill, with Jill following suit, yet they return home and remain undeterred in their adventurous spirits.
+
+2 - Jack et Jill, frère et sœur, partent en quête d&#39;eau d&#39;un puits au sommet d&#39;une colline, mais rencontrent un malheur lorsque Jack trébuche sur une pierre et dévale la colline, suivi de Jill, pourtant ils rentrent chez eux et restent déterminés dans leur esprit d&#39;aventure.
+
+3 - Jack, Jill
+
+4 - &#123;
+  &quot;french_summary&quot;: &quot;Jack et Jill, frère et sœur, partent en quête d&#39;eau d&#39;un puits au sommet d&#39;une colline, mais rencontrent un malheur lorsque Jack trébuche sur une pierre et dévale la colline, suivi de Jill, pourtant ils rentrent chez eux et restent déterminés dans leur esprit d&#39;aventure.&quot;,
+  &quot;num_names&quot;: 2
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Ask for output in a specified format</p>
+<pre class="line-numbers language-none"><code class="language-none">prompt_2 &#x3D; f&quot;&quot;&quot;
+Your task is to perform the following actions: 
+1 - Summarize the following text delimited by 
+  &lt;&gt; with 1 sentence.
+2 - Translate the summary into French.
+3 - List each name in the French summary.
+4 - Output a json object that contains the 
+  following keys: french_summary, num_names.
+
+Use the following format:
+Text: &lt;text to summarize&gt;
+Summary: &lt;summary&gt;
+Translation: &lt;summary translation&gt;
+Names: &lt;list of names in Italian summary&gt;
+Output JSON: &lt;json with summary and num_names&gt;
+
+Text: &lt;&#123;text&#125;&gt;
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt_2)
+print(&quot;\nCompletion for prompt 2:&quot;)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">Completion for prompt 2:
+Summary: Jack and Jill, siblings, go on a quest to fetch water from a hilltop well but encounter misfortune along the way. 
+Translation: Jack et Jill, frère et sœur, partent en quête d&#39;eau d&#39;un puits au sommet d&#39;une colline mais rencontrent des malheurs en chemin.
+Names: Jack, Jill
+Output JSON: &#123;&quot;french_summary&quot;: &quot;Jack et Jill, frère et sœur, partent en quête d&#39;eau d&#39;un puits au sommet d&#39;une colline mais rencontrent des malheurs en chemin.&quot;, &quot;num_names&quot;: 2&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="Tactic-2-Instruct-the-model-to-work-out-its-own-solution-before-rushing-to-a-conclusion"><a href="#Tactic-2-Instruct-the-model-to-work-out-its-own-solution-before-rushing-to-a-conclusion" class="headerlink" title="Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion"></a>Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion</h5><pre class="line-numbers language-none"><code class="language-none">prompt &#x3D; f&quot;&quot;&quot;
+Determine if the student&#39;s solution is correct or not.
+
+Question:
+I&#39;m building a solar power installation and I need \
+ help working out the financials. 
+- Land costs $100 &#x2F; square foot
+- I can buy solar panels for $250 &#x2F; square foot
+- I negotiated a contract for maintenance that will cost \ 
+me a flat $100k per year, and an additional $10 &#x2F; square \
+foot
+What is the total cost for the first year of operations 
+as a function of the number of square feet.
+
+Student&#39;s Solution:
+Let x be the size of the installation in square feet.
+Costs:
+1. Land cost: 100x
+2. Solar panel cost: 250x
+3. Maintenance cost: 100,000 + 100x
+Total cost: 100x + 250x + 100,000 + 100x &#x3D; 450x + 100,000
+&quot;&quot;&quot;
+response &#x3D; get_completion(prompt)
+print(response)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">The student&#39;s solution is correct. They correctly identified the costs for land, solar panels, and maintenance, and calculated the total cost for the first year of operations as a function of the number of square feet.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Note that the student’s solution is actually not correct.<br>We can fix this by instructing the model to work out its own solution first.</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307082032637.png"></p>
+<blockquote>
+<blockquote>
+<p>这里模型的输出出错了哈哈… 应该是 360x + 100000 来着。</p>
+</blockquote>
+</blockquote>
+<h3 id="Model-Limitations-Hallucinations"><a href="#Model-Limitations-Hallucinations" class="headerlink" title="Model Limitations: Hallucinations"></a>Model Limitations: Hallucinations</h3><p>This will Makes statements that sound plausible But are not true<br>也就是说模型可能会胡乱编造。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307082046620.png"></p>
+<p>为了减少类似情况的发生的 tactics：<br>First find relevant information,<br>Then answer the question based on the relevant information.</p>
+<h2 id="Iterative-Prompt-Development"><a href="#Iterative-Prompt-Development" class="headerlink" title="Iterative Prompt Development"></a>Iterative Prompt Development</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091356205.png"></p>
+<ul>
+<li><p>第一次可能总不会得到理想结果，这不重要，重要的是分析为什么没有，然后基于此不断迭代</p>
+</li>
+<li><p>LLM 对于字符（character）统计不是很擅长，所以可能会给出不符合字数要求的答案</p>
+</li>
+<li><p>如果答案文本过长</p>
+<ul>
+<li>就让其限制答案字数</li>
+</ul>
+</li>
+<li><p>如果错误关注了不应该关注的细节</p>
+<ul>
+<li>需要指明需要其关注的细节</li>
+</ul>
+</li>
+<li><p>需要的话可以让其提供表格形式的输出</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091416874.png"></p>
+<h2 id="Summarizing"><a href="#Summarizing" class="headerlink" title="Summarizing"></a>Summarizing</h2><ul>
+<li>可以让其根据受众来 summarize<ul>
+<li>会根据内容来总结</li>
+</ul>
+</li>
+<li>如果是 extract <ul>
+<li>则会是第三方的客观视角</li>
+</ul>
+</li>
+</ul>
+<h2 id="Inferring"><a href="#Inferring" class="headerlink" title="Inferring"></a>Inferring</h2><ul>
+<li>比如可以用于推断评论的情绪效价</li>
+<li>也可以让其辨别一段话中包含的情绪类型</li>
+<li>可以让其从评论中 extract 产品信息</li>
+<li>可以一次做好多不同的任务</li>
+<li>Inferring topics<ul>
+<li>根据文本推测 topic</li>
+<li>也可以根据 topic 看文本是否包含了相应 topic（舆情监测） zero-shot training algorithm</li>
+</ul>
+</li>
+</ul>
+<h2 id="Transforming"><a href="#Transforming" class="headerlink" title="Transforming"></a>Transforming</h2><ul>
+<li>翻译</li>
+<li>转译</li>
+<li>语气转换</li>
+<li>形式/格式转换</li>
+<li>语法检查<ul>
+<li>甚至可以列出更改的部分<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091627821.png"><h2 id="Expanding"><a href="#Expanding" class="headerlink" title="Expanding"></a>Expanding</h2></li>
+</ul>
+</li>
+<li>扩写</li>
+<li>提醒模型在扩写的同时使用已知的细节</li>
+<li>不应该使用该功能来写垃圾邮件</li>
+<li>使用 temperature 参数来控制 variety 和 creativity<ul>
+<li>如果 temperature = 0 基本可以保证每次结果都一致</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091633201.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091634765.png"></p>
+<h2 id="Chatbot-Chat-Workflow"><a href="#Chatbot-Chat-Workflow" class="headerlink" title="Chatbot / Chat Workflow"></a>Chatbot / Chat Workflow</h2><h3 id="Chatbot"><a href="#Chatbot" class="headerlink" title="Chatbot"></a>Chatbot</h3><ul>
+<li>OpenAI 的 chat model 使用 user message 作为 input 使用 assistant message 作为 output</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091639418.png"></p>
+<ul>
+<li>在此基础之上，system message 其实会影响 assistant 的回答逻辑</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>大概这也是为什么许多 prompt 教程中提到的，先预设身份是有效的。这相当于把“预设身份”这一信息作为 system message 来告知模型，让其调整 assistant 的输出模式，从而更好地输出结果。</p>
+</blockquote>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091641447.png"></p>
+<h3 id="OrderBot"><a href="#OrderBot" class="headerlink" title="OrderBot"></a>OrderBot</h3><ul>
+<li>有时候模型无法回答是因为其不知道上下文情景（context），需要为其提供</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091649786.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091654535.png"></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091658054.png"></p>
+<ul>
+<li>Use it responsibly!</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2023/07/09/20230709-chatgpt-prompt-engineering-for-developers/">https://medill-east.github.io/2023/07/09/20230709-chatgpt-prompt-engineering-for-developers/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Learning-Notes/">
+                                    <span class="chip bg-color">Learning Notes</span>
+                                </a>
+                            
+                                <a href="/tags/GCORES/">
+                                    <span class="chip bg-color">GCORES</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2023/07/16/20230716-m06/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307161138018.png" class="responsive-img" alt="20230716 - That was Then, This Is Now">
+                        
+                        <span class="card-title">20230716 - That was Then, This Is Now</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，了解多多尝试是更好地享受现在的秘诀！
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/07/09/20230709-f03/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202307091106128.png" class="responsive-img" alt="20230709 - Distinguishing Between Major and Minor Elements">
+                        
+                        <span class="card-title">20230709 - Distinguishing Between Major and Minor Elements</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，了解通过区分元素的主次进行优化的方法！
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

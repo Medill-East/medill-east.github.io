@@ -1,0 +1,1339 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20240917 - Development Secrets of the Original Kirby, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20240917 - Development Secrets of the Original Kirby | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171205128.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20240917 - Development Secrets of the Original Kirby</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                                <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                            </a>
+                        
+                            <a href="/tags/Learning/">
+                                <span class="chip bg-color">Learning</span>
+                            </a>
+                        
+                            <a href="/tags/Notes/">
+                                <span class="chip bg-color">Notes</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2024-09-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2024-09-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    11 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="What"><a href="#What" class="headerlink" title="What"></a>What</h2><p>观看 Masahiro Sakurai on Creating Games 的视频，了解初代卡比的秘密！</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h2 id="M14-Development-Secrets-of-the-Original-Kirby"><a href="#M14-Development-Secrets-of-the-Original-Kirby" class="headerlink" title="M14 - Development Secrets of the Original Kirby"></a>M14 - Development Secrets of the Original Kirby</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171205128.png"></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZUY2AtBD6Sk?si=yhjVmPANJ_d-JuEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+2017 年举办了一场庆祝 [[Kirby]] 25 周年的音乐会，在当时， [[樱井政博]] 准备了一些首部卡比的幕后开发故事在舞台上进行了呈现，这一期也将对其进行呈现~
+
+<p>在频道的 Game Concepts 分类中讨论过早期的卡比作品，今天是一些更加深入的内容。甚至会分享一些只在 Osaka 表演中呈现过的和 [[魅塔骑士 Meta Knight]] 相关的秘密！</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171209749.png"></p>
+<p>所有的内容都是 PPT 制作的：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171211266.png"></p>
+<p>[[Kirby’s Dream Land 1992]] 于 1992 年在 [[Game Boy]] 上发售。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171211943.png"></p>
+<p>[[Kirby]] 是一个可以将敌人吞入吐出，以及飞行的神秘生物。在这一作中还没有引入它的复制能力（在下一作 [[Kirby’s Adventure]] 中才会引入 ）</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171213443.png"></p>
+<p>[[樱井政博]] 在其 19 岁时（大概是 1990 年五月）提出了卡比的游戏设想，他的目标是让没有接触过游戏的人们也能体会游戏的乐趣。花费了大概一年时间进行开发。</p>
+<p>游戏流程相对较短，有经验的玩家大概 20 分钟就可以通关。这部作品在全世界售出了超过 500 万份。当时占据 [[Game Boy]] 畅销榜榜首好几个月。当时采用了最先进的硬件 [[Twin Famicom]] 来开发卡比。</p>
+<p>连接了在 [[HAL Laboratory]] 制作的 trackball (滚球输入，以替代鼠标键盘)，并且从光碟读取开发工具，并用其进行开发。这在当时是非常好的设备，樱井也非常喜欢！(看样子猫猫也很喜欢！)</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171242098.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171245522.png"></p>
+<p>之后展示了一些开发机上的实机录像，需要从一个复合电缆上进行录像，所以效果可能没有那么好。</p>
+<p>首先可以绘制像素美术</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171248590.png"></p>
+<p>之后需要结合这些图像来创造角色</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171248897.png"></p>
+<p>然后让它们按照预期移动！</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171249720.png"></p>
+<p>[[魅塔骑士 Meta Knight]] 在初代卡比中还不存在，这个图中展示的是 [[Kirby’s Adventure]] 的它，这也是如何对动画进行测试的办法。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171250222.png"></p>
+<p>然后是 [[Kirby’s Adventure]] 第五关的 BOSS - [[Kirby’s Adventure - Heavy Mole]]，这些都是在 Famicom 上完成的。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171251757.png"></p>
+<p>甚至可以绘制背景</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171252907.png"></p>
+<p>也用其制作了标题画面，你可以看到这个开发工具真的非常具有很多功能</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171253875.png"></p>
+<p>之后是使用开发工具将游戏可视化，这里需要涉及到 ROM Size 的话题。最开始的目标大小是 512 kbit（64KB/0.064MB/0.000064GB），但最终发售时的包体大小达到了 2Mbit。总而言之，这是个非常小的游戏。后面的讨论会基于这一点展开。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171256769.png"></p>
+<p>下面的角色中的 Waddle part 指的是鸭子和企鹅不稳定的行走方式，为了便于区分，你可以想象有两个 oo 的就是有着大眼睛的 Doo。</p>
+<p>它们如此相似的原因是樱井想用 1.5 ROM 的空间大小来创造两个角色，所以两个角色共享了身体的后半部分</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171258530.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171301061.png"></p>
+<p>这是 Gordo 的美术素材，完整的 Gordo 由这个素材拼合（以及旋转）而成</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171302289.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171302679.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171303634.png"></p>
+<p>而具有复杂动画的 Poppy Bros. Sr. 其实也只有三种手部模式和两种头部模式</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171304502.png"></p>
+<p>樱井用了很多小技巧来使用更少的资源来创造吸引人的动画。但他还是想让 BOSS 战感觉非常精彩。卡比是对新手玩家友好的游戏，所以即使瞄准有一点点偏差，也应该能击中敌人。</p>
+<p>以此为前提，下面是 Whispy Woods 的部分创作过程。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171306908.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171306765.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171306844.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171307153.png"></p>
+<p>下面是 Kracko 的创作过程：<br>它的身体是将各部分翻转得到的，眼睛只有一种模式，并且也复用到了 Kracko Jr. 身上。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171309560.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171310577.png"></p>
+<p>如上所述，将角色放到有限的 ROM 空间中是很重要的过程。</p>
+<p>因为卡比占据了 8 * 16 的大小，所以红色方框部分就不得不留空了，这是非常令人心痛的浪费！</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171312833.png"></p>
+<p>由此， Green Greens - Stage 1 就被创建了出来，</p>
+<p>在一个 256 * 256 的空间中，左边部分存放了在关卡转换过程之外的卡比自己，中间是在整个游戏中都保持不变的元素（Maxim Tomato 得到了字母 M 是因为 M 可以通过翻转得到）；右边的部分是每个关卡所独有的部分，这张图中包含了 Grizzo - 初代卡比中唯一的大型敌人，所以你也可以看到有很多空白部分。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171318689.png"></p>
+<p>而关卡的背景也是通过使用相同素材的不同组合得到的：<br>当时的可用空间只有 NES 游戏的一半，也不可以将素材进行垂直翻转，樱井他们已经尽力去做了（效果也非常的好！）</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171322734.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171323291.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171324363.png"></p>
+<p>下面是 Dedede 的素材，因为它在场时没有其他敌人会出现，所以它的美术也是最华丽的！</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171326869.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171326490.png"></p>
+<p>顺带一提，上面的所有作品几乎都是 [[樱井政博]] 自己画的： Kirby, Dedede, Waddle Dee, enemies, backgrounds, items, effects…</p>
+<p>有另一位设计师参与了其他舞台的制作。在当时，很多人在纸上先进行绘制，但樱井是直接对像素进行绘制的。</p>
+<p>接下来要讲的是和敌人移动相关的秘密！</p>
+<p>图中的这只寄居蟹 Coner 可能是樱井画的第一个敌人，它会向前爬行，然后从悬崖掉下，沉入水中。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171610578.png"></p>
+<p>Waddle Dee 会顺着楼梯不断向下</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171611079.png"></p>
+<p>但在初代卡比中，这些看似自然的移动，实现方式却不那么容易。实际上敌人是没有地面碰撞的</p>
+<p>对于寄居蟹 corner 而言，红色路线是预制好的路线，只是正好让其与背景相匹配而已。这是种很浪费的做法！樱井使用了之前的开发工具并输入了对应的姿势和移动</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171612576.png"></p>
+<p>图中的红色区域控制的就是移动<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171614455.png"></p>
+<p>这里展示的就是 Poppy Bros. Sr. 左右横跳的控制码<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171616045.png"></p>
+<p>下方是输入的方式<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171617735.png"></p>
+<p>当时采用的是 trackball 来进行输入，没有鼠标和键盘，所以需要这个光标来输入对应的十六进制值。</p>
+<p>樱井采用类似的方式制作了寄居蟹 corner 的移动，现如今看来这是非常不便捷高效的制作方式，但当时而言樱井刚刚开始制作游戏，所以他将其当做成长的必经之路，并且享受微调的乐趣。</p>
+<p>不用说，这个方法还是尤其好处 - 不太需要太多的运算处理就能使其表现很好，这对于在 [[Game Boy]] 上的开发是很重要的。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171620936.png"></p>
+<p>系列中的一个常见角色被称为 Cappy<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171622716.png"></p>
+<p>它也不会检查地形碰撞，但也具有很好的动画效果。如果它需要很多的运算资源的话，估计也没有办法看起来如此 Q 弹有趣了。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171622440.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171624190.gif"></p>
+<p>接下来要讲的是和另一个游戏的惊人巧合。</p>
+<p>这是卡比的初始设计文档，但樱井最开始先画的是像素画，这些示意图是后面才画的。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171626928.png"></p>
+<p>有一部分文档很有趣：</p>
+<ul>
+<li>通常而言，屏幕会随着你在中心的角色一起滚动</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171627670.png"></p>
+<ul>
+<li>但是，当你被敌人击中弹飞时，屏幕会停止滚动<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171627315.png"></li>
+<li>一旦你停下之后，屏幕会慢慢地回滚，并且重新聚焦到你身上<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171629937.png"></li>
+<li>如果完全飞出了屏幕，那么就会损失一条生命<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171630852.png"></li>
+</ul>
+<p>没错，这一运镜规则在 [[Super Smash Bros.]] 中也是相同的！<br>樱井在当时制作初代卡比时已经在构思 smash 的伤害累计系统了！这真是令人惊掉下巴的事实！<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171630160.png"></p>
+<p>并且当时的策划案中也陈述了角色的击飞距离与角色生命相关，当时还是 1990 年。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171633735.png"></p>
+<p>那么有一个新的问题出现了：为什么要在 [[Smash Bros.]] 中引入这个“老”想法呢？</p>
+<p>答案是，樱井完全忘记了原来已经想过这个系统…</p>
+<p>最后樱井让我们接受谜团</p>
+<p>实际上当初代卡比发售时，卡比和 Dream Land 的世界还满是谜团：</p>
+<p>比如，你在屏幕上看到的这是什么呢？<br>在当时，它被称为 Bourbon。</p>
+<blockquote>
+<p>来自评论区的解释：<br>在这里，他说的 “Bourbon “指的是一家日本糖果公司。这是因为该公司销售的一种名为 Chocoliere 的饼干很像那个神秘物体。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171636003.png"></p>
+<p>虽然卡比的体谅不大，但里面充满了你未曾在普通游戏中见到过的图像：比如说，为什么在每次打通一个关卡时卡比都会分成三个呢？</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171640889.gif"></p>
+<p>有很多个卡比不断地出现，但通常而言你并不会在 Mario 或者 Link 系列游戏中见到这样的场景。</p>
+<p>也有很多关于 Warp Star 的问题：</p>
+<ul>
+<li>它是什么</li>
+<li>它是怎么带着你飞行的<br>虽然有游戏设计的理由，但这些都是谜</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171643204.gif"></p>
+<p>甚至有一关的转场是你被从鲸鱼的喷气孔发射到了天上，然后你就可以发射 mint breath </p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171644851.gif"></p>
+<p>在朝着最后的 BOSS Dedede 的城堡进发时，关卡中的文字随着屏幕滚走了，在当时这是从未见过的。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171647045.gif"></p>
+<p>然后，触碰这些长得像卡比的生物会清除前方的道路</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171648565.gif"></p>
+<p>这些事情不必有理，不要思考！感觉！拥抱谜团！</p>
+<p>另外，初代卡比中有一个动态的结局：卡比的任务是将梦之岛的食物带回来，所以它变得巨大无比，并且直接将整个城堡都带着飞回了家。</p>
+<p>这是一个充满迷之生物的迷之世界，超越任何理由 - 这就是卡比的核心。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171654230.gif"></p>
+<p>之后是 Bonus！</p>
+<p>关于 [[魅塔骑士 Meta Knight]] 的设计！<br>樱井当时在 Osaka 演出时在最后呈现了这个部分</p>
+<p>哪一个图形是魅塔骑士的面具缺口呢？</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171657872.png"></p>
+<p>答案是…<br>全部！</p>
+<p>每一个形状都曾被用来表示魅塔骑士<br>左边的形状是魅塔骑士在 [[Kirby Return to Dream Land]] 以及动画中的造型（是一个类似 V 的形状，边缘是截断的）：<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171658401.png"></p>
+<p>右边的是魅塔骑士在 [[Smash Bros.]] 系列中的形象（在边缘加入了凹形曲线，赋予其一种酷和老练的感觉）<br>这也是为了让其能在面对更具真实感的对手时更加契合（不仅是魅塔骑士，很多角色都做了类似的调整）<br>类似肩膀上的 M 元素也在后期的卡比作品中被体现了出来：<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171659776.png"></p>
+<p>这是一张对比图，更新的作品中的魅塔骑士没有旧作中那么圆润。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171702967.png"></p>
+<p>至于中间的形状，是魅塔骑士初次亮相时的形象 - 即在 kirby [[Kirby’s Adventure]] 中的形象，当时魅塔骑士的设计还是基于像素的</p>
+<p>当然了，边缘部分看起来只是一个点，开口的位置也是在稍微偏移的位置。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171704656.png"></p>
+<p>因为 [[Kirby’s Adventure]] 中的图形和左边的很像，这后来渐渐也变成了魅塔骑士真实的样子。但对于每一部游戏而言，在考虑其角色定位之后，都会重新审视其设计，为其找到最契合的形象和设计。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171657872.png"></p>
+<p>最后是一个问题<br>这张图片来自于 Famicom 开发工具，但这是什么呢？<br>这是 [[Kirby Super Star]] 在 NES 上的原型</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171709635.png"></p>
+<p>[[Kirby Super Star]] 也通常作为 NES 上的超级游戏被认知，因为在 SNES 开发工具出来之前还有一段时间，所以樱井从设计文档中找到了当时的素材，并且想象着卡比的大小画出了这幅作品。</p>
+<p>比如这是在最终游戏中也采用了的 beam 能力（虽然特效有一些不同）<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171712340.png"></p>
+<p>这是当卡比使用回旋踢时能够骑上 yoyo 的能力<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171713215.png"></p>
+<p>图中展示了斗士能力所能使用的不同技术<br>最终发售时的动作组就是从早期开发阶段的这里脱胎而出的<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171714494.png"></p>
+<p>然后是 cutter 能力<br>上方和下方的动作设置有一些问题，但最终版本的 cutter 连招就是这样的</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409171718098.gif"></p>
+<p>从最开始，卡比就一直是樱井个人的风格 - 从项目最早期就尽可能清晰地将设计进行可视化呈现。具体的视觉可以让团队更容易前行。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2024/09/17/20240917-m14/">https://medill-east.github.io/2024/09/17/20240917-m14/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                                    <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                                </a>
+                            
+                                <a href="/tags/Learning/">
+                                    <span class="chip bg-color">Learning</span>
+                                </a>
+                            
+                                <a href="/tags/Notes/">
+                                    <span class="chip bg-color">Notes</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2024/09/22/20240922-l02/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409221020691.png" class="responsive-img" alt="20240922 - Paint an Accurate Picture of Your Game">
+                        
+                        <span class="card-title">20240922 - Paint an Accurate Picture of Your Game</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，了解宣传画面和实际内容相符的重要性！
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-09-22
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                    <a href="/tags/Learning/">
+                        <span class="chip bg-color">Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Notes/">
+                        <span class="chip bg-color">Notes</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/09/01/20240901-a10/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202409011043412.png" class="responsive-img" alt="20240901 - How I Stuck With My Column">
+                        
+                        <span class="card-title">20240901 - How I Stuck With My Column</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，了解他如何坚持为专栏撰稿！
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                    <a href="/tags/Learning/">
+                        <span class="chip bg-color">Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Notes/">
+                        <span class="chip bg-color">Notes</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

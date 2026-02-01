@@ -1,0 +1,1306 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="游戏设计艺术 第九章 游戏为玩家而生, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>游戏设计艺术 第九章 游戏为玩家而生 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712115919.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">游戏设计艺术 第九章 游戏为玩家而生</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Design/">
+                                <span class="chip bg-color">Game Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-05-30
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-07-12
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    4.4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    15 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="游戏设计艺术-摘抄-笔记"><a href="#游戏设计艺术-摘抄-笔记" class="headerlink" title="游戏设计艺术 摘抄/笔记"></a>游戏设计艺术 摘抄/笔记</h1><h2 id="第九章-游戏为玩家而生"><a href="#第九章-游戏为玩家而生" class="headerlink" title="第九章 游戏为玩家而生"></a>第九章 游戏为玩家而生</h2><h3 id="爱因斯坦的小提琴"><a href="#爱因斯坦的小提琴" class="headerlink" title="爱因斯坦的小提琴"></a>爱因斯坦的小提琴</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220605004916.png"></p>
+<p>要创造宏伟体验，必须和爱因斯坦一样，了解受众会喜欢什么，比他们更了解。很多时候，人们并不知道自己喜欢什么。他们觉得他们知道，但其实他们不知道。</p>
+<blockquote>
+<blockquote>
+<p>想起了亨利福特名言，人们只能想到要更快的马，却没法想到汽车。</p>
+</blockquote>
+</blockquote>
+<p>这里的关键是倾听。必须深入而彻底地倾听玩家。必须熟悉他们的想法、情感、恐惧和欲望。一些他们自己可能都没有意识到的部分往往是最重要的。</p>
+<h3 id="设身处地"><a href="#设身处地" class="headerlink" title="设身处地"></a>设身处地</h3><p>如何完成倾听？最好的方法之一是移情（会在第十章中讨论），就是换位思考。</p>
+<p>适应玩家的精神角度，积极把自己投射到玩家们的思维中。必须尝试变成他们，观其所观，听其所听，想其所想。</p>
+<p>制作游戏时如果自己曾是目标受众的一员，就会有优势，能够更好的代入。好好保存自己的记忆，这些是最珍贵的工具之一，可以帮助你移情。</p>
+<p>但要是为一些不了解的受众制作游戏，必须在目标人群中想起你认识的朋友，想象他们的行为。和文化人类学家一样，必须花时间与目标受众在一起，与他们交流，观察他们，想象成为他们会怎么样。勤加练习，就能进步。如果能在思想上变为任何类型的玩家，就能为游戏拓展受众，因为你的设计能够囊括其他设计师忽视的人群。</p>
+<blockquote>
+<blockquote>
+<p>想起之前面试米的面试官教会我的词——“格人”。</p>
+</blockquote>
+</blockquote>
+<h3 id="人群特征"><a href="#人群特征" class="headerlink" title="人群特征"></a>人群特征</h3><blockquote>
+<p>正如有些人所言，年龄不会把我们变成孩子，它只会为我们保留真正的童心。 —— 歌德（Goethe）</p>
+</blockquote>
+<p>每个人都是独特的，但要制作一些许多人都喜欢的游戏，就要考虑这些人群的共同之处。这些分类叫做人群特征/市场细分。</p>
+<p>对于游戏设计师，两条最重要的人口统计变量是年龄和性别。<br>随着年龄增长，玩游戏的方式会有所不同；男性女性在所有年龄段都有不同游戏方式。</p>
+<p>以下是典型年龄的人群特征：</p>
+<ul>
+<li>0~3 岁，婴儿/幼儿：该年龄段孩子对玩具很感兴趣，但游戏复杂度于其中包含的待解决问题对他们来说太难。虚拟界面（如游戏卡牌）超越了他们的能力范围，但他们会觉得直接的界面（如触摸屏）很有趣</li>
+<li>4~6 岁，学龄前儿童：该年龄段孩子通常会第一次表现出对游戏的兴趣。他们会更频繁地与父母而不是其它人一起玩简单游戏，因为父母知道怎样调整规则来让游戏保持快乐而有趣。</li>
+<li>7~9 岁，儿童：7 岁被称为“启蒙时期”。该年龄段的孩子已经入学，通常能阅读书本，能够想通问题并解决一些难题。他们自然而然对游戏玩法表现出兴趣。该年龄段，孩子们开始自己决定喜爱的游戏和玩具，而不只是接受父母为他们所做的选择。</li>
+<li>10~13 岁，青春期前的孩子：该阶段的孩子经历一系列巨大生理变化，他们开始对事物有更深入思考。该年龄段有时也被称为“迷恋时期”，因为他们开始着迷于兴趣爱好。男孩的兴趣经常就是游戏。</li>
+<li>13~18 岁，青少年。青少年的任务是为成人做准备。男女孩兴趣出现重要分化。男孩们对竞技和征服保持兴趣，女孩更留意现实世界的问题和相互交流。两种性别的青少年都喜欢尝试新体验。</li>
+<li>18~24岁，年轻的成人：通常比孩子玩得少。游戏类型和娱乐方式已经有了特定偏好。通常有富余的时间和金钱。</li>
+<li>25~35，二三十岁：时间变得更加宝贵，是“构建家庭”的年龄。大多数成年人只玩一些休闲游戏，把玩游戏作为偶尔娱乐活动，或者与孩子一起玩游戏。该年龄段的“核心玩家”——把游戏作为主要爱好的人——是重要的目标市场之一，会购买很多游戏。经常表达喜好与厌恶，可能潜在影响社交网络中其他人的购买决策。</li>
+<li>35~50，三四十岁：“家庭成熟”阶段，大多数人成为休闲玩家。随着孩子年龄增长，会做出购买昂贵游戏的决定。若有可能，会寻求整个家庭一起游戏的机会。</li>
+<li>50+，五十岁以上：“空巢老人”，突然有了很多闲暇时间——孩子搬出去，自己很快退休。一些人回归年轻时喜爱的游戏，其他人寻求转变，转向新的游戏体验。该年龄段人群对重度社交游戏体验尤其感兴趣，如高尔夫、网球、桥牌、MMO。Facebook 游戏在这个年龄段特别成功。老人眼睛和双手不如以前灵活，所以会对小屏幕游戏或者需要控制极其复杂移动的游戏感到沮丧。</li>
+</ul>
+<p>无论为哪个群体创作游戏，重要的是：由于儿童时期就是以玩游戏为中心，所以他们所有的游戏活动都与他们的儿童时期有关。为给一些特定年龄的人群制作游戏，必须让自己的游戏与他们儿童时期流行的游戏和主题保持协调。换言之：要与他们真正地交流，必须用他们孩童时期说话的方式。</p>
+<blockquote>
+<blockquote>
+<p>这一点倒是以前不知道的。</p>
+</blockquote>
+</blockquote>
+<h3 id="媒介排斥女性吗"><a href="#媒介排斥女性吗" class="headerlink" title="媒介排斥女性吗"></a>媒介排斥女性吗</h3><p>男人和女人不同。设计师需要认识到这种区别并为之做出差异化设计。</p>
+<h4 id="男性玩家喜欢在游戏中看到的五件事"><a href="#男性玩家喜欢在游戏中看到的五件事" class="headerlink" title="男性玩家喜欢在游戏中看到的五件事"></a>男性玩家喜欢在游戏中看到的五件事</h4><blockquote>
+<p>假如你是一位女性并且觉得自己不了解男性，你可能想得太多了。 —— 路易斯·雷米（louis Ramey）</p>
+</blockquote>
+<ol>
+<li>掌握：男性很喜欢掌握一件事。这并不意味着这件事很重要或者很有用——它可能只是很有挑战性。而女性更倾向于掌握一件很有意义的事。</li>
+<li>竞争：男性很喜欢通过与其他人竞争来表现出他们是最棒的。但对于女性，输掉游戏（或导致其他人输掉）带来的糟糕体验远大于胜利带来的兴奋感。</li>
+<li>破坏：男性喜欢摧毁东西。我们常看到男人在搞破坏。小男孩玩积木，最兴奋的部分不是构建，而是完成后立马推倒。电子游戏天生适合这种玩法，虚拟世界中的摧毁能比现实世界具有更大数量级。</li>
+<li>空间谜题：男性通常比女性有更强空间推理能力。</li>
+<li>试错：男性倾向于反复试错来学习。</li>
+</ol>
+<h4 id="女性玩家喜欢在游戏中看到的五件事"><a href="#女性玩家喜欢在游戏中看到的五件事" class="headerlink" title="女性玩家喜欢在游戏中看到的五件事"></a>女性玩家喜欢在游戏中看到的五件事</h4><blockquote>
+<p>女性渴望获得情感与社交探索的体验，并将这些应用到自己的生活中。 —— Heidi Dangelmeier</p>
+</blockquote>
+<ol>
+<li>情感：女性玩家喜欢探索人类丰富情感的体验。对于男性，情感是体验中的有趣部分，但很少作为体验终点。</li>
+<li>现实世界：女性倾向于玩与现实有关联的娱乐活动。观察小女孩们的游戏（过家家、扮演兽医、换装游戏等）。小男孩更喜欢扮演幻想中的角色。这种倾向持续到成年——当事物通过有意义方式与现实世界相连，女人们更有兴趣了（如模拟人生）</li>
+<li>照料：女性玩家喜欢照料。女孩们喜欢照顾玩具娃娃、玩具宠物和比她们更小的孩子。竞技游戏中会出现女孩放弃领先优势来帮助弱小玩家，一部分原因是她们觉得玩家之间的联系和感受比游戏更加重要；另一部分原因是出于照料的乐趣。种植游戏和宠物游戏在女性玩家中的成功大部分源于照料机制。</li>
+<li>对话与字谜：女性具有更好的文字技能。</li>
+<li>通过例子学习：女性倾向于通过例子学习。她们喜欢用清晰教程指导自己，一步步学习。</li>
+</ol>
+<p>还有其他区别。<br>男性倾向于专注一件事，女性具有较好的多线程工作能力。一些推测认为这与原始收集行为有关。</p>
+<p>PC 的出现带来了新的游戏类型：</p>
+<ul>
+<li>移除所有社交元素</li>
+<li>移除大部分文字和情感元素</li>
+<li>很大程度与现实世界分离</li>
+<li>通常很难掌握</li>
+<li>为没有限制的虚拟破坏提供了可能</li>
+</ul>
+<p>所以早期电脑和视频游戏主要流行于男性玩家。但随着技术发展，这一局面得到了改善。</p>
+<h4 id="19-号透镜：玩家"><a href="#19-号透镜：玩家" class="headerlink" title="19 号透镜：玩家"></a>19 号透镜：玩家</h4><p>要是用这个透镜，你需要停止思考你的游戏，开始思考你的玩家。<br>问你自己关于这几个关于你的目标玩家的问题：</p>
+<ul>
+<li>他们通常喜欢什么？</li>
+<li>他们不喜欢什么,为什么?</li>
+<li>他们希望能在你的游戏中看到什么？</li>
+<li>如果我处在他们的位置上,我想要在游戏中看到什么?</li>
+<li>他们将会特别喜欢或者不喜欢游戏中的哪一部分?</li>
+</ul>
+<p>一个优秀的游戏设计师总是考虑并拥护他的玩家。熟练的设计师会同时使用玩家透镜和全息透镜，同时考虑玩家、游戏体验和游戏机制。思考你的玩家是一种很有用的方法，但是更有用的是观察他们玩你的游戏。你观察得越多，就越容易预测他们会喜欢什么。</p>
+<p>通过密切关注不同人群特征目标的欲望和行为，能够平衡游戏来适应所有人。当你的游戏受众广泛时，不妨将其细化分析。密切观察不同人群特征的玩家如何游玩游戏，修改已有设定，让其能支持每个群体的游戏风格。</p>
+<h3 id="心理特征"><a href="#心理特征" class="headerlink" title="心理特征"></a>心理特征</h3><p>心理特征：人们的内在想法，他们在寻找怎样的快乐。</p>
+<p>有一些心理特征与生活方式（活动）有关，如“喜欢养狗的人”、“FPS 硬核玩家”。</p>
+<p>其他一些心理特征与一个人喜欢什么有关——人们从参与的游戏或者其他活动中寻找快乐。每个人行动的动机最终都可以被追溯为寻求某种快乐。</p>
+<h4 id="Marc-LeBlanc-的游戏乐趣分类"><a href="#Marc-LeBlanc-的游戏乐趣分类" class="headerlink" title="Marc LeBlanc 的游戏乐趣分类"></a>Marc LeBlanc 的游戏乐趣分类</h4><ol>
+<li>感官：感官乐趣包含使用感观（视听嗅味触）。看到美丽事物，聆听音乐，触摸丝绸，闻到/品尝到美味食物都是感官快乐。游戏美感主要带来这种快乐。<br>  感官乐趣通常是玩具的乐趣（17 号透镜）。这种乐趣不能把糟糕的游戏变得优秀，但它通常能把优秀的游戏变得更好。</li>
+<li>幻想：一种想象世界的乐趣和想象自己变为其他人的乐趣。将在 19、20 章进行深入讨论。</li>
+<li>叙事：并不意味着讲述确定的线性故事。而是故事的发生经过了一系列事件的戏剧化演变。将在 16、17 章深入讨论。</li>
+<li>挑战：某种程度上游戏玩法的核心乐趣之一，因为每个游戏的核心都有一个需要被解决的问题。对部分玩家而言，这种乐趣就足够了，其他玩家想要更多乐趣。</li>
+<li>团队关系：由友情、合作和社区带来的乐趣。23、24 章深入讨论。</li>
+<li>探索：探索的乐趣很广泛，搜寻并找到新东西就是探索。有时候是对游戏世界的探索，有时候是对隐藏特性/巧妙策略的探索。探索新食物是游戏乐趣的关键。</li>
+<li>表达：表达自我的乐趣和创造事物的乐趣。表达很少与完成游戏目标有关，在大多游戏中，为角色设计新外观不能帮你取得优势——但对一些玩家而言，这可能是他们的游戏原因。<blockquote>
+<blockquote>
+<p>可以算做某种程度的“自己实现”哈哈，参见《乌合之众》的读后感： <a href="https://medill-east.github.io/2022/06/04/20220604-after-reading-the-crowd/">群体语境下无归属玩家的个人叙事是否可能</a></p>
+</blockquote>
+</blockquote>
+</li>
+<li>服从：这是踏入魔法阵的快乐——离开真实世界，进入全新、令人愉悦、充满规则、有意义的世界。几乎所有游戏都包含服从的快乐。</li>
+</ol>
+<h4 id="Richard-Bartle-玩家类型分类"><a href="#Richard-Bartle-玩家类型分类" class="headerlink" title="Richard Bartle 玩家类型分类"></a>Richard Bartle 玩家类型分类</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220605104129.png"></p>
+<ol>
+<li>♦成就型：想完成游戏目标，主要乐趣源于挑战。喜欢对世界施加影响。</li>
+<li>♠探索型：想了解游戏方方面面，主要乐趣源于探索。喜欢与世界互动。</li>
+<li>❤社交型：对于人们之间的关系更感兴趣，主要寻求团队合作乐趣。喜欢与玩家互动。</li>
+<li>♣杀手型：喜欢竞争并击败他人，享受混合了竞争和破坏的快乐。角色特征是“喜欢对他人施加影响”。乐于助人者也包含在这个分类中。喜欢对玩家施加影响。</li>
+</ol>
+<h4 id="更多乐趣：更多"><a href="#更多乐趣：更多" class="headerlink" title="更多乐趣：更多"></a>更多乐趣：更多</h4><ul>
+<li>预感：当得知快乐就要来临，等待它的到来就是一种快乐<blockquote>
+<blockquote>
+<p>等待小王子的小狐狸。<br>如果你说你在下午四点来，从三点钟开始，我就开始感觉很快乐，时间越临近，我就越来越感到快乐。<br>到了四点钟的时候，我就会坐立不安，我发现了幸福的价值，但是如果你随便什么时候来，我就不知道在什么时候准备好迎接你的心情了<br>——安东尼·德·圣-埃克苏佩里 《小王子》</p>
+</blockquote>
+</blockquote>
+</li>
+<li>完成：完成一件事是一种美好感觉。如“吃掉所有豆子”，“消灭所有坏蛋”，“清空这个关卡”等目标都是利用这种乐趣。</li>
+<li>幸灾乐祸：当一些不公正的人突然遭到报应，我们会有此感受。这是竞技游戏的重要构成部分。德国人称其为 schadenfreude。</li>
+<li>赠与礼物：当你通过赠送惊喜礼物让别人开心时，就会感受到这种特别乐趣。可以通过包装礼物来增强这种惊喜。这种乐趣并不是源于别人的快乐，而是源于你使得他们变得快乐。</li>
+<li>幽默感：两个没有联系的事物通过形式变化被突然联系在一起。<blockquote>
+<blockquote>
+<p>搞点薯条！</p>
+</blockquote>
+</blockquote>
+</li>
+<li>可能性：有很多选择并让你任意挑选的乐趣。通常在购物/自助餐桌上体验这种乐趣。</li>
+<li>成就的自豪感：完成一件事之后，这种乐趣自身可以持续很久。意第绪语中的单词 naches 就是关于这种快乐的满足感，通常指向对孩子们/孙子们的自豪感。</li>
+<li>惊喜：大脑喜欢惊喜。</li>
+<li>激动：过山车设计师之间的说法“恐惧 - 死亡 = 开心”。观看《Thrill》频道的节目就是这种快乐——恐惧，但安全。</li>
+<li>战胜逆境：这是一种完成了一件认为难以成功的事的乐趣。通常而言，这种乐趣的出现伴随着个人胜利的呼喊。意大利人用于描述这种快乐的单词：Fiero<blockquote>
+<blockquote>
+<p>这作者真是博学多识，怎么什么语都知道 233</p>
+</blockquote>
+</blockquote>
+</li>
+<li>难以置信：一种包含敬畏和惊异的强大感受。</li>
+</ul>
+<p>对不同乐趣保持开放心态，并且注意乐趣会与情境有关。</p>
+<h4 id="20-号透镜：乐趣"><a href="#20-号透镜：乐趣" class="headerlink" title="20 号透镜：乐趣"></a>20 号透镜：乐趣</h4><p>思考你的游戏提供了哪些类型的乐趣。<br>问你自己这几个问题：</p>
+<ul>
+<li>你的游戏能给玩家带来哪些乐趣？这些乐趣能够继续改善吗？</li>
+<li>你的体验中缺少了哪些乐趣，为什么？能够在游戏中增加这种乐趣吗？</li>
+</ul>
+<p>游戏的最终目的就是带来快乐。通过浏览已知的乐趣列表，考虑你的游戏如何传达其中的每一种乐趣，你可能就有了改进游戏的灵感，让它能够为玩家带来更多乐趣。要经常留意那些独特的、未分类的、在大多数游戏中都没有的乐趣。因为只要找到一个就能让你的游戏拥有独特的体验。</p>
+<hr>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><h3 id="第九章-游戏为玩家而生-1"><a href="#第九章-游戏为玩家而生-1" class="headerlink" title="第九章 游戏为玩家而生"></a>第九章 游戏为玩家而生</h3><p> - 理查德,R·巴特尔撰写的《设计虚拟世界》 (Designing Virtual Worlds by Richard R. Bartle) 。这是一本关于虚拟世界开发历史的优秀著作。它由一位实现这种虚拟世界的深度思考者撰写。</p>
+<ul>
+<li>马膝.L·克林格尔巴赫与肯特,C·巴里吉共同撰写的《大脑的快乐》 (Pleasures of the Brain by Morten L. Kringelbach and Kent C. Berridge, editors) 。这是一本由心理学家与神经学家共同完成的关于寻找快乐机制的研究集合。如果你还不熟悉科学论文，这可能有点令人却步，但这对于执着的读者是一笔宝贵的财富。</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/05/30/20220530-theartofgamedesign-chap9/">https://medill-east.github.io/2022/05/30/20220530-theartofgamedesign-chap9/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Design/">
+                                    <span class="chip bg-color">Game Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/06/01/20220601-theartofgamedesign-chap10/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712120204.png" class="responsive-img" alt="游戏设计艺术 第十章 游戏在玩家的脑中">
+                        
+                        <span class="card-title">游戏设计艺术 第十章 游戏在玩家的脑中</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            四项主要心理能力让玩游戏成为可能：建模、专注、想象、共情。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/29/20220529-yinyangmeseenger-demo-showcase-analysis/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cover2.jpg" class="responsive-img" alt="《Yin Yang Messenger》 Demo 展示及分析">
+                        
+                        <span class="card-title">《Yin Yang Messenger》 Demo 展示及分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对 2022 年 2 月独立制作的平台跳跃类游戏《Yin Yang Messenger》的展示及分析。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Demo/" class="post-category">
+                                    Study-Game-Demo
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Portfolio/">
+                        <span class="chip bg-color">Portfolio</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

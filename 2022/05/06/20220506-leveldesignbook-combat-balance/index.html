@@ -1,0 +1,1319 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220506 - Level Design Book - BOOK 1. PROCESS - Combat - Balance, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220506 - Level Design Book - BOOK 1. PROCESS - Combat - Balance | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506234428.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220506 - Level Design Book - BOOK 1. PROCESS - Combat - Balance</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Level-Design/">
+                                <span class="chip bg-color">Game Level Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                Study-Game-LevelDesign
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-05-06
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2024-09-14
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    12 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Balance"><a href="#Balance" class="headerlink" title="Balance"></a>Balance</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://book.leveldesignbook.com/process/combat/balance">原文链接</a></p>
+</li>
+<li><p><a href="https://medill-east.github.io/2022/04/29/20220428-leveldesignbook-toc/">Level Design Book 随译/笔记</a></p>
+</li>
+</ul>
+<blockquote>
+<p>玩家在整个关卡中能做的选择，玩家可以去哪里的公平性</p>
+</blockquote>
+<hr>
+<h3 id="Why-balance-a-level"><a href="#Why-balance-a-level" class="headerlink" title="Why balance a level"></a>Why balance a level</h3><p>地图平衡是贯穿整个关卡的真实的以及玩家可感知的公平性。玩家是会怪自己没有理解怎么利用关卡，还是会怪关卡设计师把他们置于绝境呢？</p>
+<p>一个平衡良好的关卡支持多种玩法风格，也会让玩家保持对于结果的投入（保持期待与热情），平衡不佳的地图可能会促使玩家因为沮丧或挫败而退出游戏。</p>
+<p>尽管可以说平衡适用于任何关卡，但平衡对于基于战斗的关卡和竞技性的多人地图而言最为重要。</p>
+<h4 id="Single-player-has-no-balance"><a href="#Single-player-has-no-balance" class="headerlink" title="Single player has no balance"></a>Single player has no balance</h4><p>对于对抗 AI 的游戏而言，“平衡”其实没什么意义。几乎所有合作性的“Player vs. Enemy” （PVE）或是单人游戏都会故意不平衡以利于玩家。</p>
+<p>敌人 AI 会故意占据有明显弱点的位置，因为这些情况下的游戏是基于完成的目标而设计的。此时，一个“公平”的关卡为玩家提供了充足信息和机会来取胜。AI 对手的目标是以一种有趣的方式输掉。从本质上讲，我们必须以玩家喜好来操纵游戏，并为玩家提供令人信服的机会来进一步操纵游戏。</p>
+<p>所以当我们谈论地图平衡时，所指的是多人地图平衡，而不是单人/PVE。</p>
+<p>有关单人游戏/PVE/合作战斗的更过内容，可以看<a href="https://medill-east.github.io/2022/05/05/20220505-leveldesignbook-combat-encounter/">遭遇战</a>。</p>
+<hr>
+<h3 id="Game-balance"><a href="#Game-balance" class="headerlink" title="Game balance"></a>Game balance</h3><p>首先，让我们回顾一下基本的游戏平衡</p>
+<h4 id="Counters"><a href="#Counters" class="headerlink" title="Counters"></a>Counters</h4><p>在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%9F%B3%E5%A4%B4%E3%80%81%E5%89%AA%E5%AD%90%E3%80%81%E5%B8%83">石头剪刀布 （RPS）</a>中每一种行为都会被另一种行为克制。<br>竞技性游戏经常依赖于一种 RPS 的隐喻来实现平衡。像是街头霸王这样的格斗游戏归结为攻击/投掷/格挡（攻击克制投掷，投掷克制格挡，格挡克制攻击）。像星际争霸这样的策略战争游戏是步兵/炮兵/骑兵（步兵克制骑兵，骑兵克制炮兵，炮兵克制步兵）。这种模式因游戏和类型而异（近战/法师/射手…霰弹枪/狙击手/步枪…坦克/辅助/伤害…核心/上路/中路/打野/辅助）</p>
+<p>从这样的观点出发，平衡意味着克制关系。如果玩家对于对手的移动/策略没有任何可能的克制办法，那么系统就是不平衡的。任何平衡的克制系统都需要 3 个以上的可选项，因此用于克制的出招（<a target="_blank" rel="noopener" href="https://www.sirlin.net/articles/game-balance-and-yomi">“yomi”</a>）是不同于自己最初始的出招且不同于敌方出招的第三选项</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506113806.png" alt="diagram comparing Rock Paper Scissors vs Attack Throw Block (right image by David Sirlin, from https://www.sirlin.net/articles/designing-yomi)"></p>
+<h4 id="Dilemmas-payoffs-dominant-strategies"><a href="#Dilemmas-payoffs-dominant-strategies" class="headerlink" title="Dilemmas, payoffs, dominant strategies"></a>Dilemmas, payoffs, dominant strategies</h4><p>囚徒困境是1950年代美军智库设计的思想实验，是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Game_theory">博弈论</a>的核心概念：</p>
+<blockquote>
+<p>犯罪团伙的两名罪犯被捕。每个囚犯单独监禁，无法与他人交流。每个囚犯都有机会通过作证对方犯罪来背叛，或是沉默来与对方合作。可能的结果：</p>
+<ul>
+<li>AB 彼此背叛，各自服刑两年</li>
+<li>A 背叛，B 沉默，A 将被释放，B 服刑三年</li>
+<li>A 沉默，B 背叛，A 服刑三年，B 释放</li>
+<li>AB 都沉默，每人服刑一年</li>
+</ul>
+</blockquote>
+<p>以下是表示为回报矩阵的可能结果，其中监禁年数用负分表示，目标是最大化最高分：</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">B 沉默（合作）</th>
+<th align="left">B 背叛（敌对）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">A 沉默（合作）</td>
+<td align="left">A -1 B -1</td>
+<td align="left">A -3 B 0</td>
+</tr>
+<tr>
+<td align="left">A 背叛（敌对）</td>
+<td align="left">A 0 B -3</td>
+<td align="left">A -2 B -2</td>
+</tr>
+</tbody></table>
+<p>在这个标准囚徒困境中，博弈论者认为玩家应该总是选择背叛。 为什么？ 假设你是 A，如果 B 配合，那么你应该背叛，因为 0 年的监禁比 1 年的监禁要好； 即使 B 背叛，那你也应该背叛，因为 2 年监禁比 3 年监禁要好。</p>
+<p>囚徒困境在英国游戏节目金球奖的最后一轮“Split or Steal”中最为流行：</p>
+<iframe width="485" height="273" src="https://www.youtube.com/embed/S0qjK3TWZE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+出于这个原因，背叛是一种优势策略，因为其他玩家做什么并不重要。 总是选择背叛能获得最多的胜利，最坏的情况是平局。 就成本/积分而言，如果您总是背叛其他玩家，您实际上不会输。 要了解原因，请观看英国游戏节目 Golden Balls 中最著名的时刻（上面的视频），参赛者 Nick Corrigan 使用这种优势策略对抗另一位参赛者 Ibrahim Hussein 以取胜。
+
+<p>从这个角度来看，<strong>平衡意味着在你的系统中避免出现能获得最高理论收益的优势策略</strong>。 如果存在一个优势策略，那么理论上所有理性的玩家都会选择它，这使得其余策略无关紧要，因此是不平衡的。</p>
+<h4 id="Feedback-loops"><a href="#Feedback-loops" class="headerlink" title="Feedback loops"></a>Feedback loops</h4><p>加热器是一种简单的自平衡系统。当加热器检测到太冷时，它会加热；当加热器检测到太热时，它会停止加热。在<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/System_dynamics">系统动力学</a>中，这个负反馈回路（negative feedback loop）是一个平衡回路，因为它稳定了系统的状态。相比之下，想象一个加热器，当变得更热时，它继续加热，最终导致着火并烧毁房子——这是一个正反馈循环（positive feedback loop），一个加强自身效果的强化循环。</p>
+<p>在游戏中，<strong>平衡的循环给予处于劣势的玩家翻盘的机会</strong>。例如，赛车游戏通常会通过给予他们更快的速度奖励（例如 Gran Turismo 中的人工智能汽车）或更好的物品（例如马里奥赛车中的蓝色冲刺）来“左右局势”，从而使比赛感觉更刺激和有竞争性。然而，这也可能导致（对于优势玩家的）不公平，或者让人感觉像是人为制造的旷日持久的僵局。强化循环有助于更强大的玩家增加他们的优势，就像在任何资源产生更多资源的游戏中一样（例如，在反恐精英中，金钱可以买到更好的枪，这使得杀戮更容易，赚更多的钱，买更好的枪……等等。 ）。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Adoption_SFD_ANI_s.gif" alt="Dynamic stock and flow diagram of model _New product adoption_ (model from article by John Sterman (https://en.wikipedia.org/wiki/John_Sterman &quot;John Sterman&quot;) 2001)"></p>
+<h4 id="Balancing-for-feel"><a href="#Balancing-for-feel" class="headerlink" title="Balancing for feel"></a>Balancing for feel</h4><p>游戏平衡现在看起来像是一个可以证明的数学问题——如果结合所有的克制关系、反馈循环和数字，那么你的游戏或关卡现在就完美平衡了！</p>
+<p>看哪，标准石头剪刀布的完美平衡收益矩阵：</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">B 出石头</th>
+<th align="left">B 出布</th>
+<th align="left">B 出剪刀</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">A 出石头</td>
+<td align="left">A: 0  ,  B: 0</td>
+<td align="left">A: 0  ,  B: +1</td>
+<td align="left">A: +1  ,  B: 0</td>
+</tr>
+<tr>
+<td align="left">A 出布</td>
+<td align="left">A: +1 , B: 0</td>
+<td align="left">A: 0 , B: 0</td>
+<td align="left">A: 0 , B: +1</td>
+</tr>
+<tr>
+<td align="left">A 出剪刀</td>
+<td align="left">A: 0 , B: +1</td>
+<td align="left">A: +1 , B: 0</td>
+<td align="left">A: 0 , B: 0</td>
+</tr>
+</tbody></table>
+<p>理论上，石头剪刀布是完美平衡的，所有选项有着相同胜率。 没有导致连续获胜的强化循环，过去的回合不会影响未来的回合。 这种完美的平衡是否让石头剪刀布成为有史以来最伟大的游戏？相反，有些人可能会说完美的平衡最终使它成为一个无聊的游戏！ 所有的出招感觉都是一样的，没有办法冒很大的风险来获得丰厚的回报，并且有 33% 的几率无事发生。</p>
+<p>不平衡的克制、优势策略或失控的负反馈循环在游戏中不一定是坏事。 如果优势策略实现了我们的体验目标，那么，让它存在！即使它不那么让人难以抉择，使用优势策略仍然会让人感到戏剧性和影响力。 除非是非常明显的胜利，否则普通胜利的冲击可能并不强烈。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506224943.png"></p>
+<p>若想让“石头”感觉像是一个重大的戏剧性的决定：<br>| |B 出石头|B 出布|B 出剪刀|<br>|:—-|:—-|:—-|:—-|<br>|A 出石头|A: -10 , B: -10|A: 0 , B: +5|A: +15 , B: 0|<br>|A 出布|A: +5 , B: 0|A: 0 , B: 0|A: 0 , B: +1|<br>|A 出剪刀|A: 0 , B: +15|A: +1 , B: 0|A: 0 , B: 0|</p>
+<p>Journey 是一款游戏，玩家可以在彼此附近“啁啾”以补充其他玩家的跳跃能量。 合作显然是这里的主导战略，但这就是重点：</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">B 叽喳（合作）</th>
+<th align="left">B 不叽喳（不合作）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">A 叽喳（合作）</td>
+<td align="left">A: +1 jump , B: +1 jump</td>
+<td align="left">A: +0 jump , B: +1 jump</td>
+</tr>
+<tr>
+<td align="left">A 不叽喳（不合作）</td>
+<td align="left">A: +1 jump , B: +0 jump</td>
+<td align="left">A: +0 jump , B: +0 jump</td>
+</tr>
+</tbody></table>
+<p>这也意味着：一个平衡的游戏/关卡通常并不是我们所想要的</p>
+<h4 id="Fairness"><a href="#Fairness" class="headerlink" title="Fairness"></a>Fairness</h4><p>公平是玩家对平衡的心理感知。但公平与否与是否真的平衡其实并不一定相关。通常竞技性的多人地图应为双方提供 50 % 的平均胜率。</p>
+<p>一般优先考虑公平而不是平衡。公平并不是完美数学，而是理解玩家体验和反应。玩家就是事实的制定者，如果玩家都说 2+2=5，那就等于 5 又有何妨。</p>
+<p>游戏设计师对“公平”的定义不同。 <a target="_blank" rel="noopener" href="https://www.sirlin.net/articles/balancing-multiplayer-games-part-3-fairness">David Sirlin 将公平定义</a>为“技巧水平相同的玩家有平等的获胜机会，无论他们的开局条件如何。”</p>
+<h5 id="Match-tournament-design"><a href="#Match-tournament-design" class="headerlink" title="Match/ tournament design"></a>Match/ tournament design</h5><p>规则和程序会影响玩家使用地图的方式，特别是在竞技性的多人游戏中。</p>
+<ul>
+<li>换边。当双方在比赛中切换阵营时，地图平衡的重要性会降低。</li>
+<li>层级列表。常见于 MOBA 和格斗游戏中。将不同等级、角色、装备等进行等级分类，仅在相同等级内平衡。 Sirlin 认为所有 S 级（过于好）和 F 级（过于差）角色都该被重新设计。</li>
+<li>锦标赛。竞技性多人锦标赛的分支设计是一门完整的科学，可以说这基本上是元关卡设计。开放式/封闭式？循环赛/淘汰赛？一支队伍在某地图上比另一只队伍更拿手怎么办？队伍可以否决地图吗？地图池怎么决定？</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506232146.png" alt="photo of the Green Monster wall at Fenway Park by &quot;wallyg&quot; under CC-BY license (https://commons.wikimedia.org/wiki/File:Fenway_Park_Home_Plate_and_Green_Monster.jpg)"></p>
+<p>以下是关于上图的解说，直翻：</p>
+<blockquote>
+<p>例如，上图是美国波士顿美国职棒大联盟芬威球场左侧场地后侧的一堵异常高大的绿墙“绿魔”。在关卡设计和地图平衡方面，绿魔在场上为防守团队提供了巨大的优势；绿魔如此高（11.3米），击球手很难击出本垒打翻墙。</p>
+<p>但在整个棒球比赛的大背景下，球队在多局比赛中反复转换角色，这是公平的，因为两支球队都处于类似的劣势。整体游戏设计框架我们如何理解平衡，有时地图平衡甚至有些无关紧要。</p>
+<p>（棒球书呆子争论绿色怪物是否对击球手不利。击球手可以瞄准墙壁并将球从墙上反弹，这对于左外野手来说更难接球。左撇子投手在芬威经常遭受更糟糕的统计，因为右-击球手在这些“墙球双打”中得分更多。）</p>
+</blockquote>
+<hr>
+<h3 id="Map-balance"><a href="#Map-balance" class="headerlink" title="Map balance"></a>Map balance</h3><p>地图平衡涉及以下方面：</p>
+<ul>
+<li>实用性：该区域有用/有趣？为什么玩家到这里/在这里停留？</li>
+<li>成本：区域是否容易到达/停留？玩家是否需要耗费大量时间/资源才能这么做？玩家在这里会让别的地方更脆弱吗？</li>
+<li>信息：玩家知道这里存在吗？玩家必须追踪/记忆多少信息才能使用该区域？有隐藏成本吗？误解会发生什么有趣的事吗？</li>
+</ul>
+<p>关卡设计目标并不是最大化实用性。在关卡设计中设计一个总是有用（高实用性）、容易到达（低成本）、明显（可见信息）的“完美”区域实际上并不理想。因为所有“理性”玩家都会选这样的地区。那构建其他地区的意义何在？</p>
+<p>理想情况下，地图的每个部分都应该有特定的用途，具体取决于游戏状态，并通过情境弱点阻止玩家停留太久，通过有限的信息过滤让玩家犯有趣的错误。</p>
+<h4 id="Territory-map-control"><a href="#Territory-map-control" class="headerlink" title="Territory/ map control"></a>Territory/ map control</h4><p>领地：玩家可追踪，防御，且通常从中受益的区域。</p>
+<p>拥有更多领地就有更多地图控制权。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506233409.png" alt="map control diagram with &quot;P&quot; (player) on left, and &quot;E&quot; (enemy) territory on right -- from &quot;The Door Problem of Combat Design&quot; by Andrew Yoder"></p>
+<h4 id="Chokepoints"><a href="#Chokepoints" class="headerlink" title="Chokepoints"></a>Chokepoints</h4><p>领土通常以阻塞点（chokepoints），即较小的区域或通道为界，这些区域可以被占领以防御敌人入侵。</p>
+<p>在多人 PvP 地图中，在地图上分布 3-4 个阻塞点，每条路一个阻塞点。 不应该能够从一个点覆盖所有阻塞点。</p>
+<p>例如，在 Counter-Strike 地图 de_cache 中，上车道  (A) 有两个小阻塞点，中车道有一个大阻塞点，而下车道 (B) 有一个大阻塞点。<br>反恐（CT）小组的工作是保护橙色炸弹点，这两个炸弹点在开始时都牢牢地在他们的领土内（战线左侧）。 CT 有一种安全的方式从中间迂回到 A，但 T 可以从两个阻塞点攻击 A。 B 更靠近 CT 和 Ts，但从 B 迂回需要更长的时间。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506233744.png" alt="battle line and chokepoint breakdown on de_cache by Sal Garozzo and Shawn Snelling for Counter-Strike: Global Offensive, from GDC 2015: Community Level Design for Competitive CS:GO"></p>
+<hr>
+<h2 id="Backlink"><a href="#Backlink" class="headerlink" title="Backlink"></a>Backlink</h2><ul>
+<li><a href="https://medill-east.github.io/2022/04/29/20220428-leveldesignbook-toc/">Level Design Book 随译/笔记</a></li>
+</ul>
+<hr>
+<h2 id="暂告段落"><a href="#暂告段落" class="headerlink" title="暂告段落"></a>暂告段落</h2><p>后面有些部分感觉并未写完。毕竟本“书”还处于不断填坑过程中，暂时打算等坑再填填再来继续随译/笔记。</p>
+<p>至目前为止其实看下来更多是一个体系梳理的感觉，但要真正落到生产设计中，感觉还需要更精细化和深入的内容。后面可能会暂时转向关卡设计的另一本书。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/05/06/20220506-leveldesignbook-combat-balance/">https://medill-east.github.io/2022/05/06/20220506-leveldesignbook-combat-balance/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Level-Design/">
+                                    <span class="chip bg-color">Game Level Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/05/07/20220507-comicjung-toc/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220508233533.png" class="responsive-img" alt="漫画荣格：内心深处结构的解析 摘抄/笔记">
+                        
+                        <span class="card-title">漫画荣格：内心深处结构的解析 摘抄/笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            为了解荣格理论中的集体潜意识，对《漫画荣格：内心深处结构的解析》一书进行摘抄/笔记，特此记录。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-07
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Psychology-Notes/" class="post-category">
+                                    Study-Psychology-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Psychology/">
+                        <span class="chip bg-color">Psychology</span>
+                    </a>
+                    
+                    <a href="/tags/Carl-Gustav-Jung/">
+                        <span class="chip bg-color">Carl-Gustav-Jung</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/05/20220505-leveldesignbook-combat-encounter/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220505231631.png" class="responsive-img" alt="20220505 - Level Design Book - BOOK 1. PROCESS - Combat - Encounter">
+                        
+                        <span class="card-title">20220505 - Level Design Book - BOOK 1. PROCESS - Combat - Encounter</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Continuous sequence of open-ended challenges; usually in combat with NPCs
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                    Study-Game-LevelDesign
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Level-Design/">
+                        <span class="chip bg-color">Game Level Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

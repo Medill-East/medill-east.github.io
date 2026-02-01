@@ -1,0 +1,1444 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220924 - 射击游戏设计一把枪有多复杂, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220924 - 射击游戏设计一把枪有多复杂 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220924111033.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220924 - 射击游戏设计一把枪有多复杂</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Learning-Notes/">
+                                <span class="chip bg-color">Learning Notes</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-09-24
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2024-01-07
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    1.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    4 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="射击游戏设计一把枪有多复杂"><a href="#射击游戏设计一把枪有多复杂" class="headerlink" title="射击游戏设计一把枪有多复杂"></a>射击游戏设计一把枪有多复杂</h2><h3 id="视频地址"><a href="#视频地址" class="headerlink" title="视频地址"></a>视频地址</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1V7411o77S?spm_id_from=333.337.search-card.all.click&vd_source=2a7309dd68e8e66352cd01e962ce7993">射击游戏设计一把枪有多复杂？【游戏设计手册05】</a></li>
+</ul>
+<h3 id="mindmap"><a href="#mindmap" class="headerlink" title="mindmap"></a>mindmap</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/%E5%B0%84%E5%87%BB%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E4%B8%80%E6%8A%8A%E6%9E%AA%E6%9C%89%E5%A4%9A%E5%A4%8D%E6%9D%82.png"></p>
+<h3 id="早期（传统）射击游戏核心要素"><a href="#早期（传统）射击游戏核心要素" class="headerlink" title="早期（传统）射击游戏核心要素"></a>早期（传统）射击游戏核心要素</h3><p>武器设计<br>地图路线设计<br>交战区域设计</p>
+<h4 id="非传统射击游戏"><a href="#非传统射击游戏" class="headerlink" title="非传统射击游戏"></a>非传统射击游戏</h4><ul>
+<li><p>加入 X 要素并强调该要素</p>
+<ul>
+<li>通常会削弱传统的核心要素</li>
+</ul>
+</li>
+<li><p>世界观和剧情 - 冒险</p>
+<ul>
+<li>COD</li>
+</ul>
+</li>
+<li><p>成长线 - RPG</p>
+<ul>
+<li>无主之地</li>
+</ul>
+</li>
+<li><p>技能搭配</p>
+<ul>
+<li>守望先锋</li>
+</ul>
+</li>
+<li><p>环境变化和利用环境</p>
+<ul>
+<li>绝地求生<ul>
+<li>削弱了地图路线和交战区域</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>建造 &amp; 花式道具</p>
+<ul>
+<li>堡垒之夜</li>
+</ul>
+</li>
+</ul>
+<h3 id="武器设计"><a href="#武器设计" class="headerlink" title="武器设计"></a>武器设计</h3><h4 id="考虑"><a href="#考虑" class="headerlink" title="考虑"></a>考虑</h4><h5 id="生产线"><a href="#生产线" class="headerlink" title="生产线"></a>生产线</h5><ul>
+<li>策划<ul>
+<li>完成设计文档</li>
+<li>与程序完成原型<ul>
+<li>确保开发进度</li>
+</ul>
+</li>
+<li>与美术沟通<ul>
+<li>确保美术风格细节和特效达到要求</li>
+<li>不超过性能上限</li>
+</ul>
+</li>
+<li>QA<ul>
+<li>完成测试</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h4><h5 id="伤害（单发子弹）"><a href="#伤害（单发子弹）" class="headerlink" title="伤害（单发子弹）"></a>伤害（单发子弹）</h5><h6 id="单发伤害衰减曲线"><a href="#单发伤害衰减曲线" class="headerlink" title="单发伤害衰减曲线"></a>单发伤害衰减曲线</h6><ul>
+<li>常数曲线</li>
+<li>分段曲线</li>
+<li>连续下降曲线</li>
+</ul>
+<h6 id="不同部位伤害倍率"><a href="#不同部位伤害倍率" class="headerlink" title="不同部位伤害倍率"></a>不同部位伤害倍率</h6><ul>
+<li>头<ul>
+<li>x2</li>
+</ul>
+</li>
+<li>躯干<ul>
+<li>x1</li>
+</ul>
+</li>
+<li>四肢<ul>
+<li>x0.7</li>
+</ul>
+</li>
+</ul>
+<h6 id="特殊效果（debuff）"><a href="#特殊效果（debuff）" class="headerlink" title="特殊效果（debuff）"></a>特殊效果（debuff）</h6><ul>
+<li>持续伤害</li>
+<li>减速</li>
+<li>麻醉</li>
+<li>…</li>
+</ul>
+<h5 id="子弹"><a href="#子弹" class="headerlink" title="子弹"></a>子弹</h5><h6 id="每次发射数量"><a href="#每次发射数量" class="headerlink" title="每次发射数量"></a>每次发射数量</h6><ul>
+<li>大多一次一颗</li>
+<li>连发</li>
+<li>n 颗</li>
+<li>考虑<ul>
+<li>一次射击最多能造成多少伤害</li>
+</ul>
+</li>
+</ul>
+<h6 id="射速"><a href="#射速" class="headerlink" title="射速"></a>射速</h6><ul>
+<li>玩家感受<ul>
+<li>一分钟内能射出多少子弹</li>
+</ul>
+</li>
+<li>考虑<ul>
+<li>每两次射击之间的最小时间间隔</li>
+<li>决定了单位时间里的最大输出量</li>
+</ul>
+</li>
+</ul>
+<h6 id="弹夹容量"><a href="#弹夹容量" class="headerlink" title="弹夹容量"></a>弹夹容量</h6><ul>
+<li>限制一把枪单次输出上限</li>
+<li>也和输出容错率有关</li>
+</ul>
+<h6 id="换弹时间"><a href="#换弹时间" class="headerlink" title="换弹时间"></a>换弹时间</h6><ul>
+<li>霰弹枪<ul>
+<li>一颗一颗</li>
+</ul>
+</li>
+<li>其他<ul>
+<li>一次一个弹夹</li>
+</ul>
+</li>
+</ul>
+<h6 id="换弹后摇"><a href="#换弹后摇" class="headerlink" title="换弹后摇"></a>换弹后摇</h6><ul>
+<li>换完弹匣后拉下枪栓能够再次射击的时间</li>
+</ul>
+<h6 id="手动模式-自动模式"><a href="#手动模式-自动模式" class="headerlink" title="手动模式/自动模式"></a>手动模式/自动模式</h6><ul>
+<li>手动模式<ul>
+<li>每次只有重新按下鼠标才能发射</li>
+</ul>
+</li>
+<li>自动模式<ul>
+<li>释放鼠标之前会持续射击</li>
+</ul>
+</li>
+</ul>
+<h6 id="子弹飞行速度"><a href="#子弹飞行速度" class="headerlink" title="子弹飞行速度"></a>子弹飞行速度</h6><ul>
+<li>不追求真实的游戏会忽略</li>
+<li>开发更消耗资源</li>
+</ul>
+<h6 id="子弹下坠速度"><a href="#子弹下坠速度" class="headerlink" title="子弹下坠速度"></a>子弹下坠速度</h6><p>不追求真实的游戏会忽略<br>开发更消耗资源</p>
+<h6 id="子弹类型"><a href="#子弹类型" class="headerlink" title="子弹类型"></a>子弹类型</h6><p>增加真实<br>增加限制</p>
+<h5 id="手感"><a href="#手感" class="headerlink" title="手感"></a>手感</h5><h6 id="后坐力"><a href="#后坐力" class="headerlink" title="后坐力"></a>后坐力</h6><p>游戏中的准心移动<br>每次发射子弹镜头上抬了多少角度<br>向左/向右旋转了多少角度（单位）</p>
+<ul>
+<li><p>回正速度/回中速度</p>
+<ul>
+<li><p>释放鼠标后准心回到正中的速度</p>
+</li>
+<li><p>例子</p>
+<ul>
+<li><p>基础做法</p>
+<ul>
+<li>回中速度为 10 即 1 秒可以回复 10 个单位</li>
+<li>如果后坐力为 1 即每发子弹向上移动一个单位</li>
+<li>连续开枪一秒 共发射 10 发子弹 向上偏移为 10</li>
+<li>则 1s 后 回复到正中</li>
+</ul>
+</li>
+<li><p>进阶做法</p>
+<ul>
+<li>让首颗子弹偏移量 * 系数 使得每把枪的偏移量有所区别</li>
+<li>上下偏移也引入随机数 而不是固定偏移量</li>
+<li>在范围里取随机数时用正态分布而不是均匀分布</li>
+<li>给不同持枪状态设定不同偏移量和回中速度</li>
+</ul>
+<p>  <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220914135539.png"></p>
+</li>
+</ul>
+</li>
+<li><p>左右和上下类似</p>
+<ul>
+<li>但区别是左右是区间<ul>
+<li>在区间立产生随机数进行偏移</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="准星扩散"><a href="#准星扩散" class="headerlink" title="准星扩散"></a>准星扩散</h6><p>持续射击准星会变大<br>子弹在准星范围内随机射出<br>准星越大 命中目标概率越低</p>
+<ul>
+<li>考虑<ul>
+<li>最小半径</li>
+<li>最大半径</li>
+<li>每发子弹增加的量</li>
+<li>回中速度</li>
+<li>不同持枪状态下的准星区别</li>
+</ul>
+</li>
+</ul>
+<h6 id="吸附"><a href="#吸附" class="headerlink" title="吸附"></a>吸附</h6><h6 id="瞄准-开镜速度"><a href="#瞄准-开镜速度" class="headerlink" title="瞄准/开镜速度"></a>瞄准/开镜速度</h6><h6 id="开枪倍率"><a href="#开枪倍率" class="headerlink" title="开枪倍率"></a>开枪倍率</h6><h6 id="持枪呼吸晃动"><a href="#持枪呼吸晃动" class="headerlink" title="持枪呼吸晃动"></a>持枪呼吸晃动</h6><h6 id="切枪速度"><a href="#切枪速度" class="headerlink" title="切枪速度"></a>切枪速度</h6><h6 id="持枪移动速度"><a href="#持枪移动速度" class="headerlink" title="持枪移动速度"></a>持枪移动速度</h6><h6 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h6><ul>
+<li>压枪<ul>
+<li>通过肌肉记忆 在连续射击时将鼠标向下移动与偏移系数相对应的距离</li>
+</ul>
+</li>
+<li>开枪节奏<ul>
+<li>在射速和准星扩散命中降低之间找平衡点</li>
+</ul>
+</li>
+</ul>
+<h5 id="配件"><a href="#配件" class="headerlink" title="配件"></a>配件</h5><p>通过配件调整数值<br>一般建议调整下限不低于 10%<br>依据游戏本质是想让玩家玩枪还是玩配件</p>
+<ul>
+<li><p>设计武器考虑</p>
+<ul>
+<li>能加什么配件</li>
+<li>配件都有些什么效果</li>
+<li>理论最大数值能达到多少</li>
+</ul>
+</li>
+<li><p>设计配件考虑</p>
+<ul>
+<li>能加在哪些武器</li>
+<li>加在不同武器上会不会有不同提升</li>
+</ul>
+</li>
+<li><p>例子</p>
+<ul>
+<li>pubg（20%）<ul>
+<li>枪口<ul>
+<li>子弹散布</li>
+</ul>
+</li>
+<li>枪托握把<ul>
+<li>后坐力</li>
+<li>开镜速度</li>
+</ul>
+</li>
+<li>弹夹<ul>
+<li>容量</li>
+<li>换弹时间</li>
+</ul>
+</li>
+<li>消音/倍镜<ul>
+<li>功能影响</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="获取成本"><a href="#获取成本" class="headerlink" title="获取成本"></a>获取成本</h5><p>物以稀为贵</p>
+<ul>
+<li>通常做法<ul>
+<li>资源捆绑</li>
+<li>概率捆绑</li>
+</ul>
+</li>
+</ul>
+<h6 id="资源捆绑"><a href="#资源捆绑" class="headerlink" title="资源捆绑"></a>资源捆绑</h6><ul>
+<li>例子<ul>
+<li>CS<ul>
+<li>狙击枪价格 &gt; AK 价格 &gt; 手枪价格</li>
+<li>需要玩家思考如何分配资源</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="概率捆绑"><a href="#概率捆绑" class="headerlink" title="概率捆绑"></a>概率捆绑</h6><ul>
+<li>例子<ul>
+<li>pubg<ul>
+<li>八倍镜 《 二倍镜</li>
+<li>好枪往往在仅有的几个空投里开出来</li>
+<li>如果有一个地点有非常强力的配件 玩家行为也会受到相应影响<ul>
+<li>前往该地的高手玩家变多</li>
+<li>初期战斗更加频繁</li>
+<li>依托该点进行偷袭等战术就会出现</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>影响<ul>
+<li>整局对战节奏</li>
+<li>高手和普通玩家的落点分布 游戏体验</li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/09/24/20220924-yyy001-gundesign/">https://medill-east.github.io/2022/09/24/20220924-yyy001-gundesign/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Learning-Notes/">
+                                    <span class="chip bg-color">Learning Notes</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/09/24/20220924-bayonetta-action/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220924111938.png" class="responsive-img" alt="20220924 - BAYONETTA - 令人印象深刻的角色动作">
+                        
+                        <span class="card-title">20220924 - BAYONETTA - 令人印象深刻的角色动作</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看白金工作室在 B 站上的《爆款游戏创作心法》视频，学习如何设计令人印象深刻的角色动作。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Platinum-Games/">
+                        <span class="chip bg-color">Platinum-Games</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/09/17/20220917-risk-and-rewards/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220917131009.png" class="responsive-img" alt="20220917 - Risk and Rewards">
+                        
+                        <span class="card-title">20220917 - Risk and Rewards</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，了解风险与回报！
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

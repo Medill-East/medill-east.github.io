@@ -1,0 +1,1335 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="《Yin Yang Messenger》 Demo 展示及分析, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>《Yin Yang Messenger》 Demo 展示及分析 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cover2.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">《Yin Yang Messenger》 Demo 展示及分析</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Portfolio/">
+                                <span class="chip bg-color">Portfolio</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Demo/" class="post-category">
+                                Study-Game-Demo
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-05-29
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-05-29
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    10 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="《Yin-Yang-Messenger》Demo-展示"><a href="#《Yin-Yang-Messenger》Demo-展示" class="headerlink" title="《Yin Yang Messenger》Demo 展示"></a>《Yin Yang Messenger》Demo 展示</h2><h3 id="视频展示"><a href="#视频展示" class="headerlink" title="视频展示"></a>视频展示</h3><video width="480" height="270" controls>
+  <source src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Yin Yang Messenger Compression.mp4" type="video/mp4">
+</video>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11g411R7J4/">b 站视频链接</a></li>
+</ul>
+<h3 id="试玩地址"><a href="#试玩地址" class="headerlink" title="试玩地址"></a>试玩地址</h3><p><a target="_blank" rel="noopener" href="https://haodongliao.itch.io/yin-yang-messenger">https://haodongliao.itch.io/yin-yang-messenger</a></p>
+<h3 id="截图展示"><a href="#截图展示" class="headerlink" title="截图展示"></a>截图展示</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/screenshot1.jpg" alt="善良灵魂与贪吃小猪"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/screenshot2.jpg" alt="恶灵与恶犬"></p>
+<h2 id="《Yin-Yang-Messenger》Demo-设计思路分析"><a href="#《Yin-Yang-Messenger》Demo-设计思路分析" class="headerlink" title="《Yin Yang Messenger》Demo 设计思路分析"></a>《Yin Yang Messenger》Demo 设计思路分析</h2><h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><p> 在中国传统文化中，公鸡是阳的象征之一。在这个游戏中，玩家将扮演一个能在阴阳状态间转换的信使，为坟墓中的灵魂带去消息。 路途中，玩家将遭遇恶犬、恶灵、善良的灵魂以及调皮的鬼魂，也会碰上只关心眼前吃食的小猪。 灵活使用阴阳状态的转换，留心坟墓中灵魂的遗言。</p>
+<h3 id="游戏整体说明"><a href="#游戏整体说明" class="headerlink" title="游戏整体说明"></a>游戏整体说明</h3><p>以下将从目标、路径、挑战、体验四个方面对游戏进行整体说明：</p>
+<h4 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h4><p>即游戏的结束条件<br>玩家需要通过操作，避开前方阻碍/搭建道路，到达终点</p>
+<h4 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h4><p>即玩家达到目标的手段<br>玩家可进行的操作有：移动、跳跃（可两次跳跃）、阴阳转换</p>
+<h4 id="挑战"><a href="#挑战" class="headerlink" title="挑战"></a>挑战</h4><p>即玩家在实现目标的路径中可能碰到的障碍</p>
+<h5 id="恶犬"><a href="#恶犬" class="headerlink" title="恶犬"></a>恶犬</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529145830.png"></p>
+<ul>
+<li>行为模式<br>恶犬平时会躲在自己的窝中，但若是玩家以阳状态靠近到恶犬的感知范围内，就会扑向玩家。若是在追击成功前离开窝太远，又会回到窝中。玩家若是被恶犬扑倒，游戏结束。</li>
+<li>应对方式<br>恶犬虽会追击阳状态，但却害怕阴状态。玩家可利用这一特性来调动恶犬位置，从而为自己争取前进空间。</li>
+</ul>
+<h5 id="贪吃小猪"><a href="#贪吃小猪" class="headerlink" title="贪吃小猪"></a>贪吃小猪</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529150238.png"></p>
+<ul>
+<li>行为模式<br>贪吃小猪什么也不管，只会埋头吃食。但若是感受到强大的灵魂，也会不情愿地勉强挪挪位置。</li>
+<li>交互方式<br>贪吃小猪不会伤害玩家，玩家可以站到其身上，将其作为垫脚处。会朝反方向原理善良的灵魂。</li>
+</ul>
+<h5 id="善良的灵魂"><a href="#善良的灵魂" class="headerlink" title="善良的灵魂"></a>善良的灵魂</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529145900.png"></p>
+<ul>
+<li>行为模式<br>善良的灵魂与世无争，只是在无聊游荡。但其若是感知到阴状态，便会紧紧跟随。</li>
+<li>交互方式<br>善良的灵魂不会伤害玩家，但玩家可以利用阴状态来将它带到贪吃小猪处，迫使小猪移动。</li>
+</ul>
+<h5 id="恶灵"><a href="#恶灵" class="headerlink" title="恶灵"></a>恶灵</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529150504.png"></p>
+<ul>
+<li>行为模式<br>恶灵不会对阳状态的玩家有任何反应，但若是玩家处于阴状态，恶灵就会慢慢靠近玩家，想要进行“夺舍”。若是被其夺舍成功，玩家便不再受控。</li>
+<li>应对方式<br>阳状态下恶灵不会有所行动，但恶灵会靠近处于阴阳转换状态的玩家。玩家可利用这一特性来调动恶灵位置，防止被其夺舍</li>
+</ul>
+<h5 id="调皮鬼"><a href="#调皮鬼" class="headerlink" title="调皮鬼"></a>调皮鬼</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529150851.png"></p>
+<ul>
+<li>行为模式<br>调皮鬼不会直接对玩家造成伤害，但却会对玩家操作方式造成影响。调皮鬼会不断在红绿两种状态间切换，且不断追寻玩家，若是被红色状态的调皮鬼追到，则玩家水平操作按键会反向（即原本向左的按键变为向右，反之亦然）；若是被绿色状态的调皮鬼追到，则玩家水平操作按键恢复正常。玩家每次被调皮鬼追到后会被降速，最多被降速两次。</li>
+<li>应对方式<br>调皮鬼总是能找到玩家，但它速度较慢，所以可以先引诱其到地图角落，然后一口气突破剩余障碍。</li>
+</ul>
+<h4 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h4><p>即期望玩家在游玩时获得的情感体验<br>在后面部分会展开描述，这里只进行列举</p>
+<ul>
+<li>被恶犬追的心跳</li>
+<li>被善灵帮的恍然</li>
+<li>被恶灵附身的无助</li>
+<li>被调皮鬼影响的恼人</li>
+</ul>
+<h3 id="目标体验分析"><a href="#目标体验分析" class="headerlink" title="目标体验分析"></a>目标体验分析</h3><h4 id="被恶犬追的心跳-第一关"><a href="#被恶犬追的心跳-第一关" class="headerlink" title="被恶犬追的心跳 - 第一关"></a>被恶犬追的心跳 - 第一关</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529152132.png"></p>
+<ul>
+<li>预期体验</li>
+</ul>
+<p>心跳+紧张</p>
+<ul>
+<li><p>实现手段</p>
+<ul>
+<li>恶犬的高速移动</li>
+<li>恶犬的范围探敌</li>
+</ul>
+</li>
+<li><p>预期的玩家行为方式</p>
+</li>
+</ul>
+<p>最开始进入第一关时有摄像机的视觉引导，玩家会知道需要前往墓碑。而恶犬一开始朝向右方，玩家来到恶犬附近时可能还在熟悉操作，但恶犬的速度非常之快，电光火石间战斗便已经结束。玩家这时候很可能会有种措手不及的感觉。</p>
+<p>下一次在面对恶犬时有了些谨慎，这时玩家会逐渐试探出恶犬的活动范围，但因为恶犬的移速太快，所以多数情况下还是来不及反应就游戏结束了。这时候玩家会注意到屏幕上方除了移动和跳跃，还有转换能力，借用转换能力玩家便可发现恶犬会原理处于阴状态下的玩家。利用这点便可调动恶犬走位，实现过关。</p>
+<p>过关后，会发现墓碑中的灵魂留下了遗言：</p>
+<blockquote>
+<p>Thank you! If you have trouble, go to the blue guy!</p>
+</blockquote>
+<p>这其实是对下关破关机制的提示。</p>
+<ul>
+<li>实际体验</li>
+</ul>
+<p>作为第一关，其实很大程度上会造就第一印象。而从给身边朋友的试玩反馈来看，对第一关的描述大多是“措手不及+心跳”。通关过程也基本和预期相符。</p>
+<ul>
+<li>题外话</li>
+</ul>
+<p>其实玩家可以不借助阴状态，直接通过极限的跳跃技巧来直接避开恶犬的扑咬。但其实很难做到这一点，所以算是给愿意探索的玩家留了一条捷径（速通，有√）。</p>
+<h4 id="被善灵帮的恍然-第二关"><a href="#被善灵帮的恍然-第二关" class="headerlink" title="被善灵帮的恍然 - 第二关"></a>被善灵帮的恍然 - 第二关</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529153433.png"></p>
+<ul>
+<li>预期体验</li>
+</ul>
+<p>迷茫+恍然</p>
+<ul>
+<li><p>实现手段</p>
+<ul>
+<li>无法直接跳上去的高台</li>
+<li>善灵+小猪+箱子的配合</li>
+</ul>
+</li>
+<li><p>预期的玩家行为方式</p>
+</li>
+</ul>
+<p>玩家来到高台之下，会发现无法跳上，如果跳下绿色毒池也会结束游戏。所以会尝试使用阴状态在图中乱跑，发现无论是小猪还是箱子都没有反应。这时候会发现地图中还有一个没有接触过的蓝色东西，结合上一关中的墓碑遗言，玩家会尝试性地靠近善灵。</p>
+<p>因为是无法跳跃到的高度，所以玩家只能通过阴状态接近善灵，发现善灵会跟随阴状态。此时玩家可能还是不知道能干什么，但反复尝试之后发现小猪会被善灵推远。利用这个机制，玩家利用阴状态带善灵来到右方，将小猪往左推，从而推下箱子（甚至小猪），从而有了登高的垫脚处。</p>
+<p>过关后，会发现墓碑中的灵魂留下了遗言：</p>
+<blockquote>
+<p>Thank you! Watch out for that purple guy!</p>
+</blockquote>
+<p>这其实是对下关恶灵的提示。</p>
+<ul>
+<li>实际体验</li>
+</ul>
+<p>从给身边朋友的试玩反馈来看，确实会出现不知道该干什么的情况，但因为只有那一条可解路径，所以还是能顺利通关。通关过程也基本和预期相符。</p>
+<h4 id="被恶灵附身的无助-第三关"><a href="#被恶灵附身的无助-第三关" class="headerlink" title="被恶灵附身的无助 - 第三关"></a>被恶灵附身的无助 - 第三关</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529154228.png"></p>
+<ul>
+<li>预期体验</li>
+</ul>
+<p>无助</p>
+<ul>
+<li><p>实现手段</p>
+<ul>
+<li>熟悉的恶犬</li>
+<li>只对阴状态敏感的恶灵</li>
+<li>被恶灵附身后无法操控</li>
+</ul>
+</li>
+<li><p>预期的玩家行为方式</p>
+</li>
+</ul>
+<p>玩家来到这关会看到熟悉的恶犬，心中不免一紧。下意识地会开始切换到阴状态来调动恶犬位置。</p>
+<p>当玩家切换到阴状态后会发现恶灵会向自己靠近。不知道这意味着什么的玩家可能会置之不理，但最终被恶灵附身的玩家会发现自己不受控制了，从而结束当局游戏。</p>
+<p>玩家这时会试探恶灵的行为方式，发现它只对阴状态离体后的阳感兴趣。知道了恶灵的行为方式，也就可以通关了。</p>
+<p>过关后，会发现墓碑中的灵魂留下了遗言：</p>
+<blockquote>
+<p>Thank you! The guy who changes color will make you dizzy!</p>
+</blockquote>
+<p>这其实是对下关调皮鬼的提示。</p>
+<ul>
+<li>实际体验</li>
+</ul>
+<p>通关过程基本和预期相符。</p>
+<h4 id="被调皮鬼附身的恼人-第四关"><a href="#被调皮鬼附身的恼人-第四关" class="headerlink" title="被调皮鬼附身的恼人 - 第四关"></a>被调皮鬼附身的恼人 - 第四关</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529154904.png"></p>
+<ul>
+<li>预期体验</li>
+</ul>
+<p>恼人</p>
+<ul>
+<li><p>实现手段</p>
+<ul>
+<li>熟悉的善灵与小猪</li>
+<li>会改变玩家水平方向按键操作的调皮鬼</li>
+<li>每次被调皮鬼追上后会被减速，一共会被减速两次</li>
+</ul>
+</li>
+<li><p>预期的玩家行为方式</p>
+</li>
+</ul>
+<p>玩家刚进到关卡就会注意到缓缓向自己移动的调皮鬼，经过恶灵关的玩家会对这些莫名靠近的灵体很谨慎，所以可能会想原理。一旦玩家在初始高台跳跃且按住右方向键不放，很可能就会被调皮鬼抓到，从而水平按键反向，直接落入毒池中，当局游戏结束。</p>
+<p>之后可能会需要经过几番试探才清楚调皮鬼的水平按键反向机制，其实正好和上关中墓碑留言相应“那个变色的家伙会让你晕头转向”。知道这一点后，便是利用熟悉的善灵调动贪吃小猪的机制来通关了。</p>
+<p>需要注意的是每次被调皮鬼追上后，玩家速度会下降，这其实会导致游戏难度不断提升，而且一旦在空中被调皮鬼追上很难处理，所以玩家会尝试先将调皮鬼勾引到角落再进行剩余部分的通关。</p>
+<p>然后就通关啦！</p>
+<ul>
+<li>实际体验</li>
+</ul>
+<p>通关过程基本和预期相符。试玩的朋友确实也被这个小调皮鬼搞了好几次哈哈。</p>
+<h3 id="灵感杂谈"><a href="#灵感杂谈" class="headerlink" title="灵感杂谈"></a>灵感杂谈</h3><p>本身想从阴阳出发，而 2D 平台跳跃算是现有工具和资源体系较为完善的。设计过程中其实受到了 <a target="_blank" rel="noopener" href="https://space.bilibili.com/618369?spm_id_from=333.337.0.0">鱼一元 001</a> 大佬关于平台跳跃游戏中 物品（Item）、装置（Devices）、环境（Environment）、状态（Status）四元素讲解的启发。将阴阳作为状态元素引入，而后又从需要发挥阴阳作用以及克制阴阳作用的点出发，分别设计了能够帮助阴状态的善灵（以及配套的小猪拱箱子机制），以及会附身出窍（阴状态离体）状态的恶灵。</p>
+<p>调皮鬼的设计倒是属于设计过程中的突发奇想，因为好的、坏的灵体都有了，那就设计一个亦正亦邪的吧！所以就有了调皮鬼。</p>
+<p>恶犬设计其实思路来源于“鸡犬不宁”，以及能“开天眼”的狗。所以就是与阳状态不死不休，但又畏惧阴状态的设定。</p>
+<p>整体其实经过了一个多月的思路反复，最终真正投入制作的时间可能也就一周左右。这要多亏了 <a target="_blank" rel="noopener" href="https://www.coursera.org/learn/game-design-and-development-2">Game Design and Development 2: 2D Platformer</a> 课程打的底子。UI 框架及音乐音效都来自这里面，确实是非常不错的课程。</p>
+<h3 id="可能的扩展思路"><a href="#可能的扩展思路" class="headerlink" title="可能的扩展思路"></a>可能的扩展思路</h3><ul>
+<li>新机制</li>
+</ul>
+<p>新的机制如果继续引入会考虑一些机制上的翻转。总的理念还是阴中有阳，阳中有阴，没有绝对。<br>比如引入阳光机制，对于原本跟随阴状态的善灵，若是将其带到了阳光之下，它就会受伤发狂，从而对阳进行追杀。<br>引入贿赂机制，对于原本执着于夺舍阳的恶灵，可通过一些手段来使其夺舍他人。<br>等等。</p>
+<ul>
+<li>新关卡</li>
+</ul>
+<p>其实 demo 中基本都是机制介绍，没有真正意义上设计复杂关卡，这也是自己所欠缺，需要不断学习的部分。</p>
+<h3 id="可能的商业化思路"><a href="#可能的商业化思路" class="headerlink" title="可能的商业化思路"></a>可能的商业化思路</h3><p>若是能丰富关卡，统一美术风格，也许可以考虑一次性买断制单机或手游。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/05/29/20220529-yinyangmeseenger-demo-showcase-analysis/">https://medill-east.github.io/2022/05/29/20220529-yinyangmeseenger-demo-showcase-analysis/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Portfolio/">
+                                    <span class="chip bg-color">Portfolio</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/05/30/20220530-theartofgamedesign-chap9/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712115919.png" class="responsive-img" alt="游戏设计艺术 第九章 游戏为玩家而生">
+                        
+                        <span class="card-title">游戏设计艺术 第九章 游戏为玩家而生</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            人们只能想到要更快的马，却没法想到汽车。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-30
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/29/20220529-theartofgamedesign-chap8/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712115450.png" class="responsive-img" alt="游戏设计艺术 第八章 游戏通过迭代提高">
+                        
+                        <span class="card-title">游戏设计艺术 第八章 游戏通过迭代提高</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            敏捷迭代，风险评估，适时停止。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

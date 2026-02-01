@@ -1,0 +1,1734 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220601 - 机核 游戏理论系列播客笔记, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220601 - 机核 游戏理论系列播客笔记 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601184005.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220601 - 机核 游戏理论系列播客笔记</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Learning-Notes/">
+                                <span class="chip bg-color">Learning Notes</span>
+                            </a>
+                        
+                            <a href="/tags/GCORES/">
+                                <span class="chip bg-color">GCORES</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-06-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-06-02
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    12.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    42 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Why-Note"><a href="#Why-Note" class="headerlink" title="Why Note"></a>Why Note</h2><p>最近听了机核的游戏理论系列播客，对其中所涉及到的一些游戏理论和想法进行了记录。</p>
+<h2 id="What"><a href="#What" class="headerlink" title="What"></a>What</h2><p>以下基本信息引用自<a target="_blank" rel="noopener" href="https://www.gcores.com/albums/119">机核播单</a>：</p>
+<blockquote>
+<p>由一直在高校从事游戏教育的张兆弓老师，为我们分享一些游戏研究理论。</p>
+</blockquote>
+<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><h3 id="什么是游戏"><a href="#什么是游戏" class="headerlink" title="什么是游戏"></a>什么是游戏</h3><h4 id="谈及游戏时-谈话的三个明显特征"><a href="#谈及游戏时-谈话的三个明显特征" class="headerlink" title="谈及游戏时 谈话的三个明显特征"></a>谈及游戏时 谈话的三个明显特征</h4><ol>
+<li>指向不明确</li>
+</ol>
+<p>很可能双方讨论的概念并不一致</p>
+<ol start="2">
+<li>讨论者中任何一方对自身对于游戏的理解特别笃定</li>
+</ol>
+<p>觉得自己的理解没问题，有些想当然</p>
+<ol start="3">
+<li>其实将第二点 讨论者所笃定的理解开诚布公后 发现其实和真正定义相距较远</li>
+</ol>
+<p>很容易说不明白</p>
+<h4 id="张兆弓老师对于游戏发展历程的分类"><a href="#张兆弓老师对于游戏发展历程的分类" class="headerlink" title="张兆弓老师对于游戏发展历程的分类"></a>张兆弓老师对于游戏发展历程的分类</h4><ol>
+<li>无道具时期的游戏</li>
+</ol>
+<p>该时期的游戏偏向纯粹意识形态上的或是捉迷藏之类的游戏。<br>举例：石头剪刀布<br>剪刀石头布甚至作为分配物资等重要决策的依据<br>可以延伸，比如谈话也可以理解为一种无道具游戏，双方有来有回，都在参与</p>
+<p>人们对于这一阶段的游戏的负面评价较少（或至少流传下来的很少）</p>
+<ol start="2">
+<li>有物理道具的游戏</li>
+</ol>
+<p>如：跳皮筋，扔沙包，麻将，桌游</p>
+<p>人们对这一阶段的游戏已经有了一些负面评价的声音，但也不多</p>
+<ol start="3">
+<li>电子游戏</li>
+</ol>
+<p>如借由计算机作为媒介的游戏，往后还会有基于物联网的游戏</p>
+<p>游戏在这一阶段能带来的变化与其媒介息息相关，如借由计算机大大提升了图形渲染能力和声音表达能力。</p>
+<blockquote>
+<blockquote>
+<p>未来借由物联网等设备会逐渐在触觉等目前还未被充分利用的感觉方面发力。<br>写到这里，想起以前不记得哪里看到的一个说法，人越往后，越来越“忙”，眼睛要看东西，耳朵被耳机塞住，以后可能手要带上手套（目前其实已经有利用超声波技术来模拟触觉反馈的装置，如 <a target="_blank" rel="noopener" href="https://www.ultraleap.com/">Ultraleap</a>）等等等等，感官没有一个闲下来的。<br>又想到《道德经》第十二章里写到：“五色令人目盲，五音令人耳聋，五味令人口爽，驰骋畋猎令人心发狂，难得之货令人行妨。是以圣人为腹不为目，故去彼取此。”过犹不及啊，还是让自己“闲”些好。</p>
+</blockquote>
+</blockquote>
+<h4 id="不同时期学者对于游戏的不同定义"><a href="#不同时期学者对于游戏的不同定义" class="headerlink" title="不同时期学者对于游戏的不同定义"></a>不同时期学者对于游戏的不同定义</h4><h5 id="无道具时期的游戏"><a href="#无道具时期的游戏" class="headerlink" title="无道具时期的游戏"></a>无道具时期的游戏</h5><ul>
+<li>柏拉图（公元前429年 - 前347年）<br>游戏是一场娱神的仪式。游戏作为神赐的能力，能够培育人们对美和善的感受能力和情感能力。</li>
+</ul>
+<h5 id="有物理道具的游戏"><a href="#有物理道具的游戏" class="headerlink" title="有物理道具的游戏"></a>有物理道具的游戏</h5><ul>
+<li>西格蒙德·弗洛伊德（1856年5月6日 - 1939年9月23日）<br>游戏是“人借助想象来满足自身愿望的虚拟活动”，驱使儿童去游戏的，是心理生活的快乐原则。游戏与其他心理事件一样，都受快乐原则的自动调节。在儿童的游戏中，快乐原则表现为能满足儿童的愿望，掌握创伤事件和使受压抑的敌意冲动得到发泄。游戏的对立面不是真正的工作，而是现实。</li>
+</ul>
+<p>他认为游戏是严肃的，特别是参与到游戏中的人，是严肃的。</p>
+<ul>
+<li>赫伊津哈<blockquote>
+<p>《游戏的人》（Homo Ludens）是荷兰学者约翰·赫伊津哈在1938年写的一本著作，它讨论了在文化和社会中游戏所起的重要作用。Homo Ludens，翻成中文为：人，游戏者，或简单称作“游戏人”，形式就像我们比较熟悉的 Homo sapien (智人)，是对“人”这种“生物”或“生活型态”做的概念化描绘。 Homo ludens 同时也是一个社会科学的理论模型，在此理论模型中阐明，一如在经济活动中，人们最主要透过游戏发展其技能。由于在游戏中有被规范的行动自由并要求独立思考能力，人类可以发现自己的特点并将从中所得到的经验转化入自己的人格塑造中。在此模型中指出，人类需要游戏来做为一种发展观念及意义的基本形式。作者在书中认为游戏同理性和制造同等重要。</p>
+<p>“如果要总结游戏的形式特征，我们不妨称之为一种自由的活动，有意识脱离平常生活并使之“不严肃”，同时又使游戏人全身心投入、忘乎所以的活动。游戏和物质利益没有直接的关系，游戏人不能从中获利。游戏在特定的时空范围内展开，遵守固定的规则，井然有序。游戏促进社群的形成，游戏的社群往往笼罩着神秘的气氛，游戏人往往要乔装打扮或戴上面具，以示自己有别于一般的世人。”</p>
+</blockquote>
+</li>
+</ul>
+<p>游戏不严肃，参与游戏的人严肃。</p>
+<ul>
+<li><p>爱因斯坦（1879 年 3 月 14 日 - 1955 年 4 月 18 日）<br>爱因斯坦曾说过：“玩是最高级的研究（Play is the highest form of research）。”</p>
+</li>
+<li><p>Roger Caillois<br>他在其著作里《Man, Play and Games》（1961）提到了游戏的6个特征： </p>
+</li>
+</ul>
+<p>1.free 自由<br>2.separate (from the routine of life) 非日常，与现实有明确界限<br>3.uncertain 不确定性，主要指由于玩家输入而带来的不确定结果<br>4.unproductive 不为功利性目的而存在<br>5.governed by rules 由规则控制<br>6.make-believe (pretend) 想象构建的虚拟世界，并投入其中</p>
+<h5 id="电子游戏时期"><a href="#电子游戏时期" class="headerlink" title="电子游戏时期"></a>电子游戏时期</h5><ul>
+<li><p>Brian Sutton-Smith<br>《Study of Games》由 Brian Sutton-Smith 和 Elliott M. Avedon 共同编写，是一本是对几乎所有游戏（棋盘游戏、纸牌游戏、策略游戏、儿童游戏和体育游戏）的综合研究著作。</p>
+</li>
+<li><p>Bernard Suits<br>《The Grasshopper: Games, Life and Utopia 》一书出版于1978年。作者在此书中不仅认为游戏可以被有意义地定义；他还认为，玩游戏是人类生存理想的核心部分。</p>
+</li>
+<li><p>Chris Crawford<br>Chris Crawford（1950年6月1日~）是美国电脑游戏设计师和作家。20世纪80年代，他设计并编程了几款重要的电脑游戏，包括《 Eastern Front (1941) 》和《权力平衡》。在开发者中，他以热衷于倡导游戏设计作为一种艺术形式而闻名，他创办了《计算机游戏设计杂志》，并与他人共同创办了游戏开发者大会（GDC）。<br>Chris Crawford 对于游戏的定义：游戏是一个独立闭合的、有明确规则的、从世界抽象而来的一个系统，这个系统从人的主观角度反映了现实世界的作用。</p>
+</li>
+</ul>
+<p>Chris Crawford 关于游戏的三层分类法（可能并不严谨，但可从中一窥游戏的属性）</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220531205047.png"></p>
+<ul>
+<li><p>Eric Zimmerman<br>他的观点是：游戏是一种系统，在该系统中玩家被吸引进入由规则定义的人为冲突，从而导致一定数量的结果。</p>
+</li>
+<li><p>Tracy Fullerton<br>他的观点是：游戏是一个独立闭合有明确规则的系统，这个系统吸引玩家参与到结构化的冲突中，并在冲突解决后产生不规则的结果。</p>
+</li>
+<li><p>张兆弓老师的观点<br>游戏是一套从世界抽象而来的系统，它包含4个特征：</p>
+</li>
+</ul>
+<p>1.玩家自愿参与<br>2.有规则边界<br>3.玩家行为给世界带来变化从而导致不确定的结果<br>4.参与者在试图达成目标的过程中会遇到一些阻碍。</p>
+<blockquote>
+<blockquote>
+<p>自愿、边界、不确定结果、阻碍</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>英国作家大卫·帕列特（David Sidney Parlett）<br>他在他的著作《牛津桌面游戏史》（1999）里认为游戏这个词被过度泛用了，过多的歧义使得游戏难以被定义。</li>
+</ul>
+<h4 id="对游戏的不同定义中的共识特征"><a href="#对游戏的不同定义中的共识特征" class="headerlink" title="对游戏的不同定义中的共识特征"></a>对游戏的不同定义中的共识特征</h4><p>各种不同游戏定义中都提到的特征</p>
+<ul>
+<li>自愿参与</li>
+<li>游戏本质：系统<ul>
+<li>可能是开放的，可能是闭合的，可能是不同玩家间的碰撞与反馈</li>
+</ul>
+</li>
+<li>人的参与会给游戏系统带来不确定的 outcome</li>
+</ul>
+<h4 id="关于游戏的严肃与非严肃的讨论"><a href="#关于游戏的严肃与非严肃的讨论" class="headerlink" title="关于游戏的严肃与非严肃的讨论"></a>关于游戏的严肃与非严肃的讨论</h4><p>游戏的严肃性体现在参与游戏的过程中，玩家玩游戏需要态度认真、全身心投入。<br>非严肃性体现在游戏的过程之外，从外观之，它与真实世界相隔离。</p>
+<blockquote>
+<blockquote>
+<p>写到这里想到《游戏设计原型与开发》一书中其实也写到关于游戏与现实的边界讨论，其中将游戏规则统治的临时世界称为魔力圈（magic circle）：<br>    magic circle —— 《Homo Ludens》Johan Huizinga<br>    魔力圈——游戏规则统治的临时世界——《Rules of Play》Katie Salen, Eric Zimmerman</p>
+</blockquote>
+</blockquote>
+<p>从严肃与非严肃也可以反观游戏设计，若是将游戏比作玩家需要解决的问题，那么可以问，设计师是否精心为玩家准备了“值得严肃对待的问题”。这其中也反映了设计师与玩家之间的信任关系，设计师准备了严肃的问题，相应的也需要玩家严肃对待。</p>
+<blockquote>
+<blockquote>
+<p>想到之前写为什么艾尔登法环能打动我的时候，原因之一就是其对于 layout 和 pacing 的设计与玩家之间形成了某种默契。<br>于 layout 而言，它基本会让你每次“走入死胡同”时都有所收获，要么是假的死胡同，柳暗花明；要么是真的死胡同，但会有物质奖励。从而让玩家每一次行动都带着期待，并且愿意“扫荡”地图，而不是直接直冲下一个赐福点而去。<br>于 pacing 而言，要具体细分为局内和局外。局内 pacing 主要指的是对于战斗节奏的掌控，“不要做多余的动作”，以及“不要贪刀”这两点应该是魂类游戏向玩家成功灌输的两点，这两点对应的其实是局内节奏的松弛有度，“二人转”时的观察其实是一种“松”，挥刀时或者弹反的瞬间对应着“紧”，松紧之间，让玩家沉浸在了局内。<br>局外 pacing 其实主要指的是对于整体游戏走向和事件触发的掌控。按照之前听的网易对于游戏体验的说法，即游戏是为了打造玩家的“非线性体验”，即心境心情的高低起伏。从这个角度来说，游戏中的每次战斗会将玩家非线性体验拉到一个峰值，而当这一次峰值成为极值之后，其实对下一次战斗在某种程度上就提出了更高的要求：若是下一次战斗体验的体验只不过约等于这一次，甚至低于这一次，那最终会导致玩家兴趣逐渐走低。所以在我理解中，最完美的体验打造方式不仅是要打造非线性体验的峰值，而且要尽可能多地创造更多极值，这样会让玩家能体会到的乐趣不断加深。（反过来说，温水煮青蛙和先引入最强的体验的做法有可能值得商榷）我所知的艾尔登法环与玩家默契的结合点在于，玩家每次战斗过后，上一次战斗的余韵其实会隐隐加深玩家对于下一次战斗体验的期待（即期望峰值更高），这对于设计师而言既是机会也是挑战。显然，FS 的设计师们做得很好。<br>当然了，并不是说他们已经做得完美。艾尔登法环令人诟病的其中一点其实也正是局外 pacing 的设计。由于其高自由度的开放世界设计，局外 pacing （什么时候遭遇什么怪物或触发什么事件）完全由玩家自己掌控，所以也有一些玩家会出现“一直在逛街，也不知道该干什么”的情况，从而失去游玩兴趣。<br>解决的办法当时想到的是可以更多地加入一些大世界中的随机事件来一定程度上调控玩家的局外 pacing。当然了，若是能根据玩家所出发的事件流来作为数据支撑，那么这样的调控就更加有针对性了。</p>
+</blockquote>
+</blockquote>
+<h4 id="关于游戏边界的讨论"><a href="#关于游戏边界的讨论" class="headerlink" title="关于游戏边界的讨论"></a>关于游戏边界的讨论</h4><p>在约翰·赫伊津哈的作品《游戏的人》中提到：游戏比文明，比人类都要诞生的早。人类对于游戏的探讨和研究从未停止，只不过是有意识和无意识的区别罢了。</p>
+<ul>
+<li><p>关于游戏边界的讨论</p>
+<ul>
+<li>赫伊津哈<ul>
+<li>游戏具有仿真性，是对真实世界的仿真</li>
+<li>游戏里涉及冲突，矛盾</li>
+</ul>
+</li>
+<li>赫伊津哈，Roger Caillois，Brian Sutton Smith<ul>
+<li>游戏涉及正规的、复杂的、关闭的系统</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Chris Crawford</p>
+<ul>
+<li>game is a subset of the reality</li>
+</ul>
+</li>
+</ul>
+<h4 id="游戏与文化的关系"><a href="#游戏与文化的关系" class="headerlink" title="游戏与文化的关系"></a>游戏与文化的关系</h4><p>赫伊津哈《游戏的人》里写道：“游戏是文化本质的、固有的、不可或缺的、绝非偶然的成分，游戏就是文明，文明就是游戏。”</p>
+<p>同样一个篮球，当它被漫无目的的拍打时它只是一个球，而当它被运用在篮球比赛里时它就成了游戏。</p>
+<blockquote>
+<p>游戏是伴随着人的发展文化的衍生所诞生的。</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>人类现如今的很多行为即便起于游戏，但最终其实已经不再落于游戏。换言之，游戏成为了途径和手段。比如开黑，比如逛街，这些行为都具有很强的社交属性在其中（不仅限于 people fun 的层面，而是 social 层面）。</p>
+</blockquote>
+</blockquote>
+<h4 id="玩本身就很重要"><a href="#玩本身就很重要" class="headerlink" title="玩本身就很重要"></a>玩本身就很重要</h4><blockquote>
+<blockquote>
+<p>其实我想到的是道家所讲无用之用。本就不该过于强调所谓严肃游戏的功能性，而忽视了玩本身这一行为所象征的人的某种本源渴望。<br>之前提到的陈丹青老师所说关于不用看懂艺术，和这里的玩本身就很重要其实是共通的。观看这一行为本身就已经是一种自然的，不假思索的对于外界的认知和探索，而玩这一行为本身，也是一种与世界交互，认知世界的方式。</p>
+</blockquote>
+</blockquote>
+<h4 id="张兆弓老师谈游戏与学习"><a href="#张兆弓老师谈游戏与学习" class="headerlink" title="张兆弓老师谈游戏与学习"></a>张兆弓老师谈游戏与学习</h4><blockquote>
+<p>游戏最本质的东西其实和学习很类似。</p>
+</blockquote>
+<ul>
+<li>学习怎么一步步“游戏化”<ul>
+<li>增加学习难度<ul>
+<li>比如从 1+1 -&gt; 123+4324</li>
+</ul>
+</li>
+<li>增加学习规则<ul>
+<li>比如要求限时回答</li>
+<li>比如增加犯错机会</li>
+</ul>
+</li>
+<li>增加剧情<ul>
+<li>比如增加故事背景<blockquote>
+<blockquote>
+<p>想到了小学应用题哈哈哈</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>设计游戏其实就是设计师为玩家设计一系列有趣问题</p>
+</blockquote>
+<h5 id="学者们对于游戏与学习关系的说法"><a href="#学者们对于游戏与学习关系的说法" class="headerlink" title="学者们对于游戏与学习关系的说法"></a>学者们对于游戏与学习关系的说法</h5><ul>
+<li><p>柏拉图</p>
+<blockquote>
+<p>柏拉图把游戏等同于神圣，称神圣为游戏，这并未亵渎神圣，反而把游戏概念升华到最高的精神境界。游戏是一切幼子（动物的人的）生活和能力跳跃需要而产生的有意识的模拟活动。</p>
+</blockquote>
+</li>
+<li><p>爱因斯坦</p>
+<blockquote>
+<p>爱因斯坦曾说过：“玩是最高级的研究（Play is the highest form of research）。”</p>
+</blockquote>
+</li>
+<li><p>让·皮亚杰</p>
+<blockquote>
+<p>玩是关于所有新生事物如何诞生的答案。</p>
+</blockquote>
+</li>
+<li><p>克里斯托弗·克劳福德</p>
+<blockquote>
+<p>乐趣是学习行为的情感反应。</p>
+</blockquote>
+</li>
+<li><p>拉夫·科斯特</p>
+<blockquote>
+<p>游戏是为了帮助我们学习图式而建立的系统。<br>fun is just another word of learning</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="认知科学与游戏"><a href="#认知科学与游戏" class="headerlink" title="认知科学与游戏"></a>认知科学与游戏</h5><blockquote>
+<p>认知科学，是一门研究讯息如何在大脑中形成以及转录过程的跨领域学科。它研究何为认知，认知有何用途以及它如何工作，研究信息如何表现为感觉、语言、注意、推理和情感。其研究领域包括心理学、哲学、人工智能、神经科学、学习、语言学、人类学、社会学和教育学。它跨越相当多层次的分析，从低层次的学习和决策机制，到高层次的逻辑和策划能力，以及脑部神经电路。“认知科学”这个词是克里斯多福·龙格-希金斯在1973年评注一部关于当时人工智能最新研究的著作莱特希尔报告时创造的。同10年内，《认知科学期刊》和认知科学学会相继于美国加州成立。认知科学的基本要义是：理解思维的最好途径，是认识脑中的代表性结构，以及这些结构中发生的计算性过程。</p>
+</blockquote>
+<ul>
+<li>认知学科中的解决问题领域：关注人是如何接受（识别）信息，怎么解决问题的。</li>
+</ul>
+<h6 id="让·皮亚杰的图式理论"><a href="#让·皮亚杰的图式理论" class="headerlink" title="让·皮亚杰的图式理论"></a>让·皮亚杰的图式理论</h6><ul>
+<li>图式 schema</li>
+</ul>
+<blockquote>
+<p>让·皮亚杰认为人在认识世界之中首先需要“图式”，在张老师看来类似于概念的封装。<br> 人实际上对于其概念的归纳并没有特别的意识，这可能是因为人类从非常小的时候就开始进行这样的活动。</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>想到了完形心理学，即人对于事物的认知是基于整体，“整体不同于其部件的总和”。如对于一朵花的感知，并不仅仅只是其颜色、形状、气味等（某种意义上的外界）元素的呈现，还有过往对于花的经验和印象（某种意义上的自身元素），外界元素和自身元素整体构成了对于花的认知。</p>
+</blockquote>
+</blockquote>
+<p>里面张老师也提到了计算机图像识别中怎么让计算机知道“这个”是狗，“那个”不是狗的问题哈哈。</p>
+<ul>
+<li>同化</li>
+</ul>
+<blockquote>
+<p>当我建立“图示”之后，就开始有能力去认知其是否在自己归纳过的范围内，这就是“同化”，听上去有点像举一反三。</p>
+</blockquote>
+<p>如这个是狗，那个也是狗，是一种已有图式的匹配。</p>
+<ul>
+<li>顺应</li>
+</ul>
+<blockquote>
+<p>当看到的事物超出了我的“图示”之后，我需要编辑新的“图式”来归纳新的事物。</p>
+</blockquote>
+<p>看到了一个好像狗，但其实不是狗的生物。是一种图式的更新。</p>
+<p>新手教程阶段其实可以看作某种“建立图式”的过程。即玩家学习游戏的交互方式和系统功能。</p>
+<h6 id="加涅的学习理论"><a href="#加涅的学习理论" class="headerlink" title="加涅的学习理论"></a>加涅的学习理论</h6><p>Robert Miles Gagné</p>
+<p>他将人要学习的内容分为五个类别三个方向</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601133205.png" style="zoom:67%;" />
+
+<ul>
+<li>五个类别（横向）<ul>
+<li>言语信息</li>
+<li>智慧技能</li>
+<li>认知策略</li>
+<li>动作技能</li>
+<li>态度</li>
+</ul>
+</li>
+<li>三个方向（纵向）<ul>
+<li>辨别能力<ul>
+<li>如区分水还是火</li>
+</ul>
+</li>
+<li>概念（和图式很像）<ul>
+<li>对同类事物共同本质特征的一个认识，基于此对事物分类</li>
+</ul>
+</li>
+<li>规则<ul>
+<li>技能的本质就是规则，是规则支配了人的行为</li>
+<li>还有一个高级规则的说法<ul>
+<li>加涅认为，高级规则是由各个规则单元组成的复杂结构。其实有点类似于“系统认知”。这些很多理论都与游戏十分类似。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>三个方向在学习中存在一定程度互斥，如经典的颜色冲突实验。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601135546.png" style="zoom: 50%;" />
+
+<p>游戏设计过程中通常针对具体关卡，其对能力考查的偏重并不一致。若是考察的是不同方向的能力，会有些“说不上来的不舒服”。所以也启发制作人们在设计时要明确目标玩家体验，到底偏向对于什么能力的考察，尽量不要多个方向一起出现，会有些“设计混乱”。</p>
+<p>张兆弓老师也举了相应例子：<br>以找茬游戏（考察的是认知能力）为例。</p>
+<ul>
+<li>第一关，从 20 个表情中找到一个不一样的；</li>
+<li>第二关，增加总数，且增加图形复杂度；</li>
+<li>第三关，增加复杂性，增加难度（让你找到最强的人，而不是直接告诉你找到“光头”）<ul>
+<li>不仅考察辨别能力</li>
+<li>也考察语言认知（需要理解“最强的人”的意义）</li>
+</ul>
+</li>
+<li>第四关，如果场景里面增加了一个不断移动的需要点击才能继续交互的元素<ul>
+<li>引入了动作方面的考察，其实和认知考察会有一点点冲突，所以会让人感觉有一些些“不适”</li>
+</ul>
+</li>
+<li>第四关，如果每隔一段时间所有元素排位刷新一下<ul>
+<li>和上一种加入动作考察的相比，其实还是深化考察了认知能力，所以玩家不会感觉“不适”</li>
+</ul>
+</li>
+</ul>
+<h6 id="加涅的九段式教学法"><a href="#加涅的九段式教学法" class="headerlink" title="加涅的九段式教学法"></a>加涅的九段式教学法</h6><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601174111.png" style="zoom:80%;" />
+
+<p>这个主要可以用于指导游戏机制教学的设计，不应该一直给玩家介绍新机制，而是在机制介绍完后，立马让玩家能用上，复习一下，这样能加深印象。</p>
+<p>同样，在进行机制介绍的时候，最好也能循序渐进，比如先是应对普通坑的简单跳，然后是面对长距离坑的极限跳。尽可能把同类机制一起介绍。螺旋上升！</p>
+<p>新手引导应该尽可能以抛出问题的形式来展开，如告诉玩家需要到达对岸，让玩家自己摸索跳跃机制，而不是直接告诉玩家按这个键是跳跃就结束了。</p>
+<p>综上，就是要通过问题引导，循序渐进地教，然后及时让玩家能用上复习！也不能一直横向展开（完全新的机制），要适度纵向深入（同一机制的深入应用）！</p>
+<p>里面也讲到了期望管理，其实也就是常说的玩家短中长期目标。一般来说，为玩家提供清晰的目标其实是一种 pacing 的调控机制，做得比较好的其实可以参考育碧《刺客信条》系列，其为玩家提供了较为清晰的目标规划可选项。而具有更高自由度的《塞尔达：旷野之息》和《艾尔登法环》其实玩家的短期目标没有那么明显，这两种情况下 pacing 其实更多由玩家自己掌控，其实在某种程度上更是考验设计师如何以更加自然，换言之，以更“不显眼”的方式来引入玩家目标。</p>
+<h5 id="学习与游戏的不同"><a href="#学习与游戏的不同" class="headerlink" title="学习与游戏的不同"></a>学习与游戏的不同</h5><h6 id="有趣和无趣"><a href="#有趣和无趣" class="headerlink" title="有趣和无趣"></a>有趣和无趣</h6><p>前面也提过了，游戏定义之一是自愿参与，学习有时未必是，但若是也能以自愿参与心态快乐学习，那称之为游戏也未尝不可。</p>
+<h6 id="游戏的封闭性"><a href="#游戏的封闭性" class="headerlink" title="游戏的封闭性"></a>游戏的封闭性</h6><ol>
+<li>行为导向的成果不同。游戏里学到的东西不一定能在现实世界用上。学习的东西一般通用性较强。</li>
+<li>和之前提到过的 magic ring 的边界性有关。只有参与游戏的人才能感受到游戏中的乐趣。举的例子是敲别人门的小孩觉得有趣，但被敲门的人会很烦（这也太真实了 233）；包括徒手攀岩也是，对于参与者本身可能是，但对于提心吊胆的家人就未必了。</li>
+</ol>
+<h6 id="游戏的不确定性"><a href="#游戏的不确定性" class="headerlink" title="游戏的不确定性"></a>游戏的不确定性</h6><p>玩家对于游戏的输入会带来不确定输出是游戏的重要特征之一。Rougelike 更是将随机性发挥到了极致。但对于学习而言，通常而言，并不是一个随机过程。</p>
+<p>这里举了抛硬币的例子。<br>抛硬币直观而言是一种随机行为，但其实从硬币被抛出的瞬间，其结果可以说已经注定。</p>
+<blockquote>
+<blockquote>
+<p>想到了大数定律。偶然的必然性。</p>
+</blockquote>
+</blockquote>
+<p>随机其实是一种人类错觉，是由于观测能力有限导致的一种不可知状态。但正是由于这种不可知，某种方面也可以说引起了人们的好奇心，推动技术不断向前，想要突破这种不确定的不可知。</p>
+<p>石头剪刀布胜率更高的策略（博弈论）：<br>赢的时候马上变换手势，输的时候，尽可能保持不变。</p>
+<p>解决问题其实是某种“战胜”不可知的过程，如果做到了，算是学习到了新的技能，就会高兴兴奋。</p>
+<p>游戏中，或者说计算机都是伪随机，真随机的模拟对于玩家体验来说很可能是非黑即白的。毕竟有可能出现怎么都能中，和怎么都不中。所以也才引入了所谓保底机制等。</p>
+<h3 id="游戏乐趣的三个阶段"><a href="#游戏乐趣的三个阶段" class="headerlink" title="游戏乐趣的三个阶段"></a>游戏乐趣的三个阶段</h3><h4 id="游戏前的乐趣（motivation）"><a href="#游戏前的乐趣（motivation）" class="headerlink" title="游戏前的乐趣（motivation）"></a>游戏前的乐趣（motivation）</h4><ul>
+<li>即想要参与其中的动机（下一个章节会提到）<ul>
+<li>比如听说它好难，所以好想玩玩看（后面会提到的 hardfun）</li>
+<li>比如题材吸引人（会和后面提到的 easyfun 相关），开不到真车，那在游戏里开车！</li>
+<li>people fun</li>
+<li>serious fun</li>
+</ul>
+</li>
+</ul>
+<h4 id="游戏中的乐趣"><a href="#游戏中的乐趣" class="headerlink" title="游戏中的乐趣"></a>游戏中的乐趣</h4><ul>
+<li>心流<ul>
+<li>挑战与技能水平近乎完美匹配的状态</li>
+</ul>
+</li>
+<li>大多数游戏的核心玩法和关卡设计都是为了尽可能延长这一阶段</li>
+</ul>
+<h4 id="游戏后的乐趣"><a href="#游戏后的乐趣" class="headerlink" title="游戏后的乐趣"></a>游戏后的乐趣</h4><ul>
+<li>和游戏化有关<ul>
+<li>以游戏方式促成某些行为</li>
+</ul>
+</li>
+<li>参与之后的乐趣<ul>
+<li>比如游戏的社区效应或玩家群聚效应</li>
+<li>比如会有成就感<blockquote>
+<blockquote>
+<p>游戏中也会涉及这一部分，比如你进入类似“练功房”之类的地方拼命刷级，过程其实很无趣，但最终等级得到提升的时刻是成就感，也就是乐趣来源</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="为什么玩游戏（Motivation）"><a href="#为什么玩游戏（Motivation）" class="headerlink" title="为什么玩游戏（Motivation）"></a>为什么玩游戏（Motivation）</h3><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529213324.png" style="zoom:50%;" />
+
+<h4 id="四种玩家类型理论"><a href="#四种玩家类型理论" class="headerlink" title="四种玩家类型理论"></a>四种玩家类型理论</h4><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529213448.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529213640.png" style="zoom:50%;" />
+
+<p>1996 年，理查德·巴图（Richard Bartle）在一篇名为《红心、梅花、方块、黑桃：MUD 游戏玩家分类》的文章中，提出了 MUD 玩家的四种分类方法。分别是：杀手型、成就型、探索型和社交型。该分类基于玩家的兴趣所决定。作者强调该分类其实只适用于 MUD，但没拦住大家扩散使用。后来该理论扩展到八种（x 内在动力/外在动力），但使用的人没有四理论多。</p>
+<ul>
+<li>杀手型玩家：其主要目的是对游戏环境造成破坏，发泄他们由现实社会造成的精神上的压力。 </li>
+<li>探索型玩家：探索型玩家由思维的方式又可以进一步划分为，审美型玩家（以感性思维为主）和学习型玩家（以理性思维为主）。审美型玩家会跑到游戏的每一个角落，尝试各种不同的行为看会发生什么。学习型玩家的乐趣在于了解游戏内部的机制。 学习型玩家更倾向于通过插旗PK，来提高自己的技术，研究游戏的技能系统。 </li>
+<li>社交型玩家：对社交型玩家而言，游戏本身只是一个背景，一个和其他玩家交互的平台，建立和别的玩家之间的关系是最重要的</li>
+</ul>
+<h4 id="马斯洛需求层次理论"><a href="#马斯洛需求层次理论" class="headerlink" title="马斯洛需求层次理论"></a>马斯洛需求层次理论</h4><p>游戏行业中对于玩家动机的解释很多基于马斯洛需求金字塔：</p>
+<blockquote>
+<p>马斯洛需求层次理论是亚伯拉罕·马斯洛于 1943 年提出，其基本内容是将人的需求从低到高依次分为生理需求、安全需求、社交需求、尊重需求和自我实现需求五种需求。 马斯洛需求层次理论是人本主义科学的理论之一，其不仅是动机理论，同时也是一种人性论和价值论。</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529213823.png" style="zoom: 50%;" />
+
+<h4 id="自我决定理论-SDT"><a href="#自我决定理论-SDT" class="headerlink" title="自我决定理论 SDT"></a>自我决定理论 SDT</h4><p>现在使用更广泛的，用于解释玩家动机的理论是自我决定理论（Self-Determination Theory）：</p>
+<blockquote>
+<p>自我决定是一种关于经验选择的潜能，是在充分认识个人需要和环境信息的基础上，个体对自己的行动做出自由的选择。自我决定论（Self-Decide Theory）由美国心理学家德西和瑞安提出，强调自我在动机过程中的能动作用。自我决定论将人类行为分为自我决定行为和非自我决定行为，认为驱力、内在需要和情绪是自我决定行为的动机来源。</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529214311.png" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529214603.png" alt="SDT 关于动力来源的解释" style="zoom:50%;" />
+
+<p>SDT 中将动力分为三种：</p>
+<ul>
+<li>自我控制（Autonomy），即像主动技能一样的控制自己的能力</li>
+<li>竞争（competence）</li>
+<li>关联（relatedness）</li>
+</ul>
+<h4 id="Hard-Fun"><a href="#Hard-Fun" class="headerlink" title="Hard Fun"></a>Hard Fun</h4><blockquote>
+<p>我们可能认为电子游戏很“有趣”，但在《失败的艺术》一书中，Jesper Juul 声称这几乎是完全错误的。当我们玩电子游戏时，我们的面部表情很少表现出快乐或幸福。相反，当我们失败、死亡或无法进入下一个阶段时，我们会皱眉、做鬼脸、沮丧地大喊大叫。人类可能有一种渴望成功并感到有能力的基本愿望，但游戏玩家选择参与一种他们几乎肯定会失败并感到无能的活动。那么，即使电子游戏让我们不开心，我们为什么还要玩呢? Juul 研究了这个悖论。在电子游戏中，就像在悲剧艺术、文学、戏剧和电影中一样，我们似乎想要体验不愉快，即使我们也不喜欢它。读者或观众对悲剧的反应通常被解释为一种宣泄，一种负面情绪的净化。</p>
+</blockquote>
+<blockquote>
+<p>买游戏其实是买了个问题回家，消费者真正的目的是回避这个问题。 —— 《失败的艺术》</p>
+</blockquote>
+<p>页游其实极大降低了关于难度部分的设计，突出的是 competence 属性，即玩家间的竞争。</p>
+<ul>
+<li>Hard Fun<ul>
+<li>越难越有乐趣</li>
+<li>人为什么玩游戏的原因之一</li>
+<li>游戏最本质动力之一</li>
+</ul>
+</li>
+</ul>
+<p>高尔夫球，被称为“绿色鸦片”，其上手难度极高（两万颗球入门），但入门后的玩家会被其深深吸引。</p>
+<p>Hardfun 一词由 Nicole Lazzaro 提出。</p>
+<blockquote>
+<p>Nicole Lazzaro，XEODesign 公司的创始人和总裁。在面向大众市场的娱乐产品的玩家体验设计(PXD)方面拥有 20 年的经验。被广泛认为是电子游戏界最优秀的女性之一，也是移动和社交游戏界的领军人物，Fast Company 认为 Nicole 是高科技领域最具影响力的 100 名女性之一，Gamasutra 也将她选为电子游戏界 20 名女性之一。</p>
+</blockquote>
+<p>Nicole Lazzaro 所提出的 4fun2key：</p>
+<ul>
+<li>easy fun<blockquote>
+<p>easy fun 在后面的解读中代指了所有种类的简单模式，并不单单指在游戏难度上简单，而是指整个过程是很简单的，能够轻而易举的完成这件事情。比如说一个男孩想要成为宇航员，但是不能完成这个梦想，于是家人给了他一套宇航服，他就获得了简单的快乐，那么这就是 easy fun。<br>比如有人要买一个杯子，但是他不喜欢白色的，所以就在被子上做了个 IP 联名，结果就买到了，就快乐了。这也是 easy fun。其实 easy fun 和声音画面等等很多方面都有联系，所以和游戏并不是强绑定的关系。</p>
+<blockquote>
+<p>其实和难度无关，我理解是一种对于期望的快速的“折中”满足方式</p>
+</blockquote>
+</blockquote>
+</li>
+<li>hard fun<blockquote>
+<p>Hard fun 其实是一种很矛盾的体现，是因为游戏难，他不断的抗拒玩家，从而使玩家产生了一种对抗的激情，随着不断解决难题，玩家会从中不断的收获乐趣。<br>Nicole 的老公作为一个玩家的时候，如果表示这游戏很难，那么最后就会一直玩下去。一旦觉得这个游戏简单了，那么很快就会放弃。<br>《Getting Over It with Bennett Foddy》<br>《只狼》其实是利用了一套强制引导体系，使得玩家不得不利用一些一般动作类游戏中非必须的操作来完成游戏。</p>
+<blockquote>
+<p>hardfun 也是我之前思考为什么《艾尔登法环》能吸引我一次次拿起手柄进行游玩这一问题的最终答案</p>
+</blockquote>
+</blockquote>
+</li>
+<li>people fun<blockquote>
+<p>people fun 的含义非常直接，就是人与人之间是相互需要的。有很多游戏沉迷于为玩家提供自组的空间，比如说《EVE》《传奇》。当玩家发现自己属于一个群体的时候，确实很容易产生满足感。</p>
+</blockquote>
+</li>
+<li>serious fun<blockquote>
+<p>serious fun 其实是指一种脱离纯粹娱乐性的快乐。而严肃游戏(Serious Game)，电子游戏的一种。最初被定义为“以应用为目的的游戏”，具体来讲，是指以那些以教授知识技巧、提供专业训练和模拟为主要内容的游戏。严肃游戏自上个世纪八十年代诞生以来，已经广泛应用于军事、医学、工业、教育、科研、培训等诸多领域。<br>开始的时候以娱乐性为目的自愿参与游戏，但在游戏进行或完成时一开始的娱乐性目的已经不重要了</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="认知理论"><a href="#认知理论" class="headerlink" title="认知理论"></a>认知理论</h5><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529220832.png" style="zoom:50%;" />
+
+<p>Richard Garriott 在回答“人为什么玩游戏”这一问题时引入了很多认知理论。</p>
+<blockquote>
+<p>认知理论（theories of cognition）是关于有机体学习的内部加工过程，如信息、知识及经验的获得和记忆、达到顿悟、使观念和概念相互联系以及问题解决的各种心理学理论。持学习的认知观的理论家有德国格式塔学派的主要代表人物、瑞士的皮亚杰、美国的布鲁纳与奥苏伯尔。尽管他们彼此间存在很大差别，但在学习问题的观点上有一些共同特点。一是他们确认，有机体习得的是知觉或认知结构的形成与变化。即学习的基础是有机体内部的、有组织的结构的形成与改组，而不是刺激与反应联结的形成或行为习惯的加强或改变。二是他们相信，影响学习的主要变量是刺激情境的整体性、突然的理解或知觉、有意义的发现与接受、认知结构的特点、注意或心向，而不是刺激与反应的接近、强化、强化程式。这一理论与发展智力和培养创造能力的教育理论相符，对解释较高级的认知学习较适合。</p>
+</blockquote>
+<blockquote>
+<p>认知理论是将人认知世界的方式方法用信息处理的方式进行描述。<br>即人类在接触任何知识时都有一个感知器（如眼耳口鼻），一个存储器（涉及长短期记忆），一个生成器（负责加工处理）</p>
+</blockquote>
+<ul>
+<li>认知理论解释什么是感受</li>
+</ul>
+<blockquote>
+<p>张老师的老师曾经给他讲过一个例子来解释感觉是什么，就是如果有一个身边的人，你很熟悉他，那么即便是在眼睛看不清正面的情况下也可以自觉的认知这个人的存在。而认知理论就是从科学的角度解释了感觉的存在。<br>其实是看见的瞬间完成了信息处理</p>
+</blockquote>
+<ul>
+<li>认知理论解释游戏 —— 解决问题能力</li>
+</ul>
+<blockquote>
+<p>解决问题能力是指人们运用观念、规则、一定的程序方法等对客观问题进行分析并提出解决方案的能力。 解决问题能力是指人们运用观念、规则、一定的程序方法等对客观问题进行分析并提出解决方案的能力。初级的能力表现在能够发现一般的显性问题，能够初步判断，可以简单处理；能力较强者，能在自己熟悉的领域或范围较容易发现隐藏的问题，有一定的发现问题的技巧，具备一定的分析能力，能够根据现象探求解决问题的途径，并找到答案，可以较好解决问题；更高层次的解决问题能力，实际是更早期地发现问题，感知外界对自己或工作生活地不良结合课堂，可以准确预测事情发展过程中的各种问题，并将其消灭在萌芽状态！同时能归纳总结问题发生的规律，可以指导提高他人发现问题的能力。</p>
+</blockquote>
+<blockquote>
+<p>人类大脑将所有得到的信息都符号化、模块化（语言是典型模块化过程）、抽象化。所以，认知理论其实是从科学的角度解释了人为什么玩游戏这件事情，将其总结为解决问题的方式之一。问题是什么、行为参与、解决方法三个方面分别对应了游戏规则、操作、和为什么玩游戏三个方面。</p>
+<blockquote>
+<p>人脑对于各种信息的高度封装，即共识的形成</p>
+</blockquote>
+</blockquote>
+<p>Chris Crawford 认为人玩游戏就是在解决问题，每次解决问题就会有随之而来的快乐。</p>
+<p>借用认知理论对游戏分类，其实就是基于同品类游戏具有相似的内核，即同类游戏会让你解决相似的问题。</p>
+<p>《Gossip》和《Her Story》就是设计师给玩家提供了大量信息，然后玩家需要从中思考事情来龙去脉（从而解决游戏所提出的问题）。</p>
+<blockquote>
+<p>Zachtronics 是一家美国的独立游戏开发公司，他们的游戏以充满创意的程序解谜元素著称，其代表作有《无限工厂》（Infiniminer Infinifactory），《太空化学》（SpaceChem），《巨著》（Opus Magnum）等。</p>
+</blockquote>
+<p>Hard fun 其实就是通过解决困难问题所带来的快乐。</p>
+<h5 id="内在动力和外在动力"><a href="#内在动力和外在动力" class="headerlink" title="内在动力和外在动力"></a>内在动力和外在动力</h5><blockquote>
+<p>内在动力是个体发自内心对于该项事物感到好奇，感到有兴趣，并认为能借由做这件事达成满足感与获得刺激。比如想去了解、想去达成、想获得刺激。</p>
+</blockquote>
+<blockquote>
+<p>外在动力相对于内在动力则是与实际的赏酬有关系，对于做这件事所获得的内在与外在赏酬来决定是否做这件事。 外在赏酬指做这件事会获得外在奖励或酬劳，内在赏酬指做这件事会被夸奖或避免被责骂排挤，还有自我认同赏酬是认为做这件事对自己有帮助，尽管不一定有内在动机。统整以上三者之后，认为整体来说做这件事对自己有帮助，此行为的动机型态亦较趋近内在动机</p>
+</blockquote>
+<h6 id="索玛立方实验"><a href="#索玛立方实验" class="headerlink" title="索玛立方实验"></a>索玛立方实验</h6><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529223626.png" style="zoom:33%;" />
+
+<ul>
+<li>实验概述</li>
+</ul>
+<p>索玛立方（Soma cube）是在 1933 年由皮亚特·海恩发明的智力游戏，索马立方是由七块多立方体组成的一个 3x3x3 的立方体，在不考虑旋转及反射的情形下，这七块索马立方可以组合成 240 个不同的形态。1969 年，当时还是卡内基美隆大学研究生的爱德华·德西（Edward L. Deci）邀请了多位大学生，要求他们在不同的奖励条件下破解索玛立方谜题，最终通过实验的结果来分析动机排挤效果及内在动机及外在动机的关系。</p>
+<ul>
+<li>实验描述</li>
+</ul>
+<p>实验房间内有一张桌子，其上有七块索玛立方、几张要求参与者完成的索玛立方谜题图片，以及《时代周刊》、《纽约客》、《花花公子》杂志。<br>主试坐在桌对面向被试说明要求，并监督被试破解谜题。<br>每次实验过程中，被试拼好三个谜题中的两个后，主试会暂停实验，借口离开 8 分钟，离开时告诉被试他会短暂离开，期间可以自由活动。而后主试到实验房间旁的房间观察 8 分钟自由时间内被试会做什么。<br>实验的评估标准即被试在这 8 分钟内的行为，是继续解密还是干别的事。</p>
+<ul>
+<li>实验分组</li>
+</ul>
+<p>实验设计为  between-subject，即每个被试只参与自己组别的实验。所有被试被分为 2 组，连续三天内，被试需要参与同等时间的实验。</p>
+<p>第一天，两组解开谜题都没有任何奖励。<br>第二天，A 组被告知，8 分钟内每解开一个谜题，奖励 1 美元，B 组和第一天一样，没有奖励。<br>第三天，A 组被告知实验经费只够支付昨天一天的奖金，今天不再有奖金，B 组还是没有奖励。</p>
+<ul>
+<li>实验结果</li>
+</ul>
+<p>第一天，两组解开谜题都没有任何奖励，两组被试表现相似，都继续解题，平均每人继续解题了 3.5~4分钟。<br>第二天，被告知有外在现金奖励的 A 组的解密兴趣激增，平均每人在主试离开的 8 分钟内解题超过 5 分钟，B 组被试表现和第一天类似。<br>第三天，A 组被告知不再有奖励，A 组被试在 8 分钟内的解密时间急剧降低，B 组花费的时间比前两次甚至还要长。</p>
+<h6 id="后续实验"><a href="#后续实验" class="headerlink" title="后续实验"></a>后续实验</h6><blockquote>
+<p>爱德华·德西后来又在 1971 年前后做了两次相似的实验。第二次实验的目标大体上与索玛立方实验相近，不过德西把实验对象从明确受邀参加的大学生换成了不知情的在报社兼职打工的学生，实验的任务要求从解立方谜题变成了让学生为报纸写标题。德西依然采用给予现金奖励的手段观察被试者前后的反应。整个实验在非室内环境进行，为期长达10周。实验结果也基本和索玛立方实验一致。</p>
+</blockquote>
+<blockquote>
+<p>第三次实验德西又回到了室内进行实验，第三次的内容和形式都与索玛立方实验基本一致，唯一变化的是第二天实验中的现金奖励变成了口头鼓励。最终实验的结果表明受到口头奖励的被试者在解谜上付出的时间和精力明显高于没有受到任何奖励的被试者。</p>
+</blockquote>
+<p>第二次是变体实验，但实验内核不变。<br>第三次将外在奖励变为了口头鼓励（提升内在动力），结果发现被试所花时间大大提升。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529232653.png" style="zoom:50%;" />
+
+<ul>
+<li>takeaways<br>外在动力会成为内在动力的 debuff ，即会削弱内在动力<br>口头表扬最为外在奖励会增加人们的内在动机</li>
+</ul>
+<blockquote>
+<p>这三次实验的结果证明了口头表扬作为外在奖励会增加人的内在动机。当一个人去完成一项任务时，像金钱这种实际的外在奖励被引入到这项任务中时，人会在认知上重新评估任务的重要性，基于有趣或快乐的内在动力会转移到外在的激励上，主要的关注点也会从享受任务转变过来为了获得实际的回报。然而，当口头表扬是在类似的情况下出现却会增加内在动力，人会在此影响下认为这项任务是一个愉快的任务，进而自主的去完成。</p>
+</blockquote>
+<h6 id="游戏之内也分了内外在奖励"><a href="#游戏之内也分了内外在奖励" class="headerlink" title="游戏之内也分了内外在奖励"></a>游戏之内也分了内外在奖励</h6><p>玩家出于自愿进行的游戏行为，本身没有外在动力。但在游戏之内，也分了外在与内在动力。如装备，经验等奖励就属于外在动力，而 NPC 的羁绊和鼓励等就属于游戏里的内在动力。</p>
+<blockquote>
+<p>游戏的核心玩法，即抛给玩家怎样的问题，一定要难住玩家，且通过内在动力来促使玩家不断向难题发起冲击</p>
+</blockquote>
+<h6 id="内外在动力与儿童教育"><a href="#内外在动力与儿童教育" class="headerlink" title="内外在动力与儿童教育"></a>内外在动力与儿童教育</h6><p>要鼓励不要奖励，鼓励孩子们去寻找自己的内在动力，即自己真正喜欢的东西</p>
+<h6 id="换皮为什么行不通"><a href="#换皮为什么行不通" class="headerlink" title="换皮为什么行不通"></a>换皮为什么行不通</h6><blockquote>
+<p>电子游戏作为一个相当多元的表现形式，它所能激发玩家产生内在动力的元素不一定只局限在游戏玩法本身，故事剧情、美术设计甚至是玩家社区的氛围都可能激发玩家的内在动力，进而让玩家们对游戏产生极大的热情。但如果仅仅通过游戏玩法这单一层面去分析游戏会受到欢迎的原因，得出的答案可能就会非常的缺乏说服力。</p>
+</blockquote>
+<blockquote>
+<p>对于那些核心吸引力不在玩法设计上的游戏来说，想要通过机械的换皮去复制成功是非常困难的事情，缺乏那些原有的激发玩家内在动力的元素只会让整个玩法系统看上去僵硬无趣，玩家们也自然不会对这个“新皮”产生什么热爱。</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>即使能“换”到外在动力，但与之相符的内在动力是换不来的</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>游戏机制的来源</li>
+</ul>
+<p>许多游戏机制其实是对现实生活的抽象和组合（也可以理解为一种创造）</p>
+<p>所以人们对事物的多维度感知，在换了环境（即换皮）之下，很可能无法复现，所以换皮无法成功。</p>
+<blockquote>
+<blockquote>
+<p>这也让我想到陈丹青老师在《局部》里面所提到的，一件作品，能够被感知到的最完整的样子和感觉，需要结合其原本的特定放置环境。即除了作品本身，其被放置的环境，无论是挂的那面墙，还是打的光，都会产生影响。这也是为什么一些作品被外借展览的时候，好像，少了那么点意思的原因。</p>
+</blockquote>
+</blockquote>
+<h4 id="反过来可以通过-信息密度-挑战难度-来对游戏进行分类"><a href="#反过来可以通过-信息密度-挑战难度-来对游戏进行分类" class="headerlink" title="反过来可以通过 信息密度-挑战难度 来对游戏进行分类"></a>反过来可以通过 信息密度-挑战难度 来对游戏进行分类</h4><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529234953.png" style="zoom:33%;" />
+
+<blockquote>
+<p>处于中间的基本都是神作，围棋处于右上角。</p>
+</blockquote>
+<p>游戏即是学习。</p>
+<blockquote>
+<p>人在玩游戏时必须要去接收游戏传递的信息，掌握游戏的机制和规则，这一切其实就是一个学习的过程。</p>
+</blockquote>
+<h3 id="对于游戏人才的培养"><a href="#对于游戏人才的培养" class="headerlink" title="对于游戏人才的培养"></a>对于游戏人才的培养</h3><p>其实是培养设计者观察归纳提取的能力</p>
+<p>里面有讲到不同阶段对于培养学生的侧重点是不同的：</p>
+<p>游戏迭代设计——培养工程意识<br>游戏叙事设计——着重培养观察和表达能力<br>表达自我—— find something beyond the game</p>
+<p>最后这一部分其实听下来比较有感触。结合最近听到的关于腾讯 Next Studio 的叶梓涛前辈所做关于哲学游戏《The Shape of Time》的分享，感觉哲学，尤其是道家哲学的游戏化表达是我自己的 “something beyond the game”。</p>
+<p>路漫漫其修远兮。革命尚未成功，同志仍需努力。</p>
+<h3 id="书单"><a href="#书单" class="headerlink" title="书单"></a>书单</h3><ul>
+<li><p>《艺术的故事》，贡布里希</p>
+<ul>
+<li>看任何的艺术作品，当看不懂的时候，回到其当时的历史语境下看<blockquote>
+<blockquote>
+<p>说起来看《局部》的时候，陈丹青老师也提了一个观点，看画，看艺术作品，无所谓看不看懂，不要在乎到底有没有看懂。关键是看，感受，至于懂不懂，没关系的。这可能已经有些返璞归真的感觉了。</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>电子游戏诞生前</p>
+<ul>
+<li>《游戏的人》，赫伊津哈</li>
+<li>《Man, Play and Games》，是 Roger Caillois 基于赫伊津哈的理论之后进一步讨论游戏的作品。</li>
+<li>《The Study of Games》，Brian Sutton Smith，该书诞生于电子游戏早期萌芽期</li>
+</ul>
+</li>
+<li><p>电子游戏诞生后</p>
+<ul>
+<li>《The Art of Failure》，Jesper Juul</li>
+<li>《Rule of Play》，Erik Zimmerman</li>
+<li>《The Art of Computer Game Design》，Chris Crawford，GDC 大会创始人之一，该书从艺术层面讲解游戏</li>
+<li>《Theory of Fun》，Raph Koster</li>
+<li>《Effects of Externally Mediated Rewards on Intrinsic Motivation》，Edward DECI</li>
+<li>《Why We Play Games: Four Key to More Emotion Without Story》，Nicole Lazzaro</li>
+</ul>
+</li>
+</ul>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.gcores.com/radios/101694">技法、观察、意识 — 中央美院与它的游戏设计教育</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.gcores.com/radios/125339/timelines?pi=1">游戏为何能深深吸引玩家？一堂深入浅出的游戏理论课程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.gcores.com/radios/141533">重识游戏Vol.1 游戏是什么</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.gcores.com/radios/141842">重识游戏Vol.2 游戏与学习</a></li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/06/01/20220601-gcores-playbeyondthegame/">https://medill-east.github.io/2022/06/01/20220601-gcores-playbeyondthegame/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Learning-Notes/">
+                                    <span class="chip bg-color">Learning Notes</span>
+                                </a>
+                            
+                                <a href="/tags/GCORES/">
+                                    <span class="chip bg-color">GCORES</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/06/04/20220604-after-reading-the-crowd/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220604151515.png" class="responsive-img" alt="20220604 - Thinking after the reading of 《The Crowd - A Study of the Popular Mind》">
+                        
+                        <span class="card-title">20220604 - Thinking after the reading of 《The Crowd - A Study of the Popular Mind》</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            群体语境下无归属玩家的个人叙事是否可能——读《乌合之众》有感。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Thinking/" class="post-category">
+                                    Thinking
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Thinking/">
+                        <span class="chip bg-color">Thinking</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/06/01/20220601-theartofgamedesign-chap10/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712120204.png" class="responsive-img" alt="游戏设计艺术 第十章 游戏在玩家的脑中">
+                        
+                        <span class="card-title">游戏设计艺术 第十章 游戏在玩家的脑中</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            四项主要心理能力让玩游戏成为可能：建模、专注、想象、共情。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

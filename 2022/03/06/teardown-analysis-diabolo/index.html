@@ -1,0 +1,1297 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="暗黑破坏神 3 拆解分析, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>暗黑破坏神 3 拆解分析 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306001035.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">暗黑破坏神 3 拆解分析</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                Study-Game-Analysis
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-03-06
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-04-29
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    7.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    23 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="《-暗黑破坏神-3》-Teardown-Analysis"><a href="#《-暗黑破坏神-3》-Teardown-Analysis" class="headerlink" title="《 暗黑破坏神 3》 Teardown Analysis"></a>《 暗黑破坏神 3》 Teardown Analysis</h2><h3 id="游戏概况"><a href="#游戏概况" class="headerlink" title="游戏概况"></a>游戏概况</h3><ul>
+<li>开发公司：暴雪</li>
+<li>上线时间：2012 年 5 月 15 日</li>
+<li>类型：RPG + PVE 刷宝</li>
+<li>特色：<ul>
+<li>多种职业+套装+技能组合可供选择</li>
+<li>几乎无尽的难度可供挑战</li>
+<li>鲜明的装备阶梯</li>
+<li>不断变强的可能性（巅峰等级系统）</li>
+<li>有趣的隐藏机制（藏宝秘窟、奶牛关等）</li>
+</ul>
+</li>
+</ul>
+<h3 id="游戏截图展示"><a href="#游戏截图展示" class="headerlink" title="游戏截图展示"></a>游戏截图展示</h3><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/screenshot.jpg" style="zoom: 50%;" />
+
+<h3 id="Core-Loop-展示"><a href="#Core-Loop-展示" class="headerlink" title="Core Loop 展示"></a>Core Loop 展示</h3><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/CoreLoopDiablo202203061208.jpeg"  />
+
+<p>这次的拆解分析会采用和上次稍不同的方式来进行。首先会从玩家视角出发对其需求进行分析，而后会从策划视角出发对一些拆解过程中所思所想的设计问题进行分析思考。</p>
+<h3 id="玩家视角-需求分析"><a href="#玩家视角-需求分析" class="headerlink" title="玩家视角 - 需求分析"></a>玩家视角 - 需求分析</h3><p>从 Coreloop 中可以看出，玩家追求基本分为三大方面，即观看新剧情、角色能力提升，以及天梯排名提升。其中观看新剧情的需求主要是满级前的基础需求，而角色能力提升是满级后的进阶需求，最终的天梯排名提升算是玩家的最终需求，三种需求分别对应基础玩家，进阶玩家和顶级玩家。</p>
+<h4 id="玩家基础需求-观看新剧情"><a href="#玩家基础需求-观看新剧情" class="headerlink" title="玩家基础需求 - 观看新剧情"></a>玩家基础需求 - 观看新剧情</h4><p>可以从 Coreloop 中看到，新剧情的解锁需要完成剧情任务。而剧情任务完成后一般可以获得经验奖励以及可能的普通装备奖励。这一阶段的基础需求完成后，玩家便会产生更高层级的角色能力提升需求。</p>
+<h4 id="玩家进阶需求-角色能力提升"><a href="#玩家进阶需求-角色能力提升" class="headerlink" title="玩家进阶需求 - 角色能力提升"></a>玩家进阶需求 - 角色能力提升</h4><p>在主线剧情通关后，玩家等级基本会达到接近满级的水平，此时可以选择通过以下几种方式来升到满级：</p>
+<ul>
+<li>完成悬赏任务</li>
+<li>到普通地图中杀怪</li>
+<li>到秘境地图中杀怪</li>
+</ul>
+<p>而升到满级之后，玩家的技能和天赋也会全部解锁，此时算是正式开始了下一阶段，渴望提升角色能力。</p>
+<p>可以从 Coreloop 中看到，玩家角色能力的提升有两大途径，即装备增强和角色增强，下面会分别对两种途径进行梳理。</p>
+<h5 id="角色能力提升-装备增强"><a href="#角色能力提升-装备增强" class="headerlink" title="角色能力提升 - 装备增强"></a>角色能力提升 - 装备增强</h5><p>游戏中的装备分为次级(灰色)/高等(白色)/魔法(蓝色)/稀有(黄色)/传奇/ 5种，其中传奇为橙色，套装为绿色。不同装备带有不同的词缀以及数值。后文中会主要使用颜色对装备进行指代，普通装备包括了灰色，白色，蓝色和黄色装备。传奇装备包括了橙色和绿色装备。</p>
+<ul>
+<li>新普通装备</li>
+</ul>
+<p>从 Coreloop 中可以看到，新普通装备的获取可以通过以下途径：1. 完成剧情任务；2. 地图中击杀掉落；3. 血岩碎片抽取。<br>普通装备主要服务于满级前的阶段，属于过渡装备，所以其淘汰率很高，后期可能会有两种用途：1. 分解之后获取材料；2. 黄色品质装备可在卡奈模仿处消耗材料升级为同类传奇品质装备。</p>
+<ul>
+<li>新传奇装备</li>
+</ul>
+<p>如前所述，传奇装备包含了橙色传奇装备和绿色套装装备。不仅如此，传奇品质之上还有更高品质的远古传奇和太古传奇装备。传奇装备也是角色能力提升的核心。这里一并将剩余几个装备增强机制介绍后统一梳理玩家通过装备增强角色的思路。</p>
+<ul>
+<li><p>装备附魔（洗装备属性）<br>装备附魔是一种通过重置现有装备的其中一条属性来实现的装备增强方式，即所谓的“洗装备属性”。同一件装备只能洗一条属性，并且每一条原属性可洗出的属性类型是预设的（但数值随机）。</p>
+</li>
+<li><p>宝石镶嵌<br>宝石镶嵌是一种通过将宝石镶嵌到有孔装备中来达到增强装备目的的方式，不同的宝石镶嵌到不同部位中会有不同的效果。</p>
+</li>
+<li><p>卡奈魔方能力<br>卡奈魔方是游戏中的一种特殊道具，其获取需要通过在特定普通地图中完成特殊任务。最常用的卡奈魔方能力可能涉及：1. 属性萃取；2. 套装转换；3. 稀有物品升级。</p>
+</li>
+</ul>
+<p><em>属性萃取</em>：传奇物品本身可能会带有特殊属性（橙字描述），但由于身上可装备物品的数量限制，很有可能出现想要 A 和 B 装备的特殊属性，但是只能装备一件装备的情况。可以通过卡奈魔方萃取 A 的特殊属性（A 在被萃取后会被毁坏）并装备该词条，此时相当于共同拥有了 A 和 B 两件装备的特殊属性。</p>
+<p><em>套装转换</em>：游戏过程中很可能出现的情况是一个套装的相同部件重复爆出了，此时可以通过卡奈魔方的套装转换功能，通过消耗材料将该部件转换为同一套装下的其它部件（有可能还是会转换出相同部件）。</p>
+<p><em>稀有物品升级</em>：该功能可以通过消耗材料对稀有物品进行品质升级。但因为消耗材料较多，所以并不是一种性价比很高的方式，玩家通常在缺少特定传奇装备情况下才会使用该功能来获取传奇物品。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306232538.png" style="zoom: 33%;" />
+
+<p>玩家的装备增强大致分为两个路线：1. 基于套装的装备增强思路；2. 基于散件的装备增强思路。无论哪种路线，其装备获取和增强方式都是一样的：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Equip202203061235.jpeg"></p>
+<p>这里主要关注新传奇装备。从图中可以看到，新传奇装备的获取可以通过以下途径：1. 地图中击杀掉落；2. 完成悬赏任务；3. 血岩碎片抽取。</p>
+<ul>
+<li><p>地图击杀掉落<br>如图所示，普通地图的爆率较低，玩家一般会选择通关秘境地图（以下简称小秘境）和宏伟秘境（以下简称大秘境）来获取新传奇装备。其中小秘境的怪物和普通怪物一样，会正常掉落物品，即玩家在通关小秘境过程中就可以有几率获取新传奇装备，在击杀小秘境最终 BOSS 也有较高几率获取新传奇装备。而大秘境的区别在于，其中除最终 BOSS 之外的怪物是不会掉落物品的，所以玩家只有成功击杀大秘境的最终 BOSS 才能有几率获取新传奇装备。</p>
+</li>
+<li><p>完成悬赏任务<br>玩家完成悬赏任务一般是为了获取特殊的悬赏材料用于卡奈魔方。完成悬赏任务虽然有几率获取新传奇装备，但因为其出货率不稳定，且不确定具体会拿到什么装备，所以一般玩家可能不会将悬赏任务作为获取新传奇装备的主要途径。除非是为了某些具有特殊出货率的装备，如完成第一章的悬赏任务有较高的几率获得降低一件套装所需件数效果的皇家华戒。</p>
+</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306232622.png" style="zoom:50%;" />
+
+<ul>
+<li>血岩碎片抽取<br>血岩碎片的获取方式有如下几种：1. 通关秘境（大或小均可）；2. 完成悬赏任务；3. 击杀血岩盗宝贼（小几率出现的特殊宝箱怪）。玩家可以通过花费血岩碎片抽取特定部位的装备，不同部位的抽取费用不同（武器（75）&gt;首饰（50）&gt;其他饰品（25））。该方式也是获取新传奇装备的常用方式之一。</li>
+</ul>
+<p>在获取到心仪装备后，玩家便可根据需要，使用装备附魔（洗装备属性），宝石镶嵌来对装备属性进行提升。</p>
+<h5 id="角色能力提升-角色增强"><a href="#角色能力提升-角色增强" class="headerlink" title="角色能力提升 - 角色增强"></a>角色能力提升 - 角色增强</h5><p>角色增强主要包括了以下几个方面：1. 新技能/天赋的获取；2. 巅峰属性提升；3. 特殊能力提升。</p>
+<p>其中新技能/天赋的获取需要依托于英雄等级，而玩家的技能和天赋搭配通常需要结合装备属性（如套装对某个技能有特殊加成情况下就会专门点出与之相关的技能与天赋）。</p>
+<p>巅峰属性的提升依托于玩家的巅峰等级，巅峰等级与玩家账号绑定，其升级消耗的是角色满级之后所获得的经验值。巅峰等级每提升一级就可以获得一点巅峰属性。玩家可以根据自己的需求进行加点。其中部分属性是有加成上限的（50 点），但主属性的加点是没有上限的。这意味着只要能够不断提高巅峰等级，就能够不断增加主属性，实现角色增强的目的。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/peakattribute.jpg" style="zoom:50%;" />
+
+<p>角色增强的最后一部分和特殊能力有关。这里的特殊能力指的是通关宏伟秘境之后能够获取的特殊宝石上的能力，通过宝石镶嵌机制可以将宝石镶嵌到特定部位（我所玩的秘法师职业的特殊宝石镶嵌部位通常为戒指）的装备中来得到这些特殊能力加成。一共 22 枚传奇宝石，在全部获取前，每次限时通关大秘境都能获取一枚新的传奇宝石，直到全部获取。且每次限时通关大秘境之后都能获得 3 次（如果在进入大秘境前选择加强大秘境则可以获得 4 次）传奇宝石的升级机会。每枚传奇宝石的效果都不一样，且升级到 25 级之后会解锁特殊能力。每次升级传奇宝石都可以对特殊宝石能力词条中的数值进行提升。</p>
+<h4 id="玩家最终需求-天梯排名提升"><a href="#玩家最终需求-天梯排名提升" class="headerlink" title="玩家最终需求 - 天梯排名提升"></a>玩家最终需求 - 天梯排名提升</h4><p>大部分玩家其实会停留在前一阶段，而有这一阶段需求的玩家基本可以称为该游戏的最核心玩家。玩家在这一阶段的追求是在尽可能短的时间内通关更高等级的大秘境，从而获得更高的天梯排名（基于大秘境等级，同等级则用时少的排名高），收获荣誉与游戏内奖励。</p>
+<h3 id="策划视角-相关设计反思"><a href="#策划视角-相关设计反思" class="headerlink" title="策划视角 - 相关设计反思"></a>策划视角 - 相关设计反思</h3><p>这里对拆解过程及游玩过程中所想到的一些点从策划视角进行设计反思。</p>
+<h4 id="游戏的核心目标体验是什么？游戏通过哪些手段来实现核心目标体验？"><a href="#游戏的核心目标体验是什么？游戏通过哪些手段来实现核心目标体验？" class="headerlink" title="游戏的核心目标体验是什么？游戏通过哪些手段来实现核心目标体验？"></a>游戏的核心目标体验是什么？游戏通过哪些手段来实现核心目标体验？</h4><p>我个人认为暗黑破坏神 3 的目标体验有以下几方面：1. 爽快感；2. 挑战感；3. 目标感。</p>
+<ol>
+<li>爽快感<br>何为爽快：这里的爽快主要有两方面，即装备掉落时的获得感以及造成伤害时的满足感。<br>何以爽快：如上所言，爽快感主要体现在装备掉落和伤害机制。</li>
+</ol>
+<p>设计师通过视觉和听觉两方面加强了装备掉落时的获得感。<br>视觉层面上，传奇物品掉落时会有相应的橙色或绿色光柱冲天而立，十分抓眼。而听觉层面上，物品掉落时会有金属坠地的声音，这也在另一方面加强了玩家“出货了”的心理预期，令人满足。此外，玩家在 NPC 处消耗血岩碎片抽取物品时也会有“大量出货”的兴奋感。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/equip.jpg" style="zoom:50%;" />
+
+<p>而造成伤害的满足感主要通过视觉层面和机制层面得以加强。<br>视觉层面上，在玩家打开伤害显示后（默认打开），玩家的每一次伤害都通过飘字形式得以显现，暴击伤害还会以橙色字体突出显示。这样的即时视觉反馈很好地满足了玩家“造成了成吨输出”的心理预期，令人满足。而机制层面主要指的是玩家借助套装或特殊装备可以实现的伤害质变。套装在完全组装之后其伤害提升是质变的，玩家在套装组成前和组成后能够体会到明显的伤害变化，非常爽快。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306232710.png" style="zoom:50%;" />
+
+<ol start="2">
+<li>挑战感<br>何为挑战：这里的挑战主要有两方面，即角色装备提升的困难感和通关更高难度秘境的困难感。<br>何以挑战：角色装备提升的困难感主要是通过装备掉落几率体现的，而限时通关秘境的困难感主要通过相关机制体现。</li>
+</ol>
+<ul>
+<li>装备提升的困难感</li>
+</ul>
+<p>游戏进行到中后期，基本能够凑齐所玩英雄的所有套装以及大部分传奇物品，再之后想要提升需要靠以下几种方式： 1. 通过装备附魔对装备属性进行提升；2. 继续刷图来获取同一装备的更高品质装备。</p>
+<p>其中通过装备附魔对装备属性进行提升的方式只能在一定程度上实现伤害的量变提升，无法达到质变提升。并且前面也提到过，附魔时能够“洗”的属性是基于物品原本的属性类型的，并不能“洗”出所有的属性，所以这一方式对于角色装备的提升其实较小。</p>
+<p>前面已经大致提过游戏中的装备阶层是次级(灰色)/高等(白色)/魔法(蓝色)/稀有(黄色)/传奇/ 5种，其中传奇为橙色，套装为绿色。而传奇物品中也有更细的品级分类，从低到高依次是传奇，远古传奇，太古传奇。远古和太古物品和传奇物品大致相同，但基础属性（伤害或护甲）以及非百分比词缀的上下限数值都较高。</p>
+<p>只有达到70级的角色，才能在苦痛难度下获得远古物品，掉落在地时，远古物品的橙色光效和普通传奇物品相同，只有在辨识后才能确定是否是远古物品。在经过辨识后，远古物品的物品图标会有橙色的边框（套装物品为绿色边框），物品描述中也会标明“远古”。它们会通过全部途径掉落，包括怪物、宝箱、卡达拉、赫拉迪姆宝箱、卡奈魔盒，或者由铁匠与珠宝匠制造。</p>
+<p>太古物品掉落在地时会带有闪亮的红色光柱，游戏中任何产出传奇物品的途径都可能掉落，包括赫拉迪姆宝箱、卡达拉和卡奈魔盒，但你必须先单人成功完成一个最低70层的大秘境才有获取太古物品的资格。太古物品比远古更加稀有，并且所有词缀都呈现完美的远古级别数值，包括物品的传奇威能。</p>
+<p>在查找相关资料时正好找到了暴雪官方新闻中对于太古物品与开发理念的解读，这里直接引用过来：</p>
+<blockquote>
+<p>太古物品主要面向基本完成了角色技能配置或赛季旅程，但还想要继续玩下去的玩家。装备很好并且将大部分时间花在升级巅峰和传奇宝石的非赛季玩家也能通过太古物品中获得乐趣。在每个部位都得到远古物品以后，我们希望延续玩家看到装备掉落、在卡达拉处消耗血岩碎片时的兴奋感。太古为专注型玩家提供了完成一整套完美配置的途径，不再需要去升级。</p>
+</blockquote>
+<p>可以看到官方对于太古物品的描述基本将其作为了游戏的最终阶层物品。在这样的前提下，其爆率其实也极低（据说是 1%，即 100 件传奇物品中能出一件）。越往后其实能用的新装备的获取也越来越困难，符合心理预期，但也确实令人挫败。</p>
+<ul>
+<li>通关更高难度秘境的困难</li>
+</ul>
+<p>这一点主要是通过以下几种机制实现的：1. 限时通关；2. 难度倍增；3. 死亡后复活时长延长；4. 装备损毁；</p>
+<p><em>限时通关</em>：小秘境的通关是不限时的，玩家只需要击杀足量怪物便可通关，但大秘境的通关是限时的，这一机制其实大大增大了通关大秘境的难度。<br><em>难度倍增</em>：这个主要是通过数值调整实现的，高难度秘境每高一个等级，其怪物属性会成倍提升，玩家在游玩时会面临“你打怪物在磨血，怪物打你就一刀”的局面。<br><em>死亡后复活时长延长</em>：玩家每在秘境中死亡一次，复活时间就会延长五秒（至多三十秒）。而在限时机制下，每分每秒都显得格外珍贵。<br><em>装备损毁</em>：游戏中的装备是具备耐久度属性的，除去日常情况下的损耗，玩家每次死亡都会使得装备耐久度整体下降 10%，也就是说如果你以装备满耐久度进入秘境，但在其中死亡达到十次，装备就会损毁（不会消失，但需要回到城镇找铁匠修复后才能恢复），这样的机制也增强了通关秘境的难度。</p>
+<ol start="3">
+<li>目标感<br>何为目标：即玩家游玩时对于变强的追求。<br>何以目标：游戏目标感依靠装备和巅峰等级系统塑造。</li>
+</ol>
+<p>玩家在游戏中的目标简言之是让自己变得更强，而实现这一目标的途径会随着角色的不断增强最终聚焦到装备属性和巅峰等级的提升。<br>如前所述，游戏中的高级装备会有颜色和词条的区分，前中期会让玩家产生一种绿色强于橙色的颜色偏见，但随着角色不断增强，也随着玩家获得了远古和太古物品的获取资格，这种颜色偏见会逐渐消失，也让玩家一直有“更强的装备”能够追求。<br>变强的另一途径是不断获取经验，提升巅峰等级，从而提升巅峰属性。不设上限的巅峰等级使得玩家永远可以变强。</p>
+<h4 id="作为一款刷宝游戏，其重复可玩性如何保证？"><a href="#作为一款刷宝游戏，其重复可玩性如何保证？" class="headerlink" title="作为一款刷宝游戏，其重复可玩性如何保证？"></a>作为一款刷宝游戏，其重复可玩性如何保证？</h4><p>暗黑三的重复可玩性主要通过以下三方面的机制来保证：</p>
+<ol>
+<li>装备可提升性</li>
+<li>难度增长非线性</li>
+<li>等级可提升性</li>
+</ol>
+<ol>
+<li>装备可提升性<br>如前所述，暗黑 3 中透明的装备阶层使得绝大部分情况下玩家总有更高等级的装备可以追求，此种情况下会促使玩家通过不断刷图来获取可能的新装备。</li>
+<li>难度增长非线性<br>暗黑 3 中的难度提升是非线性的，越往后难度会越来越高，这意味着玩家在后期想要通关更高等级的秘境不是一件容易的事情，此种情况会促使玩家选择通关更低等级的秘境来获取可能的新装备以及增长角色等级。</li>
+<li>等级可提升性<br>巅峰等级系统的引入使得玩家永远都有变强的机会，面对难以打过的高等级秘境，设计师为玩家保留了一丝只要不断刷图，即使无法获取心仪装备，也能变强从而通关的可能性。</li>
+</ol>
+<h4 id="巅峰等级系统的设计意图"><a href="#巅峰等级系统的设计意图" class="headerlink" title="巅峰等级系统的设计意图"></a>巅峰等级系统的设计意图</h4><ol>
+<li><p>降低游戏挫败感<br>如前所述，巅峰系统的引入为玩家保留了 一条永远能够变强的道路，若是没有巅峰系统，在面对无法攻克的高等级秘境时，能做的只有刷出更好的装备这一条路，在后期心仪装备出货率极低的情况下无疑会让玩家产生挫败感。而巅峰等级系统的引入带来的另一条变强之路会让这样的挫败感减少。</p>
+</li>
+<li><p>保障老玩家利益的同时利于引入赛制机制<br>巅峰等级系统的出现可以使得一直游玩的老玩家始终在装备和角色属性上领先于后面进入游戏的新玩家。若是没有巅峰等级系统，那么新老角色的差距便只有装备属性，即使只有较低概率，但是新玩家很可能会在短时间内就“赶上”玩了很久的老玩家，这不利于保障老玩家的利益。但正因如此，为了让新老玩家有机会“同台竞技”，赛制机制的引入使得玩家均需“从零开始”。如此一来，巅峰等级系统的引入便实现了保障老玩家利益的同时利于引入赛制机制的双赢局面。</p>
+</li>
+</ol>
+<h4 id="为什么一开始提升游戏难度时金币和经验涨幅一致，但难度越高，经验涨幅大大高于金币涨幅了？"><a href="#为什么一开始提升游戏难度时金币和经验涨幅一致，但难度越高，经验涨幅大大高于金币涨幅了？" class="headerlink" title="为什么一开始提升游戏难度时金币和经验涨幅一致，但难度越高，经验涨幅大大高于金币涨幅了？"></a>为什么一开始提升游戏难度时金币和经验涨幅一致，但难度越高，经验涨幅大大高于金币涨幅了？</h4><p>从现象出发，即越往后设计师将经验的比重视为比金币更高。从 Coreloop 中可知，经验的流向只有一个地方，即用于提高巅峰等级，属于角色增强，而金币的流向却有很多，但主要都是用于装备增强。结合前面对于巅峰等级系统的分析，从现象出发可知到后期玩家能够实现的装备增强较少，所以对金币的需求会减少，但是巅峰属性作为能够在后期增强玩家的唯二途径之一，其增长需要依靠巅峰等级的提升。该设计强化了巅峰等级系统的作用，保障了玩家不断变强的可能性。</p>
+<h4 id="宝箱怪物，宝箱关，奶牛关的设计意图"><a href="#宝箱怪物，宝箱关，奶牛关的设计意图" class="headerlink" title="宝箱怪物，宝箱关，奶牛关的设计意图"></a>宝箱怪物，宝箱关，奶牛关的设计意图</h4><p>宝箱怪物，即游戏中的各式盗宝地精，击杀后通常会有丰厚奖励（装备/血岩碎片/宝石/金币/材料），玩家周围有宝箱怪物时可以听到其笑声的特殊音效。宝箱关，即拥有多个宝箱怪物的藏宝秘窟，可以通过在卡奈魔方中放入连环戒并直接转化来打开通往藏宝秘窟的传送门。奶牛关，是另一个特殊地图，可以通过在卡奈魔方中放入牛王戟斧并直接转化来打开通往奶牛关的传送门。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306232750.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220306211538.png" style="zoom:50%;" />
+
+<p>虽然无论是击杀宝箱怪物，通关藏宝秘窟或是奶牛关中能获得较多的软货币或是材料，甚至是好的装备，但因为碰见宝箱怪物的几率较低，以及刷出这两件特殊装备的概率也不高，所以这些机制的设计其实偏向于游戏中的调节机制。</p>
+<p>玩家在进行大量刷图后肯定会感到疲惫，而这些调节机制的引入可以在很大程度上增强游戏乐趣性以及缓解玩家疲劳。盗宝贼特殊音效的出彩设计也形成了一种操作性条件反射，即让玩家一听到盗宝贼的笑声就会兴奋地在周遭寻找它的身影。</p>
+<h4 id="拆解系统的设计目的"><a href="#拆解系统的设计目的" class="headerlink" title="拆解系统的设计目的"></a>拆解系统的设计目的</h4><p>和大多数游戏中的拆解系统一样，其设计是为了提升无用装备的价值，让玩家即使进行到中后期不再需要这些较低级装备时也能让它们派上用场。但暗黑 3 的拆解系统有两点值得一提：1. 白装拆解材料；2. 连环戒。</p>
+<ol>
+<li>白装，即次级装备，在游戏中属于很早期的装备，一些游戏中虽然也设计了拆解系统，但玩家看到白装也会直接忽视。但暗黑 3  中白装能够拆解出其它品质装备无法拆解获得的<code>万用材料</code>，其他途径要获取该材料较为困难（开地图中的箱子有较小几率获得）或性价比较低（通过卡奈魔方消耗高级材料转换）。这一设计使得白装的被拾取率和价值大大提高。</li>
+<li>连环戒，即上面分析宝箱关时的特殊装备，其特殊属性是能够召唤一只盗宝地精为你拾取普通装备，并在拾取一定件数后掉落一件稀有装备，这一特殊属性的设计很好地增添了游戏性。</li>
+</ol>
+<h3 id="发现的潜在问题和思考"><a href="#发现的潜在问题和思考" class="headerlink" title="发现的潜在问题和思考"></a>发现的潜在问题和思考</h3><ol>
+<li>后期提升乏力，目标感不足</li>
+</ol>
+<p>虽然前面分析过，游戏的目标感是不断变强，而不断变强的手段便是追求可知的更高阶装备或是不断提升巅峰等级和属性。但我作为玩家在后期基本完成配装后，想要限时通关更高等级大秘境确实非常困难，而除获取更好装备的另一种增强途径就只有重复刷图提升巅峰等级，疲倦的同时提升也较小，这就导致在中后期会产生乏力和目标感不足的情况。</p>
+<p>针对这种情况其实能做的不多，只能为玩家提升路上做一些锦上添花的小机制，以作为玩家不断提升的鼓励。游戏本身已经设计了类似的机制，即当玩家巅峰等级不断提升时，可以获取到更加炫酷的头像框。与之类似的，我个人认为可以为宠物也添加这样的机制，即随着玩家巅峰等级不断提升，宠物的形态也会发生进化。这样的机制设计能在不改变游戏本身的情况下作为玩家不断提升的潜在动力。</p>
+<ol start="2">
+<li>部分套装可用性不高</li>
+</ol>
+<p>从玩家角度出发，我个人较为熟悉的是秘法师角色，而在游戏进行到中后期时发现部分套装的可用性其实并不高的这一现象。和玩了多个赛季的老玩家聊过之后了解到其实随着赛季更迭，不同套装的强度是在不断变化的。另一方面，游戏本身的天梯系统其实为这一问题也算是设计了相应的解决方案：即为穿戴不同套装（或是只穿戴散件）的玩家单独设计天梯排行，这样的设计使得每一种装备搭配都有其发挥的舞台，在某种层面上实现了“百花齐放”。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这次的拆解分析除了 Coreloop 之外，从玩家视角和策划视角分别对玩家需求和相关设计进行了分析和反思。期间确实也加深了一些对于游戏的理解。在和友人聊天过程中还了解到了暗黑 3 中的宠物掉落机制：宠物会作为白装掉落，玩家即使爆出宠物之后也很有可能会发生忽视不捡取或是直接将其分解的情况。这样的机制虽免不了发生玩家不小心“错失”宠物的情况，但却无形之中调动了玩家的游戏参与感以及保障了游玩新鲜度，不得不说是一个出色的设计。</p>
+<p>综上，本文借助 Teardown Analysis 方法对游戏《暗黑破坏神 3》进行了分析，而后阐述了此次分析期间发现的潜在问题和思考。</p>
+<p>感谢您的阅读，欢迎大家批评指正！</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://news.blz.cn/zh-cn/diablo3/17900086/%E4%BC%A0%E5%A5%87%E7%89%A9%E5%93%81%EF%BC%9A%E8%BF%9C%E5%8F%A4%E4%B8%8E%E5%A4%AA%E5%8F%A4%E6%8C%87%E5%8D%97">传奇物品：远古与太古指南</a></li>
+<li><a target="_blank" rel="noopener" href="http://games.sina.com.cn/o/z/diablo3/2015-09-01/fxhkafa9529522.shtml">看图识怪：暗黑3盗宝地精家族怪物图鉴</a></li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/03/06/teardown-analysis-diabolo/">https://medill-east.github.io/2022/03/06/teardown-analysis-diabolo/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/04/28/index-notes/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428235020.png" class="responsive-img" alt="学习笔记汇总">
+                        
+                        <span class="card-title">学习笔记汇总</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            汇总学习笔记，方便查找。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Blog-Index/" class="post-category">
+                                    Blog-Index
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Index/">
+                        <span class="chip bg-color">Index</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/12/12/teardown-analysis-gunfire-reborn/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cover.jpg" class="responsive-img" alt="枪火重生 Teardown Analysis">
+                        
+                        <span class="card-title">枪火重生 Teardown Analysis</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是一份由我写于 2021 年 12 月对游戏《枪火重生》的 Teardown Analysis。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1391 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Clash Heroes 目标体验思考及设计反思, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>Clash Heroes 目标体验思考及设计反思 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/clash heroes.jpeg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Clash Heroes 目标体验思考及设计反思</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                Study-Game-Analysis
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-11-06
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-04-29
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    11 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="视频展示"><a href="#视频展示" class="headerlink" title="视频展示"></a>视频展示</h3><p>不知道为何 Youtube 的视频无法在这里嵌套展示，所以在这里提供视频传送门：<a target="_blank" rel="noopener" href="https://youtube.com/clip/UgkxFq-TIaDR8SPzRPFo4lYH-Tv9vCs9dWsH">点击访问视频</a></p>
+<h3 id="Gif-展示"><a href="#Gif-展示" class="headerlink" title="Gif 展示"></a>Gif 展示</h3><table><tr> <center>
+    <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/冲撞技能与地形的交互.gif" alt="冲撞技能与地形的交互" style="zoom: 33%; text-align: center; align:middle;" border=0></td> 
+    <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/InteractiveObject.gif" alt="可交互道具" style="zoom: 50%; text-align: center; align:middle;" border=0></td> 
+    <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/interactiveTerrain.gif" alt="可交互地形" style="zoom:33%; align:middle;" border=0></td> 
+</center></tr></table>
+
+<table><tr> <center>
+    <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fight.gif" alt="战斗场景" style="zoom:33%; align:middle;" border=0></td> 
+    <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/object collection.gif" alt="物品拾取" style="zoom:33%; align:middle;" border=0></td> 
+        <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/貌似 BOSS 战斗.gif" alt="精英怪物" style="zoom:33%; align:middle;" border=0></td> 
+</center></tr></table>
+
+<h2 id="《Clash-Heroes》目标体验思考及设计反思"><a href="#《Clash-Heroes》目标体验思考及设计反思" class="headerlink" title="《Clash Heroes》目标体验思考及设计反思"></a>《Clash Heroes》目标体验思考及设计反思</h2><h3 id="游戏概述"><a href="#游戏概述" class="headerlink" title="游戏概述"></a>游戏概述</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cooperation.gif"></p>
+<p>从目前放出的一些预览视频来看，《Clash Heroes》 是一款合作类的角色扮演闯关手游，玩家将以俯视角操纵英雄进行实时游玩。每个游戏角色都有独立的角色特性和技能。</p>
+<h4 id="目标、路径、挑战、体验分析"><a href="#目标、路径、挑战、体验分析" class="headerlink" title="目标、路径、挑战、体验分析"></a>目标、路径、挑战、体验分析</h4><p>基于视频，以下将从目标、路径、挑战、体验四个方面对游戏进行整体设想：</p>
+<h5 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h5><p>即游戏的结束条件：玩家需要带领角色冲破重重关卡，直至通关</p>
+<h5 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h5><p>即玩家达到目标的手段：玩家需要通过不断杀敌，从而不断向前。<br>其中涉及的元素有：</p>
+<ul>
+<li><p>杀敌</p>
+</li>
+<li><p>收集</p>
+<table><tr> <center>
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/object collection.gif" alt="掉落资源收集" style="zoom:45%; align:middle;" border=0></td> 
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fight.gif" alt="场景（右上方）宝箱收集" style="zoom:45%; align:middle;" border=0></td> 
+</center></tr></table></li>
+<li><p>场景道具交互</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/InteractiveObject.gif" style="zoom:60%;" /></li>
+<li><p>地形交互</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/interactiveTerrain.gif" style="zoom:30%;" /></li>
+</ul>
+<h5 id="挑战"><a href="#挑战" class="headerlink" title="挑战"></a>挑战</h5><p>即玩家在实现目标的路径中可能碰到的障碍。<br>目前视频中所反映出的障碍基本有以下几种：</p>
+<ol>
+<li>怪物障碍：即通关过程中会不断遭遇的怪物<br>怪物类型：</li>
+</ol>
+<ul>
+<li>普通怪物<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fight.gif" style="zoom: 30%;" /></li>
+<li>精英怪物<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/貌似 BOSS 战斗.gif" style="zoom:30%;" /></li>
+<li>BOSS<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Boss.gif" style="zoom:70%;" /></li>
+</ul>
+<ol start="2">
+<li>陷阱/建筑障碍：即会对玩家造成直接或间接伤害的地图陷阱/建筑<br>陷阱/建筑类型：</li>
+</ol>
+<ul>
+<li>防御塔：如下图 Gif 中出现的会对角色进行攻击的防御塔</li>
+<li>兵工厂：如下图 Gif 中右上角出现的会不断产生新怪物的兵工厂<table><tr> <center>
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterArrow.gif" alt="防御塔" style="zoom: 80%; align:middle;" border=0></td> 
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterWorrior.gif" alt="兵工厂" style="zoom:80%; align:middle;" border=0></td> 
+</center></tr></table></li>
+</ul>
+<ol start="3">
+<li>地形障碍：即通关过程中需要跨越地形<br>地形类型：沟壑 - 需要借助地形交互<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/interactiveTerrain.gif" style="zoom:40%;" /></li>
+</ol>
+<h5 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h5><p>即期望玩家在游玩时获得的情感体验。<br>在后面部分会展开描述，这里只进行列举：</p>
+<ul>
+<li>爽快感</li>
+<li>合作感</li>
+<li>策略感</li>
+</ul>
+<h3 id="目标体验反思"><a href="#目标体验反思" class="headerlink" title="目标体验反思"></a>目标体验反思</h3><h4 id="爽快感"><a href="#爽快感" class="headerlink" title="爽快感"></a>爽快感</h4><p>爽快感解析：换言之我觉得也可以称之为顺畅感、割草感<br>爽快感实现方式：</p>
+<ol>
+<li>系统角度</li>
+</ol>
+<ul>
+<li><p>操作简单：采用了市面通行的左右摇杆机制，让玩家几乎没有学习和适应成本</p>
+</li>
+<li><p>攻击机制简单：每个角色只有一个普攻按键和一个技能按键</p>
+</li>
+<li><p>怒气积累机制直观：角色每次成功攻击都能积累一档怒气（即生命条下方的紫色状态条），当怒气集满之后不同角色会有独特的状态：</p>
+<ul>
+<li><p>战士是会进入狂暴状态，应该是能得到攻击加成</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Boss.gif" alt="战士" style="zoom:70%;" /></li>
+<li><p>弓箭手和炸弹师都是能在下次普攻时自动发动一次强力攻击</p>
+<table><tr> <center>
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterArrow2.gif" alt="弓箭手" style="zoom:70%; align:middle;" border=0></td> 
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterbomb.gif" alt="炸弹师" style="zoom:70%; align:middle;" border=0></td> 
+</center></tr></table></li>
+<li><p>自动选择攻击单位（参见上方炸弹师 Gif）：在进行普通攻击时，玩家不需要选择供给单位，系统会自动选择离自己最近的敌方单位进行攻击</p>
+</li>
+<li><p>技能方向选择简单（参见上方炸弹师 Gif）：对于需要选择攻击方向的技能，采用了以玩家自身为锚点的方式，玩家只需要根据按钮方向对攻击方向进行选择</p>
+</li>
+</ul>
+</li>
+<li><p>交互机制简单</p>
+<ul>
+<li>攻击即可触发道具交互<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/InteractiveObject.gif" style="zoom: 60%;" /></li>
+<li>移动到特殊地形即可触发地形交互<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/interactiveTerrain.gif" style="zoom:40%;" /></li>
+<li>移动到一定范围内即可对掉落物进行自动收集<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/objectCollection.gif" style="zoom:40%;" /></li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>UX 角度</li>
+</ol>
+<ul>
+<li>美学呈现（以视觉举例）<ul>
+<li>卡通风格简明：卡通风格既能保证战斗体验，也不会耗费玩家太多的注意力资源</li>
+<li>攻击飘字颜色简单：如图所示，目前的飘字一共有两种，己方造成的伤害是白色，敌方造成的伤害是红色，这样的飘字呈现方式简单直白  <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fight.gif" style="zoom:40%;" /></li>
+<li>范围呈现明显：无论是敌方的攻击范围，还是所控制角色的技能释放范围，都有很明显的视觉辅助，从而能让玩家产生爽快的战斗体验  <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Boss.gif" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterbomb.gif" style="zoom:80%;" /></li>
+</ul>
+</li>
+<li>即时交互：即时交互机制能让玩家很容易进入全神贯注的心流状态</li>
+</ul>
+<h4 id="合作感"><a href="#合作感" class="headerlink" title="合作感"></a>合作感</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/coop.gif" alt="合作杀敌"></p>
+<p>合作感解析：即需要与玩家配合杀敌通关<br>合作感实现：在所展示的 Gif 中，不同玩家操纵着不同角色在同一地图中共同作战，但从目前放出的资料来看，合作感还有待加强，本文后续部分也会再次提到这部分内容。</p>
+<h4 id="策略感"><a href="#策略感" class="headerlink" title="策略感"></a>策略感</h4><p>策略感解析：这里的策略感指的是玩家可以以多种方式进行游玩和参与到游戏中<br>策略感实现：</p>
+<ol>
+<li>角色设计<br>如图所示，目前放出的视频中一共有三种角色，我称之为战士，弓箭手和炸弹师。<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Boss.gif" alt="战士" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterArrow2.gif" alt="弓箭手" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterbomb.gif" alt="炸弹师" style="zoom:80%;" /></li>
+</ol>
+<p>据称还会有更多职业放出，多样化的职业为玩家提供了更多的游玩可能性<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characters.jpg" alt="角色造型" style="zoom: 33%;" /></p>
+<ol start="2">
+<li><p>可交互地形设计<br>如图所示，目前的除了有可交互的特殊区域可以帮助进行地形跨越外，还增加了令人眼前一亮的技能与地形的交互，这样的交互可能性会极大增强可玩性和策略性（但想必实现难度不低，BUG 也会很多哈哈）</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/interactiveTerrain.gif" alt="可交互地形" style="zoom:40%;" />
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/冲撞技能与地形的交互.gif" alt="技能与地形的交互" style="zoom:40%;" /></li>
+<li><p>道具设计<br>如图所示，目前放出的视频中，地图中也有可供玩家交互的道具，这些道具的出现势必会丰富玩家的策略空间</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/InteractiveObject.gif" alt="可交互道具" style="zoom: 67%;" /></li>
+</ol>
+<p>以上对目前所放出的视频中的目标体验进行了一些反思，下面我会对未来可能的一些设计方向提出一些自己的思考。</p>
+<h3 id="对未来可能的设计方向的思考"><a href="#对未来可能的设计方向的思考" class="headerlink" title="对未来可能的设计方向的思考"></a>对未来可能的设计方向的思考</h3><p>以下将从战斗、养成、社交的经典三元素出发，对未来可能的设计方向进行一些思考。</p>
+<h4 id="战斗"><a href="#战斗" class="headerlink" title="战斗"></a>战斗</h4><ol>
+<li>丰富战斗交互空间<br>这里的战斗交互空间主要指的是玩家的可操作空间。丰富战斗交互空间可以增强玩家【策略感】。<br>目前只为玩家提供了普通攻击、怒气攻击和一个技能，玩家可操作空间较少，所以也许可以考虑以下的几种方式丰富战斗交互空间：</li>
+</ol>
+<ul>
+<li>丰富技能<ul>
+<li>即为各个角色增加更多的技能选项</li>
+</ul>
+</li>
+<li>丰富攻击方式<ul>
+<li>其中一种丰富攻击方式的方法是引入武器系统，并且为每种武器赋予独特的攻击方式和技能系统</li>
+</ul>
+</li>
+<li>丰富攻击属性<br>  从下面的图中我们可以看到目前已经拥有冰属性和雷属性的攻击，在未来也许可以考虑以下的方式来丰富攻击属性：<ul>
+<li>武器附魔</li>
+<li>利用不同的技能/道具状态改变攻击属性<table><tr> <center>
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterArrow2.gif" alt="冰属性攻击" style="zoom:80%; align:middle;" border=0></td> 
+  <td><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cooperation.gif" alt="雷属性攻击" style="zoom:80%; align:middle;" border=0></td> 
+</center></tr></table></li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>丰富场景道具<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/InteractiveObject.gif" alt="可交互道具" style="zoom:67%;" />
+如上所示，目前已经有可供交互的道具，未来也许可以考虑以下的方式来丰富场景道具：</li>
+</ol>
+<ul>
+<li>丰富道具功能<ul>
+<li>如交互后可为角色带来不同的状态改变：<ul>
+<li>生命恢复</li>
+<li>攻击提升</li>
+<li>攻击属性授予</li>
+<li>防御提升</li>
+<li>一段时间内不消耗怒气等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>丰富道具属性<ul>
+<li>图中所示的为一次性交互道具，也许可以考虑为其增加可重复使用的可携带道具，可设计为同账号不同角色间通用道具，也可为不同角色设计专属道具，如为弓箭手角色设计专属道具【翎羽】，效果为可几率触发普攻连发等。</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>丰富视觉效果<br>这里的视觉效果主要指场景中的可见元素的效果。丰富视觉效果可以增强玩家战斗【爽快感】。</li>
+</ol>
+<ul>
+<li>丰富飘字效果<ul>
+<li>目前放出的版本中只有两种飘字，即己方伤害为白色，敌方伤害为红色，未来可丰富飘字效果，如暴击则飘字为黄色等。</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>丰富职业/角色<br>目前已经放出的角色有三种，我称之为战士、弓箭手和炸弹师，未来可考虑对角色进行丰富。丰富角色可以增强玩家【策略感】。<br>也许可以考虑增加以下职业/角色：</li>
+</ol>
+<ul>
+<li>召唤师：可召唤宝宝辅助进行战斗</li>
+<li>陷阱师：可设置陷阱诱捕敌人/对敌人造成伤害</li>
+<li>工程师：可建造炮塔等设施辅助进行战斗</li>
+<li>法师：可利用强大的法术进行战斗</li>
+<li>诅咒师：可利用诅咒辅助进行战斗，如施加负面效果或造成伤害</li>
+<li>盗贼：如拥有隐身和背刺等技能，背后攻击会有攻击加成</li>
+<li>狼人：可拥有变身技能，变身后提供状态加成，且攻击方式、攻击技能改变</li>
+<li>魅惑师：可利用魅惑技能让敌方单位反为己用等</li>
+</ul>
+<ol start="5">
+<li><p>丰富地形的同时提供反悔的选项，此举可以增强玩家【爽快感】。<br>如图所示，当前版本为玩家提供了地形交互选项，我想到的是可能还得为玩家提供反悔的选择，如设置为可返回前一地形，或者添加位移技能，防止出现玩家想要返回前一地形却无计可施，从而产生挫败感的情况。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/interactiveTerrain.gif" alt="可交互地形" style="zoom: 40%;" /></li>
+<li><p>丰富玩法<br>这里的玩法主要指的是游戏中的各种交互机制，玩法的丰富可以增加玩家的【策略感】。<br>可以考虑如下的方式来丰富玩法：</p>
+</li>
+</ol>
+<ul>
+<li>增加解密元素：目前放出的资料中基本只涉及战斗，所以可以考虑增加解谜元素以丰富玩法，同时不断给玩家带来新鲜感。</li>
+<li>引入天气系统：目前放出的资料中并不涉及天气系统，所以可以考虑增加天气系统，并且将其与战斗系统挂钩，如雨天环境下，雷属性攻击的范围变大，且攻击力变强等。</li>
+<li>引入时间系统：目前放出的资料中并不涉及时间系统，所以可以考虑增加时间系统，并且将其与战斗系统挂钩，如黑夜环境下，玩家视野变小，但也更不容易被敌人发现；其上所提到的狼人角色，其在黑夜状态下的变身时间会延长等。</li>
+</ul>
+<h4 id="养成"><a href="#养成" class="headerlink" title="养成"></a>养成</h4><p>即丰富养成空间：这里的养成空间主要指的是可让角色提升的方方面面，养成空间的丰富可以增强玩家的【策略感】。<br>目前所体现的角色变化只有怒气值的变化：<br>虽然怒气集满后可持续时间增长了，但是积累所需的攻击次数也变多了，如此使得养成系统的体现并不明显，也会降低玩家提升的动力。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/fight.gif" alt="三档怒气" style="zoom: 40%;" /><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/characterWorrior.gif" alt="五档怒气" style="zoom: 80%;" /></p>
+<p>目前资料中还体现了收集元素，应该也是服务于养成系统的：<br>    <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/object collection.gif" alt="掉落元素收集" style="zoom:40%;" /></p>
+<p>可以考虑如下的方式来丰富养成空间：</p>
+<ol>
+<li>个人养成</li>
+</ol>
+<ul>
+<li>属性养成：这里的属性养成指的是各个角色自身的属性，如可以对角色的以下属性进行提升：<ul>
+<li>攻击力</li>
+<li>防御力</li>
+<li>暴击率</li>
+<li>攻击属性</li>
+<li>耐性：用于抵抗倒地等</li>
+</ul>
+</li>
+<li>技能/熟练度养成：玩家在不断使用技能过程中，也许可以考虑为技能引入熟练度，从而对技能达到以下效果的提升：<ul>
+<li>攻击力</li>
+<li>攻击范围</li>
+<li>冷却速率等</li>
+</ul>
+</li>
+<li>装备养成：这里的装备指的是可以对玩家属性造成影响的装备</li>
+<li>装饰养成：这里的装饰指的是不会对玩家属性造成影响，只会影响角色外观的装备</li>
+</ul>
+<ol start="2">
+<li>道具养成：这里的道具养成指的是对玩家在游戏中可交互道具的养成，如</li>
+</ol>
+<ul>
+<li>增加道具增益状态的持续时间</li>
+<li>增加道具效果等</li>
+</ul>
+<h4 id="社交"><a href="#社交" class="headerlink" title="社交"></a>社交</h4><p>即丰富社交空间：这里的社交空间指的是游戏中需要与其他玩家共同达成的事件，社交空间的丰富可以增强玩家【合作感】。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cooperation.gif" alt="合作作战"></p>
+<p>如图所示，个人认为目前版本中玩家之间的合作感还不强，只是各自为战，未来也许可以考虑如下的方式来丰富社交空间：</p>
+<ul>
+<li>增加合作任务：可以考虑增加合作任务，并为合作任务设置奖励加成甚至是专属奖励（如只有在合作模式下才有几率掉落）</li>
+<li>增加合击技：可以考虑为不同职业之间增加合击技，或者是为不同攻击属性之间增加交互可能性，如火属性攻击和水属性攻击会互相减弱伤害，但先施加水属性攻击后施加雷属性攻击会带来伤害加成等。</li>
+</ul>
+<p>以上是基于战斗、养成、社交角度对未来可能的设计方向的一些思考，但需要明确的是在未来的设计中还是要围绕目标体验出发，达到合理的取舍与平衡。</p>
+<h2 id="《Clash-Heroes》官方网站"><a href="#《Clash-Heroes》官方网站" class="headerlink" title="《Clash Heroes》官方网站"></a>《Clash Heroes》官方网站</h2><p><a target="_blank" rel="noopener" href="https://clash.com/en">Clash</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2021/11/06/thinking-of-the-clash-heroes/">https://medill-east.github.io/2021/11/06/thinking-of-the-clash-heroes/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/11/16/thinking-of-the-florence/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20211116163215.png" class="responsive-img" alt="Florence 目标体验及设计反思">
+                        
+                        <span class="card-title">Florence 目标体验及设计反思</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是一份由我写于 2021 年 11 月对游戏《Florence》的目标体验及设计反思。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/02/drinking-games/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/noemie-cauchon-Y_bpePELbPo-unsplash.jpeg" class="responsive-img" alt="喝酒游戏列举与思考">
+                        
+                        <span class="card-title">喝酒游戏列举与思考</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            列举一些已知的喝酒游戏，以及从目标体验出发的一些设计反思。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Thinking/" class="post-category">
+                                    Thinking
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Thinking/">
+                        <span class="chip bg-color">Thinking</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

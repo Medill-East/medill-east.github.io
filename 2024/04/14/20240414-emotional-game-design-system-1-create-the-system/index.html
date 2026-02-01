@@ -1,0 +1,1402 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20240414 - 情感化游戏设计系统 - 1 - 构建系统, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20240414 - 情感化游戏设计系统 - 1 - 构建系统 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141755824.PNG')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20240414 - 情感化游戏设计系统 - 1 - 构建系统</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Thinking/">
+                                <span class="chip bg-color">Thinking</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Thinking/" class="post-category">
+                                Thinking
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2024-04-14
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2024-09-29
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    12 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="202409-视频版更新"><a href="#202409-视频版更新" class="headerlink" title="202409 视频版更新"></a>202409 视频版更新</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1r3xCe1EXZ/?share_source=copy_web&vd_source=ae6360fc02a06275c80f3c44e417c599">中文版</a></li>
+<li><a target="_blank" rel="noopener" href="https://youtu.be/EaUxVSXQ5dc">English Version</a></li>
+</ul>
+<p>其中包含了结构更新和添加了一些例子 (￣▽￣)／</p>
+<h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>前段时间再次听了一遍机核在多年前对陈星汉的专访，有了一个想法——“电影工业中，对于观众的情绪塑造和引发有着相对成熟的方法论，但游戏工业中目前好像还没有这样的方法论，能否构建？”</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.gcores.com/radios/14599">专访陈星汉 I （游戏之路） - Jenova Chen</a><br><a target="_blank" rel="noopener" href="https://www.gcores.com/radios/14601">专访陈星汉 II - 《Journey》 - Jenova Chen</a></p>
+</blockquote>
+<p>在上一篇文章 <a href="https://medill-east.github.io/2024/04/13/20240413-emotional-game-design-system-0-narrative-structure/">情感化游戏设计系统 - 0 - 从叙事结构出发</a> 中对常见叙事结构进行了学习，此篇中将对情感化游戏设计系统进行构建，在此记录。</p>
+<p>需要指出的是文中很多内容都是和大语言模型（ChatGPT/Claude/Kimi）讨论后得到，尽管我极力避免，但仍有可能会受到 AI 幻觉的影响。如有错误，欢迎批评指正！</p>
+<h3 id="内容概览"><a href="#内容概览" class="headerlink" title="内容概览"></a>内容概览</h3><ul>
+<li>情感化游戏设计（Emotional Game Design）<ul>
+<li>什么是情感化游戏设计</li>
+<li>为何关心情感化游戏设计</li>
+<li>光遇如何运用情感化游戏设计</li>
+<li>情感化游戏设计系统</li>
+<li>小结</li>
+</ul>
+</li>
+<li>相关链接</li>
+</ul>
+<h3 id="情感化游戏设计（Emotional-Game-Design）"><a href="#情感化游戏设计（Emotional-Game-Design）" class="headerlink" title="情感化游戏设计（Emotional Game Design）"></a>情感化游戏设计（Emotional Game Design）</h3><h4 id="何为情感化游戏设计"><a href="#何为情感化游戏设计" class="headerlink" title="何为情感化游戏设计"></a>何为情感化游戏设计</h4><p>如起因中所言，“电影工业中，对于观众的情绪塑造和引发有着相对成熟的方法论，但游戏工业中目前好像还没有这样的方法论，能否构建？”<br>情感化游戏设计指的就是能否构建类似的可靠方法，从而在游戏中为玩家们创造难忘的情绪化体验。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141652814.PNG"></p>
+<h4 id="为何关心情感化游戏设计"><a href="#为何关心情感化游戏设计" class="headerlink" title="为何关心情感化游戏设计"></a>为何关心情感化游戏设计</h4><p>之前一年都在做 [[Challenges for Game Designers]] 一书中的练习（感兴趣可以看<a href="https://medill-east.github.io/2022/04/28/index-showcase/">这里</a>），但做着做着感觉自己基本都是在机制层面打转。去年有一次和前辈聊了之后，也问了该如何提升的问题，答案是不再用机制设计，而是用体验设计的方法来做 Demo —— 每次选择一个核心体验，关注某一个方面（Gameplay/LA/LD/…），并在那个方面做到自己在当时能够做到的极致，这样整体的设计能力能够实现螺旋上升，而不只是某方面专精，其他方面成为短板。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141654424.PNG"></p>
+<p>之后便是受到了 [[陈星汉 Jenova]] 在机核专访中所谈话题的启发，开始构思适用于游戏工业的情感化游戏设计方法。</p>
+<p>前段时间翻看 GDC Valut 上 [[陈星汉 Jenova]] 在 <a target="_blank" rel="noopener" href="https://gdcvault.com/play/1028065/Can-We-Experience-Compassion-through">Can We Experience Compassion through Play</a> 这次演讲时，他也提到了，电影工业中其实早就已经有 [[four-quadrant movie]] 这样的概念——即超越性别（男人女人都爱看），超越年龄（大人小孩都爱看）的电影：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141654950.PNG"></p>
+<p>那么游戏的目标也应该是创造面向更广大群体的，跨越性别和年龄的，难忘的情感体验：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141656500.PNG"></p>
+<h4 id="光遇如何运用情感化游戏设计"><a href="#光遇如何运用情感化游戏设计" class="headerlink" title="光遇如何运用情感化游戏设计"></a>光遇如何运用情感化游戏设计</h4><p>我最开始看的是 [[thatgamecompany]] 在 GDC 上的那次有关于 Art of Sky Children of the Light 的演讲，但貌似 YouTube 上还没有放出对应视频，倒是找到了另一个视频，甚至是更详细的版本，放在这里。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FwcNVlpymNk?si=BnF6m0Fj3s6O534b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>简言之， [[thatgamecompany]] 参考了各种叙事结构之后，提出了 [[emotional curve]] 的概念，并利用以下维度来基于人类共识来创造跨越个体化认知的情感体验：</p>
+<ul>
+<li>基于视觉和听觉的通用语言</li>
+<li>基于玩家动作的传达方式</li>
+<li>基于空间的环境叙事</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141656568.PNG"></p>
+<p>[[thatgamecompany]] 利用 time of day，即一天的变化进程，作为 颜色、氛围和光照的基调：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141658481.PNG"></p>
+<p>利用 human life，即人类的生命进程，来作为角色状态和玩家行为的参考：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141659003.PNG"></p>
+<p>利用 progression of civilization，即文明的发展进程，作为视觉结构的参考：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141700798.PNG"></p>
+<p>利用 [[The Collective Journey 集体之旅 - Jeff Gomez 2017]] 作为叙事结构（具体可以参考上一篇文章 <a href="https://medill-east.github.io/2024/04/13/20240413-emotional-game-design-system-0-narrative-structure/">情感化游戏设计系统 - 0 - 从叙事结构出发</a> 中光遇如何利用集体叙事的部分）。</p>
+<p>最终构建了这样一套自洽而完整的情绪化设计方法：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141702238.PNG"></p>
+<h4 id="情感化游戏设计系统-Emotional-Game-Design-System"><a href="#情感化游戏设计系统-Emotional-Game-Design-System" class="headerlink" title="情感化游戏设计系统 - Emotional Game Design System"></a>情感化游戏设计系统 - Emotional Game Design System</h4><p>受到 [[游戏设计艺术 the art of game design]] 中的设计四元素：机制、美学、叙事、技术的启发，我尝试构建了一个基于情绪体验（Emotional Experiences）感觉（Feelings）、玩法/机制（Gameplay/Mechanics）和叙事（Narrative）的情感化游戏设计系统：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141830869.png"></p>
+<p>基于此，需要解决以下问题：</p>
+<ul>
+<li>确定情绪范围</li>
+<li>构建初步框架</li>
+<li>对框架进行迭代</li>
+</ul>
+<h5 id="确定情绪范围"><a href="#确定情绪范围" class="headerlink" title="确定情绪范围"></a>确定情绪范围</h5><p>借助 AI，让其推荐了目前学术界广为接受的情绪理论，得到了这几个：</p>
+<blockquote>
+<ol>
+<li><p>Paul Ekman 的六种基本情绪：在 1970 年代，心理学家 Paul Ekman 通过跨文化研究提出了六种基本情绪，分别是快乐、悲伤、惊讶、恐惧、厌恶和愤怒 anger。这一理论被广泛接受，并在多个研究中被引用。<br> 出处：Ekman, P. (1992). “An argument for basic emotions.” Cognition &amp; Emotion, 6(3-4), 169-200.</p>
+<pre><code> 愤怒 anger
+ 蔑视 contempt
+ 厌恶 disgust
+ 享受 enjoyment
+ 恐惧 fear
+ 悲伤 sadness
+ 惊讶 surprise
+</code></pre>
+</li>
+<li><p>Robert Plutchik 的情绪轮：Robert Plutchik 提出了一种情绪轮模型，其中包括八个基本情绪：快乐、悲伤、信任、厌恶、恐惧、愤怒、期待和惊讶。这些情绪可以结合形成更复杂的情感。<br> 出处：Plutchik, R. (1980). “A general psychoevolutionary theory of emotion.” In R. Plutchik &amp; H. Kellerman (Eds.), Emotion: Theory, research, and experience: Vol. 1. Theories of emotion (pp. 3-33). New York: Academic.</p>
+<p> <a target="_blank" rel="noopener" href="https://www.6seconds.org/2022/03/13/plutchik-wheel-emotions/">https://www.6seconds.org/2022/03/13/plutchik-wheel-emotions/</a><br> <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202403091550148.png"></p>
+</li>
+<li><p>Carroll Izard 的十种基本情绪：Izard 提出了十种基本情绪，包括兴趣/激动、快乐/欣喜、惊讶、悲伤/痛苦、愤怒、厌恶、轻蔑、恐惧、羞耻/羞愧和罪恶感/内疚。<br> 出处：Izard, C. E. (1977). “Human emotions.” New York: Plenum Press.</p>
+</li>
+<li><p>Jonathan Turner 的七种基本情绪：Turner 提出了七种基本情绪，包括快乐、悲伤、恐惧、愤怒、厌恶、兴趣和惊讶。<br> 出处：Turner, J. H. (2000). “On the origins of human emotions: A sociological inquiry into the evolution of human affect.” Stanford University Press.</p>
+</li>
+</ol>
+</blockquote>
+<p>最终出于以下原因选择了 Robert Plutchik 的情绪理论：</p>
+<ul>
+<li>其可视化的情绪轮易于理解</li>
+<li>并且情绪之间由于不同的生理唤醒程度（arousal level）具有清晰的关系，不同情绪之间的关系也较为清楚</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141710752.PNG"></p>
+<p>在此基础之上，为了得到更加良好的可视化模型，我构建了一个横轴为情绪效价（emotional valence, -5 - +5），纵轴为生理唤醒程度（arousal level, 0 - 10）的情绪地图：</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>各情绪最终的情绪效价及生理唤醒程度经由多个 LLM 模型（Claude Sonnet, ChatGPT 4，Kimi）以相同标准打分，取均值得到<ul>
+<li>最终结果基本符合认知</li>
+</ul>
+</li>
+<li>图中颜色采用了双轴过度<ul>
+<li>取情绪效价 -5 为蓝色，取情绪效价 +5 为红色</li>
+<li>在此基础上叠加生理唤醒透明度，以生理唤醒为 0 为完全透明，以生理唤醒为 1 为不透明</li>
+<li>由此得到的结果可以当做对各情绪的颜色象征，基本符合认知</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141712583.png"></p>
+<p>如果我们考虑电影工业中常常提到的四象限电影（four-quadrant movie），即超越年龄和性别的电影：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141717206.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141717397.png"></p>
+<p>那么我们可以在所创建的情绪地图上找到对应的区域，即对应四象限电影，我们期望创建的可能是三角形游戏（triangle game，图中右方黄色三角区域），其能够触发人们中等唤醒程度的正面效价情绪：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141719878.PNG"></p>
+<h5 id="构建基础系统"><a href="#构建基础系统" class="headerlink" title="构建基础系统"></a>构建基础系统</h5><p>如前所说，受到 [[游戏设计艺术 the art of game design]] 中的设计四元素：机制、美学、叙事、技术的启发，我尝试构建了一个基于情绪体验（Emotional Experiences）感觉（Feelings）、玩法/机制（Gameplay/Mechanics）和叙事（Narrative）的情感化游戏设计系统，这将作为今后迭代的基础：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141722114.PNG"></p>
+<h5 id="对系统进行迭代"><a href="#对系统进行迭代" class="headerlink" title="对系统进行迭代"></a>对系统进行迭代</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141726444.PNG"></p>
+<p>目前而言，对系统进行展开之后可以得到下面这些部分：</p>
+<ul>
+<li>Emotional Experiences<ul>
+<li>Emotional Curve</li>
+<li>Emotion map</li>
+</ul>
+</li>
+</ul>
+<p>即刚刚所创建的情绪地图，这将作为系统的最终设计目标，即其他所有部分的实现都是为了达到情绪地图中的期望情绪，最终构建情绪曲线。</p>
+<ul>
+<li>Feeling<ul>
+<li>Intrinsic Feeling – trigger by imagination &amp; emotion<ul>
+<li>(freedom/control/impact/mysterious/…)</li>
+</ul>
+</li>
+<li>Extrinsic Feeling – trigger by perception &amp; analyzation<ul>
+<li>Atmosphere</li>
+<li>Collective Consensus<ul>
+<li>Time of day</li>
+<li>Human life</li>
+<li>Progression of civilization</li>
+<li>Seasonal cycle</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>这里我将感受（feelings）分为了感性感受（intrinsic feeling）和理性感受（extrinsic feeling）。<br>其中感性感受其实是由想象和情绪直接触发的，比如自由感、控制感、打击感、神秘感等等。</p>
+<ul>
+<li>感性感受的构想受到了 [[丹尼尔 卡尼曼 Daniel Kahneman]] 的 [[思考快与慢 Thinking, Fast and Slow]] 一书中的 [[系统 1 system 1]] 的启发<br>理性感受其实是由感知和分析得到的，比如氛围，或者是那些人类共识（包括之前提到的一天的变化，人类生命进程，文明进程，四季循环等等）</li>
+<li>理性感受的构想受到了 [[丹尼尔 卡尼曼 Daniel Kahneman]] 的 [[思考快与慢 Thinking, Fast and Slow]] 一书中的 [[系统 2 system 2]] 的启发</li>
+</ul>
+<ul>
+<li>Gameplay/Mechanics<ul>
+<li>Control (Action)</li>
+</ul>
+</li>
+</ul>
+<p>即我们常讲的玩法和机制。<br>其中又包括了角色控制（以及前面提到过的角色行为）。</p>
+<ul>
+<li>Narrative<ul>
+<li>Narrative Content</li>
+<li>Narrative Structure<ul>
+<li>Linear<ul>
+<li>[[Five-Act Structure 五幕结构 - Gustav Freytag]] </li>
+<li>[[Three-Act Structure 三幕结构 - Syd Field]] </li>
+<li>[[The Hero’s Journey 英雄之旅 - Joseph Campbell]] </li>
+<li>[[The Writer’s Journey 作家之旅 - Christopher Vogler]] </li>
+<li>[[Hero Goal Sequences 英雄目标序列 - Eric Edson]]</li>
+</ul>
+</li>
+<li>Non-Linear<ul>
+<li>[[The Collective Journey 集体之旅 - Jeff Gomez 2017]]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>这部分在上一篇文章 <a href="https://medill-east.github.io/2024/04/13/20240413-emotional-game-design-system-0-narrative-structure/">情感化游戏设计系统 - 0 - 从叙事结构出发</a> 中进行了讨论，即故事的内容和结构。</p>
+<ul>
+<li>Storytelling (Presenting) – Collective Consensus<ul>
+<li>Visual -视觉<ul>
+<li>Camera - 相机镜头</li>
+<li>Light &amp; Shadow - 光影</li>
+<li>Color - 色彩</li>
+<li>Space/Structure - 空间和结构</li>
+<li>Environment (Prop/Architecture) - 环境（物品和建筑）</li>
+<li>UI - 界面</li>
+<li>VFX -视觉特效</li>
+<li>Character - 角色</li>
+</ul>
+</li>
+<li>Audio - 听觉<ul>
+<li>Music - 音乐</li>
+<li>Effects -音效<ul>
+<li>[[BG - background 背景音/环境音]]</li>
+<li>[[VO - dialogue/voice-over 对白/旁白]]</li>
+<li>[[foley 与动作匹配的音效]]</li>
+<li>[[SFX - sound effect 特殊音效]]</li>
+<li>[[walla 模仿人群低语]]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Haptic - 触觉</li>
+</ul>
+</li>
+</ul>
+<p>这部分即故事的呈现方式，也需要使用基于人类共识的方式来呈现。<br>这部分的很多内容（除了 haptic 触觉）其实都可以在电影工业中找到参照，剩下的需要时间来逐渐补全。<br>值得一提的是关于 Audio Effects 的相关内容是学习自该视频，感谢分享：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17D4y167tQ/?share_source=copy_web&vd_source=ae6360fc02a06275c80f3c44e417c599">新手也能学会的音效设计！一秒变大片【干货】</a></p>
+<p>理论上讲，这是一个自顶向下的系统：</p>
+<ol>
+<li>于整体而言，确定情绪曲线</li>
+<li>于局部而言，确定该部分想要触发的情绪体验</li>
+<li>情绪体验应该与多种感觉相关</li>
+<li>感觉由玩法/机制，或者由内容的呈现方式所触发</li>
+<li>玩法/机制，以及内容的呈现方式共同对故事本身进行表达</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141743608.PNG"></p>
+<h5 id="关于命名的小插曲"><a href="#关于命名的小插曲" class="headerlink" title="关于命名的小插曲"></a>关于命名的小插曲</h5><p>其实最开始在 architecture/ framework/ methodology 之间纠结，最后遇事不决问 AI：</p>
+<blockquote>
+<p>基于您提供的详细信息，您的创作涉及了游戏设计的多个方面，包括感觉、游戏机制、叙事以及如何通过各种媒介（视觉、音频、触觉）呈现故事。这个创作不仅仅是一套理论或概念，它更像是一个全面的系统，用于指导游戏设计过程，以创造深刻的情感体验。</p>
+<ul>
+<li>如果您强调的是这个系统的结构和组成部分，那么 “architecture” 是合适的，因为它通常用来描述系统的构建和组织方式。</li>
+<li>如果您强调的是这个系统的应用和实践，那么 “framework” 是合适的，因为它指的是提供一套工具和概念，用于解决特定问题或执行任务。</li>
+<li>如果您强调的是这个系统的步骤、方法和原则，那么 “methodology” 是合适的，因为它涉及研究方法、技术和策略。</li>
+</ul>
+<p>根据您的描述，我倾向于推荐使用 “framework”，因为它通常用于描述一个包含指导原则和工具的系统，可以用来开发和评估游戏设计。因此，您可以将其称为 “Emotional Game Design Framework”。</p>
+<p>然而，如果您感觉 “framework” 还不足以全面覆盖您系统的复杂性和深度，您也可以考虑使用 “system”，因为它强调了各个部分之间的相互作用和整体性。在这种情况下，可以称之为 “Emotional Game Design System”。这个名称强调了这是一个全面的、可操作的系统，包含了从理论到实践的各个方面。</p>
+</blockquote>
+<p>最后选择了选项之外的 system，是因为 system 比起其他的叫法给我了一种相互之间互相联系的感觉，整个系统虽然在低耦合情况下也能运行，但是只有耦合程度足够高，效果才能够好。</p>
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><ul>
+<li>最终的目标是创建跨越限制的，能够吸引，并且被所有人所享受的游戏</li>
+<li>尽管单一部分可能也能创建令人难忘的情绪体验，但整个系统配合起来能够带来最好的效果</li>
+<li>系统目前仍处于初期构建状态，应该随着各方面知识的增长而不断完善</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141748469.PNG"></p>
+<p>感谢观看，欢迎批评指正！</p>
+<h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><p>想知道更多和情感化游戏设计系统相关的内容，可以看 <a href="https://medill-east.github.io/2022/04/28/index-thinking/">这个页面</a> 中的 Emotional Game Design System 部分。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2024/04/14/20240414-emotional-game-design-system-1-create-the-system/">https://medill-east.github.io/2024/04/14/20240414-emotional-game-design-system-1-create-the-system/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Thinking/">
+                                    <span class="chip bg-color">Thinking</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2024/04/21/20240421-b10/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404211237713.png" class="responsive-img" alt="20240421 - Do Competitive Games Have to Be Complex?">
+                        
+                        <span class="card-title">20240421 - Do Competitive Games Have to Be Complex?</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，考虑竞技性游戏的复杂性！
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                    <a href="/tags/Learning/">
+                        <span class="chip bg-color">Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Notes/">
+                        <span class="chip bg-color">Notes</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/04/14/20240414-m11/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202404141019685.png" class="responsive-img" alt="20240414 - Games and Eye Strain">
+                        
+                        <span class="card-title">20240414 - Games and Eye Strain</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，了解他与眼睛干涩的抗争！
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-14
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                    <a href="/tags/Learning/">
+                        <span class="chip bg-color">Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Notes/">
+                        <span class="chip bg-color">Notes</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

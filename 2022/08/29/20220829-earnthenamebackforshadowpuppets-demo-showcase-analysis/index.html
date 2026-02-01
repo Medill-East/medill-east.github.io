@@ -1,0 +1,1911 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="《悬灯与玄灯》 Demo 展示及制作复盘分析, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>《悬灯与玄灯》 Demo 展示及制作复盘分析 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/shadowpuppetcover.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">《悬灯与玄灯》 Demo 展示及制作复盘分析</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Portfolio/">
+                                <span class="chip bg-color">Portfolio</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Demo/" class="post-category">
+                                Study-Game-Demo
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-08-29
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-09-01
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    14.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    49 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="《悬灯与玄灯》-Demo-展示及制作复盘分析"><a href="#《悬灯与玄灯》-Demo-展示及制作复盘分析" class="headerlink" title="《悬灯与玄灯》 Demo 展示及制作复盘分析"></a>《悬灯与玄灯》 Demo 展示及制作复盘分析</h2><h3 id="项目信息"><a href="#项目信息" class="headerlink" title="项目信息"></a>项目信息</h3><h4 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h4><p>这是 2022 年 6、7 月参与一个游戏制作比赛产出的 Demo，项目未进入复赛。除了进行 Demo 的展示外也会进行项目复盘和分析。</p>
+<h4 id="视频展示"><a href="#视频展示" class="headerlink" title="视频展示"></a>视频展示</h4><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1EY4y1P7a1?share_source=copy_web&vd_source=ae6360fc02a06275c80f3c44e417c599">b 站视频链接</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=FdxJweyDG8A">YouTube 链接</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FdxJweyDG8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+</ul>
+<h4 id="Itch-页面"><a href="#Itch-页面" class="headerlink" title="Itch 页面"></a>Itch 页面</h4><p><a target="_blank" rel="noopener" href="https://haodongliao.itch.io/earn-the-name-back-for-shadow-puppets">https://haodongliao.itch.io/earn-the-name-back-for-shadow-puppets</a></p>
+<p>因为当时用的插件（一下子想不起来是哪一个了，好像是 Wwise？）不支持 WebGL 的打包，所以就没法在线试玩了，但还是在 itch 页面上放了 Win 的下载包~</p>
+<h4 id="截图展示"><a href="#截图展示" class="headerlink" title="截图展示"></a>截图展示</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829173738.png" alt="开始界面"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829173846.png" alt="新手教程"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829174031.png" alt="BOSS 战"></p>
+<h3 id="项目展示（取自参赛-PPT）"><a href="#项目展示（取自参赛-PPT）" class="headerlink" title="项目展示（取自参赛 PPT）"></a>项目展示（取自参赛 PPT）</h3><h4 id="产品定位"><a href="#产品定位" class="headerlink" title="产品定位"></a>产品定位</h4><h5 id="品类定位"><a href="#品类定位" class="headerlink" title="品类定位"></a>品类定位</h5><p>这是一款设计灵感源自银河战士恶魔城品类的横版战斗闯关游戏。</p>
+<p>玩家将扮演受“皮影悬灯”之托的皮影，一路探索击敌，最终打败“白莲玄灯”，为皮影正名。</p>
+<h5 id="产品阐释"><a href="#产品阐释" class="headerlink" title="产品阐释"></a>产品阐释</h5><p>该游戏以非遗中的皮影戏作为灵感来源，用游戏作为媒介，演绎了皮影在清末被污名化为“玄灯戏”，但最终沉冤得雪的故事。游戏将皮影的操作方式游戏化，取材北京中轴线传说来源以及景德镇陶瓷等元素进行敌人、场景元素设计。以游戏化的创新方式对皮影的兴衰发展进行解构再创作，以期吸引当代年轻人关注皮影戏这一非物质文化遗产，从而实现传承和弘扬中华民族灿烂文明的目的。</p>
+<h4 id="目标用户定位"><a href="#目标用户定位" class="headerlink" title="目标用户定位"></a>目标用户定位</h4><p>热爱传统文化，对皮影戏等非物质文化遗产感兴趣的年轻人。</p>
+<h4 id="游戏创意点说明"><a href="#游戏创意点说明" class="headerlink" title="游戏创意点说明"></a>游戏创意点说明</h4><h5 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h5><ul>
+<li><p>操控方式</p>
+<p>  用鼠标点按滑动的特殊操作方式将皮影的“三杆操纵”方式游戏化</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829185252.png" alt="将皮影的“三杆操纵”方式游戏化"></p>
+<ul>
+<li><p>光影运用</p>
+<ol>
+<li>创建能量多-光照强的对应关系；</li>
+<li>越靠近玄灯，场景越是昏暗，但随着玩家能量的增强，玩家自己便成为了光明的源头；</li>
+<li>力图最终在屏幕上还原现实世界中的皮影幕布的呈现效果</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829185401.png" alt="光影运用"></p>
+<ul>
+<li><p>玩家技能设计</p>
+<p>  创意源于皮影的常用色彩“红黄绿黑白”，受戏剧人物“生旦净末丑”中各颜色引申义的启发，最终结合玩家身体各部分颜色，直观设计了“红色-头部-喷火”、“黄色-武器-剑气”、“绿色-身体-恢复”、“黑色-腿部-影马”、“白色-脚部-闪现”的配套技能</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829185422.png" alt="玩家技能设计"></p>
+<ul>
+<li><p>敌人技能设计</p>
+<p>  参考非遗北京中轴线传说——共工怒触不周山故事中的相繇、王子夜、浮游、无支祁、共工设计了敌人，并为各自设计了与形象及其等级相符的技能</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829185442.png" alt="敌人技能设计"></p>
+<ul>
+<li><p>地图设计</p>
+<p>  受类银河战士恶魔城游戏地图设计的“能力-锁”、“回溯”、“解锁新区域”等特点的启发，以“玄”的甲骨文作为探索场景大框架，以“玄”的汉字演化变体作为场景分割方式，以各式小游戏及其奖励作为新区域的探索奖励，对类银河战士恶魔城的地图设计方法进行解构再演绎</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829185506.png" alt="地图设计"></p>
+<h5 id="美学"><a href="#美学" class="headerlink" title="美学"></a>美学</h5><ul>
+<li><p>玩家形象设计</p>
+<p>  游戏中玩家形象的设计灵感源于西安市明清皮影艺术博物馆的各类藏品，且均还原了真实皮影的十一部分构成——头、上身、下身、两腿、两上臂、两下臂、两手。</p>
+</li>
+<li><p>敌人形象设计</p>
+<p>  游戏中的敌人形象取材自非遗北京中轴线的传说——共工怒触不周山，并参考相繇、王子夜、浮游、无支祁、共工进行敌人形象设计</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220829185716.png" alt="玩家和敌人形象设计"></p>
+<ul>
+<li><p>敌人等级区分</p>
+<p>  敌人共有三种级别——黑影、半透明、全彩，分别对应皮影制作过程中的“制皮”、“镂刻”、“敷彩”阶段，以形象对敌人实力进行直观区分</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide14.jpeg"></p>
+<ul>
+<li><p>地图及其元素设计</p>
+<p>  游戏以“玄”的甲骨文作为探索场景大框架，以“玄”的汉字演化变体作为场景分割方式，并参考皮影元素中的“云朵子”进行元素纹样设计</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide15.jpeg"></p>
+<ul>
+<li><p>场景道具设计</p>
+<p>  参考景德镇陶瓷中的颜色釉瓷设计了场景中的可交互道具</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide16.jpeg"></p>
+<ul>
+<li><p>BOSS 形象设计</p>
+<p>  参考“玄”字的甲骨文变体，以及皮影戏中“云朵子”的美术风格进行了 BOSS 形象的美学设计</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide17.jpeg"></p>
+<h5 id="叙事"><a href="#叙事" class="headerlink" title="叙事"></a>叙事</h5><ul>
+<li><p>皮影在清末的兴衰波折</p>
+<p>  将皮影艺人在清末被误打为与白莲教“玄灯聚众”相勾结的“玄灯匪”，但最终沉冤得雪的故事以游戏的方式进行解构，将游戏中的探索化为一条“受悬灯之托-击败玄灯幻化的敌人-收集被玄灯夺走的悬灯之力-战胜玄灯-为悬灯正名”的正名之路</p>
+</li>
+<li><p>越靠近玄灯，场景越是昏暗，但随着玩家能量的增强，玩家自己便成为了光明的源头，也暗含“成为悬灯”之意</p>
+</li>
+<li><p>结尾点题：在击败玄灯后，将视角拉回现代，并以“道尽千古事，挥舞百万兵；观明兴亡业，期承虚实情”做结。前两句展现皮影人所演绎的皮影艺术的魅力，后两句则表达在玩家知晓皮影艺术的兴衰波折后，希望人们传承弘扬这一光影艺术的殷切期待</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide19.jpeg"></p>
+<h4 id="核心玩法和乐趣点介绍"><a href="#核心玩法和乐趣点介绍" class="headerlink" title="核心玩法和乐趣点介绍"></a>核心玩法和乐趣点介绍</h4><ul>
+<li><p>核心玩法</p>
+<p>  以鼠标点按滑动模拟皮影的操作方式，配合特色技能进行战斗</p>
+</li>
+<li><p>玩法乐趣</p>
+<ol>
+<li>特殊的操作方式在游戏中模拟了现实中的皮影操作方式；</li>
+<li>随着游戏推进，不断解锁的与颜色对应的新能力会让战斗爽快感大幅提升</li>
+</ol>
+</li>
+<li><p>类银河恶魔城的地图设计带来的探索乐趣</p>
+<p>  参考恶魔城“能力-锁”、“回溯探索”、“新区域解锁”的机制所设计的地图，让玩家在获得新能力之后不仅能体会到战斗能力变强的乐趣，也能体会到有可供探索的新区域的乐趣</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide21.jpeg"></p>
+<ul>
+<li><p>紧张刺激的小游戏</p>
+<p>  游戏中在可通过能力解锁的新区域中设计了“躲避球”、“吹箭陷阱”、“保护火源”、“死里逃生”等小游戏，在常规战斗之余增添了别样乐趣</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide22.jpeg"></p>
+<ul>
+<li><p>激烈的 BOSS 战</p>
+<p>  参考“玄”字的甲骨文变体，以及皮影戏中“云朵子”的美术风格设计了 BOSS 形象，并为其设计了三种阶段、五种技能，能让经历一路探索变强的玩家充分展示自身能力，享受畅快的战斗</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide23.jpeg"></p>
+<ul>
+<li><p>丰富音效</p>
+<p>  游戏中为各式行为都专门设计了音效，极具表现力，别有一番乐趣</p>
+</li>
+</ul>
+<h4 id="美术风格"><a href="#美术风格" class="headerlink" title="美术风格"></a>美术风格</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide24.jpeg"></p>
+<h3 id="制作复盘"><a href="#制作复盘" class="headerlink" title="制作复盘"></a>制作复盘</h3><blockquote>
+<p>因为时间已经过去将近两个月，很多细节可能记不太清了，所以会着重一些特殊节点和事件。</p>
+</blockquote>
+<h4 id="0-概览"><a href="#0-概览" class="headerlink" title="0 概览"></a>0 概览</h4><p>这里先回顾一下从团队构建到项目提交的整体过程，其中我全权负责或是部分参与的以 <code>蓝色人头</code> icon 进行了标识，我认为可以改进或是出现了问题的部分以 <code>橙色感叹号</code> icon 进行了标识。</p>
+<p>整体而言，我以主策划和副程序的身份参与了此次项目。且认为可改进或有问题的部分有：</p>
+<ul>
+<li>会议探讨初版策划案的可能性（第一次选择方向）</li>
+<li>针对各风险实现解决原型（第二次选择方向，后面都为第二次）</li>
+<li>收尾时的各种迭代</li>
+</ul>
+<p>对于这部分的反思会放到最后。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202208301618production.png"></p>
+<h4 id="1-初期关于非遗赛道的思考以及延伸的可能游戏想法"><a href="#1-初期关于非遗赛道的思考以及延伸的可能游戏想法" class="headerlink" title="1 初期关于非遗赛道的思考以及延伸的可能游戏想法"></a>1 初期关于非遗赛道的思考以及延伸的可能游戏想法</h4><p>以下基本都引自当时所写的设计文档</p>
+<h5 id="关于非遗赛道的思考"><a href="#关于非遗赛道的思考" class="headerlink" title="关于非遗赛道的思考"></a>关于非遗赛道的思考</h5><blockquote>
+<p>看了去年的获奖作品，其实让我有些偏向于选非遗赛道，因为特殊赛道作品同时也是可以参与主赛道评比的。所以选择特殊赛道其实多了一分“可能性”。</p>
+<p>另一方面其实也是有些私心，我个人的观点是游戏不仅仅是一种娱乐方式，它在未来，甚至在当下的现在已经在成为一些人（特别是像我们这些爱玩游戏的玩家）看待世界，甚至与世界相处的一种方式。所以也希望所做出来的东西，能在某种程度上也反映自己对所知所学所认同的，对这个世界的一点点观感。我个人对于中国传统文化是很有感情的，所以，综合之下，确实会更倾向于非遗赛道。</p>
+<p>非遗赛道设置的目的，不难猜想，传承与弘扬。</p>
+<p>其中一种最直接的其实就是模拟类游戏，让玩家直观感受整个流程，参考游戏《超执刀》。这种类型的话其实大方向比较好定，就看对什么题材感兴趣，然后要怎么让这个过程好玩起来其实还是需要一些深入思考，但这种是最能直接回应赛道主题的方式。这种类型的话目标玩家的场景其实可以预设为博物馆或是教学场景我觉得没问题。</p>
+<p>另一种需要对其中的行为本身进行解构，比如不是从推进流程的人本身，而是以被使用的工具的角度。这种类型的目标玩家的场景其实就会散一些，因为时间不足以进行大规模用户调研，可以假定为和我们自己类似的玩家（等方案差不多定下来后也可以参考身边朋友的意见，他们的反馈也会很重要！）</p>
+<p>简言之，<strong>目标是做一个能让人们喜闻乐见地玩下去，并真正能从中了解到那个非遗本身的知识和文化的这样一个游戏</strong>。</p>
+<p>进行创意构想的时候也可以简单参考一下卖点设计，即回答“游戏凭什么吸引玩家游玩”，其中会涉及一点，即与相似游戏（竞品）的区分点（优势）在哪里。</p>
+<p>而玩法创意构想的时候主要针对怎样给玩家带来非线性体验，即让他们“心跳”起来。</p>
+<p>再之外那就会涉及比如游戏之外的讨论效应和玩家群聚效应，但这暂时就不属于需要主要关心的部分了。</p>
+<p><strong>主要关心的是玩法创意构想部分！</strong></p>
+<p>下面会对一些我直观想到的可能玩法进行一下罗列，肯定不成熟，但可以参考。如果觉得一定程度上喜欢，可以在评论栏里写下 ID 和想法嗷。如果有想到新的玩法也可以写在评论里 (￣▽￣)”</p>
+</blockquote>
+<h5 id="当时想到-脑子里算是有了些画面感的项目（更多的项目想法看后两个-section）"><a href="#当时想到-脑子里算是有了些画面感的项目（更多的项目想法看后两个-section）" class="headerlink" title="当时想到 脑子里算是有了些画面感的项目（更多的项目想法看后两个 section）"></a>当时想到 脑子里算是有了些画面感的项目（更多的项目想法看后两个 section）</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830174251.png" alt="投票总表"></p>
+<h5 id="功能型或是解构类"><a href="#功能型或是解构类" class="headerlink" title="功能型或是解构类"></a>功能型或是解构类</h5><blockquote>
+<p>目前能直观想到的可能是以下两种大方向：</p>
+<ol>
+<li> 功能型，其实就是前面提到的类似流程型的游戏，这类游戏其实目标场景更容易想到，非常合适用于教学或是类似博物馆这样的场景。期望人们可以真正通过这款游戏来对相关非遗有一个直观的了解和认知。理想情况下，当然是又有趣好玩又能学到知识是最好的！</li>
+</ol>
+<ul>
+<li> 可供参考的游戏：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Zx411S73t/">超执刀</a>，以及模拟类游戏</li>
+</ul>
+<ol start="2">
+<li> 解构型，这种思路可能从涉及工具的非遗出发，比如成为工具本身。开始时其实玩家并不能直观知道全貌，直到最后才能得知。比如，玩家所操作的不是弹琴的人，而是琴本身，相应问题可能会是“琴为什么一定要被弹/为什么只能被弹”</li>
+</ol>
+<p>下面是一些可能的项目，说明，及玩法思考</p>
+<p>这大类的游戏创意出发点会主要关注演奏方式/制作过程。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830174718.png"></p>
+<h5 id="叙事类或基于故事背景构建战斗-解谜"><a href="#叙事类或基于故事背景构建战斗-解谜" class="headerlink" title="叙事类或基于故事背景构建战斗/解谜"></a>叙事类或基于故事背景构建战斗/解谜</h5><blockquote>
+<ol>
+<li>叙事类</li>
+</ol>
+<ul>
+<li>直接基于叙事相关的非遗来构建游戏世界 以小见大 期望让人们对故事本身 甚至背后更深的意义感兴趣</li>
+<li>这类其实属于初一想貌似很好做开头，毕竟有现成故事，但是这类游戏要想做出彩，其实很考验叙事和剧情功底，另一方面就得考虑美术表现力了。</li>
+<li>如果要做，估计也需要从其中挑选冲突性最强的故事出来。</li>
+</ul>
+<ol start="2">
+<li>基于故事背景构建战斗/解密</li>
+</ol>
+<ul>
+<li>不过也不一定真的全篇叙事，也可以挑选其中一场最具冲突性的战斗来集中做一个战斗/解密关卡？这感觉也是一种很好的思路，不会太大，难以把控，也可以以点窥面。</li>
+</ul>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830174840.png"></p>
+<h5 id="目前的一些思考"><a href="#目前的一些思考" class="headerlink" title="目前的一些思考"></a>目前的一些思考</h5><p>即使现在反观，个人认为当时思考的大部分内容仍具有参考价值。总结而言就是需要一款以小见大的游戏，让人们能借助它来关注到背后的非遗本身，从而实现传承和弘扬的目的。</p>
+<p>而对于这种基于特定文化主题的改编，当时提的几个大类也具有很好的概括性：</p>
+<blockquote>
+<ol>
+<li> 功能型，其实就是前面提到的类似流程型的游戏，这类游戏其实目标场景更容易想到，非常合适用于教学或是类似博物馆这样的场景。期望人们可以真正通过这款游戏来对相关非遗有一个直观的了解和认知。理想情况下，当然是又有趣好玩又能学到知识是最好的！</li>
+</ol>
+<ul>
+<li> 可供参考的游戏：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Zx411S73t/">超执刀</a>，以及模拟类游戏</li>
+</ul>
+<ol start="2">
+<li> 解构型，这种思路可能从涉及工具的非遗出发，比如成为工具本身。开始时其实玩家并不能直观知道全貌，直到最后才能得知。比如，玩家所操作的不是弹琴的人，而是琴本身，相应问题可能会是“琴为什么一定要被弹/为什么只能被弹”</li>
+</ol>
+<p>这大类的游戏创意出发点会主要关注演奏方式/制作过程。</p>
+<ol start="3">
+<li>叙事类</li>
+</ol>
+<ul>
+<li>直接基于叙事相关的非遗来构建游戏世界 以小见大 期望让人们对故事本身 甚至背后更深的意义感兴趣</li>
+<li>这类其实属于初一想貌似很好做开头，毕竟有现成故事，但是这类游戏要想做出彩，其实很考验叙事和剧情功底，另一方面就得考虑美术表现力了。</li>
+<li>如果要做，估计也需要从其中挑选冲突性最强的故事出来。</li>
+</ul>
+<ol start="4">
+<li>基于故事背景构建战斗/解密</li>
+</ol>
+<ul>
+<li>不过也不一定真的全篇叙事，也可以挑选其中一场最具冲突性的战斗来集中做一个战斗/解密关卡？这感觉也是一种很好的思路，不会太大，难以把控，也可以以点窥面。</li>
+</ul>
+</blockquote>
+<p>倒是看到解构型的时候，突然想到了最近在看的《游戏情感设计：如何触动玩家的心灵》一书中提到的《火车》（Train）这一游戏，玩家们需要移动装满了乘客的火车车厢，把他们从一个地方运往另一个地方，途中会遇到障碍和挑战。到了游戏结束时，他们才知道火车的终点是奥斯维辛。</p>
+<p>《火车》虽然是从叙事层面出发的，但实现的效果，和我之前所想的“直到最后知道真相然后恍然大悟”的感觉是一样的。感觉需要是一个玩家一看全貌就知道是什么，但对其内里不是很了解的这样一个事物。换言之，过程需要有“蒙蔽性”，结果需要有“恍然性”。</p>
+<h4 id="2-中国皮影戏玩法设想"><a href="#2-中国皮影戏玩法设想" class="headerlink" title="2 中国皮影戏玩法设想"></a>2 中国皮影戏玩法设想</h4><h5 id="主要创意方向"><a href="#主要创意方向" class="headerlink" title="主要创意方向"></a>主要创意方向</h5><h6 id="功能型-展现皮影制作过程"><a href="#功能型-展现皮影制作过程" class="headerlink" title="功能型 - 展现皮影制作过程"></a>功能型 - 展现皮影制作过程</h6><blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222325.png"></p>
+<ul>
+<li>  画稿</li>
+<li>  过稿</li>
+<li>  潮皮</li>
+<li>  推平</li>
+<li>  镂刻 - 推皮走刀 （这个也许是一个可以专门拿出来的点）</li>
+<li>  上色</li>
+</ul>
+<p>如果要做偏这个方向，也许不用全貌展示（其中细节过多，需要太多资料），可以挑选其中的具有代表性的阶段进行深入拆解。比如镂刻。</p>
+</blockquote>
+<h6 id="功能型-展现皮影表演过程（作为表演者）"><a href="#功能型-展现皮影表演过程（作为表演者）" class="headerlink" title="功能型 - 展现皮影表演过程（作为表演者）"></a>功能型 - 展现皮影表演过程（作为表演者）</h6><ul>
+<li>  道情    </li>
+</ul>
+<p>但这个方向其实可以融入到下一个方向里，主要是为了展现皮影的操作难度。</p>
+<h6 id="解构型-叙事-玩家扮演皮影角色，演绎经典皮影剧目中的故事"><a href="#解构型-叙事-玩家扮演皮影角色，演绎经典皮影剧目中的故事" class="headerlink" title="解构型+叙事 - 玩家扮演皮影角色，演绎经典皮影剧目中的故事"></a>解构型+叙事 - 玩家扮演皮影角色，演绎经典皮影剧目中的故事</h6><ul>
+<li>  和决战平安京的联动：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ab4y1X7Ef?spm_id_from=333.337.search-card.all.click">【灯影戏梦】国风皮影戏纪录片《灯火人间戏》</a></li>
+<li>经典剧目<ul>
+<li>  《闹元宵》</li>
+<li>  《鹤与龟》</li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/s/video/BV1Mg411T7p8">《老鼠偷油》</a><ul>
+<li>  真的很好笑，推荐大家都看看！</li>
+</ul>
+</li>
+<li>  大闹天宫！</li>
+<li>  皮影戏的演出，有历史演义戏、民间传说戏、武侠公案戏、爱情故事戏、神话寓言戏、时装现代戏等等，无所不有。折子戏、单本戏和连本戏的剧目繁多，数不胜数。常见的传统剧目有白蛇传、拾玉镯、西厢记、秦香莲、牛郎织女、杨家将、岳飞传、水浒传、三国演义、西游记、封神榜等等。从革命战争年代起到解放后，新发展出的时装戏、现代戏和童话寓言剧，常见的剧目有兄妹开荒、白毛女、刘胡兰、小二黑结婚、小女婿、林海雪原、红灯记、龟与鹤、两朋友、东郭先生等等。</li>
+<li>  2017年，在第57届威尼斯双年展上，汪天稳及艺术家汤南南、邬建安、姚惠芬等人，合力创作了皮影表演作品《不息-移山填海》。这部讲述中华民族生命不止、奋斗不息的精神的作品，成为了那一年威尼斯双年展的焦点和中国馆的核心展示，更是在国内引起了一波关于传统艺术与当代艺术如何结合的热烈讨论。</li>
+</ul>
+</li>
+</ul>
+<h6 id="头脑风暴得出的相关元素"><a href="#头脑风暴得出的相关元素" class="headerlink" title="头脑风暴得出的相关元素"></a>头脑风暴得出的相关元素</h6><blockquote>
+<ul>
+<li>  近大远小（针对 3d）</li>
+<li>光与影<ul>
+<li>  可以延伸到 2d 与 3d 空间的变换 - 来源于去年的金奖作品《五维空间》 有光则有影 为 3d （皮状态） 无光则无影 为 2d（影状态）</li>
+</ul>
+</li>
+<li>灯与萤火虫<ul>
+<li>  萤火虫作为收集元素，其会成为玩家在虚实之间转化的力量来源（有光则能实，无光只能虚）</li>
+</ul>
+</li>
+<li>特殊操作方式<ul>
+<li>因为皮影操作一般为三杆 - 头、左手、右手，其实可以延伸出双人的合作操作模式，参考 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Xs411x7Ak?spm_id_from=333.337.search-card.all.click">manual samuel</a><ul>
+<li>  一人负责角色移动与头杆（比如手柄左摇杆控制前后移动，右摇杆控制头部）</li>
+<li>  另一人负责左手与右手（比如手柄左摇杆为左手与右摇杆为右手）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特殊颜色<ul>
+<li>  其实可以考虑 不单单制作最传统的配色，可以考虑为其增添发光效果，赛博皮影！听着都酷！</li>
+</ul>
+</li>
+<li>虚实关系<ul>
+<li>比如有两个状态：远离布（就是虚状态），靠近布（就是实状态）。<ul>
+<li>  只有虚状态下人物才能转身，但虚状态下的攻击大幅降低（如只有 50%）</li>
+<li>  实状态下人物攻击正常（100%），但只能向前攻击（前后上下移动都可以）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h6 id="可能构想及投票！"><a href="#可能构想及投票！" class="headerlink" title="可能构想及投票！"></a>可能构想及投票！</h6><blockquote>
+<p>关键是要能发挥出皮影本身的特点（即上面提到的几个相关元素，尤其是光影以及操作方式），不然我觉得但是以皮影元素作为设计点就失去了意义。</p>
+<p>我目前看了几个皮影戏，故事精简，有直观冲突并且便于设计主角的是<a target="_blank" rel="noopener" href="https://www.bilibili.com/s/video/BV1Mg411T7p8">《老鼠偷油》</a>。但其实应该还有很多潜在可能性，选择的要点主要是：</p>
+<ol>
+<li> 有清晰故事脉络（方便设计玩家目的/获胜条件）</li>
+<li> 有直观故事冲突（有对立，方便设计敌人）</li>
+</ol>
+<p>如果确实最终选择以这个方向开展，可能还需要再看看有没有别的合适的剧目。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830225746.png"></p>
+</blockquote>
+<h6 id="叙事型-讲述其历史起源"><a href="#叙事型-讲述其历史起源" class="headerlink" title="叙事型 - 讲述其历史起源"></a>叙事型 - 讲述其历史起源</h6><blockquote>
+<ul>
+<li>  历史起源</li>
+</ul>
+<p>皮影戏从有文字记载，已经有2000多年的历史，汉武帝爱妃李夫人染疾故去了，武帝的思念心切神情恍惚，终日不理朝政。大臣李少翁一日出门，路遇孩童手拿布娃娃玩耍，影子倒映于地栩栩如生。李少翁心中一动，用棉帛裁成李夫人影像，涂上色彩，并在手脚处装上木杆。入夜围方帷，张灯烛，恭请皇帝端坐帐中观看。武帝看罢龙颜大悦，就此爱不释手。这个载入《汉书》的爱情故事，被认为是皮影戏最早的渊源。</p>
+</blockquote>
+<h5 id="目前的一些想法"><a href="#目前的一些想法" class="headerlink" title="目前的一些想法"></a>目前的一些想法</h5><p>这个阶段的构想中其实有一部分比较好的想法未能在最终版本中体现，如想法 7 中的 </p>
+<blockquote>
+<p>两个状态：远离布（就是虚状态），靠近布（就是实状态）。<br>只有虚状态下人物才能转身，但虚状态下的攻击大幅降低（如只有 50%）<br>实状态下人物攻击正常（100%），但只能向前攻击（前后上下移动都可以）</p>
+</blockquote>
+<p>想要还原真实皮影的质感，个人感觉转身一定是需要特殊处理的，这也是皮影作为“光影艺术”的直接体现之一。</p>
+<p>除了降低虚状态下的攻击，也可以对虚状态进行一些加强，如虚状态下能闪避攻击。这样能让玩家从“因为要转身不得不进入虚状态”变为“也可以因为想闪避攻击而进入虚状态”，从而增加玩法的策略深度。</p>
+<p>另外几个想法也各有特色，应该是最后得票不够高被舍弃了…</p>
+<h4 id="3-第一次集体选题分析反思"><a href="#3-第一次集体选题分析反思" class="headerlink" title="3 第一次集体选题分析反思"></a>3 第一次集体选题分析反思</h4><p>其实头脑风暴部分进行的还算顺利，只不过基本只使用了<code>基于给定元素的头脑风暴</code>方法。</p>
+<h6 id="第一次头脑风暴"><a href="#第一次头脑风暴" class="headerlink" title="第一次头脑风暴"></a>第一次头脑风暴</h6><p>这里先放一下第一次头脑风暴的截图</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830161009.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830161106.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830161200.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830161307.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830161505.png"></p>
+<p>最终票选结果最高的是这几个</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220830161547.png"></p>
+<h5 id="第一次选题的初版策划案"><a href="#第一次选题的初版策划案" class="headerlink" title="第一次选题的初版策划案"></a>第一次选题的初版策划案</h5><h6 id="游戏描述-游戏概述"><a href="#游戏描述-游戏概述" class="headerlink" title="游戏描述 - 游戏概述"></a>游戏描述 - 游戏概述</h6><blockquote>
+<ul>
+<li>玩家人数：<ul>
+<li>  单人</li>
+</ul>
+</li>
+<li>游戏玩法类型：<ul>
+<li>  探索+PZL+视角转换</li>
+</ul>
+</li>
+<li>游戏描述<ul>
+<li>故事描述<ul>
+<li>  清末，原本作为“悬灯操影”的皮影艺人的你被打为了和白莲教勾结的“玄灯匪”。为了不让这一身技艺断送在自己手里，你踏上了躲躲藏藏的守护传承之路。而手中的皮影，似是感受到了你的一腔热情，也悄然发生了变化…</li>
+</ul>
+</li>
+<li>玩法描述<ul>
+<li>  玩家作为操纵皮影的“操影师”，主要活动在三维空间，而皮影主要活动在二维空间。三维空间中的光影关系能够对二维空间造成影响，而二维空间中的物体变化反过来也能影响三维空间。玩家需要巧妙利用不同空间的光影以及位置关系来一次次逃脱官兵的追捕。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>一句话描述游戏，它为什么特别（让人印象深刻）：<ul>
+<li>  两种维度，虚实相生逃一死；多样皮影，丰富变化解万难；</li>
+<li>  玩家所操控的皮影具有多种变化，对应多种能力；维度的转换也十分烧脑，令人着迷。</li>
+</ul>
+</li>
+<li>目标玩家群体：<ul>
+<li>  和我们一样的同龄玩家</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h6 id="游戏描述-游戏玩法"><a href="#游戏描述-游戏玩法" class="headerlink" title="游戏描述 - 游戏玩法"></a>游戏描述 - 游戏玩法</h6><blockquote>
+<ul>
+<li>目标<ul>
+<li>玩家获胜条件<ul>
+<li>  在规定时间内，逃出房间。</li>
+</ul>
+</li>
+<li>玩家失败条件<ul>
+<li>  没有在规定时间内逃出房间。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>路径<ul>
+<li>  玩家如何达到目标</li>
+<li>从玩法层面描述游戏怎么玩<ul>
+<li>  玩家需要灵活运用三维空间的操影人和光影关系为二维空间中的皮影创造路径，从而能让二维空间中的皮影通过对二维世界中的物体进行改变来反作用于三维世界，从而为操影人赢得求生的机会。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>挑战<ul>
+<li>玩家在实现目标过程中可能遇到的障碍<ul>
+<li>  需要在三维空间中找到合适的光影关系，从而为二维空间创造路径</li>
+<li>  需要在二维空间中为三维世界找到合适的逃生手段</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>体验<ul>
+<li>期望传达的目标体验是什么<ul>
+<li>  限时逃生的惊险</li>
+<li>  多样皮影的绚丽</li>
+<li>  烧脑</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>玩法是否原创？其他同类游戏做了些什么？与他们相比，我们的区分点在哪里？<ul>
+<li>  该玩法应该是属于某种视觉错位解密？并非原创</li>
+<li>  同类游戏包括：笼中窥梦，纪念碑谷系列</li>
+<li>  区分点：2d 和 3d 世界藉由光影关系相互影响，皮影人物及其能力的多样化</li>
+</ul>
+</li>
+<li>3C<ul>
+<li>操作方式<ul>
+<li>  按键映射</li>
+</ul>
+</li>
+<li>相机视角<ul>
+<li>  游戏中一共会有三种视角</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>3D 空间<ul>
+<li>  第一人称的正面视角，用于改变和观察当前光影关系</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222413.png"></p>
+<blockquote>
+<pre><code>- 第三人称的 45 度 俯视角，便于与场景交互，以寻找光影关系的可能性
+</code></pre>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222430.png"></p>
+<blockquote>
+<ul>
+<li>2D 空间<ul>
+<li>  由第一人称的正面视角推进后变为 2D 平面视角，皮影只能在该视角下进行操作和交互</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222448.png"></p>
+<blockquote>
+<ul>
+<li>卖点<ul>
+<li>与同类作品的区分点在哪里/凭什么来吸引玩家游玩<ul>
+<li>  皮影元素的引入</li>
+<li>  2d 和 3D 世界藉由光影关系互相影响的视觉错位解密</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h6 id="原型验证及风险评估-功能原型-需求"><a href="#原型验证及风险评估-功能原型-需求" class="headerlink" title="原型验证及风险评估 - 功能原型 - 需求"></a>原型验证及风险评估 - 功能原型 - 需求</h6><blockquote>
+<ol>
+<li> 需要想办法让阴影组成的 2d 平面可玩起来</li>
+</ol>
+<ul>
+<li>  需要达成的目标：可以在阴影组成的 2d 平面进行角色移动</li>
+<li>  需要考虑的因素：如何利用阴影构建 2d 世界</li>
+</ul>
+<p>我以前只试过单独制作 2d 游戏的交互，相当于是用的 tile map 那一套。先不考虑 3d 世界的变化对 2d 的影响，怎么让这个由阴影组成的 2d 平面可玩呢？目前想到的可能性是直接基于阴影制作 2d 关卡，所以是一种“伪实时操作”的阴影变化而形成的“新”关卡。</p>
+<ol start="2">
+<li> 验证 3d 空间的改变对于 2d 空间的影响</li>
+</ol>
+<ul>
+<li>  需要达成的目标：3d 空间改变后 用新的阴影构建 2d 平面关卡</li>
+<li>  需要考虑的因素：实时阴影所带来的复杂性</li>
+</ul>
+<p>3d 空间中物体的移动改变阴影倒是简单，但是需要让这个改变在 2d 世界中“生效”。这需要获取阴影然后重新渲染 2d 关卡。听起来不太可能啊。除非是重新基于当前阴影来重新生成关卡，感觉好难。另一种简化方法是通过限定交互可选项（如一个物体只能被摆动到某个位置或者只能旋转特定角度）来为每一种交互可能单独构建 2d 关卡。这个需要讨论一下。有可能需要重新构思一下这部分玩法，甚至去掉 3d 空间的交互</p>
+<ol start="3">
+<li> 验证 2d 空间的改变对于 3d 空间的影响</li>
+</ol>
+<ul>
+<li>  需要达成的目标：2d 平面改变后 3d 空间物体做出相应改变</li>
+<li>  需要考虑的因素：2d 空间物体的非常规变化以及 2d 3d 变化的空间映射关系</li>
+</ul>
+<p>2d 空间的改变对于 3d 空间的影响，目前想到的肯定是得绑定 2d 和 3d 中的物体（他们其实都是各自独立的 只是假装是一体），然后具体改变目前想到的有两种，一种是基础几何变换，比如平移，旋转，这个倒是直接改变绑定的 3d 物体的属性就可以；我想到的另一种变换其实是皮影本身的变换，比如皮影在这一关中获取到了变身的能力（比如变为梯子），那么就在 3d 世界中创建相应梯子就可以。感觉难点会出现在位置关系的映射上，最后的解决方案估计是做成某种伪映射。</p>
+<ol start="4">
+<li> 用 direction light 模拟油灯效果</li>
+</ol>
+<ul>
+<li>  需要达成的目标：实现 忽明忽暗的点光源效果（模拟油灯/蜡烛）</li>
+<li>  需要考虑的因素：如果要做实时光照 貌似只能用 direction light</li>
+</ul>
+<p>我看了一下，spot light 和 point light 都不支持实时光照，只有 direction light 支持实时光照，可能得研究一下加遮罩之类的，一个是为了聚焦，也是为了模拟油灯效果（忽明忽暗倒是可以直接调整 intensity）</p>
+</blockquote>
+<h6 id="原型验证及风险评估-玩法原型"><a href="#原型验证及风险评估-玩法原型" class="headerlink" title="原型验证及风险评估 - 玩法原型"></a>原型验证及风险评估 - 玩法原型</h6><blockquote>
+<p>说实话，要是功能原型能验证通过，玩法原型，即谜题设计会是可以预见的一大难点哈哈哈…</p>
+</blockquote>
+<h6 id="原型验证及风险评估-美术原型-需求"><a href="#原型验证及风险评估-美术原型-需求" class="headerlink" title="原型验证及风险评估 - 美术原型  - 需求"></a>原型验证及风险评估 - 美术原型  - 需求</h6><blockquote>
+<p>可以先制作一个玩家可操控的人形皮影角色，需要能够行走，跳跃。</p>
+</blockquote>
+<blockquote>
+<p>可以参考下面的西安市明清皮影艺术博物馆中的藏品介绍中的“身段”中的人物</p>
+</blockquote>
+<h6 id="原型验证及风险评估-美术原型-参考资料"><a href="#原型验证及风险评估-美术原型-参考资料" class="headerlink" title="原型验证及风险评估 - 美术原型  - 参考资料"></a>原型验证及风险评估 - 美术原型  - 参考资料</h6><blockquote>
+<ul>
+<li>  <a target="_blank" rel="noopener" href="http://www.shadowpuppetart.com/p_yunyou.html">西安市明清皮影艺术博物馆</a></li>
+<li>  <a target="_blank" rel="noopener" href="http://www.leather-silhouette.com/ydy">中国西安数字皮影博物馆</a></li>
+</ul>
+</blockquote>
+<h6 id="整体故事背景-“玄灯匪”的由来"><a href="#整体故事背景-“玄灯匪”的由来" class="headerlink" title="整体故事背景 - “玄灯匪”的由来"></a>整体故事背景 - “玄灯匪”的由来</h6><p>截取自《“西琴”东渐与本土艺术》</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222700.png"></p>
+<blockquote>
+<p>白莲教属于民间秘密宗教组织,有自己的一套教规和仪式。因为白莲教入教仪式有“中棹设灯一盏，使观灯花，变化百出”，教徒称之为“玄灯”,故被封建统治者诬为“玄灯匪”。而演出皮影戏也要悬灯，“玄灯”与“悬灯”音同意不同。又由于民间传说白莲教起义是利用“纸人纸马”造反.白莲教利用通俗的民间戏曲形式演唱经卷。宣传教义，发动群众，组织群众，号召群众反抗官府。他们这种活动多在夜晚进行，所谓“天将晓，各教归”。而影戏也是在夜间聚会，中悬巨灯，用皮人皮马来演唱“影卷”，故才有影戏是“皮人皮马造反”的“悬灯匪”的说法，产生了影戏活动与白莲教秘密结社有关的嫌疑。</p>
+</blockquote>
+<h5 id="当时的一些思考"><a href="#当时的一些思考" class="headerlink" title="当时的一些思考"></a>当时的一些思考</h5><p>这个版本其实主要关注于空间解密，要是能做出来感觉会是类似《笼中窥梦》那样的感觉，但这种类型的解密说实话对谜题设计的要求很高，我自认暂时还没有这样的谜题设计能力，所以只得作罢。</p>
+<p>另一个放弃的原因是当时考虑到如果要实现想象中的空间解密效果，需要实现 3D 阴影在 2D 平面上实时投射这样的效果，当时在实现上也有困难。</p>
+<p>虽然可以将阴影的实时移动简化为非实时移动（即预设可能的移动方案），把它改为一种类似密室逃脱的空间解密游戏。然而当时受制于谜题设计难度，最终也没有选择这个方案。</p>
+<h4 id="4-之后就是当前看到的这个版本了"><a href="#4-之后就是当前看到的这个版本了" class="headerlink" title="4 之后就是当前看到的这个版本了"></a>4 之后就是当前看到的这个版本了</h4><h5 id="当时的灵感来源"><a href="#当时的灵感来源" class="headerlink" title="当时的灵感来源"></a>当时的灵感来源</h5><p>当时的灵感其实来自于两个大的方向：</p>
+<blockquote>
+<ol>
+<li>皮影操控+音乐<ul>
+<li> 游戏角色是操作皮影的人,以控制皮影去做一些肢体动作去接触音符,</li>
+<li> 最后的音符连串起来会是一首民间曲调</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222743.png"></p>
+<blockquote>
+<ol start="2">
+<li> 特殊的光照方式</li>
+</ol>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831222802.png"></p>
+<h5 id="后续取舍"><a href="#后续取舍" class="headerlink" title="后续取舍"></a>后续取舍</h5><p>加入音符/节奏玩法的思路其实是参考了《节奏海拉鲁》，但后来考虑到相关音乐音效的制作难度太大，最终也放弃了音符/节奏元素的引入。</p>
+<h3 id="可改进的点"><a href="#可改进的点" class="headerlink" title="可改进的点"></a>可改进的点</h3><h4 id="评审反馈"><a href="#评审反馈" class="headerlink" title="评审反馈"></a>评审反馈</h4><blockquote>
+<p>选题有一定创意，同时核心玩法与题材有一定契合度。美术有一定风格，但素材量略微不足，场景和战斗表现较平、<br>同时作为横版格斗最重要的战斗完成度不足，打击感与操作精准度均有明显缺憾，尚需进一步打磨。</p>
+</blockquote>
+<h4 id="反馈思考"><a href="#反馈思考" class="headerlink" title="反馈思考"></a>反馈思考</h4><blockquote>
+<blockquote>
+<p>我更多会从设计角度进行反思</p>
+</blockquote>
+</blockquote>
+<p>这里先补充一个后面会多次提到的概念——“三个原因”原则。</p>
+<h5 id="设计决策要满足“三个原因”的原则"><a href="#设计决策要满足“三个原因”的原则" class="headerlink" title="设计决策要满足“三个原因”的原则"></a>设计决策要满足“三个原因”的原则</h5><p>设计决策应尽可能地遵循陈星汉所提过的 “三个原因” 的原则。</p>
+<blockquote>
+<blockquote>
+<p>“三个原因” 的原则指的是在进行元素引入等设计决策时，应该至少满足三个引入原因，这样才能称得上是有力的设计。<br>《游戏设计艺术》<a href="https://medill-east.github.io/2022/07/11/20220711-theartofgamedesign-chap13/#toc-heading-1">第十三章 游戏机制必须平衡</a> 中所提到的 <a href="https://medill-east.github.io/2022/07/11/20220711-theartofgamedesign-chap13/#toc-heading-26">49 号透镜：优雅</a> 所说的也是同样的道理，即一个设计应该能够满足多个设计目的。</p>
+</blockquote>
+</blockquote>
+<hr>
+<p>评审反馈中指出的明显问题有：</p>
+<ol>
+<li>美术有一定风格，但素材量略微不足 —— 美术素材不足</li>
+<li>场景和战斗表现较平 —— 关卡和战斗设计需要提高</li>
+<li>战斗完成度不足，打击感与操作精确度均有明显缺憾 —— 战斗手感需要提高</li>
+</ol>
+<p>选题，核心玩法和题材都用了“一定”作为定语，也就是说勉强是个及格线，也并不出彩。</p>
+<p> 这些问题其实并非没有意识到，战斗手感本来的打算是如果能进入复赛就重点调试，但未能如愿。时间资源本就是有限的，所以这暴露出的问题是优先级的排期不够合理。</p>
+<h5 id="问题：需求优先级排期可以优化，即项目管理能力不足"><a href="#问题：需求优先级排期可以优化，即项目管理能力不足" class="headerlink" title="问题：需求优先级排期可以优化，即项目管理能力不足"></a>问题：需求优先级排期可以优化，即项目管理能力不足</h5><p>这次项目推进过程中美术同学的电脑送修了差不多一周，所以大头的美术资源（主角、敌人、结尾）虽然创作完成，但只有很少的时间留给了其余部分（拾取物素材），地图中的大部分素材其实是我这个外行来创作的，最终导致了反馈中所提到的美术素材不足的问题。</p>
+<p>这其实就涉及 “如何在有限资源情况下更好地完成项目” 这一宏大的项目管理问题，往小了说就是需求的优先级排期问题。</p>
+<p>这次项目推进的前中期需求排期主要是利用飞书表格进行的，后期快速迭代时则主要是利用的看板功能进行直观地分职能需求排期，对于我们这样一个较小的项目而言，个人感觉差不多是够用的。</p>
+<p>在项目早期（差不多六月中）我其实已经以周为单位规划完了大致的需求完成节点，但在项目推进过程中还是多次出现了需求延期的情况，除开电脑送修这种非人为因素，其中其实还是有不少可以优化的地方：</p>
+<h6 id="反思：需求沟通时，一定要摸清对方的沟通习惯，并且双向确认"><a href="#反思：需求沟通时，一定要摸清对方的沟通习惯，并且双向确认" class="headerlink" title="反思：需求沟通时，一定要摸清对方的沟通习惯，并且双向确认"></a>反思：需求沟通时，一定要摸清对方的沟通习惯，并且双向确认</h6><p>此次项目是线上组队，也是全程线上进行，所以事先对于大家的沟通习惯都不了解，所以这个问题还是出现了几次。</p>
+<p>解决方案目前想到的其实就是双向确认，在我方描述完需求后，让需求承接方也复述一遍需求，以确保双方达成共识。且为了避免占用所有人的时间，需求复述这一环节可以采取 1v1 进行的方式，即统一的会议结束后，单独找需求承接方来进行 double check。</p>
+<p>其实这样的问题本可以避免的，因为一直也在强调 “如果有任何不清楚的地方，一定要沟通” 云云，但很可能出现的情况就是对方觉得了解得很清楚了，但其实和发布的需求有偏差的情况。一方面当然是因为需求描述不够清晰，产生了歧义，但另一方面也是因为双方没有真正达成共识，这在团队协作中应该很常见？所以对于未来的长期团队而言，摸清每个人的沟通习惯也是很重要的。</p>
+<h6 id="反思：提升自身积累，才能更清晰地描述需求，帮助项目更快更好地推进"><a href="#反思：提升自身积累，才能更清晰地描述需求，帮助项目更快更好地推进" class="headerlink" title="反思：提升自身积累，才能更清晰地描述需求，帮助项目更快更好地推进"></a>反思：提升自身积累，才能更清晰地描述需求，帮助项目更快更好地推进</h6><p>因为以前看过的资料中反复提到过需要根据对方的情况来调整需求描述的方法，如程序更喜欢清晰的输入输出关系以及流程图，美术更喜欢有直观的对照参考。此次项目推进中也在有意识地这么做，但仍有较大的提升空间。</p>
+<p>做的不够好的很大原因是自身积累不足，尤其是美术需求。因为我自己就是副程序，所以和程序同学的沟通其实也较为顺畅。提音效需求的时候其实也大概能通过文字和语音沟通来明确需求。但对于美术和 UI 需求，此次只做到了给出大致的美术参考范围（甚至都不是精确的美术参考），剩下的都靠美术和 UI 同学自由发挥。</p>
+<p>好在美术同学和 UI 同学自身专业水平过硬，产出的素材水平都较高。但最终由于时间有限和我对于下一步艺术资产迭代没有清晰想法的原因而没有能更好地进行迭代。</p>
+<p>无论是从项目推进效率（能更清晰地描述需求就能减少不必要的时间浪费）还是从自我提升的角度而言，在未来都需要更多地提升自身的艺术涵养，否则还是会出现 “自己都不能清楚说出要的是什么” 的尴尬情况。</p>
+<h5 id="问题：场景和战斗表现较平"><a href="#问题：场景和战斗表现较平" class="headerlink" title="问题：场景和战斗表现较平"></a>问题：场景和战斗表现较平</h5><p>这里所指的 “表现较平” 可以从四元素层面（技术层面按下不表）进行一下拆解。</p>
+<blockquote>
+<blockquote>
+<p>因为此次项目设计中一共只有三个关卡，“新手教学-类银河恶魔城探索战斗-BOSS战”，其中第二部分“类银河恶魔城探索战斗”所占比例是最大的，这里也以该部分进行拆解反思。</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>机制层面：应该是指关卡设计和战斗设计缺陷。</li>
+<li>叙事层面：场景、战斗和整体叙事的契合度不够高。</li>
+<li>美学层面：这个其实是前面提到过的美术素材不够的问题。</li>
+</ul>
+<h6 id="问题：场景和战斗表现较平-机制层面"><a href="#问题：场景和战斗表现较平-机制层面" class="headerlink" title="问题：场景和战斗表现较平 - 机制层面"></a>问题：场景和战斗表现较平 - 机制层面</h6><p>此次项目的关卡设计灵感其实来自于之前所看的 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/hG_s05ULXsl_5nxeuYQb4w">银河恶魔城入门指南</a> 一文，这里先对作者 Charlie Hou 表示感谢。</p>
+<p>为什么选用了类银河恶魔城的关卡设计思路呢？还是以 “三个原因” 原则作答：</p>
+<ul>
+<li><code>回溯探索</code> 的特点能提高场景复用度</li>
+<li><code>能力-锁</code> 的特点可以和皮影的用色结合以进行玩家能力设计</li>
+<li><code>连通世界</code> 的特点可以更好地给予玩家 “操纵皮影” 的自由感</li>
+</ul>
+<h6 id="反思：关卡设计能力不足"><a href="#反思：关卡设计能力不足" class="headerlink" title="反思：关卡设计能力不足"></a>反思：关卡设计能力不足</h6><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831172031.png"></p>
+<p>此次地图设计中虽然有意识地想进行 <code>回溯探索</code> 地图特点的实践，但最终只在图中两个标蓝的地方很好地实现了该特点，究其原因是与回溯探索配套的相应奖励和探索内容（此次设计中主要以各式小游戏的形式对新区域进行了内容填充）做得还不够好。这会导致玩家在回溯途中感到无聊和挫败。</p>
+<p><code>能力-锁</code> 的特点倒是实践得较好，玩家需要具有相应颜色的能力才能打开对应颜色的锁（其实就是特定路径上的门），也为开锁设计了相应的特效。</p>
+<p><code>连通世界</code> 其实做得不太好，关卡整体还是线性推进的，只是右方的蓝圈部分设计了通往上方的传送点，增加了可探索范围。但其他地方其实算不上所谓连通世界。</p>
+<p>这三个特点其实是互相配合的，需要通过能力-锁机制让玩家进行回溯探索，而连通世界的设定需要有相符的关卡内容填充才能让玩家的探索充满乐趣。</p>
+<p>需要提升的方面还有很多：</p>
+<ul>
+<li>地图构建能力</li>
+<li>内容填充能力</li>
+<li>以及其他关卡设计相关能力</li>
+</ul>
+<h6 id="问题：场景和战斗表现较平-叙事层面"><a href="#问题：场景和战斗表现较平-叙事层面" class="headerlink" title="问题：场景和战斗表现较平 - 叙事层面"></a>问题：场景和战斗表现较平 - 叙事层面</h6><ul>
+<li>叙事层面：场景、战斗和整体叙事的契合度不够高。</li>
+</ul>
+<p>这里虽然评审没有直接提到，但我个人觉得战斗设计和第二关中的敌人设计是值得优化的。</p>
+<p>其中战斗设计会放在下个部分 “问题：操纵皮影的特殊手感未能成型” 部分展开，这里主要提一下敌人设计。</p>
+<p>游戏中第二关的敌人设计思路其实来自于另一个非遗元素——北京中轴线。参考了相关传说——共工怒触不周山故事中的相繇、王子夜、浮游、无支祁、共工设计了敌人，并为各自设计了与形象及其等级相符的技能。</p>
+<p>但这里其实要是不单独拿出来讲，玩家是肯定不会意识到这些怪物的来源的。</p>
+<p>虽然在 “对抗玄灯” 的过程中引入 “共工怒触不周山” 的相关敌人看似有些突兀，但因为满足了 “三个原因”（见下方），并且也可以用 “白莲玄灯，千变万化，迷惑人心” 进行解释，所以个人觉得也不是一个不能接受的决策。</p>
+<p>以 “三个原因” 的原则进行引入分析：</p>
+<ul>
+<li>因为“北京中轴线”也是非遗元素，引入中轴线相关的传说也算是和赛道主题契合</li>
+<li>有据可考，方便为其设计相应技能</li>
+<li>有据可考，方便美术寻找形象参考</li>
+</ul>
+<h6 id="思考：以碎片化或逐层揭露方法来补足叙事"><a href="#思考：以碎片化或逐层揭露方法来补足叙事" class="headerlink" title="思考：以碎片化或逐层揭露方法来补足叙事"></a>思考：以碎片化或逐层揭露方法来补足叙事</h6><p>有关这个部分的改进方案其实在后期迭代过程中有想过：</p>
+<ul>
+<li>比如以类似魂系游戏中的碎片化叙事方法，引入一些掉落物或收集物，以文字形式进行碎片化信息引入。</li>
+<li>或者以类似《战神 4》中阿特柔斯的日记的方式，以游戏内角色的口吻，根据击败数量，逐层揭露怪物信息。</li>
+</ul>
+<h6 id="问题：场景和战斗表现较平-美学层面"><a href="#问题：场景和战斗表现较平-美学层面" class="headerlink" title="问题：场景和战斗表现较平 - 美学层面"></a>问题：场景和战斗表现较平 - 美学层面</h6><ul>
+<li>美学层面：这个其实是前面提到过的美术素材不够的问题。</li>
+</ul>
+<p>第二关的场景框架其实是 “玄” 字横置，其中的关卡元素都是 “玄” 字的各式（甲骨文、金文等）变体，并在其中用皮影相关元素进行填充来进行设计的。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831181343.png" alt="“玄” 字的古体变体"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide15.jpeg" alt="以 “玄” 字变体设计的地图框架及场景元素"></p>
+<p>还是以 “三个原因” 原则进行分析：</p>
+<ul>
+<li>叙事层面，因为最终 BOSS 便是玄灯，此处以 “玄” 字变体作为场景设计的立意便是 “在玄灯的地盘上击败玄灯所化的敌人”</li>
+<li>“玄” 的古体变种很多，有丰富的设计素材来源</li>
+<li>美学层面上，以字体填充皮影纹样的方式能很好地体现场景风格</li>
+</ul>
+<h6 id="反思：美术设计能力不足"><a href="#反思：美术设计能力不足" class="headerlink" title="反思：美术设计能力不足"></a>反思：美术设计能力不足</h6><p>因为团队中只有一位美术同学，她更多需要关注别的核心美术资源的产出，所以地图部分的美术资源都是我产出的。此次反映出的问题根本是美术设计能力的不足，直观体现就是所产出美术资产较为“单薄” —— 虽然有一定风格，但产出速度慢，产出效率低，且不成体系，无法与其余美术资产形成契合的美术风格。</p>
+<p>也正是由于所产出的地图资产不足，使得地图关卡的视觉表现大打折扣。</p>
+<p>提升自己的美术设计能力估计没有那么容易，暂时而言还是优先考虑多提升美术鉴赏能力就好，有余力的话，就自己画画小东西吧，能形成自己独特的风格是最好咯，但不可强求。</p>
+<h5 id="问题：操纵皮影的特殊手感未能成型"><a href="#问题：操纵皮影的特殊手感未能成型" class="headerlink" title="问题：操纵皮影的特殊手感未能成型"></a>问题：操纵皮影的特殊手感未能成型</h5><p>评审反馈中的最后部分 <code>战斗完成度不足，打击感与操作精确度均有明显缺憾</code> 其实讲的就是战斗手感问题。</p>
+<p>在策划案中其实很早就定下了该项目最重要的几个特性：</p>
+<ol>
+<li>还原皮影特殊的 “三杆操作”，形成特殊的战斗手感与风格</li>
+<li>还原皮影特殊的光照效果，营造特殊的关卡风格</li>
+<li>充分结合皮影的其它特点（制作工艺、色彩运用等）进行细节设计</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>皮影的 “三杆” 指的是常见的人型皮影中连接左手、右手和头部的三根杆。</p>
+</blockquote>
+</blockquote>
+<p>其中第一个特性 “还原皮影的三杆操作” 主要就是为了打造操纵皮影的特殊手感。其设计预期是利用输入设备（键鼠/手柄等）来模拟皮影的真实操作过程，以形成特殊的战斗手感和风格。从结果反观，并不理想。</p>
+<p>说实话这其实是很大的问题，而且是本应在原型验证和风险评估阶段就解决的问题。</p>
+<p>预期的方案其实前后迭代了几个版本：</p>
+<ul>
+<li>利用<code>手柄的双摇杆+其他按键</code>配合来模拟皮影的三杆操作</li>
+<li>因为没有强调手柄摇杆的重要性，也为了给键鼠做适配，改为了 <code>WASD + 小键盘方向键</code> 作为手柄双摇杆的模拟</li>
+<li>后来调试着调试着就直接没做手柄部分的适配了，只留下了<code>键盘</code>的适配</li>
+<li>后来有一天突然想到，鼠标的移动很像操纵皮影时手部的移动，所以改为了<code>用鼠标来模拟双杆中操纵皮影手部的两杆 + 键盘控制头部杆</code>的设计，即身体是类似晴天娃娃那样被惯性带着走的飘浮状态，这也和皮影本身的移动方式相似</li>
+</ul>
+<h6 id="反思：设计决策的转变要有理有据"><a href="#反思：设计决策的转变要有理有据" class="headerlink" title="反思：设计决策的转变要有理有据"></a>反思：设计决策的转变要有理有据</h6><p>其实迭代到这里已经有些偏离最能还原皮影操作的 <code>手柄双摇杆</code> 操作，这个决策转变甚至有些不明不白，这也启示我后续在进行设计决策迭代时需要明确决策的转变原因。</p>
+<ul>
+<li>最终版本其实是受限于技术实现的妥协，原本的设想是让角色手部移动实现和鼠标移动的实时映射，且模仿皮影的真实操作中的 “突刺” 动作来实现相应角色的攻防。以攻击为例，按下鼠标左键后，鼠标向攻击方向做出一次折返移动，便可完成一次攻击。<ul>
+<li>原本的设想是角色手部能够随鼠标移动做出相符的实时骨骼移动（画小圆），但在实现过程中发现肩膀和手肘关节处的移动受限，最终只能围绕肩膀运动（画大圆），如此导致最终的呈现效果大打折扣</li>
+</ul>
+</li>
+</ul>
+<h6 id="思考：构建皮影特殊战斗手感的方法"><a href="#思考：构建皮影特殊战斗手感的方法" class="headerlink" title="思考：构建皮影特殊战斗手感的方法"></a>思考：构建皮影特殊战斗手感的方法</h6><p>要形成皮影的特殊战斗手感其实要做的迭代不少，比如：</p>
+<ul>
+<li>更好地利用骨骼动画，形成皮影特殊的以关节驱动的动作 “折顿感”</li>
+<li>需要考虑一些细节层面的，比如物理惯性的匹配</li>
+<li>因为该设计基于 “头部杆 + 手部杆”，所以一定要能很好地模拟和还原出由头部杆所牵引移动带来的那种类似晴天娃娃的身体垂坠感和惯性后滞，但手部杆的移动却是实时的</li>
+<li>手部最好能实现和鼠标 “同步+任意范围” 的移动，即基于肩部关节绑定圆周范围内，随鼠标移动实时移动，如此才谈得上还原 “操纵皮影” 的感觉</li>
+</ul>
+<h4 id="其余思考"><a href="#其余思考" class="headerlink" title="其余思考"></a>其余思考</h4><h5 id="思考：立项之初几个初始特性的“三个原因”"><a href="#思考：立项之初几个初始特性的“三个原因”" class="headerlink" title="思考：立项之初几个初始特性的“三个原因”"></a>思考：立项之初几个初始特性的“三个原因”</h5><p>从 <code>三个原因</code> 原则出发，几个初始特性分别有如下设计目的：</p>
+<ol>
+<li><p>还原皮影特殊的 “三杆操作”，形成特殊的战斗手感与风格</p>
+<ol>
+<li>与现实中的皮影操作呼应，让玩家更真切地感受皮影艺术，也能一定程度上体会皮影艺人的不易</li>
+<li>双摇杆操作常见于飞行射击游戏，在本项目的 2D 战斗中引入，做好了能让人眼前一亮</li>
+<li>若能和美术做好相应配合，能让玩家体会到 “自己正在操纵皮影” 的奇妙感觉，从而与其他作品区分开来</li>
+</ol>
+</li>
+<li><p>还原皮影特殊的光照效果，营造特殊的关卡风格</p>
+<ol>
+<li>技术层面上，实现难度应该不是很大</li>
+<li>机制层面上，创建了 “能量多-光照强” 的直观对应关系</li>
+<li>叙事层面上，与以下叙事目的契合：<ul>
+<li>“越靠近玄灯，场景越昏暗，有靠近黑暗源头的感觉”</li>
+<li>“随着玩家自身能量增强，自己便成为了光明的源头”</li>
+<li>“击败玄灯后，完全收回了悬灯的力量，玩家自己成为了悬灯” </li>
+</ul>
+</li>
+<li>若能在美学层面上还原皮影本身的幕布呈现效果，便能深化玩家 “操控皮影” 的感觉</li>
+</ol>
+</li>
+</ol>
+<h6 id="思考：光影机制的利用不够充分"><a href="#思考：光影机制的利用不够充分" class="headerlink" title="思考：光影机制的利用不够充分"></a>思考：光影机制的利用不够充分</h6><p>光影元素应该是皮影艺术的重要组成部分，本该和玩法有更深层次的结合，但当前版本中的光影机制更多只服务于了叙事和美学层面（并且最终也没能很好地还原皮影幕布的质感）。</p>
+<p>可以考虑以下方式深化光阴机制与玩法的结合：</p>
+<ul>
+<li>添加虚实转身机制<ul>
+<li>即玩家具有两个状态：远离布（就是虚状态），靠近布（就是实状态）。  只有虚状态下人物才能转身，但虚状态下的攻击大幅降低（如只有 50%）  实状态下人物攻击正常（100%），但只能向前攻击（前后上下移动不受限制）</li>
+<li>以“三个原因”原则进行分析<ul>
+<li>虚实转身机制深化了光影元素与玩法的结合，增加了玩家的可操作深度</li>
+<li>在美学层面上，该机制契合皮影本身的现实呈现效果</li>
+<li>该机制也符合玩家们对于皮影的直观认知</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>充分结合皮影的其它特点（制作工艺、色彩运用等）进行细节设计<ol>
+<li>机制层面上，能结合皮影本身的用色特点对（玩家和敌人的）技能进行设计</li>
+<li>叙事层面上，能结合皮影的制作工艺，对敌人进行等级和强度的区分</li>
+<li>美学层面上，正是这些特点构成了 “皮影味儿”，让玩家能感受到皮影艺术的魅力</li>
+</ol>
+</li>
+</ol>
+<p>基本可以说，这几个立项之初所定下的特性是“站得住脚”的，可惜在后续实现过程中渐渐有些偏离。</p>
+<h5 id="思考：制作推进过程中主要出现问题的部分（即复盘概览部分所提到的橙色感叹号部分）"><a href="#思考：制作推进过程中主要出现问题的部分（即复盘概览部分所提到的橙色感叹号部分）" class="headerlink" title="思考：制作推进过程中主要出现问题的部分（即复盘概览部分所提到的橙色感叹号部分）"></a>思考：制作推进过程中主要出现问题的部分（即复盘概览部分所提到的橙色感叹号部分）</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202208301618production.png"></p>
+<ul>
+<li>会议探讨初版策划案的可能性（第一次选择方向）</li>
+<li>针对各风险实现解决原型（第二次选择方向，后面都为第二次）</li>
+<li>收尾时的各种迭代</li>
+</ul>
+<h6 id="思考：多多讨论有潜力的-idea"><a href="#思考：多多讨论有潜力的-idea" class="headerlink" title="思考：多多讨论有潜力的 idea"></a>思考：多多讨论有潜力的 idea</h6><p>现在反观最开始头脑风暴的各种方案，其实还是有不少可以做的方向，当时选择皮影来作为主题的原因是美术同学表示了明确喜好。</p>
+<p>这里并不是说当时决策有问题，而是提醒自己未来在进行想法收集和决策的时候要多多调动大家的积极性，对有潜力的方案进行更细致地讨论。</p>
+<h6 id="思考：原型制作和风险评估做得不够好"><a href="#思考：原型制作和风险评估做得不够好" class="headerlink" title="思考：原型制作和风险评估做得不够好"></a>思考：原型制作和风险评估做得不够好</h6><p>第一次其实有意识地进行了原型制作和风险评估，但由于 “2D + 3D 的空间谜题设计很难” 这一问题有点劝退我，所以很快否决了这个方案，但其实这也是个很有潜力的方案。当时也不该执着于光影的实时运算这一特性，限定玩家决策空间也不失为一个好办法，也许当时逼一逼自己，空间关卡构建能力也能有所提升哈哈，当然了，这都是马后炮了。</p>
+<p>而第二次原型制作和风险迭代说实话做得就没那么好，好几个原型都是部分满足了验证需求。比如当时就应该验证的 “手部实时移动” 特性在最后关头才发现没办法很好地实现，最后只能做一些技术妥协。</p>
+<p>所以，贯彻落实敏捷开发原则！一定要做好快速原型制作和风险评估！</p>
+<h6 id="思考：测试迭代做得不够好"><a href="#思考：测试迭代做得不够好" class="headerlink" title="思考：测试迭代做得不够好"></a>思考：测试迭代做得不够好</h6><p>按理说在整体制作过程中，自可玩版本发布的第一时间就应该让内外部人员积极测试。虽然内部多次鼓励大家参与测试，但效果不是很理想，也没有拉上朋友一起进行潜在玩家测试，这在未来的开发过程中是应该极力避免的。</p>
+<h5 id="思考：玩家技能设计仍有提升空间"><a href="#思考：玩家技能设计仍有提升空间" class="headerlink" title="思考：玩家技能设计仍有提升空间"></a>思考：玩家技能设计仍有提升空间</h5><p>玩家技能设计的创意源于皮影的常用色彩“红黄绿黑白”，受戏剧人物“生旦净末丑”中各颜色引申义的启发，最终结合玩家身体各部分颜色，直观设计了“红色-头部-喷火”、“黄色-武器-剑气”、“绿色-身体-恢复”、“黑色-腿部-影马”、“白色-脚部-闪现”的配套技能</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831205700.png"></p>
+<p>一开始其实并不是这五个技能，而是与京剧脸谱颜色所对应人物性格更强的一些技能，但思考过后改为了目前这版 “颜色-身体部位-与颜色相关的直观联想” 的技能设计。</p>
+<p>但若以 “三个原因” 原则进行反思，这套技能方案虽然在美学层面上与皮影本身的配色方案相契合，但却没能在机制和叙事层面上达到多少效果。换言之，这套技能方案不太具有 “不可替代性”。比如，目前的红色所对应的身体部位是头部，所对应技能是喷火，那么，不是头部可以吗？——可以，不是喷火可以吗？——可以。</p>
+<p>在进行皮影技能设计时，应该更多地结合皮影本身的特点：比如，设计一个技能为可以将手部关节像回旋镖一样掷出之类的。</p>
+<p>颜色方案的设计难度虽然更低，但因为皮影配色并不是一个深入人心的生活常识，也许倒反没有这种 “可拆卸手部” 的直观视觉刺激来得强烈。</p>
+<h5 id="思考：不同等级敌人的美学区分仍可优化"><a href="#思考：不同等级敌人的美学区分仍可优化" class="headerlink" title="思考：不同等级敌人的美学区分仍可优化"></a>思考：不同等级敌人的美学区分仍可优化</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide14.jpeg"></p>
+<blockquote>
+<p>敌人共有三种级别——黑影、半透明、全彩，分别对应皮影制作过程中的“制皮”、“镂刻”、“敷彩”阶段，以形象对敌人实力进行直观区分</p>
+</blockquote>
+<p>前面已经以 “三个原因” 原则进行分析，证明这一设计决策是能站住脚的。因为第一第二阶段的区分度不好把控，最终导致当前版本中的敌人区分度不够。</p>
+<p>未来若是想进行迭代，需要重新对第一二阶段的美术呈现进行修正，如让第一阶段呈现完全的黑影，而让第二等级的怪物呈现大片留白镂空，只留下轮廓部分。</p>
+<h5 id="思考：BOSS-美学设计仍可优化"><a href="#思考：BOSS-美学设计仍可优化" class="headerlink" title="思考：BOSS 美学设计仍可优化"></a>思考：BOSS 美学设计仍可优化</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Slide17.jpeg"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220831213359.png"></p>
+<p>这里指的优化主要是美学层面，可以看到这里的 BOSS 设计还是不专业的我操刀的哈哈…. </p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><h4 id="未来版本的可能迭代方向"><a href="#未来版本的可能迭代方向" class="headerlink" title="未来版本的可能迭代方向"></a>未来版本的可能迭代方向</h4><p>这里主要将前文所提到的一些思考和反思进行总结：</p>
+<ul>
+<li>以碎片化或逐层揭露方法来补足叙事</li>
+<li>构建皮影的特殊战斗手感<ul>
+<li>看了樱井政博关于停止特效的视频后，学习到可以充分利用停止特效来加强战斗手感 —— <a href="https://medill-east.github.io/2022/09/01/20220901-stop-for-big-moments/">【Masahiro Sakurai on Creating Games】- Stop for Big Moments!</a></li>
+</ul>
+</li>
+<li>深化对光影机制的运用</li>
+<li>玩家技能设计仍有提升空间</li>
+<li>不同等级敌人的美学区分仍可优化</li>
+<li>BOSS 美学设计仍可优化</li>
+</ul>
+<h4 id="对未来项目的启示"><a href="#对未来项目的启示" class="headerlink" title="对未来项目的启示"></a>对未来项目的启示</h4><p>这里将前文所提到的一些思考和反思进行总结：</p>
+<ul>
+<li>项目相关<ul>
+<li>需求沟通时，一定要摸清对方的沟通习惯，并且双向确认</li>
+<li>提升自身积累，才能更清晰地描述需求，帮助项目更快更好地推进</li>
+<li>设计决策的转变要有理有据</li>
+<li>多多讨论有潜力的 idea</li>
+<li>要重视原型制作和风险评估</li>
+<li>要在项目推进过程中多多进行内外部测试</li>
+</ul>
+</li>
+<li>设计能力相关<ul>
+<li>需要提升自身关卡设计能力</li>
+<li>需要提升自身美学鉴赏和美术设计能力</li>
+</ul>
+</li>
+</ul>
+<h4 id="头脑风暴方法"><a href="#头脑风暴方法" class="headerlink" title="头脑风暴方法"></a>头脑风暴方法</h4><p>这里也把项目中用到没用到的头脑风暴做一份总结。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/gamebrainstorming.png" alt="头脑风暴方法"></p>
+<h4 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h4><p>两个月，从构建队伍到最终拿出可玩的 Demo，还是碰到了诸多问题，也发现了许多不足。总归是毕业前的最后一个作品，不算满意，但也无憾了。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/08/29/20220829-earnthenamebackforshadowpuppets-demo-showcase-analysis/">https://medill-east.github.io/2022/08/29/20220829-earnthenamebackforshadowpuppets-demo-showcase-analysis/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Portfolio/">
+                                    <span class="chip bg-color">Portfolio</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/08/31/20220900-toc/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220911152746.png" class="responsive-img" alt="Masahiro Sakurai on Creating Games">
+                        
+                        <span class="card-title">Masahiro Sakurai on Creating Games</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 Masahiro Sakurai on Creating Games 的视频，学习游戏制作，特此记录。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-31
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Masahiro-Sakurai-on-Creating-Games/">
+                        <span class="chip bg-color">Masahiro-Sakurai-on-Creating-Games</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/13/20220813-teardown-analysis-avatar-the-game/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220803181126.png" class="responsive-img" alt="Avatar：The Game 拆解分析">
+                        
+                        <span class="card-title">Avatar：The Game 拆解分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是一份由我写于 2022 年 8 月对游戏《Avatar：The Game》的 Teardown Analysis。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

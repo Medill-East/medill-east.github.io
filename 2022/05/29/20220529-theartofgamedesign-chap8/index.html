@@ -1,0 +1,1443 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="游戏设计艺术 第八章 游戏通过迭代提高, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>游戏设计艺术 第八章 游戏通过迭代提高 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712115450.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">游戏设计艺术 第八章 游戏通过迭代提高</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Design/">
+                                <span class="chip bg-color">Game Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-05-29
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-07-12
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    6.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    22 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="游戏设计艺术-摘抄-笔记"><a href="#游戏设计艺术-摘抄-笔记" class="headerlink" title="游戏设计艺术 摘抄/笔记"></a>游戏设计艺术 摘抄/笔记</h1><h2 id="第八章-游戏通过迭代提高"><a href="#第八章-游戏通过迭代提高" class="headerlink" title="第八章 游戏通过迭代提高"></a>第八章 游戏通过迭代提高</h2><h3 id="选择创意"><a href="#选择创意" class="headerlink" title="选择创意"></a>选择创意</h3><blockquote>
+<p>一个平淡的创意根本不算创意。——艾尔伯特·哈伯德</p>
+</blockquote>
+<p>面对一堆想法，迅速做出设计决定，坚持下去，然后立刻想一想这个决定的后果。</p>
+<p>而当做出决策后意识到错误时，准备好推翻之前的决策。</p>
+<blockquote>
+<p>创意不是一个完好的瓷器，而是一次性纸杯——它很廉价，能够大量生产。如果有人得到了一个纸杯，去拿另一个就好了。</p>
+</blockquote>
+<blockquote>
+<p>尽快确定一个创意比拖延更好——你将可能更快地做出好决定，而不是花费时间考虑潜在选择。不要沉迷于你的决定，当它并没有效果时，准备好推翻它。</p>
+</blockquote>
+<p>怎样选择？猜！</p>
+<h3 id="八项测试"><a href="#八项测试" class="headerlink" title="八项测试"></a>八项测试</h3><p>你完成的设计方案必须通过八项测试或是过滤器。只有所有测试都通过，设计方案才算得上优秀。</p>
+<ol>
+<li>测试一：艺术冲动。<br>作为设计师，是否觉得这个游戏“感觉不错”。自己的直觉和团队直觉都很重要。<br>关键问题：这个游戏看起来不错吗？</li>
+<li>测试二：人群特征<br>你的游戏有一群特定受众。需要考虑设计是否适合目标受众。<br>关键问题：我们的目标受众很喜欢这个游戏吗？</li>
+<li>测试三：体验设计<br>为通过这项测试，需要尽一切努力创造良好体验，包括美学、兴趣曲线、共鸣主题和游戏平衡。游戏必须经得起书中的透镜的检验<br>关键问题：这个游戏设计得不错吗</li>
+<li>革新<br>一个新游戏按理说需要包含一些玩家从未见到过的新内容<br>关键问题：这个游戏是否与众不同？</li>
+<li>商业和市场<br>想要卖出游戏的设计师必须考虑商业现实，并将其融入游戏设计中。这带来了很多问题。<br>游戏主题和故事对玩家们具有吸引力吗？<br>游戏是否通俗易懂，一个玩家能否仅仅通过观看概述就能明白这个游戏的内容？<br>消费者对这种题材的游戏有怎样的期待？<br>市场上，这个游戏与相似游戏比有哪些特点？<br>是否开发成本过高导致无法盈利？<br>关键问题：这个问题能够盈利吗？</li>
+<li>工程<br>即技术可行性。<br>关键问题：这个游戏在技术上是否具备可行性？</li>
+<li>社交/社区<br>有时候，一个好玩的游戏可能并不足够。一些设计目标可能需要很强的社交元素，迅速蔓延的病毒式传播，或者围绕游戏形成社区。<br>关键问题：这个游戏完成我们的社交或社区目标了吗？</li>
+<li>玩法测试<br>当游戏开发到可玩程度，必须通过玩法测试。必须尽可能把游戏开发到可玩程度，只有实际看到游戏表现，才知道需要做出哪些重大改变。随着对游戏机制和目标受众的心理感受的了解加深，这个过程中测试目标与游戏都会不断迭代。<br>关键问题：游戏测试者是否享受这个游戏？</li>
+</ol>
+<p>测试过程中对某些测试预期的调整是允许的，如改变目标受众。关键是要想办法通过所有测试。</p>
+<p>当你选择一个初始创意时，重要的是选择创意中最容易被修改和塑造的那个，这样它更容易在测试中存活。</p>
+<h4 id="15-号透镜：八项测试"><a href="#15-号透镜：八项测试" class="headerlink" title="15 号透镜：八项测试"></a>15 号透镜：八项测试</h4><p>要使用这个透镜，你的设计必须满足许多约束条件。只有当它通过了八项测试而不需要修改时，你的设计才算完成。</p>
+<p>问你自己八个关键问题：</p>
+<ol>
+<li>这个游戏看起来不错吗?</li>
+<li>我们的目标受众喜欢这个游戏吗?</li>
+<li>这个游戏设计得不错吗?</li>
+<li>这个游戏是否与众不同?</li>
+<li>这个游戏能够盈利吗?</li>
+<li>这个游戏在技术上是否具备可行性?</li>
+<li>这个游戏完成我们的社交或者社区目标了吗?</li>
+<li>游戏测试者是否享受这个游戏?</li>
+</ol>
+<p>在某些情况下，还需要考虑一些其他的测试。<br>如一个教育游戏必须回答“这个游戏达到了它的教育目标了吗?”。如果你的设计需要更多的测试，不要遗漏它们。</p>
+<h3 id="迭代规则"><a href="#迭代规则" class="headerlink" title="迭代规则"></a>迭代规则</h3><p>思考并选择创意后，下一步是尝试将其实现。</p>
+<p>对于简单游戏，可以快速构建原型，并进行玩法测试。<br>但若是无法在一两小时内构建可玩原型，要谨慎。游戏设计和开发过程必须是迭代/循环的。</p>
+<p>期待游戏做完时就是最好的状态是一种天真想法。</p>
+<blockquote>
+<p>迭代规则：你的游戏测试和改进的次数越多，就会越出色。</p>
+</blockquote>
+<p>如果会经历长期测试与改进，需要回答以下问题：</p>
+<ul>
+<li>迭代问题 1：怎样才能让每一次迭代都有意义？</li>
+<li>迭代问题 2：怎样才能尽可能快地进行迭代？</li>
+</ul>
+<p>软件工程师在过去 40 年中已经对这两个问题进行了深刻思考，他们想出了一些有用技巧。</p>
+<h3 id="软件工程的简短历史"><a href="#软件工程的简短历史" class="headerlink" title="软件工程的简短历史"></a>软件工程的简短历史</h3><h4 id="危险-瀑布-保留"><a href="#危险-瀑布-保留" class="headerlink" title="危险-瀑布-保留"></a>危险-瀑布-保留</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220530003026.png" alt="瀑布模型"></p>
+<p>瀑布模型中，只需要不断向前，没有迭代，因为瀑布不会回头。</p>
+<ul>
+<li>优点<br>鼓励开发者在编写代码前花费更多时间进行规划和设计</li>
+<li>缺点<br>违背了迭代规则</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>瀑布模型符合项目认知，但却缺少工程认知，对于一个复杂系统而言，瀑布模型的推进是完全不可控的，也不太可能如此顺利</p>
+</blockquote>
+</blockquote>
+<h4 id="巴里·伯姆爱你"><a href="#巴里·伯姆爱你" class="headerlink" title="巴里·伯姆爱你"></a>巴里·伯姆爱你</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220530003310.png" alt="螺旋模型"></p>
+<p>螺旋模型中，开发从最中间开始，顺时针旋转，依次通过四个象限。</p>
+<p>里面包含了最棒的三个理念：风险评估、原型和迭代。</p>
+<p>螺旋模型建议你做以下几件事：</p>
+<ol>
+<li>想出一个基础设计</li>
+<li>找出设计中最大的风险</li>
+<li>建立原型消除这些风险</li>
+<li>测试原型</li>
+<li>基于从原型中得出的结论作更详细的设计</li>
+<li>回到 2</li>
+</ol>
+<p>它运用了迭代规则击败了瀑布模型的递进关系，它也回答了之前描述的问题：</p>
+<ul>
+<li>迭代问题 1：怎样让每次迭代都有意义<ul>
+<li>螺旋模型的答案：评估并消除风险</li>
+</ul>
+</li>
+<li>迭代问题 2：怎样尽可能快速进行迭代<ul>
+<li>螺旋模型答案：构建许多粗糙模型</li>
+</ul>
+</li>
+</ul>
+<p>螺旋模型有很多衍生，目前为止，最成功的的是敏捷开发的传播。</p>
+<h4 id="敏捷宣言"><a href="#敏捷宣言" class="headerlink" title="敏捷宣言"></a>敏捷宣言</h4><p>2001 年，由工程师提出的敏捷宣言：</p>
+<blockquote>
+<p>个体和互动高于流程和工具<br>工作的软件高于详尽的文档<br>客户合作高于合同谈判<br>响应变化高于遵循计划<br>也就是说，尽管右项有其价值<br>我们更重视左项的价值</p>
+</blockquote>
+<p>原则：争分夺秒！</p>
+<ol>
+<li>最重要的目标，是通过持续不断地及早交付有价值的软件使客户满意</li>
+<li>欣然面对需求变化，即使在开发后期也一样。为了客户的竞争优势，敏捷过程掌控变化</li>
+<li>经常交付可工作的软件，间隔几星期或一两个月，倾向于采取较短周期</li>
+<li>业务人员和开发人员必须相互合作，项目中的每一天都不例外</li>
+<li>激发个体斗志，以他们为核心搭建项目。提供所需的环境和支援，辅以信任，从而达成目标</li>
+<li>不论团队内外，传递信息效果最好效率也最高的方式是面对面交谈</li>
+<li>可工作的软件是进度的首要度量标准</li>
+<li>敏捷过程倡导可持续开发。责任人、开发人员和用户要能够共同维持其步调稳定延续</li>
+<li>坚持不懈追求技术卓越和良好设计，敏捷能力由此增强</li>
+<li>以简洁为本，它是极力减少不必要工作量的艺术</li>
+<li>最好的架构、需求和设计出自自组织团队</li>
+<li>团队定期反思如何能提高成效，并依此调整自身行为</li>
+</ol>
+<p>被大多数开发者使用的核心元素：</p>
+<ul>
+<li>灵活的目标：无法恰好得知计划所需的时间。围绕更加灵活的目标组制定计划，而不是忍受对计划做出改变，有计划地改变计划。开发过程中，团队能够迅速适应新创意和信息。</li>
+<li>优先级列表：任何时候有人为一个特性想到了一个新的创意，他就能将其加入到列表中。每次迭代时，团队就查看列表，重新设定特性优先级——重要的评分高。接下来的工作只需要看看列表顶端就好。没有人能保证列表上的所有特性都会被完成——这样能保证大多重要特性能在时间允许范围内完成。</li>
+<li>冲刺：相较于制定长期目标，敏捷开发者们用一系列冲刺工作，每一个冲刺持续一段较短时间，并在最后能传递一个坚实的工作结果。更多的 ddl 意味着更多工作被完成了！</li>
+<li>争分夺秒会议：10~15 分钟，站着开会以表明会议简短的本质。每个成员解释三件事：昨天完成了什么，今天计划完成什么，面临的问题。会议结束后，通过与团队成员一对一接触来一个个找到问题解决方案。每个团队成员明确知道他们要做的事，且能够被其他团队成员帮助。</li>
+<li>演示日：每个冲刺阶段最后，大家聚集在一起，面对面观看和测试工作结果。从新基准开始工作。团队开始分析风险，并一起确定下一阶段的冲刺计划。</li>
+<li>回顾：每个冲刺阶段最后，团队有一个回顾会议。不是关于产品，而是关于工作进度。这给了团队机会来讨论什么是正确的，什么是错误的，怎样在下一冲刺阶段调整工作。</li>
+</ul>
+<p>敏捷是一种哲学，不是一种规定方法。不同开发者有不同方法，但都致力于创造更多次迭代，且让每次迭代都有意义。</p>
+<p>所有特性的风险评估和原型设计都是他们的核心。</p>
+<h3 id="风险评估与原型设计"><a href="#风险评估与原型设计" class="headerlink" title="风险评估与原型设计"></a>风险评估与原型设计</h3><h4 id="案例：气泡城的囚徒"><a href="#案例：气泡城的囚徒" class="headerlink" title="案例：气泡城的囚徒"></a>案例：气泡城的囚徒</h4><p>假设要制作一款城市跳伞的电子游戏。</p>
+<p>气泡城的囚徒：设计概况</p>
+<ul>
+<li>剧情：你是一只叫作“微笑”的跳伞猫。气泡城的市民们都被一个邪恶的巫师困在他们的房间中。你只有通过跳伞进入城市，从烟肉中滑下来找到市民，寻找阻止巫师的方法。</li>
+<li>机制：在向城市中跳伞时，你可以试着抓住从城市中升起的魔法气泡。你能使用气泡的能量向邪恶的秃鸷发出射线，防止他们戳破气泡或者撕碎你的降落伞。同时你必须使降落伞正好落到城市中的目标建筑之上。</li>
+<li>艺术：卡通风格的外观和游戏体验。</li>
+<li>技术：使用第三方引擎的、多平台的三维主机游戏。</li>
+</ul>
+<p>可以马上开始制作，深入细节，但很可能在玩法测试之前已经过去了很长时间。</p>
+<p>正确的做法：和团队一起坐下，做一个风险评估，这意味着列出一个会危害到项目的所有风险的列表。可能示例：</p>
+<p>风险 1：收集泡泡/射击秃鹫的机制不如想象中有趣<br>风险 2：游戏引擎无法同时完成绘制整个城市、所有气泡和秃鹫的任务<br>风险 3：目前的想法是需要 30 种不同房子来构成完整游戏——可能没有足够时间完成所有室内设计和动画角色<br>风险 4：不确定人们是否喜欢角色和剧情<br>风险 5：可能要改变游戏主题，以夏季新上映的电影作为跳伞噱头</p>
+<p>可以通过构建小型原型，尽快减少或消除风险。</p>
+<ul>
+<li><p>风险 1：收集泡泡/射击秃鹫的机制不如想象中有趣<br>可以将游戏机制抽象出来，比如方块版本。这样可以立即回答游戏机制是否好玩的问题，若是不好玩，对着简单模型迅速做出改变，直到好玩，然后就可以开始制作精细化版本。<br>明智的做法是利用迭代规则的优势。</p>
+</li>
+<li><p>风险 2：游戏引擎无法同时完成绘制整个城市、所有气泡和秃鹫的任务<br>立刻做出快速原型。原型没有其他功能，只是单纯在屏幕上展示预估数量的相同物品，看引擎能否处理。这个引擎没有玩法，只是单纯测试技术可行性。如果能处理，很好，若是不能，在艺术品完成前，赶紧想解决方案！</p>
+</li>
+<li><p>风险 3：目前的想法是需要 30 种不同房子来构成完整游戏——可能没有足够时间完成所有室内设计和动画角色<br>让艺术家先做一间房屋和一个角色，评估时间。如果达不到预期，想办法——用更少房屋或复用角色。</p>
+</li>
+<li><p>风险 4：不确定人们是否喜欢角色和剧情<br>构建能够快速展示角色的艺术原型和故事版，将其展现给（最好是目标人群）玩家，评估他们的反映，整理出他们喜欢什么，不喜欢什么，为什么。充分利用这些信息进行迭代！</p>
+</li>
+<li><p>风险 5：可能要改变游戏主题，以夏季新上映的电影作为跳伞噱头<br>要消除这个风险，可以寄希望于管理层尽快作出决定，或者可以决定制作一款能够更容易偏向电影主题的游戏，甚至可能想出一个制作两款不同游戏的计划——关键是立即考虑风险，并做出行动以保证它不会危及项目。</p>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>这可太可怕了 2333</p>
+</blockquote>
+</blockquote>
+<h4 id="16-号透镜：风险消除"><a href="#16-号透镜：风险消除" class="headerlink" title="16 号透镜：风险消除"></a>16 号透镜：风险消除</h4><blockquote>
+<p>是以圣人犹难之，故终无难矣。 —— 道德经</p>
+</blockquote>
+<blockquote>
+<p>有道的圣人总是看重困难，所以就终于没有困难了。</p>
+<blockquote>
+<p>没想到这里能看到哈哈。</p>
+</blockquote>
+</blockquote>
+<p>要使用这个透镜，停止积极地思考，然后开始认真考虑那些会危及游戏的风险。</p>
+<p>问你自己这些问题：</p>
+<ul>
+<li>是什么让这个游戏变得平庸?</li>
+<li>我们怎样防止这样的风险发生?</li>
+</ul>
+<p>风险管理很难。这意味着你必须面对那些不想碰到和立刻解决的问题。但是如果训练自己这么做，你就能进行更多次有效的迭代，获得一个更优秀的游戏。忽视潜在的问题，只专注于游戏中你最有信心的部分是一种诱惑。你必须抵抗这种诱惑，专注于游戏中的风险。</p>
+<h3 id="制作有效原型的-10-个技巧"><a href="#制作有效原型的-10-个技巧" class="headerlink" title="制作有效原型的 10 个技巧"></a>制作有效原型的 10 个技巧</h3><ol>
+<li>原型设计技巧 1：回答问题</li>
+</ol>
+<p>每个圆形都应该设计为回答一个或多个问题。应该能清楚地描述问题，如果不能很可能会浪费时间。一些原型应该要回答的问题示例：</p>
+<ul>
+<li>我们的技术能够在一个场景中支持多少个动画角色？</li>
+<li>核心玩法有趣吗？趣味能持续较长时间吗？</li>
+<li>角色和设定在艺术上能融合吗？</li>
+<li>游戏关卡应该有多大？</li>
+</ul>
+<p>避免过度构建原型，专注于让原型回答关键问题。</p>
+<ol start="2">
+<li>原型设计技巧 2：忘记质量</li>
+</ol>
+<p>制作原型，唯一要关心的是其能否解决问题。其解决的越快，这个原型就越好——即使这个原型只能勉强使用而且只有粗糙外观。<br>目标是尽快找到问题，从而尽早解决。精致的原型会隐藏真正问题，带来错误安全感。</p>
+<p>不要逃避迭代规则。需要尽快构建能回答疑问的原型，别管它有多难看！</p>
+<blockquote>
+<blockquote>
+<p>想起自己在做 Yin Yang Messenger demo 的时候，一开始不敢动手，然后想了半天，做了个简易的 cube 版本出来，让朋友玩了之后收集了反馈立马迭代了新版本出来，一下子好了不少。</p>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li>原型设计技巧 3：不要太过留恋</li>
+</ol>
+<blockquote>
+<p>计划好扔掉当前的产品——你总会这样。 —— 《人月神话》（The Mythical Man Month）， Fred Brooks</p>
+</blockquote>
+<p>要带着一切都是临时的心态开始原型工作——唯一要关心的是这个原型是否能回答问题。<br>把每个原型都当做学习机会——这是制作真正系统的练习。</p>
+<ol start="4">
+<li>原型制作技巧 4：区分原型的优先级</li>
+</ol>
+<p>若是有多个风险需要消除，为风险也列出优先级，这样才能解决最大风险。特别是当一些风险因为其他风险而存在，那么解决源头，后续风险自然不再存在。</p>
+<ol start="5">
+<li>原型设计技巧 5：有效的并行原则</li>
+</ol>
+<p>巧妙进行更多次迭代的方法是同时制作几个原型。<br>系统工程师构建回答技术问题的原型，艺术家构建艺术原型，设计师构建玩法原型<br>多个小型独立原型可以帮助你更快回答更多问题</p>
+<ol start="6">
+<li>原型设计技巧 6：并不总需要数字化</li>
+</ol>
+<p>简单的桌上游戏原型——纸上原型，也能很好回答问题！<br>这样能迅速制作出桌面游戏，而且实现相同玩法。这能让你更快定位问题。</p>
+<p>回合制游戏的数值可以通过纸上原型来打磨<br>实时游戏也能将行为转换为回合制模式<br>案例：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220530012013.png"></p>
+<ol start="7">
+<li>原型设计技巧 7：无须交互</li>
+</ol>
+<p>简单的草图和动画能够对回答关于游戏玩法的问题大有帮助</p>
+<p>《波斯王子：时之沙》有一套新奇的跳跃和时间回溯机制，最初的原型就来自无交互动画，描绘了设计师想象中难以置信的巧妙杂技，所以团队能够更容易看到思考和讨论怎样创造一个交互系统能够完成这个愿景。</p>
+<ol start="8">
+<li>原型设计技巧 8：选择一个“快速迭代”的游戏引擎</li>
+</ol>
+<p>传统软件开发像烤面包：</p>
+<p>1.编写代码。<br>2.编译和链接。<br>3.运行你的游戏。<br>4.操纵你的游戏到你想要测试的部分。<br>5.测试并验证。<br>6.回到步骤1。</p>
+<p>如果对结果不满意，只能从头再来。</p>
+<p>选择一个能快速迭代的引擎像是捏黏土——可以一直改变：</p>
+<p>1.运行你的游戏。<br>2.操纵你的游戏到你想要测试的部分。<br>3.测试并验证。<br>4.编写代码。<br>5.回到步骤3。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220530012620.png"></p>
+<ol start="9">
+<li>原型设计技巧 9：先构建玩具</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601221510.png"></p>
+<p>通过先制作一个玩具再想出游戏，可能从根本上提高了游戏质量，因为这在两个层次上都会很有趣。更深远的是，当你创造的玩法是基于一个很有趣的玩具的一部分，两个层级就能够通过最强有力的方式互相支持。</p>
+<h4 id="17-号透镜：玩具"><a href="#17-号透镜：玩具" class="headerlink" title="17 号透镜：玩具"></a>17 号透镜：玩具</h4><p>要使用这个透镜，不要思考你的游戏是否好玩，要思考参与这个游戏是否有趣。</p>
+<p>问你自己这些问题：</p>
+<ul>
+<li>如果我的游戏没有目标，它会有趣吗？如果不是，我怎样才能改进它？</li>
+<li>当人们看到我的游戏时，他们想要与它产生互动吗，甚至在它们知道应该怎样玩之前？如果不是，我怎样才能改进它？</li>
+</ul>
+<p>有两种方式可以使用玩具透镜。<br>第一种方式是将其运用在一个现存游戏上，想出怎样为它添加一些玩具类的特质——怎样让它变得更亲切，操作更有趣。<br>第二种方式更加大胆，即在你还没有任何游戏创意之前运用它制作一个玩具。如果你在计划中做这件事就会有风险——但如果不是这样，这就是一个伟大的魔杖，可以帮助你找到你还没发现的绝妙游戏。</p>
+<ol start="10">
+<li>原型设计技巧 10：抓住更多迭代的机会</li>
+</ol>
+<p>在游戏开发过程中会对游戏做出一些改变，这需要更多时间。<br>《光环》（Halo）就是这样，它原本作为一款苹果电脑游戏而被开发。与微软交涉时，他们为个人电脑做了改变，团队利用这个机会进行了更多次迭代。第二个意外是微软请他们将这个游戏从个人电脑转移到新发布的 Xbox 平台！团队需要更多时间改变技术，他们也再次拥有了提高和迭代游戏核心玩法的时间。</p>
+<h3 id="完成迭代"><a href="#完成迭代" class="headerlink" title="完成迭代"></a>完成迭代</h3><ul>
+<li>非正式迭代</li>
+</ul>
+<ol>
+<li>想出一个创意</li>
+<li>试验它</li>
+<li>测试和改进，直到其足够好</li>
+</ol>
+<ul>
+<li>正式迭代：</li>
+</ul>
+<ol>
+<li>描述一个问题（利用机制、技术、美学、故事作为限定）</li>
+<li>用头脑风暴的方式找到几种可能的解决方案</li>
+<li>选择一个解决方案</li>
+<li>列出使用这种解决方案的风险</li>
+<li>构建原型来消除这些风险</li>
+<li>测试原型，直到足够好为止</li>
+<li>描述一个新的想要解决的问题，回到第 2 步</li>
+</ol>
+<p>每次原型设计迭代中，都能更加详细地描述问题。<br>迭代的例子：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601222707.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601222718.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601222735.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601222748.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220601222759.png"></p>
+<h3 id="多少次才足够"><a href="#多少次才足够" class="headerlink" title="多少次才足够"></a>多少次才足够</h3><blockquote>
+<p>现在我明白了，尽管太晚了。在我们计算费用之前，在我们评价自己是否有能力完成它之前就开始工作是很荒谬的。 —— 鲁滨逊·克鲁索（Robinson Crusoe）</p>
+</blockquote>
+<p>更多的迭代总会让你的游戏变得更好。但是“工作永远不会终结——只会被放弃。”<br>需要确定在用尽开发预算之前，进行足够的迭代次数。</p>
+<p>马克·塞尔尼（Mark Cerny）的观点：在你完成两个可发布的游戏版本并完成所有必要特性之前，你都处于试验产品阶段。换言之，除非有两个完全完整的关卡，你仍在进行游戏基本设计。</p>
+<p>这个点通常在花费 30% 必要预算之后。<br>如果到达该点花费了 100w，那么可能还需要花费额外 230w。</p>
+<p>作者有自己的 50% 法则：</p>
+<ul>
+<li>50 % 法则前半部分：当计划游戏时，确定用这种方式构建它。如果 50 % 的预算被削减了，你依然能够有一个可玩的游戏。这条规则要求保持系统简单，也保证当出现糟糕的事情（很可能）迫使你放弃一些特性时，依然能够得到一个可玩游戏。</li>
+<li>50 % 法则后半部分：所有核心玩法元素应该在规划中前半部分完成。即用一半时间让游戏变得可玩，用一半时间让游戏变得更好。</li>
+</ul>
+<h3 id="你的秘密燃料"><a href="#你的秘密燃料" class="headerlink" title="你的秘密燃料"></a>你的秘密燃料</h3><h4 id="18-号透镜：激情"><a href="#18-号透镜：激情" class="headerlink" title="18 号透镜：激情"></a>18 号透镜：激情</h4><p>在每个原型的结尾，当你小心地消除风险并计划下一步时，别忘了用这些重要问题检验你对游戏的感受：</p>
+<ul>
+<li>我对这款游戏的成功是否抱有极大激情？</li>
+<li>如果失去了激情，怎样才能找回？</li>
+<li>如果激情没有回来，是否应该做一些其他事？</li>
+</ul>
+<p>在每次冲刺的末尾，当你在研究原型和准备接下来的计划时，一定要记住做一个“激情检验”。激情就是潜意识与你交流的方式，它告诉你这个游戏是否令人兴奋。失去激情就说明一些地方出了问题——如果不能找到问题所在，游戏很可能会死去。激情也有危险性——毕竟这是一种不合理的情感。<br>必须小心对待激情，因为它往往能够击倒障碍并带领游戏走向成功。</p>
+<hr>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><h3 id="第八章-游戏通过迭代提高-1"><a href="#第八章-游戏通过迭代提高-1" class="headerlink" title="第八章 游戏通过迭代提高"></a>第八章 游戏通过迭代提高</h3><p> - 比尔·巴克斯顿撰写的《用户体验草图设计》 (Sketching User Experiencesby Bill Buxton)。这本书通过多元化的原理和令人嘱目的结果向我们展示了草图的概念(提示:原型就是一种草图)</p>
+<p> - 比尔·卢卡斯撰写的《用纸设计原型》 (Have Paper, Will Prototype by BillLucas) 。这本书是一系列案例研究,关于怎样成功创造计算机界面的纸上原型。麦克·塞林格撰写的《狗头人指南之桌面游戏设计》 (The Kobold Guide to Board Game Design by Mike Selinker) 。这本非常棒的书讲述了如何制作伟大的桌面游戏。</p>
+<p> - 超级兄弟撰写的《少说话,多做事》 (Less Talk, More Rock by Superbrothers)这篇文章认为游戏是行动的媒介,而不是语言的媒介,并坚定的认为太多的设计讨论将会是毁灭性的。</p>
+<p> - 《敏捷软件开发》 (Agile Software Development) 。维基百科中关于敏捷软件开发的条目编写地很不错,如果你想要更多地学习敏捷,它可以提供很多参考。
+ </p>
+<ul>
+<li>杰森·范登博格撰写的《游戏设计的四个F:快速失败与跟随快乐》(The 4Fs of Game Design: Fail Faster, and Follow the Fun by Jason Vandenberghe)这篇文章(基于马克,勒布朗的一个理念)将伟大游戏设计过程的关键方面总结为清晰的基础元素</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/05/29/20220529-theartofgamedesign-chap8/">https://medill-east.github.io/2022/05/29/20220529-theartofgamedesign-chap8/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Design/">
+                                    <span class="chip bg-color">Game Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/05/29/20220529-yinyangmeseenger-demo-showcase-analysis/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/cover2.jpg" class="responsive-img" alt="《Yin Yang Messenger》 Demo 展示及分析">
+                        
+                        <span class="card-title">《Yin Yang Messenger》 Demo 展示及分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对 2022 年 2 月独立制作的平台跳跃类游戏《Yin Yang Messenger》的展示及分析。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Demo/" class="post-category">
+                                    Study-Game-Demo
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Portfolio/">
+                        <span class="chip bg-color">Portfolio</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/29/20220529-theartofgamedesign-toc/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220529014457.png" class="responsive-img" alt="游戏设计艺术 摘抄/笔记">
+                        
+                        <span class="card-title">游戏设计艺术 摘抄/笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对《游戏设计艺术》一书进行摘抄/笔记，特此记录。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

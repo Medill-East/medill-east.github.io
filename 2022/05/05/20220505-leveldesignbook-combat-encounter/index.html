@@ -1,0 +1,1302 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220505 - Level Design Book - BOOK 1. PROCESS - Combat - Encounter, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220505 - Level Design Book - BOOK 1. PROCESS - Combat - Encounter | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220505231631.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220505 - Level Design Book - BOOK 1. PROCESS - Combat - Encounter</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Level-Design/">
+                                <span class="chip bg-color">Game Level Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                Study-Game-LevelDesign
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-05-05
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2024-09-14
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    12 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Encounter"><a href="#Encounter" class="headerlink" title="Encounter"></a>Encounter</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://book.leveldesignbook.com/process/combat/encounter">原文链接</a></p>
+</li>
+<li><p><a href="https://medill-east.github.io/2022/04/29/20220428-leveldesignbook-toc/">Level Design Book 随译/笔记</a></p>
+</li>
+</ul>
+<blockquote>
+<p>通常与 NPC 进行的连续不断的开放式挑战</p>
+</blockquote>
+<h3 id="What-is-an-encounter"><a href="#What-is-an-encounter" class="headerlink" title="What is an encounter?"></a>What is an encounter?</h3><p>遭遇战是一系列支持多种玩家策略的系统性挑战：</p>
+<ul>
+<li>序列：可以有连续多个 beats/ waves/ 挑战</li>
+<li>系统性：使用重复游戏元素设计语言</li>
+<li>多样性：理想情况下，不仅有一种特定解决方案或最佳策略</li>
+<li>战术：即兴的短期玩法风格/行为</li>
+</ul>
+<p>许多游戏以非暴力形式来构建挑战：如谜题，对话，或是迷你游戏等。但是在关卡设计文化中，“遭遇战”通常指的是动作/射击/RPG 品类游戏中的单人战役及 PVE（player vs. enemy）</p>
+<p>原文里没填的坑：有关更多非暴力挑战设计，请看谜题。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220505211328.png" alt="combat front diagram for a cover-based military shooter, from &quot;Creating Conflict: Combat Design for AAA Action Games&quot; by Michael Barclay, Sam Howels, Pete Ellis at GDC Europe 2016 (via GdcVault.com) (https://www.gdcvault.com/play/1023791/Creating-Conflict-Combat-Design-for)"></p>
+<hr>
+<h3 id="Combat-story"><a href="#Combat-story" class="headerlink" title="Combat story"></a>Combat story</h3><p>遭遇战是有关<a href="https://medill-east.github.io/2022/04/29/20220429-leveldesignbook-pre-production-pacing/">节奏</a>的艺术。何时，在哪里，发生了什么，会让玩家有何种反应？</p>
+<p>可以把它当成一个故事，但是是通过战斗来讲述的——一场有起因，经过，结果的遭遇故事：</p>
+<ul>
+<li>起因，在战斗开始前：<ul>
+<li>敌人们已经在战场中了吗，还是毫无察觉，或是在来的路上？</li>
+<li>是否由玩家选择合适加入战斗</li>
+<li>玩家是否知道敌人的布局和构成？</li>
+</ul>
+</li>
+<li>经过，战斗中：<ul>
+<li>短线作战还是长时作战？多少波或阶段？</li>
+<li>有任何会影响战斗的脚本事件吗</li>
+<li>有特别需要强调的路线或是策略吗</li>
+</ul>
+</li>
+<li>结果，战斗后：<ul>
+<li>玩家怎样知道战斗结束了</li>
+<li>是否有多种可能结果</li>
+</ul>
+</li>
+</ul>
+<p>好的遭遇战能够帮助玩家理解发生了什么，也能讲述一个拥有清晰起因和后果的连贯故事。</p>
+<p>这里配了龙叔电影中遭遇战的录制 233：</p>
+<iframe width="735" height="413" src="https://www.youtube.com/embed/YX327SIoSMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+下面这段话直翻了：
+> 在上面的纪录片《成龙：我的特技》（1999）的视频片段中，成龙为大片《尖峰时刻》（1998）编排并导演了一个打斗场景。 成龙对每个演员的动作都强调了一种“身体逻辑”； 因此，当他和克里斯·塔克的行为相互影响时，这意味着他们角色的合作关系达到了情感高潮。 布雷特·拉特纳 (Brett Ratner) 经常提出的关于枪支的愚蠢问题完全没有抓住重点。 性格就是行动，行动不断流动。 枪无所谓，它只是帮助观众遵循身体逻辑的工具。
+
+<h3 id="Starting-an-encounter-footholds"><a href="#Starting-an-encounter-footholds" class="headerlink" title="Starting an encounter: footholds"></a>Starting an encounter: footholds</h3><p>对于强调掩护的单人动作射击游戏，让玩家在战斗真正开始前有机会调查竞技场：</p>
+<ul>
+<li>从哪里开始打</li>
+<li>了解敌人的进攻路线</li>
+<li>如果打不过从哪里跑</li>
+</ul>
+<p>如果不帮玩家理解布局，他们只会在门口毫无想象力的战斗，竞技场的设计就白做了，玩家会反过来怪游戏提供的信息不够多，不知道什么时候利用竞技场。</p>
+<p>怎么吸引玩家进入竞技场，了解布局，而后交战？Andrew Yoder 将之称为 <a target="_blank" rel="noopener" href="https://andrewyoderdesign.blog/2019/08/04/the-door-problem-of-combat-design/">战斗设计的门问题</a></p>
+<p>让玩家找到立足点的方法：</p>
+<h4 id="方法-1：玩家伏击敌人"><a href="#方法-1：玩家伏击敌人" class="headerlink" title="方法 1：玩家伏击敌人"></a>方法 1：玩家伏击敌人</h4><p>开始时让敌人意识不到玩家存在，玩家可从入口处进入。这让玩家有一些时间来制定计划，并在准备好时开始攻击。</p>
+<p>玩家一开始可能会很容易消灭暴露在外的不知情敌人，但可以在拐角处隐藏/产生更多敌人，在战斗开始时引入这些敌人增援。</p>
+<p>这种模式在开放世界游戏或任何点缀着敌人前哨的大型景观中很常见。符合这些品类行动自由的美学。</p>
+<h4 id="方法-2：敌人包围玩家"><a href="#方法-2：敌人包围玩家" class="headerlink" title="方法 2：敌人包围玩家"></a>方法 2：敌人包围玩家</h4><p>开始时没有敌人，玩家就能够在竞技场中游荡到中央。一旦越过某些范围，或是机关，就触发遭遇战。可以放置一些东西和资源到场中作为“诱饵”。</p>
+<p>有经验的玩家一眼就能识破这种明显的陷阱，并且一看到空旷的竞技场房间或者看到“免费”的诱饵就提高警惕。</p>
+<p>这种伎俩其实用一次就不好使了。防止敌人保卫战很困难，因为重复死亡以及缺乏对战斗的掌控会让玩家感到后悔或不公。</p>
+<p>这种模式常见于经典射击/恐怖游戏。玩家们通常都会对此有心理准备。</p>
+<h4 id="方法-3：带有可选单向入口的-Vista"><a href="#方法-3：带有可选单向入口的-Vista" class="headerlink" title="方法 3：带有可选单向入口的 Vista"></a>方法 3：带有可选单向入口的 Vista</h4><p>Vista 应该指的是制高点。</p>
+<p>设计玩家在开始时会处于一个制高点，从这里可以看到远处的竞技场内部，但不能攻击到敌人。玩家可以收集信息，制定计划，并在愿意的时候开始战斗。</p>
+<p>可以让玩家从一个单向通道进入，在玩家进入时可以选择将其身后的门关闭，这样一旦玩家入场，敌人也知晓，类似一种“公平战斗”。</p>
+<p>如果玩家测试的时候没有很好利用 vista，可以尝试：a. 在 vista 上放置资源；b. 使得通往 vista 的路更加顺畅；c. 一开始阻塞通往竞技场的路，并混淆入口（如 U 型转弯路，这里说实话一下子看到觉得不是很直观，没想出来指的是哪种）；d. 以上所有。</p>
+<p>这种模式在 BOSS 战或是大型高潮编排中很常见。强迫玩家在一个故意建造的 vista 停留是一个强有力的设计暗示，警告玩家：不要草率，做好准备。</p>
+<hr>
+<h3 id="Encounter-design-tools"><a href="#Encounter-design-tools" class="headerlink" title="Encounter design tools"></a>Encounter design tools</h3><h4 id="Define-play-styles"><a href="#Define-play-styles" class="headerlink" title="Define play styles"></a>Define play styles</h4><p>玩家一般不会每种机制都喜欢使用，一些人会偏爱某种策略，主升某种流派，或是偏爱特定武器。这里必须区分一下玩法风格和玩家个性：</p>
+<p>玩法风格/打法（play style）：短期的战术或是模式。玩家的模式就像天气一样，毫无预兆就可能更改。<br>玩家个性（player persona）：整体的长期行为和动机。玩家个性，是玩家整体行为的氛围，一般不会改变。</p>
+<p>在以上前提下，建议：遭遇战应该迫使玩家改变打法，但不要挫败玩家个性。</p>
+<p>有关定义和研究玩家的更多内容，请看<a target="_blank" rel="noopener" href="https://book.leveldesignbook.com/process/blockout/playtesting/persona">玩家个性</a>。</p>
+<p>对于每个项目，定义一些玩家打法：</p>
+<ol>
+<li>定义一些可能的玩家战术/行为/模式</li>
+<li>用简短易读的名字标记它</li>
+</ol>
+<p>例子：</p>
+<ul>
+<li>平台跳跃游戏：跑者（runners）、跳者（jumpers）、滑翔者（gliders，啥意思，一直滑铲？）、游泳者（swimmers，啥意思，爱走水路不爱走陆路？）</li>
+<li>设计游戏：狙击手（snipers），霰弹枪手（shotgunners），喷雾（spray，这…也没懂）和祈祷（pray，啥意思，这个真没懂），露营者（campers，蹲点的）</li>
+<li>开放世界游戏：探险家（explorers）、战士（fighters）、司机（drivers，滴滴滴）、收藏家（collectors，仓鼠）</li>
+<li>策略游戏：冲刺者（rushers）、海龟者（turtlers，疯狂保命，苟）、扩张者（expansionists）、微观/宏观（micro/macro，这啥，细节和大局观？）</li>
+<li>所有游戏：完成者（completionists）、速通（speedrunners）、知识猎人（lore hunters，全成就吧应该是）、直播（streamers，主播）、新手（newbs）等。</li>
+</ul>
+<p>然后把玩法风格应用到遭遇战设计中：</p>
+<ul>
+<li>哪些关卡/遭遇应该支持哪些游戏风格？</li>
+<li>你是否试图同时支持太多的游戏风格？（贪多嚼不烂啊）</li>
+</ul>
+<hr>
+<h3 id="Arena-design"><a href="#Arena-design" class="headerlink" title="Arena design"></a>Arena design</h3><p>也是没填完的坑：分解 sock 的图表并单独讨论它们</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220505224014.png" alt="different floor design diagrams for encounters by Simon O&#39;Callaghan"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220505224039.png" alt="different fps encounter elements by Simon O&#39;Callaghan"></p>
+<hr>
+<h3 id="Example-combat-bosses-in-God-of-War-2018"><a href="#Example-combat-bosses-in-God-of-War-2018" class="headerlink" title="Example: combat bosses in God of War (2018)"></a>Example: combat bosses in God of War (2018)</h3><p>纵观第三人称动作游戏《战神》（2018），玩家可以尝试击败 9个被称为“女武神”（Valkyries）的可选 BOSS。所有女武神共享相似的角色美术、动画和招式，但在不同条件下以不同顺序使用，在构建战斗变化的同时有效重用了相同资源。</p>
+<p>玩家游玩并解锁区域来解锁 BOSS，这种区域解锁的方式暗含了一种顺序，但并没有强制玩家按照这种顺序来进行战斗。前三个专门设计为一种松散教程（loose tutorials）供玩家来识别和学习，尽管有时候设计师也会利用这种潜在的建议顺序，通过混合以前的模式（prior patterns）来强迫玩家重新学习（已经学过的内容的）新的使用时机（relearn new timings）。</p>
+<p>Sony 前战斗设计师 Jason de Heras <a target="_blank" rel="noopener" href="https://twitter.com/jasondeheras/status/1376005093028335617">在 Twitter 上详述了战斗设计</a>:</p>
+<p>下面直翻：</p>
+<blockquote>
+<p>Gunnr 有 2 次独立攻击，其作用是鼓励招架（黄色 FX）；他们的预期窗口/攻击速度相似，以允许一致的招架时间。 [它] 鼓励玩家招架，但不是必须招架。 Gunnr 的所有攻击都可以左/右/后躲避或招架，[除了] 有 1 次不可招架（红色）攻击 […] 在一系列初始攻击之后执行，因此玩家有足够的时间准备。不可阻挡的攻击几乎为零跟踪，因此玩家可以以最小的精度向右躲避。</p>
+</blockquote>
+<blockquote>
+<p>Gunnr 通常会躲开以发起她的独立攻击。这给了玩家一个明显的视觉感受，但也有大量的分层预期时间，大约 2-3 秒来准备和应对随后的攻击。 […] Gunnr 在躲避然后攻击之后几乎没有停机时间（virtually no downtime after evading and then attacking，指的应该是攻击被格挡后不会下坠，玩家可以直接发起攻击？），这可以说使战斗更容易了。这减少了玩家必须制定策略的变量。设计者让战斗保持高强度，但实际上将敌人置于易受攻击的位置。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/LDB_GodOfWar_JasonDeHeras_ValkyrieTelegraph.gif" alt="animated GIF showing Gunnr&#39;s attacks with long anticipation and yellow FX to encourage parry / evade (https://twitter.com/jasondeheras/status/1376005121830658049)"></p>
+<blockquote>
+<p>与 Gunnr 不同，Kara 的 2 次攻击强烈迫使玩家回避/阻挡。 由于这些攻击具有相似的启动姿势，因此玩家必须识别红色 FX 以选择回避或阻挡。 […]  Kara 共享 Gunnr’s 短跑/俯冲?，但是 [如果] 玩家在招架/防守时失误，他们将很容易受到附近 Draugrs 的攻击，[增加紧张感。] Kara’s 翅膀滑击（wing swipe） 是一种独立的攻击，给了她另一种躲避并重置战斗的混招。 […] Kara’s 翅膀滑击 的范围会导致它故意 miss。 如果玩家大意或贪了，这种设计会让他们更容易错失机会（sleep）或者进行攻击。 最后一小段向前短冲使这种攻击具有欺骗性。</p>
+</blockquote>
+<blockquote>
+<p>Geirdriful 分享了 Gunnr 和 Kara 的一些招式，但增加了 2 种独特的攻击来打造强大/全面的招式 […] 可以招架的攻击。 […] Geirdriful 的侧翼挥击组合与 Gunnr 的相同，但用作独立攻击（与 Gunnr 的反击相反），这是另一种使战斗更难预测的组合。 Geirdriful 共享 Gunnr 不可阻挡的翅膀冲击（wing thrust），但作为独立攻击增加了平移/速度。 如果玩家先与 Gunnr 战斗，那么在无法阻挡的翅膀冲击之前移除翅膀滑击（wing swipes）将迫使他们重新学习此攻击的节奏。<br><a target="_blank" rel="noopener" href="https://twitter.com/jasondeheras/status/1376005093028335617">– Jason de Heras (@JasonDeHeras)</a></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220505230700.png" alt="spreadsheet breakdown showing the moveset matrix for valkyrie bosses in God of War (2018), by Jason de Heras (via Twitter)(https://twitter.com/jasondeheras/status/1376005158656638977)"></p>
+<hr>
+<h3 id="Example-stealth-boss-in-Dishonored"><a href="#Example-stealth-boss-in-Dishonored" class="headerlink" title="Example: stealth boss in Dishonored"></a>Example: stealth boss in Dishonored</h3><p>在第一人称潜行游戏《耻辱》中，任务 7 “洪水区”中，玩家面对的是一个 Boss NPC。 他们可以偷偷溜过它而不被发现或试图与老板战斗。 Arkane Studios 的关卡设计师 Dana Nightingale 评论了她的设计文件：</p>
+<blockquote>
+<p>通常我讨厌 BOSS 战，所以设计一个规避了所有我不喜欢的部分的 BOSS 战让我感到兴奋。 […] 设计与 Daud 的相遇仍然是我最自豪的事情之一。 我喜欢看人们玩它。</p>
+</blockquote>
+<blockquote>
+<p>大块的文本很适合“开发评论”（dev commentary），但如果你有一百个文档要保持最新状态，或者你是必须阅读它们的人，那么它就不能很好地工作。 更简单，但传达更多，始终是我们的目标。 这真的很难。</p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://twitter.com/DanaENight/status/1371022031886635011">– Dana Nightingale (@DanaENight)</a></p>
+</blockquote>
+<p>Nightingale 的原始设计文件（见下方）概述了这次遭遇战的明确设计目标，以证明异常封闭的竞技场布局是合理的。 此外，由于《耻辱》是一款具有许多不同玩家能力的“沉浸式模拟”RPG 游戏，她使用流程图格式来想象不同的玩家策略以及遭遇脚本如何优雅地处理边界情况。 然而，正如她所指出的，阅读内容很多。 在设计简介中写太多细节并不一定会改善规划或设计。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/LDB_Encounter_Daud_Dishonored_DanaNightingale.png" alt="design documents for boss encounter in Dishonored, by Dana Nightingale (https://twitter.com/DanaENight/status/1370643659792744449)"></p>
+<p>BOSS 战的其中一个通关例子，它满足了 Nightinggale 的设计目标吗？和初始的设计意图有何不同呢？</p>
+<p>（视频里面玩家用了类似“子弹时间”的技能来顺利偷到了东西，并且也没有触发战斗，算是满足了原始设计中的“逃课”目的，但却并非直接溜走，玩家用自己的方式做到了“雁过无痕”。）</p>
+<iframe width="485" height="273" src="https://www.youtube.com/embed/yE3yO4zMMgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+<h3 id="Further-reading"><a href="#Further-reading" class="headerlink" title="Further reading"></a>Further reading</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.gameaipro.com/">Game AI Pro</a> is the main game industry publication about game AI programming and techniques – professionally written and edited – and <strong>free to read.</strong> If you’re not a programmer, some of it will be difficult to understand, but try to push through it anyway. If you can understand 50% of it, it’ll still help you a lot. A valuable community resource for combat designers.</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=oB4JMy9OjKk"><strong>“Basics of Classic FPS Combat Encounter Design”</strong></a> (47 min video) by Andrew Yoder</li>
+<li><a target="_blank" rel="noopener" href="https://www.nathanielchapman.games/pedrothedagger/encounter-design-topics-rng-in-encounter-design">“Encounter Design Topics: RNG in Encounter Design”</a> by Nathaniel Chapman is about when and how to apply randomness to combat, especially in a multiplayer or MMO context.</li>
+<li>  <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=s9bleQCTdTo">“Quake Mapping Tips: Difficulty Balance in Level Design” (8 min) video by Michael Markie</a> workshops Quake 1 combat encounters at different difficulty tiers, while offering general design commentary and advice. Markie uses different monster behavior and weapon / ammo placement to encourage different player movement within the same room layout. A great primer even if you’re not mapping for Quake.</li>
+</ul>
+<hr>
+<h2 id="Backlink"><a href="#Backlink" class="headerlink" title="Backlink"></a>Backlink</h2><ul>
+<li><a href="https://medill-east.github.io/2022/04/29/20220428-leveldesignbook-toc/">Level Design Book 随译/笔记</a></li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/05/05/20220505-leveldesignbook-combat-encounter/">https://medill-east.github.io/2022/05/05/20220505-leveldesignbook-combat-encounter/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Level-Design/">
+                                    <span class="chip bg-color">Game Level Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/05/06/20220506-leveldesignbook-combat-balance/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220506234428.png" class="responsive-img" alt="20220506 - Level Design Book - BOOK 1. PROCESS - Combat - Balance">
+                        
+                        <span class="card-title">20220506 - Level Design Book - BOOK 1. PROCESS - Combat - Balance</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            The player's options throughout the level, the fairness of where the player can go
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-06
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                    Study-Game-LevelDesign
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Level-Design/">
+                        <span class="chip bg-color">Game Level Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/04/20220504-leveldesignbook-combat-enemydesign/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220504122728.png" class="responsive-img" alt="20220504 - Level Design Book - BOOK 1. PROCESS - Combat - Enemy Design">
+                        
+                        <span class="card-title">20220504 - Level Design Book - BOOK 1. PROCESS - Combat - Enemy Design</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            prototyping different types of NPCs with specific behaviors, strengths, and weaknesses
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                    Study-Game-LevelDesign
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Level-Design/">
+                        <span class="chip bg-color">Game Level Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

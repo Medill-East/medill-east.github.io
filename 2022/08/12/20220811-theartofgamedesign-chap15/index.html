@@ -1,0 +1,1519 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="游戏设计艺术 第十五章 玩家通过界面玩游戏, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>游戏设计艺术 第十五章 玩家通过界面玩游戏 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811005432.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">游戏设计艺术 第十五章 玩家通过界面玩游戏</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Design/">
+                                <span class="chip bg-color">Game Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-08-12
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-08-12
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    6.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    23 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="游戏设计艺术-摘抄-笔记"><a href="#游戏设计艺术-摘抄-笔记" class="headerlink" title="游戏设计艺术 摘抄/笔记"></a>游戏设计艺术 摘抄/笔记</h1><h2 id="20220811-第十五章-玩家通过界面玩游戏"><a href="#20220811-第十五章-玩家通过界面玩游戏" class="headerlink" title="20220811 第十五章 玩家通过界面玩游戏"></a>20220811 第十五章 玩家通过界面玩游戏</h2><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811005432.png"></p>
+<p>一个界面的目的是让玩家感觉将他们的体验把控在手</p>
+<h4 id="59-号透镜：控制"><a href="#59-号透镜：控制" class="headerlink" title="59 号透镜：控制"></a>59 号透镜：控制</h4><p>这个透镜的作用不只是用来检查你的界面，因为有意义的控制对沉浸式互动非常重要。问</p>
+<ul>
+<li>当玩家使用界面时，是否能尽其责？若不能，为什么</li>
+<li>直观界面给人以控制感。你的界面容易还是难以掌握呢</li>
+<li>玩家是否感觉他们对游戏的结果有强烈影响力？若不是，如何改变这种情况？</li>
+<li>感觉强大=掌控感。你的玩家是否感觉强大？是否能设法使他们感觉更强大呢</li>
+</ul>
+<h3 id="条分缕析"><a href="#条分缕析" class="headerlink" title="条分缕析"></a>条分缕析</h3><p>为了避免混淆并正确理解界面，必须将其分解成组件</p>
+<p>首先，我们知道我们有玩家和游戏世界</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811005838.png"></p>
+<p>从最简单的层面而言，界面是存在于玩家和游戏世界间的所有事物</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811005938.png" alt="玩家藉由手柄等物理输入与游戏世界产生交互，并通过显示器等物理输出查看交互结果"></p>
+<p>存在位于物理输出、物理输出和游戏世界之间的虚拟界面</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811010112.png" alt="玩家藉由物理输入与世界产生的交互会反馈在虚拟界面上，同时也可以借助虚拟界面与游戏世界进行交互"></p>
+<p>以下是一些对上图中的小数字所包含的映射逻辑的例子：</p>
+<ol>
+<li>物理输入-&gt;世界</li>
+</ol>
+<p>如果推摇杆可以让人物跑动，这个映射告诉我们它会跑得多快，以及如果放开的话多久会慢下来<br>如果更用力地推摇杆，人物会奔跑得更快吗<br>人物会一直加速吗<br>双击摇杆会让人物快跑吗</p>
+<ol start="2">
+<li>世界 -&gt; 物理输出</li>
+</ol>
+<p>若是无法一下子看到整个世界，那可以看到哪个部分，它是怎样呈现的</p>
+<blockquote>
+<blockquote>
+<p>即 3C 中的摄像机部分的设定</p>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li>物理输入 -&gt; 虚拟界面</li>
+</ol>
+<p>在一个基于鼠标的菜单界面中，单击会达到什么效果，双击呢？是否可以随意拖动界面的任意部分</p>
+<ol start="4">
+<li>虚拟界面 -&gt; 世界</li>
+</ol>
+<p>当玩家操纵虚拟界面时，对世界有什么影响？<br>如果选中世界里的一件物品并使用弹出菜单对它实施了一个行为，这个行为会马上生效还是延迟起效</p>
+<blockquote>
+<blockquote>
+<p>主要涉及打开菜单后，游戏世界的时间流速设定。<br>常见的做法有：1）继续正常流逝；2）暂停</p>
+</blockquote>
+</blockquote>
+<ol start="5">
+<li>世界 -&gt; 虚拟界面</li>
+</ol>
+<p>世界里的变化如何在虚拟界面上显示<br>什么时候分数和能量条会变化<br>世界里的事件会导致界面中出现特殊弹出窗口、弹出菜单或模式改变吗<br>在玩家进入战斗后，特别战斗菜单会出现吗</p>
+<ol start="6">
+<li>虚拟界面 -&gt; 物理输出</li>
+</ol>
+<p>会显示哪些数据给玩家，另外它们会在屏幕的哪里出现<br>显示什么颜色<br>什么字体<br>当生命力非常低的时候它是否会像心脏般跳动或发出声音</p>
+<h4 id="60-号透镜：物理界面"><a href="#60-号透镜：物理界面" class="headerlink" title="60 号透镜：物理界面"></a>60 号透镜：物理界面</h4><p>玩家会和你的游戏产生物理互动。抄袭现有的物理界面是一个很容易跌落的陷阱。通过该透镜以确认你的物理界面是否适合你的游戏</p>
+<ul>
+<li>玩家捡起和触碰了什么东西？能否把这个过程做得更加令人愉悦？</li>
+<li>游戏世界内的动作映射是怎样的？这种映射是否可以做得更加直接</li>
+<li>如果不能创造一个定制的物理界面，当你将输入映射到游戏世界时使用哪种隐喻方式</li>
+<li>在玩具透镜下，物理界面看上去是什么样的</li>
+<li>玩家怎么看到、听到和触碰游戏世界？是否有方式可以集成某种物理输出设备使得整个世界在玩家的想象中变得更真实</li>
+</ul>
+<h4 id="61-号透镜：虚拟界面"><a href="#61-号透镜：虚拟界面" class="headerlink" title="61 号透镜：虚拟界面"></a>61 号透镜：虚拟界面</h4><p>虚拟界面做得不好会成为玩家和游戏世界间的阻碍。做得好，它们会放大玩家在游戏世界中的力量和控制。利用该透镜来确认你的虚拟界面在尽可能加强玩家体验：</p>
+<ul>
+<li>玩家必须接收哪些光靠观察游戏世界而无法明显获取的信息</li>
+<li>玩家何时需要这些信息？一直？有时？只在每关结尾？</li>
+<li>这些信息如何以一种不会打扰玩家与游戏世界互动的方式传递给玩家？</li>
+<li>游戏世界里是否存在某些相比直接互动更容易通过虚拟界面互动的元素（比如弹出菜单）？</li>
+<li>对于我的物理界面来说哪种虚拟界面更适合？比如弹出菜单对于游戏手柄来说是一种很差的匹配</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>想到的是很多游戏中常见的，战斗时才显示人物相关信息（生命、魔法等），平时将这些信息隐藏，以尽可能增加玩家可视范围，增加临境感</p>
+</blockquote>
+</blockquote>
+<h4 id="62-号透镜：透明"><a href="#62-号透镜：透明" class="headerlink" title="62 号透镜：透明"></a>62 号透镜：透明</h4><blockquote>
+<p>无论你的界面多美丽，它总是越少越好。 —— 爱德华·塔夫特</p>
+</blockquote>
+<p>理想的界面对玩家来说是隐形的，它可以使玩家的想象完全沉浸在游戏世界中。为确保不可见性，问：</p>
+<ul>
+<li>玩家欲望是什么？界面是否让玩家做了他们想做的事</li>
+<li>这个界面是否足够简单到玩家通过练习后可以不用思考直接使用</li>
+<li>新的玩家是否觉得这个界面直观？若不是，它是否可以用某种方法做到更直观？如果让玩家可以定制操作方式会起到帮助还是伤害的作用</li>
+<li>界面是否在所有情况下都工作良好，是否在某些情况下（靠近角落时，走得非常快，等等）它的行为会使得玩家迷惑</li>
+<li>在紧张情况下玩家是否可以继续良好地使用界面，或者他们开始笨拙地摸索如何操控/遗漏了关键信息？若是这样，如何改善</li>
+<li>界面是否有任何迷惑玩家的地方？6 个界面箭头中的哪个会有这种情况</li>
+<li>当玩家使用界面时是否有沉浸感</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>其实在看这里的时候想到了曾经学过的有关 tangible user interface （TUI） 相关的概念，这里放个 wiki 的图，简单来说就是一种物理交互设备，有与“世界”相匹配的交互方式<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811012535.png"><br>设想一个情境，我们的任务是需要在地图中找到特定位置，而我们正好拥有一个形似地球仪的可转动的物理实体，可用于这一任务，想来会很过瘾<br>如此一来也可以简单想到，这一方法要普及要面临的第一个问题就是成本——与某些任务情境非常匹配的 TUI 必然是经过特殊设计的，这也意味着其与其他任务的匹配程度就会相对较低<br>突然想到市面上其实也有相关的成熟产品，即飞行模拟器或是汽车模拟器等等，也有钓鱼游戏专用的模拟钓竿等等<br>这里其实会设计到另外两个与人机交互相关的学术概念，Gulf of execution 和 gulf of evaluation，前者衡量用户理解系统当前状态的难易程度，如图形 &lt; 命令行（更难理解），后者衡量系统反馈的理解难易度，如进度条 &lt; 无显示 （更难理解）。但这部分有点太偏理论了，有兴趣的朋友可以自行查阅 (￣▽￣)”</p>
+</blockquote>
+</blockquote>
+<h3 id="互动循环"><a href="#互动循环" class="headerlink" title="互动循环"></a>互动循环</h3><p>信息以环状流动。</p>
+<p>从游戏返回到玩家的信息会极大影响玩家的下一步行动，这个信息一般被称为反馈。这种反馈的质量可以对玩家在游戏内发生的一切理解和享受程度产生巨大影响。</p>
+<p>良好反馈的重要性会被轻易忽视。比如篮筐的网。这个网完全不影响也游戏玩法——但当球从框中落下时其减慢了球下落的速度，也让所有球员可以清晰看见甚至听见球进了</p>
+<p>一个不那么明显的例子是速易洁，一个简单设备，设计理念是成为比传统扫帚/簸箕组合更好的清洁地板解决方式</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220812004406.png" alt="速易洁——可抛弃式擦布"></p>
+<p>看起来速易洁的设计师使用了 14 号透镜 “陈述问题” 来发明了一个全新解决方案。如果我们用扫帚/簸箕的解决方案来审视其中的某些问题：</p>
+<ul>
+<li>问题 1 不可能把所有尘土扫进簸箕</li>
+<li>问题 2 很难在站立的时候使用簸箕。弯着腰却很难使用扫帚</li>
+<li>问题 3 扫帚无法扫到所有的尘土</li>
+<li>问题 4 当你尝试把灰尘扫入簸箕时，你的手会弄脏</li>
+<li>问题 5 将垃圾从簸箕转移到垃圾桶时很危险——它经常会倒得或吹得到处都是</li>
+</ul>
+<p>速易洁使用可抛弃式的擦布完美解决了这些问题</p>
+<ul>
+<li>解决方法 1 不需要簸箕</li>
+<li>解决方法 2 使用速易洁时不需要弯腰</li>
+<li>解决方法 3 速易洁擦布比扫帚能扫更多尘土</li>
+<li>解决方法 4 你的手保持清洁</li>
+<li>解决方法 5 擦布很容易清理</li>
+</ul>
+<p>它同时还具有一个超越这些实际事件的吸引力。它拥有一股强烈的精神吸引力——老实说，它用起来也很有趣。为什么？因为它的设计提出了一个常人不认为是问题的问题</p>
+<ul>
+<li>问题 6 用户几乎得不到关于他们将地板清洁到了什么程度的反馈</li>
+</ul>
+<p>速易洁将这个问题解决得很好</p>
+<ul>
+<li>解决方法 6 打扫完后你从地板上擦去的尘土在你的擦布上非常明显</li>
+</ul>
+<p>这种反馈让玩家迅速明白他们所做的在地面干净程度这件事上起到了很大作用</p>
+<p>这会引发各种乐趣——因为做了有用的事而产生的满足感；净化的快乐；甚至还有掌握别人不知道的暗知识的喜悦感（这个指什么嘞）</p>
+<p>虽然会泽中反馈直到任务结束才会到来，但玩家能够预见这一点并期待看到一件工作被不错完成后的具体证据</p>
+<h4 id="63-号透镜：反馈"><a href="#63-号透镜：反馈" class="headerlink" title="63 号透镜：反馈"></a>63 号透镜：反馈</h4><p>一个玩家从游戏中得到的反馈有很多种：判断、奖励、直到、鼓舞、挑战。用该透镜确认反馈回路正在创造想要的体验，随时随地在游戏中问：</p>
+<ul>
+<li>在该时刻，玩家应该知道什么</li>
+<li>在该时刻，玩家想要知道什么</li>
+<li>在该时刻，想要玩家感受到什么？如何给出能够创造这种感受的反馈？</li>
+<li>在该时刻，玩家希望感受到什么？对他们来说是否有机会创造一个能使得他们获得这种感受的情境</li>
+<li>在该时刻，玩家的目标是什么？哪种反馈会帮助他们实现这个目标</li>
+</ul>
+<p>在游戏中每个时刻都使用该透镜会耗费巨大精力，但这是值得的，因为它会帮助确保这个游戏清晰，富有挑战性，并且是值得的。</p>
+<p>通常按照经验来看，如果界面不会在十分之一秒内对玩家输入做出反应，他就会觉得你的界面出了问题</p>
+<h3 id="有趣"><a href="#有趣" class="headerlink" title="有趣"></a>有趣</h3><p>回到打扫的例子：一条肮脏擦布并不是速易洁给用户的唯一反馈<br>考虑扫帚/簸箕组合带来的另一个问题</p>
+<ul>
+<li>问题 7 扫地很无聊</li>
+</ul>
+<p>将这里所谓的 “无聊” 进行划分，它所指的是</p>
+<ul>
+<li>扫地是反复的（机械重复同一动作）</li>
+<li>需要你集中精神在某件不会带来惊喜的事上（如果不关注那堆尘土，它就会飞得到处都是）</li>
+</ul>
+<p>而速易洁也有对应的解决方案</p>
+<ul>
+<li>解决方法 7 使用速易洁是有趣的！</li>
+</ul>
+<p>这可能是速易洁最大的独立卖点</p>
+<p>用 17 号透镜 “玩具” 观察一下，速易洁做得很好——它确实好玩，但为什么？它不就是一根棍上的一块布吗？但速易洁的清洁底座所展示的运动是二级运动，即起源于玩家动作的运动——玩家轻轻转动手腕，支撑擦布的底座就会明显转动</p>
+<p>当一套系统展示大量一个玩家可以轻易控制的二级运动并且它会给予玩家许多力量与奖励时，我们称之为多汁系统——就像一颗成熟蜜桃，只要与其有一些互动，它就会回馈你连续不断的可口汁水</p>
+<h4 id="64-号透镜：多汁"><a href="#64-号透镜：多汁" class="headerlink" title="64 号透镜：多汁"></a>64 号透镜：多汁</h4><p>将一个界面称之为“多汁”可能有些蠢，但在你开始使用多汁界面的那一刻起 多汁界面就很有趣，问</p>
+<ul>
+<li>我的界面对玩家的动作基于持续反馈了吗？若没有，为什么没有</li>
+<li>二级运动是由玩家动作创造的吗？这个二级运动是否有利且有趣？</li>
+<li>多汁系统以多种方式立刻奖励玩家。当我给予玩家一次奖励时，我同时以多少种方式在奖励他们？可以找到更多方式吗</li>
+</ul>
+<p>趣味通常伴随着意外的愉悦</p>
+<h3 id="首要性"><a href="#首要性" class="headerlink" title="首要性"></a>首要性</h3><p>有一种界面形式，偏重于和多汁有趣联系在一起——手机和平板的触摸界面</p>
+<p>为什么触摸界面容易上手——为什么触摸界面直观——为什么触摸界面容易理解——因为它们原始</p>
+<p>直到触摸电脑的出现，每台电脑界面都采取了使用工具的形式。即与一些物理物体（键盘、鼠标、按钮控制板、打孔卡等）互动，以及会发生一些远程的（不在我手边的）反馈。渐渐地，人们逐渐学会这样的工作方式并习惯使用。但使用工具并不是最原始的交互方式。</p>
+<p>动物在更长的一段时间里都是以本能来触摸物体的。</p>
+<blockquote>
+<blockquote>
+<p>这里果然再次涉及到了之前提到的 gulf of execution 和 gulf of evaluation 的概念。简单来说就是人们使用触摸屏幕的时候是直接交互的，即手指的点击位置就是屏幕的交互位置，而若是使用键鼠，中间其实包含手-鼠标-屏幕上的光标的映射关系，多了一层手-鼠标，鼠标-光标的转换。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220812115414.png"><br>如图所示，其上包含另外两个概念，语音距离（articulatory distance）和语义距离（semantic distance）。<br>语义距离的关键在于用户是否能把意图转化为相应的界面语言（idea -&gt; input）<br>语音距离反映交互行为中为实现交互意图所做的操作（input）与其含义（output）之间的关系（input -&gt; output）</p>
+</blockquote>
+</blockquote>
+<p>可以确定的是，能使用或涉及越多的大脑原始部分，人们会觉得你的玩法更直观有力，这也帮助说明了为什么那么多游戏包含以下元素：</p>
+<ul>
+<li>收集水果类元素</li>
+<li>和有威胁的敌人作战</li>
+<li>寻路以通过不熟悉的环境</li>
+<li>克服困难去找到你的伴侣（科学家通常称之为“拯救公主”）</li>
+</ul>
+<h4 id="65-号透镜：原始性"><a href="#65-号透镜：原始性" class="headerlink" title="65 号透镜：原始性"></a>65 号透镜：原始性</h4><p>一些动作和界面是如此直观，连动物都在几亿年前就在做这些动作。为捕捉到原始性的力量，问：</p>
+<ul>
+<li>游戏中，哪些部分是如此原始，连动物都可以玩？为什么</li>
+<li>在游戏中，哪些部分可以做得更加原始？</li>
+</ul>
+<h3 id="信息通道"><a href="#信息通道" class="headerlink" title="信息通道"></a>信息通道</h3><p>任何界面的一个重要目的是用来交流信息。</p>
+<p>为搞明白在游戏中展现信息的最佳方式，尝试以下步骤</p>
+<h4 id="步骤-1：列表与排列信息"><a href="#步骤-1：列表与排列信息" class="headerlink" title="步骤 1：列表与排列信息"></a>步骤 1：列表与排列信息</h4><p>一个游戏必须呈现大量信息，但它们并不同等重要</p>
+<p>以红白机的《塞尔达传说》为例，一个没有优先度的玩家可能看到信息的列表如下：</p>
+<ol>
+<li>红宝石数量</li>
+<li>钥匙数量</li>
+<li>体力值</li>
+<li>当下环境</li>
+<li>远处环境</li>
+<li>其他物品</li>
+<li>当前五期</li>
+<li>当前宝物</li>
+<li>炸弹数量</li>
+</ol>
+<p>现在，按重要度重新排序：</p>
+<p>每一刻都必须了解：<br>4. 当下环境</p>
+<p>游戏过程中必须不时瞟一眼：</p>
+<ol>
+<li>红宝石数量</li>
+<li>钥匙数量</li>
+<li>体力值</li>
+<li>远处环境</li>
+<li>当前武器</li>
+<li>当前宝物</li>
+<li>炸弹数量</li>
+</ol>
+<p>有时必须知道：<br>6. 其他物品</p>
+<h4 id="步骤-2：列出通道"><a href="#步骤-2：列出通道" class="headerlink" title="步骤 2：列出通道"></a>步骤 2：列出通道</h4><p>一个信息通道只是传递数据流的一种方式。</p>
+<p>一些可能的信息通道：</p>
+<ul>
+<li>屏幕正上方</li>
+<li>屏幕右下角</li>
+<li>头像</li>
+<li>音效</li>
+<li>音乐</li>
+<li>屏幕边界</li>
+<li>逼近的敌人胸部</li>
+<li>一个人物头上的对话气球</li>
+</ul>
+<p>列出你认为也许会用到的通道是个好主意。在《塞尔达传说》中，设计师用到的主要信息通道是：</p>
+<ul>
+<li>主显示区域</li>
+<li>屏幕上方的信息控制面板</li>
+</ul>
+<p>他们决定玩家可以通过点击“选择”按钮激活“模式改变”，它的信息通道有所不同：</p>
+<ul>
+<li>辅助显示区域</li>
+<li>屏幕底部的信息控制面板</li>
+</ul>
+<h4 id="步骤-3：将信息映射到通道"><a href="#步骤-3：将信息映射到通道" class="headerlink" title="步骤 3：将信息映射到通道"></a>步骤 3：将信息映射到通道</h4><p>每一刻都必须了解 —— 主显示区域<br>4. 当下环境</p>
+<p>游戏过程中必须不时瞟一眼 —— 屏幕上方信息控制面板</p>
+<ol>
+<li>红宝石数量</li>
+<li>钥匙数量</li>
+<li>体力值</li>
+<li>远处环境</li>
+<li>当前武器</li>
+<li>当前宝物</li>
+<li>炸弹数量</li>
+</ol>
+<p>有时必须知道 —— 主屏幕和子屏幕<br>6. 其他物品</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220812121059.png"></p>
+<p>要注意 7 个信息通道是如何分开的</p>
+<ul>
+<li>生命——如此重要，以至于占据了三分之一</li>
+<li>红宝石、炸弹、钥匙——虽然作用不同，但都需要传递两位数信息，所以被归类到了一起</li>
+<li>当前武器、当前宝物——如此重要，所以有小框包围，且有 “A”/“B” 提示按键</li>
+<li>仓库——注意如何利用剩余空间给予玩家如何使用的提示</li>
+</ul>
+<h4 id="步骤-4：检验维度的使用"><a href="#步骤-4：检验维度的使用" class="headerlink" title="步骤 4：检验维度的使用"></a>步骤 4：检验维度的使用</h4><p>游戏中一条信息通道可以拥有许多维度</p>
+<p>例如，如果决定把“对敌伤害”映射到“从敌人飞出的数字”，那么在该通道上需要处理的维度有：</p>
+<ul>
+<li>显示的数字</li>
+<li>数字的颜色</li>
+<li>数字的大小</li>
+<li>数字的字体</li>
+</ul>
+<p>在一条通道上使用多维度来强调一则信息是使得该信息非常清晰（同时也多汁）的一种方法</p>
+<p>也可以使用另一种方法将不同信息放在不同维度上。<br>如也许在数字上标识不同颜色来表示朋友（白色）和敌人（红色）<br>也许用数字大小表示人物还差多少会被击败——小号数字表示人物还剩大量体力，大号数字表示他们快死了</p>
+<p>这种技巧可以是有效而优雅的。通过使用一个简单数字，传递了三种不同信息。风险在于需要教育玩家这一条信息通道所展示的不同维度内容。</p>
+<h5 id="66-号透镜：通道和维度"><a href="#66-号透镜：通道和维度" class="headerlink" title="66 号透镜：通道和维度"></a>66 号透镜：通道和维度</h5><p>选择如何将游戏信息映射到通道和维度是设计游戏界面的核心。问：</p>
+<ul>
+<li>哪些数据需要在玩家这里往来</li>
+<li>哪个数据是最重要的</li>
+<li>可以用哪些通道来传输这些数据</li>
+<li>哪些通道对于哪些数据最合适？为什么</li>
+<li>这些不同通道上哪些维度可用</li>
+<li>该如何使用这些维度</li>
+</ul>
+<h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><p>简单来说，界面模式是界面图里映射箭头（1~6）其中之一的改变。比如，按下某个按键后，原本的交互方式发生了改变，就是模式切换。模式切换可以作为 6 个箭头中任意一组映射改变的结果出现。</p>
+<p>模式是增加游戏多样性的好办法，但必须非常小心，如果玩家不能意识到模式切换了，就可能很疑惑</p>
+<p>以下是一些避免让界面模式陷入麻烦的建议：</p>
+<ul>
+<li>模式建议 1：使用尽可能少的模式</li>
+</ul>
+<p>模式越少，玩家可能困惑的可能性就越小<br>同时拥有几个模式并不是坏事，但要谨慎添加模式，因为每个模式都需要玩家学习并理解</p>
+<ul>
+<li>模式建议 2：避免模式叠加</li>
+</ul>
+<p>简言之，同一个界面模式最好只干一件事<br>如果重叠模式不可避免，务必确认它们在使用界面的不同信息渠道</p>
+<ul>
+<li>模式建议 3：制作尽可能不同的差异模式</li>
+</ul>
+<p>换言之，用 63 号透镜 “反馈” 和 62 号透镜 “透明” 来观察你的模式<br>如果玩家不清楚身处何种模式，他们会沮丧和疑惑<br>vim 就是会让用户十分迷惑的其中一种界面模式</p>
+<blockquote>
+<blockquote>
+<p>确实</p>
+</blockquote>
+</blockquote>
+<p>以下是几种能让模式看上去不同的好办法：</p>
+<ul>
+<li><p>改变屏幕上巨大且可视的东西</p>
+<ul>
+<li>在《光晕》及大部分 FPS 游戏中，当你切换武器，是非常明显的。</li>
+<li>此外，你剩下的弹药数量通过一条有趣通道给出——枪的背部</li>
+</ul>
+</li>
+<li><p>改变人物所采取的行动</p>
+<ul>
+<li>在经典街机《丛林之王》中，从摆动藤蔓模式切换到游泳模式时，模式明显变化（头发颜色甚至都变了——可能有些过了）</li>
+</ul>
+</li>
+<li><p>改变屏幕上的数据</p>
+<ul>
+<li>在《最终幻想》系列游戏以及大部分 RPG 中，当你进入战斗中，许多作战数据和菜单会突然出现，很明显，模式改变了</li>
+</ul>
+</li>
+<li><p>改变镜头视角</p>
+<ul>
+<li>作为模式变化的一个标志经常被忽略，但它可以非常有效</li>
+</ul>
+</li>
+</ul>
+<h4 id="67-号透镜：模式"><a href="#67-号透镜：模式" class="headerlink" title="67 号透镜：模式"></a>67 号透镜：模式</h4><p>任何复杂度的界面都需要模式。为确保你的模式让玩家感到有力和控制感，且不使得他们疑惑或不知所措，问：</p>
+<ul>
+<li>游戏中需要什么模式，为什么</li>
+<li>有些模式是否可以折叠或合并</li>
+<li>是否有些模式重叠了？若如此，是否可以把它们放入不同输入频道</li>
+<li>游戏改变模式后，玩家怎么知道？游戏是否可以用不止一种方式来传递模式改变的信息</li>
+</ul>
+<h3 id="其他关于界面的建议"><a href="#其他关于界面的建议" class="headerlink" title="其他关于界面的建议"></a>其他关于界面的建议</h3><p>以下是一些关于制作优秀游戏界面的常用建议</p>
+<h4 id="界面建议-1：偷窃"><a href="#界面建议-1：偷窃" class="headerlink" title="界面建议 1：偷窃"></a>界面建议 1：偷窃</h4><p>更礼貌一点的说法是“自顶向下方法”。</p>
+<p>可以从一个已知的成功作品开始着手，将其改变成适合你游戏中独特之处的界面，好处：</p>
+<ul>
+<li>节省大量设计时间</li>
+<li>是对于玩家而言熟悉的界面</li>
+</ul>
+<p>小小的变化可以慢慢产生化学变化，避免克隆</p>
+<h4 id="界面建议-2：定制"><a href="#界面建议-2：定制" class="headerlink" title="界面建议 2：定制"></a>界面建议 2：定制</h4><p>也被称为自底向上方法，是偷窃的对立面。</p>
+<p>通过列出信息、通道、维度来从头设计界面：是一种让你的界面看上去独特以及对你的特别游戏专门适配的好办法</p>
+<h4 id="界面建议-3：围绕物理界面设计"><a href="#界面建议-3：围绕物理界面设计" class="headerlink" title="界面建议 3：围绕物理界面设计"></a>界面建议 3：围绕物理界面设计</h4><p>不同的界面平台：触摸界面、动态界面、键鼠、游戏手柄、混合现实 HMD … </p>
+<p>尝试设计一个独立于任何一类界面的游戏往往会产生一个无趣游戏</p>
+<p>愤怒的小鸟的巨大成功一部分是因为它很好利用了触摸界面</p>
+<p>如果游戏的核心互动是利用了某种物理界面独特性的独特玩法，它会得到足够多的注意而值得让你放弃其他平台</p>
+<h4 id="界面建议-4：主题化你的界面"><a href="#界面建议-4：主题化你的界面" class="headerlink" title="界面建议 4：主题化你的界面"></a>界面建议 4：主题化你的界面</h4><p>用 11 号透镜“统一性” 来审视界面，寻找方法将游戏界面和游戏世界以及其他体验关联起来</p>
+<h4 id="界面建议-5：将声音映射到触摸"><a href="#界面建议-5：将声音映射到触摸" class="headerlink" title="界面建议 5：将声音映射到触摸"></a>界面建议 5：将声音映射到触摸</h4><p>游戏中使用声音时，考虑的是创造一个音响范围来</p>
+<ul>
+<li>给予玩家一个场所感——草地上叽叽叫的小鸟</li>
+<li>让动作看上去更真实——看见玻璃破碎同时听到声音</li>
+<li>给予玩家关于他们在游戏内进度的反馈——捡起宝物时的声音</li>
+</ul>
+<p>但音乐上总有一些与界面直接有关的方面会被忽视：人脑会容易地将声音映射到触摸</p>
+<p>在触感交互完全实现之前，使用音乐来模拟触感是很好的选择</p>
+<h4 id="界面建议-6：用层级平衡选项和简单度"><a href="#界面建议-6：用层级平衡选项和简单度" class="headerlink" title="界面建议 6：用层级平衡选项和简单度"></a>界面建议 6：用层级平衡选项和简单度</h4><p>平衡：给予玩家尽可能多选项 vs. 将界面做得尽可能简洁</p>
+<p>创造平衡的好方法：通过模式和子模式创造层级</p>
+<h4 id="界面建议-7：使用隐喻"><a href="#界面建议-7：使用隐喻" class="headerlink" title="界面建议 7：使用隐喻"></a>界面建议 7：使用隐喻</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220812125220.png"></p>
+<blockquote>
+<blockquote>
+<p>简言之就是，给一些玩家理解起来有困难的现象添加一个他们所熟悉的（通常也是游戏更早阶段已经出现过的）合理说法</p>
+</blockquote>
+</blockquote>
+<h5 id="67-5-号透镜：隐喻"><a href="#67-5-号透镜：隐喻" class="headerlink" title="67.5 号透镜：隐喻"></a>67.5 号透镜：隐喻</h5><p>游戏界面经常模仿玩家熟悉事物的界面。为确保你使用的隐喻有助于玩家理解，不令玩家困惑，问</p>
+<ul>
+<li>界面是否已经是对其他事物的隐喻</li>
+<li>若是隐喻，是否发挥了其最大作用，还是令其成为了阻碍</li>
+<li>若不是隐喻，让它变成隐喻会更符合直觉吗</li>
+</ul>
+<h4 id="界面建议-8：若是看上去不同，行为也要不同"><a href="#界面建议-8：若是看上去不同，行为也要不同" class="headerlink" title="界面建议 8：若是看上去不同，行为也要不同"></a>界面建议 8：若是看上去不同，行为也要不同</h4><p>不要仅仅因为视觉多样性而增加变化，若是它们没有功能区别，会让玩家感到困惑和失望</p>
+<p>同时也不要为完全相同的视觉符号增加多种不同含义，也会让玩家感到迷惑</p>
+<h4 id="界面建议-9：测试，测试，测试！"><a href="#界面建议-9：测试，测试，测试！" class="headerlink" title="界面建议 9：测试，测试，测试！"></a>界面建议 9：测试，测试，测试！</h4><p>早期可以使用纸面原型等对界面进行测试，在此过程中了解玩家意图</p>
+<h4 id="界面建议-10：打破不能帮助玩家的法则"><a href="#界面建议-10：打破不能帮助玩家的法则" class="headerlink" title="界面建议 10：打破不能帮助玩家的法则"></a>界面建议 10：打破不能帮助玩家的法则</h4><blockquote>
+<blockquote>
+<p>这一段主要讲的是不要囿于一些经验法则，有时候也需要做一些变通。<br>比如鼠标左键一般作为主键，经验法则是说右键一般不该做任何事，除非有特别目的。但是在简单游戏，如儿童游戏中，有些游戏完全不使用右键，一些设计师倾向于将其完全禁止，这样所有玩法都通过左键进行交互。但儿童使用鼠标时因为手小经常会误触，一些设计师打破了这条经验法则，为左右键映射了同样的行为，这样按下任意键后的操作都是正确的。<br>关键就是，天下文章一大抄，看你会抄不会抄吧哈哈</p>
+</blockquote>
+</blockquote>
+<hr>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/08/12/20220811-theartofgamedesign-chap15/">https://medill-east.github.io/2022/08/12/20220811-theartofgamedesign-chap15/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Design/">
+                                    <span class="chip bg-color">Game Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/08/13/20220813-teardown-analysis-avatar-the-game/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220803181126.png" class="responsive-img" alt="Avatar：The Game 拆解分析">
+                        
+                        <span class="card-title">Avatar：The Game 拆解分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是一份由我写于 2022 年 8 月对游戏《Avatar：The Game》的 Teardown Analysis。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/07/20220807-theartofgamedesign-chap14/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220807003235.png" class="responsive-img" alt="游戏设计艺术 第十四章 游戏机制支持谜题">
+                        
+                        <span class="card-title">游戏设计艺术 第十四章 游戏机制支持谜题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            谜题就是有最优策略的游戏
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

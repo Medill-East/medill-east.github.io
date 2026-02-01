@@ -1,0 +1,1404 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Avatar：The Game 拆解分析, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>Avatar：The Game 拆解分析 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220803181126.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Avatar：The Game 拆解分析</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                Study-Game-Analysis
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-08-13
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-08-14
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    6.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    24 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="《-Avatar-The-Game》-Teardown-Analysis"><a href="#《-Avatar-The-Game》-Teardown-Analysis" class="headerlink" title="《 Avatar: The Game》 Teardown Analysis"></a>《 Avatar: The Game》 Teardown Analysis</h2><h3 id="写在最前面"><a href="#写在最前面" class="headerlink" title="写在最前面"></a>写在最前面</h3><p>本拆解分析基于 PC 版进行，我自己只玩了 Na’vi 的主线，会结合网上的<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RTLYtoWCdTM&t=16982s">通关视频</a> 进行 PC 版人类主线的分析。</p>
+<h3 id="游戏概况"><a href="#游戏概况" class="headerlink" title="游戏概况"></a>游戏概况</h3><ul>
+<li>开发公司：Ubisoft</li>
+<li>上线时间：2009 年 12 月 1 日</li>
+<li>类型：FPS + RPG</li>
+<li>特色：<ul>
+<li>双主线分支</li>
+<li>多种可驾驶载具</li>
+<li>可选的 3D 显示效果</li>
+</ul>
+</li>
+<li>商业表现（翻译自 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Avatar:_The_Game">Wiki</a>  页面）<ul>
+<li>该游戏的销售起步缓慢，但最终在所有平台上销售 270 万台，超出预期。Ubisoft 首席执行官 Yves Guillemot 称该游戏是“对公司的积极贡献”，理由是这部电影的成功及其在 DVD 上的推出带来了销售额的增长。</li>
+</ul>
+</li>
+<li>简介<ul>
+<li>据 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Avatar:_The_Game">Wiki</a> 页面上的信息显示，该游戏的故事设定在同名电影事件的前两年，即设定为电影的前传。（但其实玩下来感觉是平行世界设定的感觉）</li>
+<li>考虑到其发售时期（12 月 1 日）是定在了电影上映前两周左右，若是假设该游戏最开始就是电影“造势”的一部分，那么可以假定该游戏要达成的核心目标之一是世界观的展现以及吸引玩家后续也成为电影的观众。</li>
+<li>整体游玩过后，游戏确实也主要围绕叙事展开，故后续分析也会基于“该游戏的设计核心是叙事”这一前提进行。</li>
+</ul>
+</li>
+</ul>
+<h3 id="游戏截图展示"><a href="#游戏截图展示" class="headerlink" title="游戏截图展示"></a>游戏截图展示</h3><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_2 6_39_44.png" style="zoom: 50%;" />
+
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_3 5_11_57.png" style="zoom: 50%;" />
+
+<h3 id="Core-Loop-展示"><a href="#Core-Loop-展示" class="headerlink" title="Core Loop 展示"></a>Core Loop 展示</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202208080028AvatarCoreLoop.jpeg" alt="CoreLoop"></p>
+<p>可以看到，《Avatar：The Game》（以下简称为 Avatar）中的玩家目标其实较为清晰，即通过不断完成任务来解锁新剧情、新玩法，以及不断让角色变强。但其实后两者最终都会服务于新剧情的解锁这一目标。</p>
+<h3 id="机制相关（主要以-Na’vi-支线为例）"><a href="#机制相关（主要以-Na’vi-支线为例）" class="headerlink" title="机制相关（主要以 Na’vi 支线为例）"></a>机制相关（主要以 Na’vi 支线为例）</h3><h4 id="养成"><a href="#养成" class="headerlink" title="养成"></a>养成</h4><p>从 Coreloop 中可以看到，本作中的资源类型其实很少，能够称得上养成相关的资源只有经验值（XP）和策略点（Credits）。</p>
+<h5 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h5><ul>
+<li>XP</li>
+</ul>
+<p>其中 XP 的来源主要是任务，任务奖励通常为 6000 XP，后期会提升到 8000 XP。杀敌能获得的其实较少，并且杀敌获得的 XP 量基本是固定的。以 Na’vi 支线为例，击杀人类士兵， XP 通常为 50，击杀驾驶 AMP 的人类士兵，XP 通常为 150。印象中击杀所获取的 XP 量到了很后期有一次下调 （50 -&gt; 30，150 有没有下调有些记不清了），但基本可以说是全程不变的。</p>
+<p>而 XP 积攒到一定量后就可以升级解锁新的装备/技能/武器了。</p>
+<ul>
+<li>Credits</li>
+</ul>
+<p>Credits 机制算是本作中值得一提的养成小机制。Credits 可以视作 XP 的一种等值获取物，每当获取了 XP 之后，相当于也自动获取了等量的 Credits。</p>
+<p>Credits 的使用依托于各传送点。本作中的各个传送点处除了可以进行传送，还内置了 Conquest 小游戏，可以将其视为一个简单的回合制 SLG 。玩家可以通过使用 Credits 来换取相应的单位，以下部分译自 <a target="_blank" rel="noopener" href="https://james-camerons-avatar.fandom.com/wiki/Conquest_(Mini_Game)">Fandom 页面</a> ：</p>
+<blockquote>
+<p>单位分为三类：<br>1）步兵（RDA 步兵和 Na’vi 战士）；<br>2）重型步兵（AMP 套装和 Thanators）；<br>3）空中单位（Samsons 和 banshees）。</p>
+<p>在回合开始时，玩家可以购买升级并随心所欲地移动他们的部队。</p>
+<p>小游戏中的星球被分成许多领土，每个领土都有自己的驻军，需要击败才能占领它。玩家决定他们希望投入多少单位进行战斗。战斗结果会自动计算。</p>
+<p>单位先攻击对应的职业：例如，如果敌方有女妖，参孙总是会攻击女妖。攻击替代职业的单位会受到惩罚，因此建议仅使用相同类型进行攻击。在回合结束时，玩家需要至少剩下 500 名士兵才能征服领土。</p>
+<p>对方也可能在他们的回合中进攻，因此在边界附近维持驻军很重要。</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_13 23_25_56.png" alt = "Conquest" style="zoom: 50%;" />
+
+<p>玩家通过在 Conquest 中占领土地可以获取主世界中多种属性的提升（即 coreloop 中的 Conquer Reward）：</p>
+<ul>
+<li>Critical Chance</li>
+<li>Range</li>
+<li>Health</li>
+<li>Armor</li>
+<li>Troops</li>
+<li>XP</li>
+</ul>
+<h5 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h5><ul>
+<li>是服务于叙事核心的简单养成体系</li>
+</ul>
+<p>还是回归最开始所假设的“以叙事为主”的核心目标，那么这样稍显简单的养成体系也就说得通了。我个人的游玩经验表明，在不利用 Conquest 机制所带来的属性提升的情况下也能顺畅地通关，所以说 Conquest 机制在我看来属于一种 pacing 调节手段，并不属于核心养成机制。</p>
+<ul>
+<li>可改进的点 1：养成路线是单一的</li>
+</ul>
+<p>特定 XP 能获取的奖励是固定的，甚至可以在特定菜单中提前预览，这样其实在很大程度上降低了玩家的期待感。</p>
+<p>改进方式也容易想到，比如隐藏本可以被预览的奖励，以及构建商店体系和技能树体系，但后者可能会与叙事推进的核心目标有些许冲突。也许现有的这种以 “无需思考的养成路线 + 可供选择的辅助养成机制” 就是多方权衡后，可服务于叙事核心的较好方式。</p>
+<h4 id="坐骑-Mount"><a href="#坐骑-Mount" class="headerlink" title="坐骑 - Mount"></a>坐骑 - Mount</h4><h5 id="展示-1"><a href="#展示-1" class="headerlink" title="展示"></a>展示</h5><ul>
+<li>Direhorse</li>
+</ul>
+<p>即最常见也最常用的夜魇马，骑上之后是无法进行攻击的，但可以按键让其进入速跑模式。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_13 20_14_13.png" alt = "Direhorse" style="zoom: 50%;" />
+
+<ul>
+<li>Mountain Banshee</li>
+</ul>
+<p>即 Na’vi 的主要飞行坐骑，主要在游戏前中期可以使用，也有几个涉及需要驾驶 Banshee 完成的任务，但在游戏中后期基本不再有需要专门驾驶 Banshee 的任务，我个人的任务线中也并未发现需要，甚至是可以骑乘 Banshee 的点。因为在传送点附近一般都只有夜魇马，不会有 Banshee 可供骑乘。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_13 20_15_56.png" alt = "Banshee" style="zoom: 50%;" />
+
+<ul>
+<li>Thanator</li>
+</ul>
+<p>这是在中后期部分特殊任务中可供骑乘的强力坐骑，应该也是 Na’vi 支线中唯一在骑乘后依然可以攻击的坐骑。按键可以命令 Thanator 进行攻击，且攻击较高。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_3 4_35_20.png" alt = "Thanator" style="zoom: 50%;" />
+
+<ul>
+<li>Great Leonopteryx</li>
+</ul>
+<p>其实就是影片中会出现的 Last Shadow，只在最终前往灵魂之井的路上可被骑乘（也就是只能骑一次，一小会儿）。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_3 7_38_08.png" alt = "Great Leonopteryx" style="zoom: 50%;" />
+
+<h5 id="感受-1"><a href="#感受-1" class="headerlink" title="感受"></a>感受</h5><p>整体而言，坐骑的解锁是随着任务推进自然展开的，没有什么特殊条件。</p>
+<ul>
+<li>可改进的点 1：剧情 bug</li>
+</ul>
+<p>Great Leonopteryx 部分也是我为什么说感觉玩下来之后觉得本作虽然设定是电影时间线的前两年，但却给我一种平行世界的感觉。因为影片中说 Rider of Last Shadow 已经多年未再出现，但明明在本作中我们已经成为了 Rider of Last Shadow。</p>
+<ul>
+<li>可改进的点 2：坐骑的驯服过程不如影片中激动人心</li>
+</ul>
+<p>让我稍感失望的是，我本以为驯服 Banshee 会引入类似 QTE 等交互机制才能完成，没想到直接是以剧情动画形式呈现的。包括最后部分骑上 Great Leonopteryx 也是，直接以剧情形式引入了，这使得这两个在片中很有象征意义的伟大时刻在本作中显得稍微有些平淡。</p>
+<p>问题是由于没有驯服成本导致的，让玩家觉得获取得过于轻松。所以改进方案也可以从此着手，以如增加 QTE 驯服等机制来增加驯服成本（当然了，同类坐骑只需要在最开始的时候驯服一次）。这当然也会导致开发成本上升，所以有可能目前的呈现是各方妥协之后的结果。</p>
+<h4 id="武器-Weapons"><a href="#武器-Weapons" class="headerlink" title="武器 - Weapons"></a>武器 - Weapons</h4><h5 id="列举"><a href="#列举" class="headerlink" title="列举"></a>列举</h5><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_13 20_53_12.png" alt = "Weapons" style="zoom: 50%;" />
+
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220813170441.png" alt = "Weapons Detail" style="zoom: 50%;" />
+
+<h5 id="感受-2"><a href="#感受-2" class="headerlink" title="感受"></a>感受</h5><p>除去最上方的不可替换的弓武器，有三个武器槽可供替换。</p>
+<ul>
+<li><p>可改进的点：单次攻击判定使得战斗节奏不够流畅</p>
+<ul>
+<li> 1）以近战武器为例，本作中使用了单次攻击进行判定，即单次按键只能触发单次攻击，是否能攻击成功与当前的攻击方向以及武器攻击范围有关。</li>
+<li>2）一共有两套攻击动作，但效果是相同的。</li>
+<li>3）因为攻击动画是强制播放的，所以会出现若是当前攻击没有打对方向，就需要等攻击动画结束了重新发动攻击，在此期间看着敌人干着急的情况，使得战斗没有那么流畅。</li>
+<li>4）在按下按键后改变攻击方向是无效的，也就是说如果你一开始攻击时方向有误，即使在攻击过程中调整了攻击路径也是无用的。</li>
+</ul>
+</li>
+</ul>
+<p>以上几点最终导致了近身作战的体验没有那么顺畅。</p>
+<p>针对以上几点其实可以分别提出改进方案，这里只提出对于 4）的改进方案：即在攻击过程中保持攻击判定有效，即若是开始时攻击方向有误，按下攻击键后的攻击过程中若是成功调整了攻击路径，则判定攻击依然有效。如此就可大大减少战斗过程中的 “割裂感”。</p>
+<ul>
+<li>可改进的点：战斗深度较浅</li>
+</ul>
+<p>这个部分其实主要指的是近身战斗的武器战斗动画，也和敌人和武器的数值设计有关。</p>
+<p>如上面 2）所说，本作中各武器的战斗动画其实较为简单，且动作间区分度不大。5 次连击后所引入的怒气攻击倒是提升了战斗深度（可操作性）。</p>
+<p>此外，武器的属性数值以及敌人的生命设计也和战斗深度相关。各武器拥有不同的攻击（Attack）、攻击速率（Rate of Attack）和攻击范围（Range），但从游玩体验而言，Attack 的数值提升对于战斗体验的影响几乎没有？</p>
+<p>无论是前期还是后期，感觉近战时普通士兵都是几刀一个，然后 AMP 都是需要连击接怒气攻击就可以击杀。前后期没有明显不同的战斗体验。</p>
+<p>远程一般使用弓箭攻击，因为 crossbow 的弹药量实在太少。对于普通士兵，只要弓箭蓄力满，并且射击角度合适（我游玩时是用的手柄，所以还开了瞄准辅助），基本能做到一箭一个，这个倒是很爽快。不过远程武器很难对 AMP 这种皮糙肉厚的敌人造成有效杀伤，所以还是需要转为近战。</p>
+<p>虽然对战斗系统的了解不多，但还是尝试着对该问题提出改进方案。</p>
+<p>既然假定问题出现在 1）武器的战斗动画以及 2）数值设计。那么解决方案也便针对问题提出。个人感觉需要优先解决问题 2），即提供有梯度的敌人难度，同时辅以相应的武器成长（可能不仅是数值层面，特殊属性的增加可以极大提升玩家对于武器“力量感”的感知），这样能使得战斗更富于变化。</p>
+<p>当然了，与此同时增添更多样化的武器战斗交互也能很好提升战斗深度，但在考虑叙事核心的前提下，这部分被作为 “锦上添花” 的部分被暂时砍掉也很合理。</p>
+<ul>
+<li>Club &amp; Axe 和 Fighting Staff 类武器区分度有限</li>
+</ul>
+<p>这两类大概可以称之为棒类和杖类武器，实际使用中感觉区分度很有限，即两类武器用起来没什么区别，无论是伤害，攻击速率和攻击范围，都区别不大，唯一的区别应该是样式？</p>
+<p>改进方案：同样的，可以采取前面所提到的，可以为不同类型的武器增添独特的攻击特效和效果，从而提升区分度。如使用棒类武器有几率造成眩晕，如使用杖类武器有可能造成击退等。</p>
+<h4 id="套装-Armor"><a href="#套装-Armor" class="headerlink" title="套装 - Armor"></a>套装 - Armor</h4><h5 id="展示-2"><a href="#展示-2" class="headerlink" title="展示"></a>展示</h5><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_13 20_58_16.png" alt = "Armor" style="zoom: 50%;" />
+
+<h5 id="感受-3"><a href="#感受-3" class="headerlink" title="感受"></a>感受</h5><p>套装也是随着游戏进程不断解锁的。</p>
+<ul>
+<li>后期套装缺少区分度</li>
+</ul>
+<p>套装的三项数值 Protection，Vitality 和 Mobility 基本随着所获取套装等级的提升也逐步提升，但是后期所获得的 IV 级套装除了样式上的差别，在数值上的区分其实并不太大。</p>
+<p>改进方式也和武器的改进思路类似，可以考虑为不同套装增加特殊属性，比如对某些技能具有强化效果，如此便可以较低的代价大大提升套装之间的区分度，</p>
+<h4 id="技能-Skills"><a href="#技能-Skills" class="headerlink" title="技能 - Skills"></a>技能 - Skills</h4><h5 id="展示-3"><a href="#展示-3" class="headerlink" title="展示"></a>展示</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220813164807.png"></p>
+<h5 id="感受-4"><a href="#感受-4" class="headerlink" title="感受"></a>感受</h5><p>无论是 Na’vi 还是 人类，都是四个技能槽，后面的技能感受主要以  Na’vi 为例。</p>
+<p>如图所示，技能类别大概可以分为攻击型，防御型（包括了治疗），BUFF 型，以及召唤型。</p>
+<ul>
+<li>做得好的点：技能定位差异做得好，可选多种搭配方案</li>
+</ul>
+<p>各个技能的定位其实都不太一样，所以这个部分其实提供了较高的玩法自由度，玩家可以根据自己的喜好来搭配技能。但治疗技能还是可以算必备技能。</p>
+<h3 id="故事线展示"><a href="#故事线展示" class="headerlink" title="故事线展示"></a>故事线展示</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/202208122310avatarstoryline.jpeg"></p>
+<p>游戏最开始时玩家可以选择与性别绑定的形象。但无论选择如何，玩家在游戏中的角色都被称之为 Ryder。</p>
+<p>简言之，开始阶段的故事围绕寻找潜伏在人类阵营中的“间谍”展开，找到后需要选择阵营。</p>
+<p>若选择了人类阵营，则在上一阶段所操控的 avatar 会被剧情杀，从而只留有了人类之身。而后需要收集 unobtanium shards，获得 harmonics 从而找到 dormant Well of Souls。这可以帮助人类来切断纳美人与其祖先树的联系。在任务进行过程中，主角发现原来的指挥官 Falco 叛变了，他抢走了用于控制 Eywa （纳美人的蜂巢思想集群） 的模拟器，并带着模拟器自己前往了灵魂之井。玩家在前往灵魂之井地区，并帮助肃清了这个地区之后会与 Falco 当面对峙。Falco 无视玩家所说的 “要是胡乱启动模拟器，会使得这个星球上的所有生物都死去”，从而逼迫玩家杀死了 Falco。玩家自己启动了模拟器，切断了纳美人和祖先树的联系，使得人类阵营赢得了战争的胜利。但之后被告知 Eywa 在谋划些什么，也会有更多人类到来。游戏结束。</p>
+<p>若选择了纳美人阵营，会被带到营地，然后原来的身体也会被设法运送到营地中，但在一次战斗中，人类身体仓被破坏，纳美萨满帮忙进行了意识转移，而后便成为了纳美人。之后是与人类分支对应的任务，即收集 shards，获得 harmonics，寻找 Well of Souls。在收集 shards 过程中，部分 shards 被毁，使得玩家在缺失 shards 的情况下 “不得不自己尝试激活” willow tree 并且成功了，这也使得纳美萨满认定玩家就是 the First Voice，是能与 Eywa 对话的传说纳美人。之后玩家前往灵魂之井地区，帮助 3 位纳美领导人守卫了该地区，并骑上了 a great leonopteryx 前往了灵魂之井，最终激活灵魂树，灵魂树释放了类似电磁脉冲的攻击，击落了人类飞机。玩家与纳美领导人于灵魂之树前相遇，并说更多人类将会到来。游戏结束。</p>
+<p>我个人是花了差不多 8 小时单通了纳美人的直线（我也不知道为什么花了这么久…），但网上的通关演示差不多是分别花了 4 小时 40 分和 3 小时 40 分左右通关了纳美人和人类支线。可以说纳美人的支线比起人类支线会稍长一些。</p>
+<h3 id="核心目标相关分析-叙事"><a href="#核心目标相关分析-叙事" class="headerlink" title="核心目标相关分析 - 叙事"></a>核心目标相关分析 - 叙事</h3><p>因为我并没有系统学习过有关游戏叙事设计的相关方法论，所以以下分析更多会基于个人主观看法，可能多有不足，欢迎批评指正。</p>
+<p>还是回到最开始所提到的本作的核心目标——作为电影正式上映前的“开胃菜”，需要很好地展现世界观，以及吸引玩家后续也成为电影的观众。</p>
+<h4 id="本作展现了什么样的世界观"><a href="#本作展现了什么样的世界观" class="headerlink" title="本作展现了什么样的世界观"></a>本作展现了什么样的世界观</h4><p>该部分分析参考了以下文章：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.sohu.com/a/23171411_204728">设计一个好的游戏世界观需要哪些必备要素？ </a></li>
+</ul>
+<h5 id="世界背景"><a href="#世界背景" class="headerlink" title="世界背景"></a>世界背景</h5><p>即这是一个怎样的世界？</p>
+<ul>
+<li><p>时间：2152 年（电影中的时间线的两年前）</p>
+</li>
+<li><p>地点：南门二恒星系生态茂盛的潘多拉（Pandora）卫星</p>
+</li>
+<li><p>事件（部分译自 <a target="_blank" rel="noopener" href="https://james-camerons-avatar.fandom.com/wiki/James_Cameron%27s_Avatar:_The_Game">Fandom 页面</a> 及电影的 <a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh/%E9%98%BF%E5%87%A1%E8%BE%BE">wiki 页面</a>）：</p>
+</li>
+</ul>
+<p>背景是扩张主义与生物多样性的对抗。</p>
+<p>玩家扮演 Lance Corporal Able Ryder 的角色，他是一名来到遥远世界 Pandora 的 SecOps 信号专家，因为与 Avatar（人类 DNA 和潘多拉本土物种 Na’vi 的混合体）的基因型适配，所以从百万人中被挑选出来参加 Avatar Program。 莱德学会了驾驶自己的化身（Avatar）。 随着莱德进一步冒险进入潘多拉丛林，他更多地了解了潘多拉的许多生物，纳美人，以及他们为拯救潘多拉而与公司进行的斗争。 在这场冲突的爆发点上，莱德必须决定他真正效忠的地方：要么是 RDA，要么是纳美人。</p>
+<ul>
+<li>核心地点：</li>
+</ul>
+<p>人类阵营貌似没有所谓核心地点的设定，更多的是类似据点之类的地方。</p>
+<p>而纳美人除了各个部落的子据点，还有所有纳美人的核心据点（home tree），也有本作中人类方要攻击的，用于纳美人与先祖沟通的灵魂之井（Well of Souls）</p>
+<h5 id="人物设定"><a href="#人物设定" class="headerlink" title="人物设定"></a>人物设定</h5><ul>
+<li>阵营：开采矿物和殖民的人类 vs. 要保护本地生态的土著纳美人</li>
+</ul>
+<p>人类自不必说，但是纳美人是与人类完全不同的种族，为此，纳美人的相貌（蓝色皮肤的瘦高种族），语言及文字（纳美语），生活习性（原始部族）都是经过精心设计的。</p>
+<blockquote>
+<blockquote>
+<p>据电影的 <a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh/%E9%98%BF%E5%87%A1%E8%BE%BE">wiki 页面</a> 上的说明，纳美人相貌的灵感来自于卡梅隆母亲很早以前做的梦中出现的身高 12 英尺的蓝肤女人。<br>虽然游戏中并没有语音旁白，但其中已经展现了奇特的纳美语文字。<br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220813010325.png"></p>
+</blockquote>
+</blockquote>
+<p>其实人类阵营内还可以细分为 “希望尽可能保护纳美人利益” 的子阵营，但这部分会放在下面的势力设定阐述。</p>
+<ul>
+<li>势力设定：</li>
+</ul>
+<p>人类阵营中大致可以分为四支势力：1） 开矿公司势力；2）公司所聘请的军方势力；3）服务于公司的人类科学家势力；4）偏向保护纳美人的人类势力。</p>
+<p>人类阵营中的所有势力明面上都是服务于开矿公司的，但貌似在游戏中玩家基本都是接受来自军方的任务。</p>
+<p>纳美人阵营中也包含 1）主战派和 2）主和派。纳美人以部落形式散落在整个星球上的不同地方，但也有核心区域（home tree）。</p>
+<ul>
+<li><p>NPC 设定（译自  <a target="_blank" rel="noopener" href="https://james-camerons-avatar.fandom.com/wiki/James_Cameron%27s_Avatar:_The_Game">Fandom 页面</a>）：</p>
+<ul>
+<li><p>人类</p>
+<ul>
+<li>Able Ryder，一个从地球带来的 RDA 咕噜加入阿凡达计划，并在潘多拉寻找一个圣地。他或她是游戏的主角。</li>
+<li>Falco 指挥官是一名海军军官，也是 RDA 的安全负责人。他认为 Na’vi 只不过是对 Pandora 采矿作业的威胁，如果要实现 RDA 目标，就必须消除这种威胁。即使玩家与 RDA 结盟，他也是游戏的主要对手。</li>
+<li>Kendra Midori，是 RDA 的主要联系人。她相信 RDA 的事业，并且不情愿地理解 Na’vi 和 RDA 之间的战争可能是不可避免的。如果莱德站在 RDA 一边，她也会对莱德有浪漫（如果玩家是男性）的感觉。</li>
+<li>Victor Monroe 是一位尊重莱德但对法尔科感到不自在的科学家。</li>
+<li>René Harper 博士是 RDA Avatar Program 的负责人。在潘多拉的所有岁月里，哈珀与许多纳美人建立了密切的联系。他了解他们的生活方式，并且看到了 RDA 采矿作业的破坏性。他很快就变成了纳美人的内奸，并试图说服玩家加入他们。</li>
+<li>格蕾丝·奥古斯丁（Grace Augustine）是游戏中第一个出现的人。格蕾丝是阿凡达计划的一部分。她将莱德分配给哈珀博士，并且在整个游戏中只出现了 3 次——她的第一次出现是在游戏开始时，第二次是在选择了 RDA 的一方之后，当人们可以从地狱之门控制室听到她的信息时，如果站在 RDA 一边，最后一个在比赛的最后。</li>
+<li>Trudy Chacon，在为 RDA 战斗时，在游戏的大部分时间里都是您的私人直升机飞行员。</li>
+<li>Colonel Quaritch，是类似于电影的指挥官。他只在游戏快结束时出现（如果玩家站在 RDA 一边），接替 Falco 指挥官。他最终继续带领 SecOps 部队取得最终胜利，前提是玩家仍然与 RDA 结盟。</li>
+<li>Winslow 是该领域的非裔澳大利亚 SecOps 指挥官。</li>
+<li>Batista,，是 RDA 的精英炸药专家。尽管他经验丰富，但他对莱德的态度几乎是自大和悠闲的。</li>
+</ul>
+</li>
+<li><p>纳美人</p>
+<ul>
+<li>Amanti，是 Torukä Na’rìng 的 Tipani 氏族的领袖。虽然性格平和，但她一直对 RDA 保持警惕，因为他们在氏族狩猎场的中心建造了一座大型建筑群。</li>
+<li>Beyda’amo 是一名纳威战士，他认为与 RDA 没有和平的余地。他认为人类必须被淘汰——就这么简单，并怀疑莱德的才能，但在比赛接近尾声时开始尊重他。</li>
+<li>Tan Jala 是一位希望与 RDA 和平相处的纳威战士。他相信张开手掌而不是拳头的对话，并与 Able Ryder 交朋友。</li>
+<li>Marali 是 Bayda’amo 的伴侣，她和他一样相信 RDA 的存在对 Pandora 及其居民构成了真正的危险，但与她的伴侣不同的是，她并不讨厌人类，而且似乎信任 Ryder。</li>
+<li>Swawta，是一位年轻的纳威战士，如果他加入纳威派系，他会与 Able Ryder 成为朋友。</li>
+<li>Tsahìk Sänume，是蒂帕尼氏族的女族长。她相信 Able Ryder 可以帮助 Na’vi 阻止 RDA 的袭击。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>简言之，若是选择人类阵营，玩家体会到的可能是一种根据指示完成特定区域占领和推进扩张工作的感觉，所以接触的大多 NPC 都是指挥官或是合作的同事设定；若是选择纳美人阵营，则是会经历需要获取信任的阶段，所以有设定相应的 “刺头” NPC（Beyda’amo），其他基本都是主和派的纳美人，不会表现出与 Beyda’amo 相同的不信任。</p>
+<h5 id="力量体系"><a href="#力量体系" class="headerlink" title="力量体系"></a>力量体系</h5><p>人类的力量来自于机械，除了一些大型飞行器和机械，还有类似高级外骨骼的机甲装备 AMP。这部分其实都比较好理解，也易于接受。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220813005154.png" alt="AMP"></p>
+<p>而纳美人的力量则是在游玩过程中才逐渐揭晓的，它们可以通过神秘力量与潘多拉星球上的其他生物建立联系，甚至存在类似蜂巢思维的思维集合体 Eywa。并且主要使用刀杖弓弩等武器作为攻击方式。</p>
+<p>这样一来，一个 “现代机械化人类军团 vs. 古老神秘力量原始部族” 的力量冲突背景就被描绘出来。</p>
+<h5 id="主线故事"><a href="#主线故事" class="headerlink" title="主线故事"></a>主线故事</h5><p>这里在前面故事线展示部分已经描述过，不再展开。<br>简言之，玩家的阵营选择决定了主线展开是 “帮助人类阵营进行扩张，击退纳美人” 还是 “帮助纳美人保护星球，击退人类” 。直观清晰。</p>
+<h4 id="本作是否实现了假定的展现世界观及吸引玩家成为观众的核心目标"><a href="#本作是否实现了假定的展现世界观及吸引玩家成为观众的核心目标" class="headerlink" title="本作是否实现了假定的展现世界观及吸引玩家成为观众的核心目标"></a>本作是否实现了假定的展现世界观及吸引玩家成为观众的核心目标</h4><p>本作清楚展现了在潘多拉星球开采资源的人类与希望保护本地生态的土著部落之间的利益冲突，也很好地展现了 “现代机械化人类军团 vs. 古老神秘力量原始部族” 的力量冲突。此外，在视觉层面展现很好地展现了奇妙的潘多拉星球（据  <a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh/%E9%98%BF%E5%87%A1%E8%BE%BE">wiki 页面</a> 显示，潘多拉星球的地形地貌设定参考了张家界，令人欣喜），游戏中的 PANDORA-PEDIA 也为玩家提供了详实的图文资料以便玩家了解相应世界观设定。</p>
+<img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/James Cameron's AVATAR™_ THE GAME 2022_8_13 20_18_36.png" alt = "PANDORA-PEDIA" style="zoom: 50%;" />
+
+<p>抛开前面所提到的关于 Rider of Last Shadow 的剧情相关 Bug 外，本作中展现出的世界观和电影中的世界观几乎是一一对应的，所以玩家在游玩后观影时不会感觉有世界观不一致的问题。</p>
+<p>个人认为本作很好地实现了假定的展现世界观以及吸引玩家成为观众的核心目标，此外甚至也吸引了观众反过来成为玩家。这一点可以从其最终超出预期的市场表现看出。</p>
+<h3 id="值得一提"><a href="#值得一提" class="headerlink" title="值得一提"></a>值得一提</h3><p>这里主要会提及一些在游玩过程中感觉让我印象深刻的点。</p>
+<ul>
+<li>让人印象深刻的纳美语</li>
+</ul>
+<p>剧情中有个部分提到了要去攻破人类的 sky tower，然后我们的主角说那里有爆炸性的盒子，然后就提到了纳美语对应 boom boom 的单词是 kxangangang，当时听到这个单词的发音确实觉得很有喜感。</p>
+<p>这些考究的纳美语也很好地提升了玩家代入感，使玩家感到纳美人也是真实存在的！</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/boomboom.jpg" alt="Boom Boom - kxangangang"></p>
+<ul>
+<li>孙子兵法</li>
+</ul>
+<p>在后期的一个任务中，纳美人采取了类似声东击西分散力量的战略，并提到了这是学习自孙子的书，那自然就是孙子兵法了。看到这里的时候还挺惊喜的哈哈。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220813194246.png" alt="Sun Tzu"></p>
+<ul>
+<li>缺少激动人心的 BOSS 战斗</li>
+</ul>
+<p>整体游玩之后感觉在一些关键节点，如坐骑的获取（特别是骑 Great Leonopteryx）等部分做的简化较多，可能会导致玩家对一些关键事件的印象不够深刻。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>总的来说，本作以较简化的养成机制服务于核心的叙事机制，为玩家们提前展现了奇妙的潘多拉世界，并最终赢得了还不错的市场表现。</p>
+<p>综上，本文借助 Teardown Analysis 方法对游戏《Avatar: The Game》进行了分析。</p>
+<p>感谢您的阅读，欢迎大家批评指正！</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/08/13/20220813-teardown-analysis-avatar-the-game/">https://medill-east.github.io/2022/08/13/20220813-teardown-analysis-avatar-the-game/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/08/29/20220829-earnthenamebackforshadowpuppets-demo-showcase-analysis/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/shadowpuppetcover.jpg" class="responsive-img" alt="《悬灯与玄灯》 Demo 展示及制作复盘分析">
+                        
+                        <span class="card-title">《悬灯与玄灯》 Demo 展示及制作复盘分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对 2022 年 6 至 7 月制作的类银河恶魔城横版闯关游戏 Demo 《悬灯与玄灯》进行展示及制作复盘分析。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-29
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Demo/" class="post-category">
+                                    Study-Game-Demo
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Portfolio/">
+                        <span class="chip bg-color">Portfolio</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/12/20220811-theartofgamedesign-chap15/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220811005432.png" class="responsive-img" alt="游戏设计艺术 第十五章 玩家通过界面玩游戏">
+                        
+                        <span class="card-title">游戏设计艺术 第十五章 玩家通过界面玩游戏</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一个界面的目的是让玩家感觉将他们的体验把控在手。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Design/">
+                        <span class="chip bg-color">Game Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

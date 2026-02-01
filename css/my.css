@@ -1,0 +1,10 @@
+/* Here is your custom css styles. */
+
+/* Obsidian 风格链接样式 */
+.obsidian-link {
+  background: #67ace585;
+  border-radius: 4px;
+  padding: 0 4px;
+  color: #34495e;
+  font-style: normal;
+}

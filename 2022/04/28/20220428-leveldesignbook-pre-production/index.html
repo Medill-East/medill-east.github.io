@@ -1,0 +1,1364 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220428 - Level Design Book - BOOK 1. PROCESS - Pre-production, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220428 - Level Design Book - BOOK 1. PROCESS - Pre-production | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428230803.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220428 - Level Design Book - BOOK 1. PROCESS - Pre-production</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Level-Design/">
+                                <span class="chip bg-color">Game Level Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                Study-Game-LevelDesign
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-04-28
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2024-09-14
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    4.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    15 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Pre-production"><a href="#Pre-production" class="headerlink" title="Pre-production"></a>Pre-production</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://book.leveldesignbook.com/process/preproduction">原文链接</a></p>
+</li>
+<li><p><a href="https://medill-east.github.io/2022/04/29/20220428-leveldesignbook-toc/">Level Design Book 随译/笔记</a></p>
+</li>
+</ul>
+<blockquote>
+<p>如何用机制（mechanics），体验目标（experience goals）和支柱（pillars）来规划游戏关卡</p>
+</blockquote>
+<h3 id="What-is-pre-production"><a href="#What-is-pre-production" class="headerlink" title="What is pre-production?"></a>What is pre-production?</h3><blockquote>
+<p>计划（plans）不那么重要，但是规划这件事本身（planning）很关键。——某个人</p>
+</blockquote>
+<p><strong>预生产</strong>是项目的早期阶段，在这一阶段你产生想法，并且试图来弄清这个项目到底是干嘛的。这一阶段需要回答一些宏观的设计问题：</p>
+<ul>
+<li>你在做的是什么<ul>
+<li>玩家们能在这里干什么（机制，体验目标，节奏（pacing））</li>
+<li>哪一部分是最重要的（支柱）</li>
+</ul>
+</li>
+<li>你要如何来进行制作<ul>
+<li>面对同一问题时，别人是怎么解决的（research，调研）</li>
+<li>你需要多少时间，这可行吗？（scope，周期）</li>
+</ul>
+</li>
+</ul>
+<p>你对于这些问题的答案在项目推进过程中会发生改变，这没问题。</p>
+<p>规划是有用的，但它并不神奇。直到你真的开始动手制作之前，你不会完全理解你所做的东西。</p>
+<hr>
+<h3 id="Project-planning"><a href="#Project-planning" class="headerlink" title="Project planning"></a>Project planning</h3><p>“规划一个关卡”具有多种形式。一些人在真正落实到某一个概念前先制作并测试小型的原型，你也可以先写下设计目标以及限制。</p>
+<p>为了能实现团队合作的目标，你必须制定计划以及确保不同计划之间有充分的交流，否则你会对其他人失望，项目最终会以失败告终。</p>
+<p>但对于一个小型的、单人的、爱好性质的项目，规划没有那么重要。制定一个简单的计划，然后享受整个即兴创作和发现过程中的兴奋与刺激吧。</p>
+<h4 id="Minimal-Checklist"><a href="#Minimal-Checklist" class="headerlink" title="Minimal Checklist"></a>Minimal Checklist</h4><p>如果你能够回答以下几个基本问题，就足以开始一个小型的单人 jam 项目了：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 电梯演讲<ul>
+<li>在三句话之内，描述项目概念以及什么让这个项目变得有趣</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 工具<ul>
+<li>你使用什么引擎或工具？</li>
+<li>它们适合于这个项目吗？</li>
+<li>从功能性而言，你有什么问题吗？</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 粗略划定周期<ul>
+<li>这个项目将花费多长时间</li>
+<li>多少个关卡</li>
+<li>关卡大小（大关卡还是小关卡）</li>
+<li>工作量（大关卡指的是多大的关卡）</li>
+</ul>
+</li>
+</ul>
+<h4 id="Recommended-checklist"><a href="#Recommended-checklist" class="headerlink" title="Recommended checklist"></a>Recommended checklist</h4><p>但实际上，除了以上基本问题外，你还应该能够回答以下设计相关问题：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 支柱<ul>
+<li>这个项目最重要的 2-3 个主题/特性是什么</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 目标体验<ul>
+<li>你期望玩家们在面对每个关卡时有什么样的反应</li>
+<li>或者说期待他们有什么样的情绪或行为</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 机制<ul>
+<li>玩家最常经历或使用的活动/交互/技能是什么</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 资源列表<ul>
+<li>对于每一个关卡，需要什么样的模型，纹理，音效</li>
+<li>已经准备好这些资源了吗，还是需要某人来进行制作</li>
+</ul>
+</li>
+</ul>
+<h4 id="Full-checklist"><a href="#Full-checklist" class="headerlink" title="Full checklist"></a>Full checklist</h4><p>对于一个三人以上或是预期三个月以上的项目，还需要进一步回答下列问题：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 节奏<ul>
+<li>在每一个关卡具体发生了什么</li>
+<li>为什么会发生这些</li>
+<li>关卡之间怎么连接</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 调研<ul>
+<li>关卡的设计启发/来源/参考是什么</li>
+<li>团队成员之间对于同一件事是否有相同的理解和解释</li>
+<li>以更大的文化或者产业视角，如何看待这个项目</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 世界观架构<ul>
+<li>这些关卡所在的世界/宇宙是什么样子的</li>
+<li>是谁创造了这些地方</li>
+<li>什么样的逻辑/情绪指导着关卡建造和使用？（不是很能理解这里的 use 使用的指代，也许指的是游玩？）</li>
+<li>详细的周期指定<ul>
+<li>每一周，甚至更加具体的事件段，应该在做什么</li>
+<li>在最终发版前，什么样的特性/关卡是锦上添花，有了更好，但是却可以被砍掉的</li>
+<li>这一过程实际非常复杂，一些商业化工作室甚至聘请一个或多个制作人来主要负责周期</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Mechanics"><a href="#Mechanics" class="headerlink" title="Mechanics"></a>Mechanics</h3><p>游戏机制指的是在游戏中任何重复出现的活动，系统或策略，基本是玩家经常进行或使用的任何行为。核心机制是一个游戏最常被使用和基础的动作或是系统，而不太频繁的活动可被称为次要机制。</p>
+<blockquote>
+<p>何为“机制（mechanic）”有诸多讨论，本书中融合了各家意见。如果想详细了解机制之争，可以<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Game_mechanics">看这里</a>。</p>
+</blockquote>
+<p>一些讨论游戏机制的例子：</p>
+<ul>
+<li>超级马里奥 64 的游戏机制由在平台间奔跑跳跃以到达出口的核心机制组成。一些马里奥 64 的关卡也含有通过撞击砖块来触发的隐藏快捷通道等次要机制。</li>
+<li>Doom 的核心机制包括奔跑和射击，几乎没有或者只含有少量的跳跃。有时玩家能够引诱怪物们互相攻击，这是一种被称为内斗（in-fighting）的次要机制。</li>
+<li>《神偷：暗黑计划 (Thief: The Dark Project)》是一款关于避免直接冲突的潜行游戏，其核心机制是响亮、快速的脚步声会吸引守卫。和马里奥和 Doom 相反，该游戏不鼓励快速移动，奔跑也是一个次要机制。</li>
+</ul>
+<p>以上的三款游戏在某种程度上是类似的——都是 3D 动作游戏，都需要在不死亡的前提下到达出口。然而，它们也拥有不同于彼此的规则和游戏机制，而这些其实意味着不同的关卡设计方法。若是使用制作马里奥风格的平台跳跃关卡手法来制作 Doom 关卡可能会让其非常难，而使用制作 Doom 的关卡手法来制作神偷的关卡也会使其难得难以想象。</p>
+<p>不要为了这些品类而设计，不要限于熟悉的模式和惯例中。要为了实际存在的游戏而进行设计，感受游戏本身。如果你是在为一个已经存在的游戏来制作 mod，至少先玩这个游戏几个小时，也玩玩其他社区作品。看看 YouTube 上的游玩视频，并注意其他玩家（应该指的是其他 modder？）如何结合不同的机制和游戏系统。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428131527.png" alt="超级马里奥 64 游戏手册的某一页，其中详细描述了不同的动作和机制"></p>
+<h4 id="What-if-you-haven’t-finalized-mechanics-yet"><a href="#What-if-you-haven’t-finalized-mechanics-yet" class="headerlink" title="What if you haven’t finalized mechanics yet?"></a>What if you haven’t finalized mechanics yet?</h4><p>不知道机制时，创建关卡是很难的。机制和关卡互相依存。不在关卡中测试就无法评估机制，而在确立机制前也没办法很好地评估一个关卡。</p>
+<p>如果改变机制，你最终会做很多无用功，得到很多基于废弃机制的过时关卡。但如果没有建立足够的测试关卡来衡量机制的潜力，你最终可能会得到一个第一关后就变得无趣的无聊机制。</p>
+<p>在游戏开发的整个过程中，你很可能会推翻或者重做关卡。你甚至可能需要重做同一关好几次。没关系，不要将这视作一种无用功，把每一个废弃的版本都视作宝贵的调研。这就是为何我们称之为游戏开发——开发是一个耗费时间的渐进过程。搞清楚什么是一个好的关卡和好的游戏是需要花费时间的。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428143052.png" alt="大金刚（1981）的早期设计文档，其中展现了机制，控制和玩法流向。取自 Shigeru Miyamoto (from https://twitter.com/forestillusion/status/1443284433268666368/"></p>
+<h4 id="Build-test-maps"><a href="#Build-test-maps" class="headerlink" title="Build test maps"></a>Build test maps</h4><p>作为规划过程的一部分，游戏设计师们经常需要制作简易的可玩地图——一种 blockout 风格的测试地图。这些简陋的关卡只限于开发者内部使用，并且通常不会在最终的公开版本中发布。</p>
+<p>从我们的目的而言，这些地图基本不含任何的关卡设计，它们只是大的方形场地，填充着随机的物体和 NPC。</p>
+<p>但这并不意味着这些地图没用。这些简单的用于测试的可玩地图对于测试游戏机制、物体表现以及游戏整体感觉是非常中啊哟的。</p>
+<p>有关构建用于内部使用的测试地图的更多内容，可以<a target="_blank" rel="noopener" href="https://book.leveldesignbook.com/process/blockout/metrics">看这里</a>。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/GodOfWar2014_CombatPrototype.gif" alt="在简单的测试地图中测试战神（2018）的战斗原型，来源为 https://80.lv/articles/evolution-of-god-of-war-from-2014-to-2018/"></p>
+<h3 id="Experience-Goals"><a href="#Experience-Goals" class="headerlink" title="Experience Goals"></a>Experience Goals</h3><p>体验目标指的是让玩家在游玩过程中能够理解或经历的某种想法，感觉，或是活动。为了提出概念性的目标体验，可以试着补充下面的句子：“在这一关中，玩家应该【学会/感到/经历】”</p>
+<ul>
+<li>在这一关中，玩家应该…<ul>
+<li>学会如何使用双跳能力（教程体验）</li>
+</ul>
+</li>
+<li>在这一关中，玩家应该…<ul>
+<li>感到脆弱，在到达安全屋后放松下来（情感体验）</li>
+</ul>
+</li>
+<li>在这一关中，玩家应该<ul>
+<li>躲避致命的陷阱并在最后解锁一条捷径。 （活动体验）</li>
+</ul>
+</li>
+<li>在这一关中，玩家应该…<ul>
+<li>感觉就像他们正在逃离中世纪的监狱。 （幻想体验）</li>
+</ul>
+</li>
+</ul>
+<h4 id="Advice-for-setting-goals"><a href="#Advice-for-setting-goals" class="headerlink" title="Advice for setting goals"></a>Advice for setting goals</h4><ul>
+<li>要具体</li>
+</ul>
+<p>目标体验不必复杂或深刻，但明确而清晰的体验目标可以帮助你决定要构建的内容以及辨别哪些是不必要的。<br>比如，“玩家应该玩得高兴”，这是一个模糊的目标，这样的目标无法帮助你进行设计决策。玩家应该体会到什么类型的乐趣？轻松休闲的乐趣，还是一种深度参与的乐趣？<br>或者说，如果目标是“让玩家感到恐惧”，那么具体指的是什么类型的恐惧？有身体恐惧（body horror），存在恐惧（existential horror），对失败的恐惧，对拒绝的恐惧，中年危机等。</p>
+<ul>
+<li>从玩家角度思考</li>
+</ul>
+<p>体验目标应该避免过度抽象，试着从玩家对其进行思考。理想情况下，当玩家游玩这一关卡时，他们会有怎样的理解，或如何描述他们的感受呢？<br>比如说，“玩家应该享受非线性（non-linearity）”是一个大多数人难以把握或甚至都不会考虑到的抽象结构。这就不是一个有用的体验目标。这里所指的享受是什么意思，非线性又是什么意思呢？<br>想象一下在玩家游玩之后进行一场采访，关于这个关卡，你希望他们说些什么呢？如果他们说“感觉，很…非线性…”，你可能会觉得这是种侮辱。</p>
+<ul>
+<li>定义多重目标</li>
+</ul>
+<p>关卡通常都不止有一个体验目标。即使是一个简单直白的教程关卡，也可以从额外设定的某些叙事情节，幻想或情绪体验目标中受益。这些体验目标肯定不如教会玩家如何游玩来得重要，但它们仍然能引导设计决策。<br>比如，“玩家应该一次性面对五个敌人”是关卡中一个和战斗相关的机制目标。但是有太多的细节还有待确定。一次面对五个敌人应该是一种让玩家感到容易还是困难的体验？这一关卡该被设计在什么地方，是否需要为了可以容纳更多的敌人而设计更大的空间？</p>
+<p>让我们尝试为其添加额外的体验设计目标：“玩家应该感到不知所措，但之后发现了一个强化道具”，“玩家应该觉得他们正在保护营地免受丧尸攻击”等等。这样就将足智多谋，防御，生存，和家园的主题引入了进来。营地的概念意味着应该有一个中等大小的户外场地，现在可以就具体的营地类型进行调研（军事营地？徒步旅行营地？冬季营地？），从而让规划更加具体。</p>
+<h3 id="Pillars"><a href="#Pillars" class="headerlink" title="Pillars"></a>Pillars</h3><p>贯穿整个项目的最重要的目标体验就是支柱（pillars）——结构性地支撑和证明整个设计的最重要的想法。设定 pillars 可以帮助团队在项目推进过程中有一个共同视野，并且免除那些并不直接服务于主要目标的“冗余”工作。<br>对于每一个关卡或地区，pillars 是一种帮助你概念化其短期体验目标的设计规划工具。你的关卡的每一个更小的体验目标或是玩法节奏都应该某种程度上服务于你的 pillars，并最终服务于更宏观的游戏体验。<br>为了便于这些大的设计目标在团队中进行沟通（原文用的 Internalize），用简短的短语或单词来为每个 pillar 命名。比如索尼圣莫尼卡的战神（2018）的内部设计 pillars 是战斗，父/子和探索：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428221919.png" alt="战神（2018）的核心体验目标/pillars，由 SIE Santa Monica Studio 呈现"></p>
+<p>因为这是一个具有高额预算的 3A 游戏，他们的体验目标也包括了像是“高光学【动作捕捉】保真度”这样的生产价值目标。<br>你可能在想，这个和角色动画有关的目标与关卡设计关系不大，但想想一个让动捕角色动画看起来很糟的关卡——谁应该对此负责来改变工作呢，关卡设计师还是动画师？<br>因为整个团第都已经同意将动捕动画作为具有高优先级的 pillar，这样的实现公示意味着关卡设计师也应该调增关卡以适应已有的动画。<br>如此，pillars 能够帮助我们来定义什么才是对整个项目而言重要的东西，从而使得整个开发过程中能够做出更加一致和连贯的决策。</p>
+<hr>
+<h3 id="Example-“Mask-of-the-Rose”"><a href="#Example-“Mask-of-the-Rose”" class="headerlink" title="Example: “Mask of the Rose”"></a>Example: “Mask of the Rose”</h3><p>Mask of the Rose 是一个由 Failbetter Games 制作的 2D 视觉小说/基于选择的叙事游戏。尽管它并不是一个具有 3D 关卡的射击游戏，它也有一些相似的 pre-production 需求：</p>
+<blockquote>
+<p>“在 Failbetter，当我们从预生产全面投入生产中时，游戏必须有一个合理紧凑的设定好的周期，必须建立用于生产不同类型内容的管线，并且有关游戏本质的问题都有相应的答案。<br>什么样的问题？在 Mask of the Rose 项目中，它们包括：<br>将使用什么引擎和中间件来制作游戏？<br>制作管线是什么样的，它是自动化的吗？<br>游戏中会有哪些【玩法系统】？是否已经对这些系统进行了充分的原型设计？<br>在游戏中会出现多少个角色？制作角色的美术流程是什么？玩家如何自定义主角？”<br>—— Stuart Young, <a target="_blank" rel="noopener" href="https://www.failbettergames.com/news/leaving-pre-production-on-mask-of-the-rose">“Leaving Pre-Production on Mask of the Rose”</a>, 16 August 2021</p>
+</blockquote>
+<h3 id="Example-Dishonored-2-“Clockwork-Mansion”"><a href="#Example-Dishonored-2-“Clockwork-Mansion”" class="headerlink" title="Example: Dishonored 2, “Clockwork Mansion”"></a>Example: Dishonored 2, “Clockwork Mansion”</h3><p>Dishonored 是一个有关探索复杂地区的 3A 品质第一人称潜行动作 RPG 游戏系列。在 耻辱 2 中，有一个“发条大厦”关卡，其中的关卡结构会动态变化。</p>
+<p>Arkane Studios 设计师 Dana Nightingale 构建了一个概念验证预生产原型：（原文括号中为 Twitter thread，不是很理解这里所代表的含义）</p>
+<blockquote>
+<p>“我在 2013 年初，早在该地图被获准加入游戏中之前就创立了这个概念验证原型。当时的想法介于“它好棒”和“我还是应该继续打磨”之间。确实如此，但在地图正式确定之前，仍有超过一年的时间。<br>但可以肯定的是，我能够让一堆方块移动变形为我想要的样子。如果使用真实几何来做是不可能的，这也是我制作这个原型的原因。<br>这个原型引入了房间的概念，这些房间像货物集装箱一样移动和嵌入不同地方，让整个地图的布局完全动态，并且没有使房间产生形变。很高兴我们没有走让房间形变的那个方向。<br>…<br>在对其他原型进行了将近一年的工作后，是时候重新审视这一关卡并最终对其进行验证了。我做了一个新的版本，其中曲折的房间更少了，但是更加强调“场景背后”的区域。”<br>—— <a target="_blank" rel="noopener" href="https://twitter.com/DanaENight/status/1448582302855045124">Dana Nightingale (@DanaENight), 14 October 2021</a></p>
+</blockquote>
+<p>这个关卡在预生产阶段花费了 7 个月，在大约 18 个月后被纳入了最终的版本中。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-BgynKsHKUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+<h3 id="To-review…"><a href="#To-review…" class="headerlink" title="To review…"></a>To review…</h3><ul>
+<li>机制是游戏中的重复系统和重复交互<ul>
+<li>核心机制是出现频率最高的，次要机制偶尔会丰富更有经验的玩家的游戏体验</li>
+</ul>
+</li>
+<li>体验目标是整个关卡与玩家有关的设计目标</li>
+<li>Pillars 是整个游戏的主要设计目标。想让玩家从中学习、感受或理解什么？</li>
+<li>多大程度上需要预生产的规划？这需要具体情况具体分析：<ul>
+<li>小型的随意项目可以几乎不需要规划<ul>
+<li>大型的长期项目可能需要一个大型的的内部 wiki</li>
+<li>对于从来没有一起合作过的团队，预生产的规划可以帮助合作者们相互协调和信任</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>规划可以帮助你，但不要让其限制你。一旦已经进入项目中，根据需要来改变或者重新制定计划。</li>
+</ul>
+<h3 id="Now-what"><a href="#Now-what" class="headerlink" title="Now what?"></a>Now what?</h3><ul>
+<li>Pre-production in more detail:<ul>
+<li><a href="https://medill-east.github.io/2022/04/30/20220430-leveldesignbook-pre-production-research/"><strong>Research</strong></a> is vital for projects focusing on story or realism.</li>
+<li>Single player projects require special attention to <a href="https://medill-east.github.io/2022/04/29/20220429-leveldesignbook-pre-production-pacing/"><strong>pacing</strong></a>.</li>
+<li>Projects often start too big and must be <a href="https://medill-east.github.io/2022/05/02/20220502-leveldesignbook-pre-production-scope/"><strong>scoped</strong></a> down.</li>
+<li>Big narrative projects benefit from <a href="https://medill-east.github.io/2022/05/01/20220501-leveldesignbook-pre-production-worldbuilding/"><strong>worldbuilding</strong></a>.</li>
+</ul>
+</li>
+<li>Or you might move on to the <a target="_blank" rel="noopener" href="https://book.leveldesignbook.com/process/layout"><strong>layout</strong></a> phase of level design.</li>
+</ul>
+<h3 id="Further-reading-and-resources"><a href="#Further-reading-and-resources" class="headerlink" title="Further reading and resources"></a>Further reading and resources</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=R75g3elj7y4"><strong>“A Series of First Steps - Overcoming the Digital Blank Page”</strong> by Seth Marinello</a> (GDC 2014)</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CpOoTAVeEcU"><strong>“An Approach to Holistic Level Design”</strong> by Steve Lee</a> (GDC 2017)</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kzQDVtysXjA"><strong>“Finding Duskers: Innovation Through Better Design Pillars”</strong> by Tim Keenan</a> (GDC 2017)</li>
+<li><a target="_blank" rel="noopener" href="https://www.playfulproductionprocess.com/"><strong>“A Playful Production Process”</strong></a> (2021) by Richard Lemarchand is an approachable textbook that introduces game production methods, ideal for late high school / university students.</li>
+<li>  <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Pre-production">Pre-production (Wikipedia)</a> is a formalized process for film and music industries.</li>
+</ul>
+<hr>
+<h2 id="Backlink"><a href="#Backlink" class="headerlink" title="Backlink"></a>Backlink</h2><ul>
+<li><a href="https://medill-east.github.io/2022/04/29/20220428-leveldesignbook-toc/">Level Design Book 随译/笔记</a></li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/04/28/20220428-leveldesignbook-pre-production/">https://medill-east.github.io/2022/04/28/20220428-leveldesignbook-pre-production/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Level-Design/">
+                                    <span class="chip bg-color">Game Level Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/04/28/index-thinking/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428235242.png" class="responsive-img" alt="随想汇总">
+                        
+                        <span class="card-title">随想汇总</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            汇总随想，方便查找。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Blog-Index/" class="post-category">
+                                    Blog-Index
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Index/">
+                        <span class="chip bg-color">Index</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/28/20220428-leveldesignbook-toc/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220428235708.png" class="responsive-img" alt="Level Design Book 随译/笔记">
+                        
+                        <span class="card-title">Level Design Book 随译/笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            学习关卡设计有关知识过程中，对《Level Design Book》中相关章节进行随译/笔记，特此记录。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-LevelDesign/" class="post-category">
+                                    Study-Game-LevelDesign
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Game-Level-Design/">
+                        <span class="chip bg-color">Game Level Design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1967 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="游戏设计艺术 第十三章 游戏机制必须平衡, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>游戏设计艺术 第十三章 游戏机制必须平衡 | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220712120830.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">游戏设计艺术 第十三章 游戏机制必须平衡</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/Game-Design/">
+                                <span class="chip bg-color">Game Design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-07-11
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-08-05
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    11.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    39 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="游戏设计艺术-摘抄-笔记"><a href="#游戏设计艺术-摘抄-笔记" class="headerlink" title="游戏设计艺术 摘抄/笔记"></a>游戏设计艺术 摘抄/笔记</h1><h2 id="20220711-第十三章-游戏机制必须平衡"><a href="#20220711-第十三章-游戏机制必须平衡" class="headerlink" title="20220711 第十三章 游戏机制必须平衡"></a>20220711 第十三章 游戏机制必须平衡</h2><blockquote>
+<p>诡诈的天平为耶和华所憎恶。 —— 《箴言 11：:1》</p>
+</blockquote>
+<p>平衡一个游戏，不过是调整游戏的各种元素，直到它们传达了你想要的体验。</p>
+<h3 id="十二种最常见的游戏平衡"><a href="#十二种最常见的游戏平衡" class="headerlink" title="十二种最常见的游戏平衡"></a>十二种最常见的游戏平衡</h3><h4 id="平衡类型-1：公平"><a href="#平衡类型-1：公平" class="headerlink" title="平衡类型 1：公平"></a>平衡类型 1：公平</h4><blockquote>
+<p>不对等的战斗毫无乐趣可言。 —— 卡武尔太太（出自电影《妈妈市场》）</p>
+</blockquote>
+<h5 id="对称游戏"><a href="#对称游戏" class="headerlink" title="对称游戏"></a>对称游戏</h5><p>给予所有玩家同等资源和能力。</p>
+<p>如果想要玩家们互相直接竞争，并预期他们的技巧水平差不多，对称游戏是不错的选择。这种系统特别适合确定哪个玩家最强。</p>
+<p>完美对称也不容易实现，会存在“先/后手优势”等问题，一般用抛硬币或投骰子等随机方式解决。<br>有时会把优势给劣势方可以弥补不对称，如“让年龄最小的玩家先来”。</p>
+<h5 id="不对称游戏"><a href="#不对称游戏" class="headerlink" title="不对称游戏"></a>不对称游戏</h5><p>创造非对称游戏的可能原因：</p>
+<ol>
+<li><p>为了模拟真实世界情况</p>
+</li>
+<li><p>为了给玩家另一种方式来探索游戏空间<br>如格斗游戏中，用不同角色意味着不同玩法。</p>
+</li>
+<li><p>个性化<br>可以让玩家自由选择游戏方式</p>
+</li>
+<li><p>为了场上情况均衡<br>特别是当双方实力相差悬殊时，或有电脑对手在场<br>是否引入该方法，取决于游戏目的。是要对玩家技巧设立标准，还是为所有玩家提供挑战。</p>
+</li>
+<li><p>为了创建有趣情况<br>让多股不对称力量相互斗争很有趣，且能引发玩家深刻思考<br>游戏制胜策略往往不能一眼看出，玩家会思考哪方占优，游戏是否真正公平<br>例子：尼泊尔虎棋。一方控制五只老虎，另一方控制二十只山羊。老虎方吃五只山羊就胜利，山羊方移动山羊，使得所有老虎不能移动而取胜。有经验的玩家一般承认游戏公平，但新手玩家会花大量时间讨论是否公平，并反复游玩以确认。</p>
+</li>
+</ol>
+<p>不对称游戏的平衡通常通过量化资源/能力，确保双方总值相等。</p>
+<h5 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h5><h6 id="双翼飞机大战"><a href="#双翼飞机大战" class="headerlink" title="双翼飞机大战"></a>双翼飞机大战</h6><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220711004949.png"></p>
+<p>此时不好判断平衡性，但若是将低中高分别量化为 123，那么可以得到</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220711005039.png"></p>
+<p>好像复仇者优势明显。经过测试后，发现食人鱼和复仇者势均力敌，但骆驼总是输，所以推测火力比其他属性更有价值，同时将骆驼火力调高，从而得到新的表：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220711005225.png"></p>
+<p>如果此时几方势均力敌，则说明模型正确，否则可能需要继续调整模型。</p>
+<p>调整平衡和开发指导平衡的模型需要共同推进。<br>只有游戏可玩了，才能真正开始调整平衡。<br>经验之谈：一半的开发时间应该用来平衡游戏。</p>
+<h6 id="石头、剪子、布"><a href="#石头、剪子、布" class="headerlink" title="石头、剪子、布"></a>石头、剪子、布</h6><p>还有一种平衡方式——克制关系。</p>
+<h4 id="37-号透镜：公平"><a href="#37-号透镜：公平" class="headerlink" title="37 号透镜：公平"></a>37 号透镜：公平</h4><p>要使用公平透镜，从玩家视角思考游戏。考虑玩家技巧水平，找到方法让每个玩家都有机会获胜，且各自都认为公平。</p>
+<ul>
+<li>游戏应该对称吗，为什么</li>
+<li>游戏应该不对称吗，为什么</li>
+<li>哪点更重要？<ul>
+<li>游戏应能有效衡量谁的技巧水平最高</li>
+<li>游戏应该为所有玩家都带来有趣挑战</li>
+</ul>
+</li>
+<li>如果想让不同水平玩家一起玩，会用什么手段，令游戏对所有人都具有趣味性和挑战性</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220711005807.png"></p>
+<h4 id="平衡类型-2：挑战与成功"><a href="#平衡类型-2：挑战与成功" class="headerlink" title="平衡类型 2：挑战与成功"></a>平衡类型 2：挑战与成功</h4><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220711010326.png"></p>
+<p>让玩家能持续体验心流，意味着平衡挑战与成功两种体验。由于玩家技巧水平不一，找到平衡很难。以下是找到平衡的一些常用方法：</p>
+<ul>
+<li>随着每次成功增加难度。<ul>
+<li>一方面不断增强关卡难度</li>
+<li>一方面也不要忘记“张弛有度”</li>
+</ul>
+</li>
+<li>让玩家快速打通容易部分<ul>
+<li>可以让熟练玩家快速遇到有意思的挑战</li>
+<li>让技巧不那么熟练的玩家慢慢挑战之前的关卡</li>
+<li>可以让每种类型玩家都快速进入游戏中能给自己带来挑战的部分</li>
+</ul>
+</li>
+<li>创建“层层挑战”<ul>
+<li>即结尾评分，如评分太差，就需要重玩</li>
+<li>新手玩家一开始只要能拿 C，就能沉浸在过关喜悦中，但随着技术水平提高，他们也会对自己有更高评分要求</li>
+</ul>
+</li>
+<li>让玩家自选难度<ul>
+<li>一种是预设难度 —— 游戏开始前就定好了会遇到什么样的困难</li>
+<li>一种是动态难度 —— 在游戏过程中根据玩家表现调整难度<ul>
+<li>优点：可以让玩家找到相匹配的挑战难度</li>
+<li>缺点：<ul>
+<li>需要创建多个难度版本（这个是对应以前的游戏，随着人工智能的发展，动态难度这一问题相信会真正被攻克）</li>
+<li>会削弱游戏“真实感”（书中说玩家会争论哪个版本才是“真的”，译者注里面写，作者解释说，这里的“真实”指的是令玩家认真对待幻想世界的真实感，因为如果有多个平行幻想世界，就提醒了玩家这些都是虚构的。有些幻想世界比别的感觉更真实。）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>请各种玩家试玩<ul>
+<li>让具有各种技巧水平的玩家都来试玩，确保游戏开头好玩，稍后好玩，后面依然好玩</li>
+</ul>
+</li>
+<li>让失败者休息一下<ul>
+<li>《马里奥赛车》中的道具机制是排名靠前的玩家拿到的道具就弱，排名靠后的玩家拿到的道具就强。这是很棒的设计。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>决定游戏难度怎样随时间增加，是调整游戏平衡的一大挑战。<br>作为设计师，应当问自己，“我想要百分之多少的玩家能打通游戏？”，然后朝这个目标去设计</p>
+<p>不要忘记，学着玩一个游戏，本身也是挑战！因此，游戏前一两关通常非常简单。因为玩家需要理解“控制和目标”。在前期，一点点成功可以帮助玩家建立自信，自信的玩家是不会轻易放弃一款游戏的。</p>
+<h4 id="38-号透镜：挑战"><a href="#38-号透镜：挑战" class="headerlink" title="38 号透镜：挑战"></a>38 号透镜：挑战</h4><p>挑战几乎是所有游戏玩法的核心。甚至可以说，游戏由其目标和挑战所定义。检查游戏中的挑战，问自己：</p>
+<ul>
+<li>游戏中的挑战是什么</li>
+<li>太容易？太难？刚刚好？</li>
+<li>这些挑战能否容纳各种技巧水平</li>
+<li>随着玩家不断成功，挑战难度如何增长</li>
+<li>挑战种类是否足够多样</li>
+<li>游戏中最高水平挑战是什么</li>
+</ul>
+<h4 id="平衡类型-3：有意义的选择"><a href="#平衡类型-3：有意义的选择" class="headerlink" title="平衡类型 3：有意义的选择"></a>平衡类型 3：有意义的选择</h4><p>对玩家有意义的选择，会引导他们问自己如下问题：</p>
+<ul>
+<li>应该去哪里</li>
+<li>应该如何运用我的资源</li>
+<li>应该练习和完善什么技能</li>
+<li>应该让人物穿什么</li>
+<li>应该快速通关还是小心谨慎</li>
+<li>应该集中进攻还是防守</li>
+<li>该情况下应该是用什么策略</li>
+<li>应该选择哪个能力</li>
+<li>应该走保险路线，还是冒大风险</li>
+</ul>
+<p>好游戏给玩家的选择是有意义的。</p>
+<ul>
+<li>选项都差不多，那么多个选项就没有意义。</li>
+<li>如果有选项明显优于其他选项（最优策略），那其他选项就没有意义。</li>
+</ul>
+<p>如果游戏中发现了最优策略，一定要调整平衡，削弱其地位。<br>玩家发现的隐藏最优策略一般叫做漏洞（exploits），因为玩家可以利用它绕开设计师意图，走捷径获得成功。</p>
+<p>应该给玩家多少有意义的选择？Michael Mateas 指出，玩家想要的选择数量，取决于他们的欲望。</p>
+<ul>
+<li>选择 &gt; 欲望，玩家感到不堪重负</li>
+<li>选择 &lt; 欲望，玩家感到沮丧</li>
+<li>选择 = 欲望，玩家感到自由和满足</li>
+</ul>
+<h4 id="39-号透镜：有意义的选择"><a href="#39-号透镜：有意义的选择" class="headerlink" title="39 号透镜：有意义的选择"></a>39 号透镜：有意义的选择</h4><p>当做出有意义选择后，会觉得自己做的事情很重要。问自己：</p>
+<ul>
+<li>我要求玩家作何种选择</li>
+<li>这些选择有意义吗？怎么做呢？</li>
+<li>给玩家的选择数量对吗？加多些，是否会让他们更有力量感？减少些，是否让游戏更清晰？</li>
+<li>游戏中是否有最优策略</li>
+</ul>
+<h5 id="三角形"><a href="#三角形" class="headerlink" title="三角形"></a>三角形</h5><p>玩家可做选择中最刺激有趣的就是小心行事小回报，还是放手一搏大回报。若是游戏平衡做得好，这个决定就很难下。</p>
+<p>如果游戏原型“就是不好玩”，八成是缺少这样有意义的选择 —— 平衡的非对称风险，为其起名为三角形。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220719105747.png" alt="玩家 风险 和回报的三角形关系"></p>
+<p>例子：《太空侵略者》</p>
+<ul>
+<li>大部分时间，射击靠近飞船的低分外星人，移动缓慢，容易打中</li>
+<li>每间隔一段时间，屏幕顶端会飞过小型红色飞碟，虽然没有威胁，但分值很高，速度很快，很难打中。为了打到它，玩家必须转移注意力，很可能让自己暴露在危险中，但这正是这个选择有意义的地方。</li>
+</ul>
+<h4 id="40-号透镜：三角形"><a href="#40-号透镜：三角形" class="headerlink" title="40 号透镜：三角形"></a>40 号透镜：三角形</h4><p>让玩家选择小心行事获得小回报，还是放手一搏获得大回报，是很有效的方式。可以让游戏兴奋有趣。问自己：</p>
+<ul>
+<li>游戏中有三角形了吗，如果没有，怎么改进</li>
+<li>我尝试构建的三角形平衡吗，换言之，回报和风险成比例吗</li>
+</ul>
+<p>一旦在各种游戏中寻找三角形，就会发现它无处不在。添加一点三角形，会让游戏变得令人兴奋而满足。</p>
+<p>典型范例， Steven Levy 著的《黑客》（Hackers）一书中。<br>一台自动售货机被黑了，给顾客提供了一个选择：</p>
+<ul>
+<li>正常价格购买</li>
+<li>冒险投一个虚拟硬币，让零食价格翻倍或免费</li>
+</ul>
+<p>要确保三角形平衡，可以用 35 号透镜，期望值。</p>
+<p>街机游戏 Qix 就是用期望值平衡的有趣例子。游戏中要在空白地图上试图绘制矩形，围住底盘。同时，一团叫 Qix 的线段随机值屏幕上飘。如果 Qix 在你没画完某个矩形时碰到它，你就死了。但如果画完矩形，就得到了地图上的这片区域。获得 75%以上区域便可过关。</p>
+<p>游戏设计者提供的明确选择 —— 快速移动可绘制蓝色矩形，半速移动可绘制橙色矩形（双倍积分）。<br>假设蓝色矩形绘制成功率 20%，等价 100 分，期望值为 100 * 20% = 20 分<br>半速绘制的橙色矩形成功率为一半 10 %，若想让期望和上面一样，分数应该是 200 分。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220719111449.png" alt="平衡的三角形选项"></p>
+<p>难点其实在于成功率的确定，需要前期估算-后期迭代-反复调整。</p>
+<p>《马里奥赛车》堪称三角形的交响乐。例子：</p>
+<ul>
+<li>手动还是自动？<ul>
+<li>手动需要更多技巧，但用得好可以让速度提升更大</li>
+</ul>
+</li>
+<li>卡丁车还是摩托车<ul>
+<li>卡丁车基础速度更快</li>
+<li>要是能在摩托车做抬轮（有风险，因为抬轮时不能转弯）动作，就比卡丁车快</li>
+</ul>
+</li>
+<li>抢道具还是无视道具<ul>
+<li>抢道具可能有撞车风险</li>
+</ul>
+</li>
+<li>使用道具还是无视<ul>
+<li>使用道具会分心</li>
+</ul>
+</li>
+<li>持有手上道具还是丢掉换新道具</li>
+<li>用不用加速区<ul>
+<li>可以让你速度加快，但经常位于危险位置</li>
+</ul>
+</li>
+<li>提早踩油门吗<ul>
+<li>起跑线上，提早加速时机正确，会有速度增强</li>
+<li>时机不对会延迟起步，令人烦躁</li>
+</ul>
+</li>
+<li>左边还是右边<ul>
+<li>许多赛道有低风险/高风险岔路，高风险岔路加速更多</li>
+</ul>
+</li>
+</ul>
+<h4 id="平衡类型-4：技巧与概率"><a href="#平衡类型-4：技巧与概率" class="headerlink" title="平衡类型 4：技巧与概率"></a>平衡类型 4：技巧与概率</h4><p>技巧游戏一般偏向体育竞赛，由裁判系统决定玩家强弱。<br>概率游戏比较轻松休闲，毕竟许多结果“不可控”。<br>为取得平衡，必须使用 19 号透镜“玩家”来理解对你的受众来说，多少技巧和多少概率才是正确数量。</p>
+<p>偏好差异有时由年龄、性别甚至文化决定。例如，德国桌面游戏玩家似乎更喜欢尽量减少偶然性影响的游戏，远胜过美国等地的玩家。</p>
+<p>平衡二者的常见方法是在游戏中交替使用概率和技巧。<br>如发牌是纯概率，出牌是纯技巧，投骰子看能走多远是纯概率，决定往哪里走是纯技巧</p>
+<p>David Perry 建议，要设计令人上瘾的游戏，关键在于把游戏设计成玩家在其中随时做三件事：</p>
+<ul>
+<li>发挥一种技巧</li>
+<li>冒各种风险（即以某种方式在挑战概率）</li>
+<li>思考一种策略</li>
+</ul>
+<h4 id="41-号透镜：技巧与概率"><a href="#41-号透镜：技巧与概率" class="headerlink" title="41 号透镜：技巧与概率"></a>41 号透镜：技巧与概率</h4><p>问自己</p>
+<ul>
+<li>玩家是来接受评断（技巧）的，还是来冒风险（概率）的</li>
+<li>技巧一般比概率更严肃，这是个严肃游戏，还是休闲游戏</li>
+<li>游戏有没有乏味部分，如果有，加入概率能盘活吗</li>
+<li>游戏中有没有感觉太随机的部分，如果有，将概率元素替换为技巧或策略元素，能让玩家感觉控制感更强吗</li>
+</ul>
+<h4 id="平衡类型-5：头与手"><a href="#平衡类型-5：头与手" class="headerlink" title="平衡类型 5：头与手"></a>平衡类型 5：头与手</h4><p>即脑与身体协调能力考验的平衡</p>
+<p>经典例子——平台跳跃类游戏</p>
+<p>了解目标市场喜欢游戏中出现什么很重要——思考更多，还是敏捷更多？</p>
+<p>在游戏中清晰传达你选择了怎样的平衡也同样重要<br>例子：世嘉 MD 的《吃豆人 2：新的冒险》<br>其名字暗示这是一个和原版吃豆人一样，略带策略元素的动作游戏（嗯？怎么看出来的？可能是原文能看出来？）<br>但包装盒上的样子，像是一款和《超级马里奥兄弟》和《刺猬索尼克》类似的 2D 平台游戏，这意味着动作加上一点点解谜。<br>但真正玩起来，又不一样！虽然视觉上像是平台动作游戏，但其实全是奇怪地心理谜题。你要微妙地指引吃豆人进入不同情感状态，才能让它通过各种障碍。<br>本来期待大量动作和少量思考的玩家失望了，本来想找一个解密游戏的玩家又因为“动作游戏”的外表而拒绝了它</p>
+<blockquote>
+<blockquote>
+<p>感觉像是宣发和游戏定位的偏差问题，现在很多玩家购入之前都会看测评，游戏商店页面也会有视频预览，所以一定程度上能缓解玩家因为“封面”就错过好游戏的问题。但要是一开始就做好二者的匹配，当然是最好的！</p>
+</blockquote>
+</blockquote>
+<h4 id="42-号透镜：头与手"><a href="#42-号透镜：头与手" class="headerlink" title="42 号透镜：头与手"></a>42 号透镜：头与手</h4><p>Yogi Berra 曾经说过：“棒球是 90% 的精神，另一半是身体。”为确保心理和生理元素在游戏内获得真实平衡，问自己</p>
+<ul>
+<li>我的玩家想要无脑动作，还是智力挑战</li>
+<li>游戏里更多地方包含解密，会更有趣吗</li>
+<li>有没有地方可以让玩家放松大脑，只管玩，不用想事情</li>
+<li>能不能给玩家一个选择——可以展示高度敏捷，也可以找到一个最不需要身体技巧的聪明策略</li>
+<li>如果 1 分是纯身体，10 分是纯精神，游戏得几分</li>
+</ul>
+<p>此透镜与 19 号透镜 “玩家” 共同使用效果尤其好</p>
+<h4 id="平衡类型-6：竞争与合作"><a href="#平衡类型-6：竞争与合作" class="headerlink" title="平衡类型 6：竞争与合作"></a>平衡类型 6：竞争与合作</h4><p>竞争与合作是动物基本本能<br>喜欢玩游戏的一大秘密原因是，其提供了社交安全的途径来探索周围人在压力之下的表现</p>
+<p>有些游戏以有趣方式融合了竞争与合作。街机游戏《鸵鸟游戏》（Joust）中，玩家既可以单人闯关，也可以双人闯关。<br>竞争方面，玩家分数由击敌数量决定，玩家可以比拼。且存在角斗士关（gladiator wave），最先打败对方的玩家得 3000 分<br>合作方面，玩家如果协调攻击、互相保护，可以得到更高分数。且存在团队关（team wave），每个玩家都能过关，则每人得 3000 分</p>
+<p>另一种组合方式：团队竞技</p>
+<h4 id="43-号透镜：竞争"><a href="#43-号透镜：竞争" class="headerlink" title="43 号透镜：竞争"></a>43 号透镜：竞争</h4><p>确定某件事情上谁最优秀，是人的基本冲动。竞争类游戏能满足这种冲动。</p>
+<ul>
+<li>我的游戏对玩家技巧高低的衡量公平吗</li>
+<li>人们是否想赢得我的游戏，为什么</li>
+<li>在这个游戏中获胜是可以自豪的事情吗，为什么</li>
+<li>新手可以在我的游戏中有意义地竞争吗</li>
+<li>专家可以在我的游戏中有意义地竞争吗</li>
+<li>专家们是否普遍肯定他们会打败新手</li>
+</ul>
+<h4 id="44-号透镜：合作"><a href="#44-号透镜：合作" class="headerlink" title="44 号透镜：合作"></a>44 号透镜：合作</h4><p>团队协作并取得成功是种特别快乐，可以创建持久社交纽带</p>
+<ul>
+<li>合作需要沟通。我的玩家有足够契机来沟通吗，如何加强沟通</li>
+<li>玩家们已经是朋友，还是陌生人？如果是陌生人，可以帮助他们破冰吗</li>
+<li>玩家们合作时有协同作用（1+1&gt;2）或是妨碍作用（1+1&lt;2）吗，为什么</li>
+<li>玩家们都是相同角色，还是有特殊分工</li>
+<li>如果只靠一个人无法完成某项任务，就嫩恶搞大大加强合作，游戏中有此类任务吗</li>
+<li>强制沟通的任务会激发合作，我又强制沟通的任务吗</li>
+</ul>
+<h4 id="45-号透镜：竞争与合作"><a href="#45-号透镜：竞争与合作" class="headerlink" title="45 号透镜：竞争与合作"></a>45 号透镜：竞争与合作</h4><ul>
+<li>如果 1 分是竞争，10 分是合作，我的游戏得几分</li>
+<li>我能不能让玩家选择，是合作还是竞争</li>
+<li>我的受众喜欢竞争、合作，还是两者混合</li>
+<li>团队竞争适合我的游戏吗，我的游戏中，是团队竞争好玩，还是单人竞争好玩</li>
+</ul>
+<h4 id="平衡-7：短与长"><a href="#平衡-7：短与长" class="headerlink" title="平衡 7：短与长"></a>平衡 7：短与长</h4><p>每个游戏都需要平衡游戏长度。<br>游戏太短，玩家可能没有机会制定和执行有意义的战略。<br>游戏太长，玩家可能会厌烦，或因为需要投入的时间太多而避开这个游戏不玩</p>
+<p>确定游戏何时结束的最主要因素是胜败条件。改变这些条件，就能大大改变游戏长度。</p>
+<ul>
+<li>例子<ul>
+<li>街机游戏《间谍猎手》（spy hunter）中，玩家需要操控车辆在高速公路上行驶，并用车上的机枪向敌人射击。若是车辆损毁三次，游戏结束。<ul>
+<li>问题<ul>
+<li>新手玩家在早期车辆损毁过快，游戏时间很短，很沮丧</li>
+</ul>
+</li>
+<li>平衡<ul>
+<li>游戏前 90 秒，玩家车辆无限，90 秒后恢复到正常的 3 部车</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>《Minotaur》是一款四人联机游戏，玩家们跑过迷宫，收集武器和咒语，试图毁灭迷宫中的其他玩家，只剩一人时，游戏结束<ul>
+<li>问题<ul>
+<li>如果玩家们不互相交战，就会陷入僵局</li>
+</ul>
+</li>
+<li>可能方案<ul>
+<li>设定时限和分数排名</li>
+</ul>
+</li>
+<li>最终平衡<ul>
+<li>20 分钟后，钟声响起，“末日沙场”开始，所有幸存玩家突然被传送到一个充满怪物和各种危险的小房间，没人可能活很久。</li>
+<li>这种方式保证游戏在 25 分钟内结束，颇具戏剧性，也能宣布一名玩家获胜</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="平衡类型-8：奖赏"><a href="#平衡类型-8：奖赏" class="headerlink" title="平衡类型 8：奖赏"></a>平衡类型 8：奖赏</h4><blockquote>
+<p>王宫贵族，赏必速，罚必缓。—— 奥维德（Ovid）</p>
+</blockquote>
+<p>玩家玩游戏，只为得高分，为什么？<br>玩家们来到游戏中，接受检验，并得到评判，且只喜欢得到好评。奖励就是游戏告诉玩家“你干得不错”的方式</p>
+<p>许多游戏都会给予玩家几种常见类型奖励，目的都是满足玩家的愿望。</p>
+<ul>
+<li>赞美：最简单的奖励。任天堂游戏就因为通过声音、动画，在每次奖励的同时给玩家附加许多赞美而闻名<ul>
+<li>明显声明</li>
+<li>特殊声音效果</li>
+<li>游戏人物对话</li>
+</ul>
+</li>
+<li>分数<ul>
+<li>许多游戏中，分数除了衡量玩家成功之外没有任何用处</li>
+<li>有时候会有新的奖励——排行榜</li>
+</ul>
+</li>
+<li>延长游戏<ul>
+<li>在基于“生命数”而得以进行的游戏中，给予玩家生命奖励是非常有价值的</li>
+<li>在“限定时间”类型的游戏中，延长游戏时长也是和上述同等类型的奖励</li>
+<li>现代免费游戏中的“体力值”设定，也是生命系统的等价系统</li>
+</ul>
+</li>
+<li>入口<ul>
+<li>获得钥匙，解锁新区域，新关卡</li>
+</ul>
+</li>
+<li>演出（spectacle）<ul>
+<li>CG</li>
+<li>但光靠这种奖励很少能满足玩家，一般都和其他类型奖励搭配出现</li>
+</ul>
+</li>
+<li>表现<ul>
+<li>特殊装饰</li>
+</ul>
+</li>
+<li>能力——令你能以更快的方式达到目标<ul>
+<li>新装备</li>
+<li>新技能</li>
+</ul>
+</li>
+<li>资源<ul>
+<li>游戏内资源</li>
+<li>虚拟货币</li>
+</ul>
+</li>
+<li>地位<ul>
+<li>排行榜排名</li>
+<li>特殊成就</li>
+</ul>
+</li>
+<li>完成<ul>
+<li>完成游戏中的所有目标给玩家一种特别的结束感，这是很多游戏的终极奖励——当你到达此处，继续再玩这个游戏就不再有意义了</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>之前看的银河恶魔城类型的设计核心的“能力-锁”机制，就很好地利用了能力与入口的奖励</p>
+</blockquote>
+</blockquote>
+<p>奖励的平衡，或者说，该给多少奖励？</p>
+<p>心理学世界中得到的奖励窍门：</p>
+<ul>
+<li>物以稀为贵。玩家收到的奖励越多，就越习以为常。常见解决办法——增加奖励价值。</li>
+<li>变化&gt;固定。变化奖励比起固定奖励能让玩家更享受。</li>
+</ul>
+<h4 id="46-号透镜：奖励"><a href="#46-号透镜：奖励" class="headerlink" title="46 号透镜：奖励"></a>46 号透镜：奖励</h4><p>要确定游戏是否在正确时间、以正确的量给出正确奖励，问自己</p>
+<ul>
+<li>我的游戏现在给出哪些奖励，还能给出其他的吗</li>
+<li>玩家在游戏中得到奖励后，是激动还是无聊，为什么</li>
+<li>收到奖赏却不理解，如同没有奖赏，玩家理解他们收到的奖赏吗</li>
+<li>游戏中送出的奖赏是不是太有规律，能不能用更多变的方式送出</li>
+<li>奖励之间有何联系，有没有办法让它们连接得更好</li>
+<li>奖励逐渐累积的方式如何，太快，太慢，还是正好</li>
+</ul>
+<p>要想确认奖励对不对，量是否合适，时机是否合适，只能通过试错和迭代。也没有办法取悦所有玩家，要安心于“足够好”。</p>
+<h4 id="平衡类型-9：惩罚"><a href="#平衡类型-9：惩罚" class="headerlink" title="平衡类型 9：惩罚"></a>平衡类型 9：惩罚</h4><p>出于以下一些原因，游戏可能会惩罚玩家：</p>
+<ul>
+<li>惩罚创造内生价值<ul>
+<li>内生价值见 7 号透镜。</li>
+<li>游戏中的资源若有可能被夺走，就更有价值</li>
+</ul>
+</li>
+<li>冒险激动人心<ul>
+<li>尤其是潜在奖励与风险平衡的话！</li>
+<li>只有存在负面后果或者惩罚，才能冒风险</li>
+<li>给玩家一个冒巨大风险的机会，才会让成功甜蜜许多</li>
+</ul>
+</li>
+<li>可能的惩罚增加挑战<ul>
+<li>若在游戏中失败就意味着倒退，游戏挑战性就增加了</li>
+<li>增加来自于失败的惩罚是一种增加挑战的办法</li>
+</ul>
+</li>
+</ul>
+<p>以下是游戏中的一些常见惩罚，其中许多只是把奖励反过来而已</p>
+<ul>
+<li><p>羞辱</p>
+<ul>
+<li><p>赞美的反面</p>
+</li>
+<li><p>游戏只是简单告诉你打得太烂，仅此而已</p>
+</li>
+<li><p>可能弹出明显消息（视觉——“未命中”/“失败”）</p>
+<blockquote>
+<blockquote>
+<p>只狼中的 “死” 也是一个道理哈哈哈</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>可能有令人沮丧的动画、声音效果、音乐等</p>
+</li>
+</ul>
+</li>
+<li><p>失分</p>
+<ul>
+<li>这种惩罚十分痛苦，乃至在电子游戏甚至传统游戏和体育运动中都相对罕见</li>
+<li>也许痛苦事小，而可以失分造成玩家挣来的分数也会贬值事大</li>
+<li>不能抢走的分数很有价值——而因为下一步走错会被扣掉的分数，其内生价值就较少</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>这个应该和所谓“损失厌恶效应”（<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh/%E6%8D%9F%E5%A4%B1%E8%A7%84%E9%81%BF">Loss aversion</a>）有关，即比起奖励，同等量级的损失会让玩家产生加倍厌恶心理（在一些地方看到的说法为 2.5 倍）</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Dota 中的死亡损失是该惩罚在游戏中的一种很好体现</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><p>缩短游戏</p>
+<ul>
+<li>在游戏中 “失去生命” 就是这种惩罚的一个例子。有些使用计时器的游戏会扣减时间来缩短游戏</li>
+</ul>
+</li>
+<li><p>中断游戏</p>
+<ul>
+<li>“Game Over”</li>
+</ul>
+</li>
+<li><p>倒退</p>
+<ul>
+<li>若一款游戏在死后要返回关卡开头，或者上一个存档点，这就是倒退惩罚。若游戏目的就是进行到底，那么用倒退做惩罚就很合乎逻辑。</li>
+<li>平衡的难点在于精确确定存档点放在哪里，才能让这种惩罚感觉有意义，而非毫无道理。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>倒是让我想起来，战神 4 中，若是在挑战除女武神王之外的女武神时死亡，重置点都被设置在进入房间之前稍远的地方，玩家在进入战斗场地之前还必须进行一次 “跳跃” 操作。<br>倒不一定真的会和直接设置在房间中有什么区别，但是个 “精确设置存档点” 的例子哈哈</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>剥夺能力<ul>
+<li>设计师在此处必须格外小心——玩家非常珍视自己挣来的能力，硬被抢走，他们会感觉非常不公平</li>
+<li>在《网络创世纪》（Ultima Online）中，战死的玩家会变成鬼魂。要复活必须设法前往祭坛。若在半路耗得太久，就会失去花几星期赚来的宝贵技能点。<ul>
+<li>许多玩家认为该惩罚太狠</li>
+</ul>
+</li>
+<li>还有一种剥夺能力的方法较公平，即暂时拿走<ul>
+<li>有些游乐园里有一种坦克碰碰车，可以互射网球，若是被对手击中位于坦克两边的标靶，自己的坦克就会原地失控旋转五秒，同时不能开炮</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>倒是让人想起了魔兽 “跑尸”。没想到还有跑得太慢就丢技能点这么狠的惩罚，这万一一个不小心，不是直接让玩家心态炸裂哈哈哈…</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>消耗资源<ul>
+<li>游戏软货币的损失</li>
+<li>或者是游戏内玩家属性的损失等</li>
+<li>是游戏中最常见的一种惩罚类型</li>
+</ul>
+</li>
+</ul>
+<p>心理研究表明，奖励始终比惩罚更能起到推动作用。</p>
+<p>如果需要激励玩家做些什么，只要可能，尽量用奖励而不是用惩罚。</p>
+<p>《暗黑破坏神》（Diablo） 中的好例子是在游戏中收集食物。许多游戏设计师都试图引入“食物”——即如果不吃的话就会导致能力下降。暴雪最开始也是这么做的，但发现玩家反馈不好，而后转而实现了新系统——玩家永不会饥饿，但如果吃食物的话，能力就会暂时提升。如此一来，玩家高兴多了。</p>
+<p>但若是惩罚是必须的，量的设定是个精妙问题。</p>
+<p>开发《卡通城》（Toontown）在线版的时候，面对的问题是：面向孩子的轻度、欢乐的 MMORPG 中，最严厉的惩罚是什么呢？</p>
+<p>最终决定 “死掉” 的惩罚是多种轻度惩罚的结合，在游戏中叫做 “伤心”。游戏中玩家是没有生命条的，只有 “欢乐（laff）条”，敌人目标也不是彻底杀死玩家，而是让其难过，不能像卡通人物一样开心。</p>
+<p>在游戏中，若是欢乐条为 0，会发生：</p>
+<ul>
+<li>从战斗去被传送回一个操场区域（倒退）<ul>
+<li>倒退很微小，距离一般只要走一分钟（怎么感觉一分钟也挺长的了哈哈..）</li>
+</ul>
+</li>
+<li>所携带的道具全部消失（消耗资源）<ul>
+<li>代价也很微小，道具价格都不贵，10 分钟就能赚回来（若是以 MMORPG 的角度来看，貌似也还能接受）</li>
+</ul>
+</li>
+<li>角色可怜地垂着头（羞辱）</li>
+<li>大约 30 s 内，人物走路很慢很慢，没法离开操场区域或参与到任何有意义的玩法内（暂时剥夺能力）</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>倒是让人想起了很长一段时间内 Dota 中的死亡买活后有一段时间获取的资源（金钱 + 经验）会折半的机制<br>但该机制在近来版本中已经取消了，目的可能是为了提高新手友好度？</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>欢乐条（生命）掉到 0 （消耗资源），玩家一般会等待其回复（在操场区域内会随时间增长）再去探索</li>
+</ul>
+<p>以上惩罚是多次平衡后的结果。</p>
+<p>游戏中的所有处罚应当是玩家能理解的、能防止的。</p>
+<p>如果玩家感觉惩罚是随机的，游戏就会被贴上 “不公平” 的标签，使得留存大幅下降</p>
+<p>玩家不喜欢惩罚，思考有没有巧妙方式让玩家逃脱惩罚</p>
+<p>Richard Garriott 的 《创世纪》（Ultima 3），虽然很受欢迎，却有很严格的惩罚。游戏要近一百小时打通，如果四个人物都在游戏中死去，记录会被抹掉，只能从头再来！</p>
+<blockquote>
+<blockquote>
+<p>让人想起了 Diablo 3 中的专家模式哈哈…</p>
+</blockquote>
+</blockquote>
+<p>玩家的应对方法是：在游戏将死之时，趁游戏没删掉存档赶紧关机，从而规避惩罚</p>
+<p>当然了，也有特别钟情于极端难度的玩家，如喜欢《恶魔之魂》（Demon Souls）的玩家，因为打通如此困难的游戏令他们感觉特别自豪。但他们也有极限，如果找不出办法防止惩罚，他们很快也会评价这款游戏“不公平”</p>
+<blockquote>
+<blockquote>
+<p>宫崎英高，真有你的 (￣▽￣)”</p>
+</blockquote>
+</blockquote>
+<h4 id="47-号透镜：惩罚"><a href="#47-号透镜：惩罚" class="headerlink" title="47 号透镜：惩罚"></a>47 号透镜：惩罚</h4><p>惩罚要小心使用<br>适当平衡的惩罚可以让游戏中的一切更有意义，玩家在其中成功后也会有真正自豪感</p>
+<ul>
+<li>游戏中有什么惩罚</li>
+<li>为什么要惩罚玩家？希望通过它来实现什么？</li>
+<li>惩罚在玩家看来公平吗？为什么？</li>
+<li>有没有办法把惩罚改成奖励，并收到同样或更好的效果</li>
+<li>强力惩罚，有没有相应丰厚的回报来平衡？</li>
+</ul>
+<h4 id="平衡类型-10：自由体验与受控体验"><a href="#平衡类型-10：自由体验与受控体验" class="headerlink" title="平衡类型 10：自由体验与受控体验"></a>平衡类型 10：自由体验与受控体验</h4><p>游戏不该完全模拟现实生活，而应该比现实生活更有趣——这有时要剜去那些无聊、繁复、或不必要的决定与行动。</p>
+<p>每个游戏设计师都必须考虑的简单游戏平衡就是在哪里给玩家自由，给多少自由。</p>
+<p>在《阿拉丁的魔毯 VR 冒险》（Aladdin’s Magic Carpet VR Adventure）中，在 <em>神奇洞穴</em> 的最后一个场景中遇到一个很棘手的问题——要使坏人的冲突尽可能激动人心，游戏就得控制镜头，但不想因此削弱玩家在场景中的自由。</p>
+<p>观察测试玩家后，发现了玩家们都想飞到坏人站立的山顶上去</p>
+<p>经过多次试验，做出了一个大胆决定——在该场景中剥夺玩家自由，把玩家飞上山直面坏人的过程做到完美。</p>
+<p>这与整个体验的其他部分形成了鲜明对比：玩家可以在其他地方没有限制地自由飞行。</p>
+<p>在后续测试中，没有测试玩家注意到其自由被剥夺了，因为游戏已经教会他们可以任意前往想去的地方，而这个场景的排布让每个看到的人都想做同一件事。</p>
+<p>该例子中，天平应该落在受控体验一边，因为能给玩家带来更棒的体验。</p>
+<h4 id="平衡类型-11：简单与复杂"><a href="#平衡类型-11：简单与复杂" class="headerlink" title="平衡类型 11：简单与复杂"></a>平衡类型 11：简单与复杂</h4><blockquote>
+<p>当再没有任何细节可以删除，而不是没有细节可以添加时，就是抵达完美这一境界了。 —— Antoine de Saint-Exupery</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>如无必要，勿增实体 —— 奥卡姆剃刀</p>
+</blockquote>
+</blockquote>
+<p>看看游戏中出现的不同种类的复杂性：</p>
+<ul>
+<li><p>固有复杂性</p>
+<ul>
+<li>游戏规则本身变得非常复杂</li>
+<li>这种复杂性经常收获恶名，一般因为设计者试图模拟复杂现实情况，或加入额外规则而实现游戏平衡而实现</li>
+<li>当看到一套规则集中有很多“例外情况”，该套规则就是固有复杂</li>
+<li>这样的游戏学起来可能很难，但也有人很享受这种享受复杂规则集的过程</li>
+</ul>
+</li>
+<li><p>自发复杂性</p>
+<ul>
+<li>是人人赞扬的复杂</li>
+<li>例子：围棋</li>
+<li>若一个游戏同时被称赞简单而又复杂，其赞扬的就是其自发复杂性</li>
+</ul>
+</li>
+</ul>
+<p>自发复杂性可能很难实现，但值得努力。</p>
+<p>要验证自己是否实现了自发复杂性——重复玩、反复修改，直到惊喜开始浮现。30 号透镜：自发，也有帮助。</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220805010354.png"></p>
+<h4 id="48-号透镜：简单-复杂"><a href="#48-号透镜：简单-复杂" class="headerlink" title="48 号透镜：简单/复杂"></a>48 号透镜：简单/复杂</h4><p>使用该透镜，能使得游戏从简单系统中产生有意义的复杂性</p>
+<ul>
+<li>游戏有什么元素是固有复杂的</li>
+<li>有办法令这种固有复杂性变为自发复杂性吗</li>
+<li>游戏中是否会产生自发复杂元素，如果没有，为什么</li>
+<li>游戏中是否有些元素太过简单</li>
+</ul>
+<h5 id="自然平衡与人工平衡"><a href="#自然平衡与人工平衡" class="headerlink" title="自然平衡与人工平衡"></a>自然平衡与人工平衡</h5><p>人工平衡——添加规则来得到希望出现的行为<br>自然平衡——游戏内互动中自然生出的可以得到希望出现的行为的情况</p>
+<p>例子：《太空侵略者》的绝妙平衡——敌人数量越少，其移动越快</p>
+<ol>
+<li>游戏开始时随着缓慢进行，随着玩家击毁敌舰，敌人速度越来越快</li>
+<li>开始时很容易击中目标，随着玩家不断成功，击中目标越来越难</li>
+</ol>
+<p>这两个属性不是固有规则规定的，而是从一条简单规则中自发出现且平衡良好的属性</p>
+<h5 id="优雅"><a href="#优雅" class="headerlink" title="优雅"></a>优雅</h5><p>可以把复杂情况下仍表现健壮的简单系统称为优雅</p>
+<p>优雅意味着游戏简单易懂，却又充满了有趣的自发复杂性</p>
+<p>针对一个游戏元素，数数其服务多少目的，就能轻松评价其优雅程度</p>
+<p>如《吃豆人》中的豆子主要服务以下目的：</p>
+<ol>
+<li>给玩家一个短期目标——吃掉附近豆子</li>
+<li>给玩家一个长期目标——吃掉本关所有豆子</li>
+<li>玩家吃豆时会稍微减速，这样便创造了优秀三角形（走没有豆子的路线则安全，有豆子的路线则冒险）</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>年代太久远了，这一点竟然毫无印象了</p>
+</blockquote>
+</blockquote>
+<ol start="4">
+<li>给玩家分数来衡量成功</li>
+<li>给玩家分数，可以赚取额外生命</li>
+</ol>
+<p>简单的豆子，竟有 5 个不同目的！</p>
+<blockquote>
+<blockquote>
+<p>想起了之前听机核对陈星汉专访时所说的 “一个设计应该至少要满足三个设计理由”</p>
+</blockquote>
+</blockquote>
+<p>还有一条好莱坞传下来的经验法则：如果剧本中有一行的目的不足两个，就该砍掉</p>
+<p>很多设计师一发现游戏感觉不对，第一反应是加点什么，而更好的问题往往是，该删掉些什么。</p>
+<p>可以尝试在游戏中寻找那些只有一个设计目的的东西，然后考虑哪些可以合并起来。</p>
+<p>例子</p>
+<p>在制作《加勒比海盗：黄金争夺战》（Pirates of the Caribbean: Battle for the Buccaneer Gold）时，原计划由两个主要人物：开头有一友方主持人，唯一工作是解释游戏怎么玩；结尾有一个恶人，唯一工作是参与戏剧性的最后一战。这只是迪士尼乐园里的很短时间（5min）的游戏，把时间花在介绍两个人物上感觉很怪，而且时间紧迫，要很好地塑造两个人物，限制较多。</p>
+<p>讨论是否要砍掉开头的教学或是最后的大战，但这会让游戏充实性大幅下降。</p>
+<p>后来的想法：开头的主持人就是最后的恶人，理由：</p>
+<ul>
+<li>节省开发时间</li>
+<li>节省游戏时间（因为只需要介绍一个任务）</li>
+<li>角色因此更加有趣，更像海盗（因为他欺骗了玩家）</li>
+<li>还创造了惊人的反转情节！</li>
+</ul>
+<h4 id="49-号透镜：优雅"><a href="#49-号透镜：优雅" class="headerlink" title="49 号透镜：优雅"></a>49 号透镜：优雅</h4><ul>
+<li>我的游戏有哪些元素</li>
+<li>每个元素的目的是什么？全部数出来，给每个元素一个优雅评分</li>
+<li>有的元素只有一个或两个目的，能否合并一些或干脆剔除？</li>
+<li>有的元素有多重目的，能否让它们承担更多目的？</li>
+</ul>
+<h5 id="性格"><a href="#性格" class="headerlink" title="性格"></a>性格</h5><p>优雅固然重要，但还有一个概念是过度打磨</p>
+<p>比萨斜塔的标志性倾斜其实并没有目的——只是意外缺陷</p>
+<p>优雅透镜会让我们去除比萨斜塔的倾斜，让其变得笔直无比，但这也使其失去了让人观看的兴趣——优雅了，但无聊了，会失去全部性格</p>
+<p>《大富翁》中的棋子：帽子，鞋子，狗，雕像，战舰<br>这些和一款房地产游戏并无关系，可以说这些棋子应该被做成各种小地主的样子，但没有人这么做，因为这会剥去《大富翁》的性格</p>
+<p>《马里奥》为什么是水管工？这和他做的事，他生活的世界几乎没有关系<br>但恰好是这种奇怪的不一致，赋予了他性格</p>
+<h4 id="50-号透镜：性格"><a href="#50-号透镜：性格" class="headerlink" title="50 号透镜：性格"></a>50 号透镜：性格</h4><p>优雅和性格是对立的，就像缩小版的简单和复杂，也必须保持平衡<br>要确保游戏中有些可爱的怪地方能定义其性格</p>
+<ul>
+<li>游戏中有没有奇怪的东西，玩家会激动地讨论它们？</li>
+<li>游戏有没有好玩的特性，令其与众不同？</li>
+<li>游戏里有没有玩家喜欢的缺陷？</li>
+</ul>
+<h4 id="平衡类型-12：细节与想象"><a href="#平衡类型-12：细节与想象" class="headerlink" title="平衡类型 12：细节与想象"></a>平衡类型 12：细节与想象</h4><p>游戏不是体验——游戏仅仅是激活玩家脑中精神模型的结构。在此过程中，游戏提供一定程度的细节，也留下一些供玩家填补。</p>
+<p>以下是关于提供哪些细节和哪些留给玩家想象的平衡的小提示：</p>
+<ul>
+<li><p>只做能做好的细节</p>
+<ul>
+<li>玩家的想象力丰富而精微</li>
+<li>若有想表现的东西，但质量不如玩家想象，那就不做——让想象力来举重若轻！<ul>
+<li>比如游戏中的对话。在没有预算请高质量配音演员或资源不足时，不如做字幕，而不是语音合成。<ul>
+<li>玩家的想象会填进一个声音——远比能合成的好</li>
+</ul>
+</li>
+<li>同样的想法适用于游戏内的一切<ul>
+<li>风光、音效、角色、动画、特效…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>给出供想象力使用的细节</p>
+<ul>
+<li>玩家刚进入游戏时要学很多东西——给出任何清晰细节，只要能让游戏更易理解，都很讨喜</li>
+<li>以国际象棋举例<ul>
+<li>游戏背景设定在中世纪<ul>
+<li>每个棋子都安排了中世纪宫廷里的角色<ul>
+<li>但并没有很多细节——如国王没有名字，我们也对其政权一无所知，但没有关系</li>
+<li>国王之所以是国王，只不过因为其是所有棋子中最高的，再加上移动方式，能唤起对真国王的一点点联想。此人很重要，一定要缓慢移动、小心保护</li>
+<li>用马代表骑士也一样，可以帮助我们记住他们可以在棋盘上四处跳动</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>这里虽然是这么写的，但是棋子的具体形状应该是在棋子功能敲定后才确定的？当然，也有可能是共同推进的结果</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><p>熟悉的世界无须太多细节</p>
+<ul>
+<li>如果要创造的游戏要模拟玩家熟知的城市街道或是一座房屋内部，就没有必要模拟每个小细节，只需给出少许相关细节，他们会用想象力将其填充</li>
+<li>但如果游戏目的是让玩家了解一个从没去过的地方，就有必要填入大量细节</li>
+</ul>
+</li>
+<li><p>运用望远镜效应</p>
+<ul>
+<li>当观众带望远镜看戏剧或体育比赛，一般是在开头用来近距离观察各位运动员或演员。当特写存入记忆后，望远镜就能放一边了</li>
+<li>电子游戏一直都在复制这种效应，经常在游戏开头放一个主角特写，然后在接下来全部体验时间，他都是一个一寸高的 sprite 了</li>
+</ul>
+</li>
+<li><p>给出激发想象力的细节</p>
+<ul>
+<li>还是以国际象棋为例——给予了能够指挥皇家军队的所有成员的这种幻想</li>
+<li>幻想与现实间只有细细的连线就可以</li>
+</ul>
+</li>
+</ul>
+<h4 id="51-号透镜：想象力"><a href="#51-号透镜：想象力" class="headerlink" title="51 号透镜：想象力"></a>51 号透镜：想象力</h4><ul>
+<li>要玩我的游戏，玩家必须明白什么</li>
+<li>用一些想象元素能帮助他们更好地理解吗</li>
+<li>在这个游戏中，我们提供哪些高质量、真实的细节</li>
+<li>哪些细节，如果由我们提供，质量会降低？可以改用想象力方法来填补差距吗</li>
+<li>能给出些细节，让想象力一次又一次来使用吗</li>
+<li>提供的哪些细节能激发想象力</li>
+<li>提供的哪些细节会扼杀想象力</li>
+</ul>
+<h3 id="游戏平衡方法论"><a href="#游戏平衡方法论" class="headerlink" title="游戏平衡方法论"></a>游戏平衡方法论</h3><p>有些方法可以同时使用，有些则互相龃龉<br>需要通过试验来找到合适的方法</p>
+<ul>
+<li><p>使用问题陈述透镜</p>
+<ul>
+<li>先搞清楚问题是什么，再来想解决办法</li>
+</ul>
+</li>
+<li><p>加倍与减半</p>
+<blockquote>
+<p>预知何者为足够，必须先知何者为多余。——William Black，《地狱谚语》</p>
+</blockquote>
+<ul>
+<li>加倍与减半规则说明在调整数值去平衡游戏时会在微量调整上浪费很多时间——不如朝着预期方向直接大刀阔斧地改动</li>
+<li>重点是要让修改的东西马上能被感知到差别</li>
+</ul>
+</li>
+<li><p>通过精确猜测训练直觉</p>
+<ul>
+<li>游戏设计得越多，直觉就会越强</li>
+<li>数值怎么定？做多了就有感觉了——也是这里所谓的直觉</li>
+</ul>
+</li>
+<li><p>记录模型</p>
+<ul>
+<li>在调整平衡时，把考虑的事物间的关联写下</li>
+<li>这有助于澄清想法，并能给你一个框架来记录游戏平衡实验的结果</li>
+</ul>
+</li>
+<li><p>调整游戏的同时调整模型</p>
+<ul>
+<li>二者应该是相互印证的</li>
+</ul>
+</li>
+<li><p>计划好平衡</p>
+<ul>
+<li>要知道调整的预期结果</li>
+<li>能一边运行一边调整就好了</li>
+<li>更好地 是有一个内容管理系统，让游戏在发售后仍能继续调整平衡<ul>
+<li>迭代规则在游戏发售后仍然生效</li>
+<li>在当今发在线发行游戏的世界里，你（也一定！）要在游戏发售后好好迭代</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>交给玩家</p>
+<ul>
+<li>有时候让玩家平衡游戏是个好主意（一般通过难度等级等选项）</li>
+<li>但大部分时候，游戏平衡还是让设计师来调整比较好</li>
+</ul>
+</li>
+</ul>
+<h3 id="平衡游戏经济"><a href="#平衡游戏经济" class="headerlink" title="平衡游戏经济"></a>平衡游戏经济</h3><p>游戏经济由两个有意义的决定来平衡：</p>
+<ul>
+<li>怎么赚钱</li>
+<li>怎么花赚来的钱</li>
+</ul>
+<p>上面的 “钱” 可以换为游戏中一切能交易的东西，技能点也是一种 “钱”。</p>
+<p>玩家有了上述两个选择，就组成了经济。而让经济变得有意义的，是两个选择深度和意义。这两个选择通常构成循环——花钱方式会帮助玩家赚更多钱，又会给他们更多机会花钱。</p>
+<p>调整经济平衡，很难，因为要同时平衡之前讨论的很多东西：</p>
+<ul>
+<li>公平：有玩家会通过买特定东西或以特定方式获利，得到不公平优势吗？（倒爷？或者 Bug 吧哈哈）</li>
+<li>挑战：有玩家能买到一些东西，令游戏对他们来说太容易吗？挣钱来买他们想要的东西会太难吗</li>
+<li>选择：玩家有足够方式赚钱吗？花钱呢？</li>
+<li>概率：赚钱更基于技能还是概率</li>
+<li>合作：玩家能以有趣方式集资吗？他们可以利用经济中的“漏洞”共谋吗</li>
+<li>时间：赚到钱花费的时间是否太长或太短</li>
+<li>奖励：赚钱这件事有奖励感吗？花钱呢？</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>这点让人想到的是成就系统，比如达到特定总资产，或花费特定数目的资源后能获得的相应成就</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><p>惩罚：惩罚如何影响一个玩家挣钱和花钱的能力？</p>
+</li>
+<li><p>自由：玩家能以希望方式买到想要的东西吗</p>
+</li>
+</ul>
+<p>平衡游戏经济的目标与平衡其他游戏机制一样——确保玩家能够享受一款快乐又有挑战性的游戏</p>
+<h4 id="52-号透镜：经济系统"><a href="#52-号透镜：经济系统" class="headerlink" title="52 号透镜：经济系统"></a>52 号透镜：经济系统</h4><p>给游戏一个经济系统，能让其自己产生令人惊讶的深度和生命。</p>
+<ul>
+<li>我的玩家可以怎样赚到钱？还应该有其他方式吗</li>
+<li>玩家可以买什么？为什么？</li>
+<li>钱会来得太容易吗？太难吗？怎样改变呢</li>
+<li>有关赚钱花钱的选择有意义吗</li>
+<li>在我的游戏里做一种通用货币是好主意吗？还是应该有特殊金币呢</li>
+</ul>
+<h3 id="动态游戏平衡"><a href="#动态游戏平衡" class="headerlink" title="动态游戏平衡"></a>动态游戏平衡</h3><p>这是一个美梦，蕴含很多让人吃惊的问题：</p>
+<ul>
+<li><p>其破坏了世界的真实性</p>
+<ul>
+<li>玩家愿意在某种程度上相信其所游玩的世界是真实的</li>
+<li>但如果知道所有对手的能力是和玩家自身属性级别相关的，就会损害“对手是固定的挑战，需要提升自我来征服驾驭”的幻想</li>
+</ul>
+</li>
+<li><p>它会被不当利用</p>
+<ul>
+<li>如果玩家知道在打得不好的时候游戏会便容易，可能就会主动玩得不好，让接下来的部分变简单，从而摧毁了平衡系统的设计目的</li>
+</ul>
+</li>
+<li><p>玩家会通过练习来提高</p>
+<ul>
+<li>PS2 上的《神奇绿巨人》（The Incredible Hulk）曾引起过一些争议，因为如果被击败的次数超过一定数值，敌人会变简单</li>
+<li>许多玩家会因此觉得受到侮辱</li>
+<li>还有人感到失望——他们本想不断练习直到克服挑战，结果游戏抢走了这种乐趣</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>现在常见的一些做法是在失败次数过多后，提示玩家可以降低难度，将其变为一种主动选择而不是强制安排。<br>虽然侮辱意味仍在，但至少不会直接剥夺玩家攻坚的乐趣了</p>
+</blockquote>
+</blockquote>
+<p>动态平衡并不是死胡同，但并没有想象中的那么简单。</p>
+<h3 id="总览全局"><a href="#总览全局" class="headerlink" title="总览全局"></a>总览全局</h3><h4 id="53-号透镜：平衡"><a href="#53-号透镜：平衡" class="headerlink" title="53 号透镜：平衡"></a>53 号透镜：平衡</h4><p>游戏平衡有许多类型，每种都很重要，但不要迷失在细节中，问自己</p>
+<ul>
+<li>我的游戏感觉对吗？为什么对？为什么不对？</li>
+</ul>
+<hr>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/07/11/20220711-theartofgamedesign-chap13/">https://medill-east.github.io/2022/07/11/20220711-theartofgamedesign-chap13/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/Game-Design/">
+                                    <span class="chip bg-color">Game Design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/07/30/20220730-why-i-think-elden-ring-is-attractive/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220730170940.png" class="responsive-img" alt="20220730 - Why I Think Elden Ring Is Attractive">
+                        
+                        <span class="card-title">20220730 - Why I Think Elden Ring Is Attractive</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            又美，又难，又过瘾。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-30
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Analysis/" class="post-category">
+                                    Study-Game-Analysis
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/07/03/20220703-toolsoflife/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220703210338.png" class="responsive-img" alt="20220703 - Tools of Life">
+                        
+                        <span class="card-title">20220703 - Tools of Life</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对游资网转载的姚勇大佬的知乎文章的笔记。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Life/" class="post-category">
+                                    Life
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Life/">
+                        <span class="chip bg-color">Life</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>

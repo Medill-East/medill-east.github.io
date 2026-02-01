@@ -1,0 +1,1501 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20220622 - Building Narrative Games with Yarn Spinner, 無涘">
+    <meta name="description" content="Whatever will be, will be.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZWMY49RQS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-JZWMY49RQS');
+</script>
+
+
+
+    <title>20220622 - Building Narrative Games with Yarn Spinner | 無涘</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="無涘" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">無涘</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Home</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">無涘</div>
+        <div class="logo-desc">
+            
+            Whatever will be, will be.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Home
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622133148.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20220622 - Building Narrative Games with Yarn Spinner</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Game/">
+                                <span class="chip bg-color">Game</span>
+                            </a>
+                        
+                            <a href="/tags/GDC/">
+                                <span class="chip bg-color">GDC</span>
+                            </a>
+                        
+                            <a href="/tags/Learning-Notes/">
+                                <span class="chip bg-color">Learning Notes</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                Study-Game-Notes
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-06-22
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-06-22
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    2.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    9 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="视频链接"><a href="#视频链接" class="headerlink" title="视频链接"></a>视频链接</h2><ul>
+<li>Youtube 链接<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=549J0eHE88k&list=PL2e4mYbwSTbbjN6TTMo6toJfByWpKvEDH&index=10">Building Narrative Games with Yarn Spinner</a></li>
+</ul>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p> ### DIALOGUE TOOLS<br> - Twine<br> - Ink<br> - Fungus<br> - Yarn Spinner<br> - Others/DIY</p>
+<h3 id="Comparison-of-tools"><a href="#Comparison-of-tools" class="headerlink" title="Comparison of tools"></a>Comparison of tools</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220618131901.png"></p>
+<ul>
+<li>Twine<ul>
+<li>很容易上手</li>
+<li>但不容易扩展（只适用于小文本/轻叙事）</li>
+</ul>
+</li>
+<li>Yarn Spinner<ul>
+<li>介于二者之间</li>
+<li>也易于上手</li>
+<li>也具有较好扩展性</li>
+</ul>
+</li>
+<li>Ink<ul>
+<li>难于上手</li>
+<li>高扩展性、多特性</li>
+</ul>
+</li>
+</ul>
+<h3 id="why-yarn-spinner"><a href="#why-yarn-spinner" class="headerlink" title="why yarn spinner"></a>why yarn spinner</h3><ul>
+<li>用于对话的脚本语言</li>
+<li>就像写剧本一样，有场景和演员提示</li>
+<li>容易写多分支剧情线</li>
+<li>一开始是为《林中之夜》（Night in the Woods）构建的</li>
+<li>被用于多个游戏</li>
+</ul>
+<h2 id="how-to-use"><a href="#how-to-use" class="headerlink" title="how to use"></a>how to use</h2><h3 id="make-a-visual-novel"><a href="#make-a-visual-novel" class="headerlink" title="make a visual novel"></a>make a visual novel</h3><ul>
+<li><p>什么是 visual novel</p>
+<ul>
+<li>常用于动画游戏、约会模拟、类 RPG 游戏</li>
+<li>用于主要机制是基于对话/选择的游戏类型</li>
+<li>十分适合用 yarn spinner 构建</li>
+</ul>
+</li>
+<li><p>特点</p>
+<ul>
+<li>管理资源</li>
+<li>构建场景</li>
+<li>没有物理或移动</li>
+</ul>
+</li>
+</ul>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="前置介绍"><a href="#前置介绍" class="headerlink" title="前置介绍"></a>前置介绍</h3><h4 id="goals"><a href="#goals" class="headerlink" title="goals"></a>goals</h4><ul>
+<li>做一个小型 sci-fi 游戏</li>
+<li>在 unity 配合使用 Yarn Spinner</li>
+<li>在 vs code 里面编辑</li>
+</ul>
+<h4 id="已有素材"><a href="#已有素材" class="headerlink" title="已有素材"></a>已有素材</h4><ul>
+<li><p>简单场景</p>
+</li>
+<li><p>3 个人物模型</p>
+</li>
+<li><p>一些纹理和动画</p>
+</li>
+<li><p>素材来源</p>
+<ul>
+<li>kenney.nl</li>
+<li>github.com/thesecretlab/SpaceJourney</li>
+</ul>
+</li>
+</ul>
+<h4 id="任务清单"><a href="#任务清单" class="headerlink" title="任务清单"></a>任务清单</h4><ul>
+<li>下载安装 yarn spinner</li>
+<li>创建基本的 yarn 脚本并 hook it up</li>
+<li>构建故事结构和逻辑</li>
+<li>设置场景中的多个角色和地点</li>
+<li>润色</li>
+<li>用最终的故事来替代对话框里的内容</li>
+</ul>
+<h4 id="主要会涉及到的内容"><a href="#主要会涉及到的内容" class="headerlink" title="主要会涉及到的内容"></a>主要会涉及到的内容</h4><ul>
+<li>分支对话</li>
+<li>基于变量的选项</li>
+<li>相机、角色和转场的自定义需求</li>
+</ul>
+<h3 id="开始动手"><a href="#开始动手" class="headerlink" title="开始动手"></a>开始动手</h3><h4 id="下载安装-yarn-spinner"><a href="#下载安装-yarn-spinner" class="headerlink" title="下载安装 yarn spinner"></a>下载安装 yarn spinner</h4><ul>
+<li>到 <a target="_blank" rel="noopener" href="https://github.com/YarnSpinnerTool/ExampleProjects">github 链接</a> 中跟随说明<ul>
+<li>创建 unity 项目</li>
+<li>加入 yarn spinner 包</li>
+<li>导入素材的 unity package</li>
+</ul>
+</li>
+<li>到 vscode 中安装相应插件 - Yarn Spinner</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220618140610.png"></p>
+<h4 id="创建基本的-yarn-脚本并-hook-it-up"><a href="#创建基本的-yarn-脚本并-hook-it-up" class="headerlink" title="创建基本的 yarn 脚本并 hook it up"></a>创建基本的 yarn 脚本并 hook it up</h4><h5 id="导入素材"><a href="#导入素材" class="headerlink" title="导入素材"></a>导入素材</h5><p>前面已经导入了 space journey 的 unity 包</p>
+<h5 id="创建并链接脚本"><a href="#创建并链接脚本" class="headerlink" title="创建并链接脚本"></a>创建并链接脚本</h5><p>打开 scene 文件夹下的 start point</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620213039.png"></p>
+<p>来到 <code>Dialogue</code> 文件夹下，右键 <code>Create - Yarn Spinner - Yarn Script</code> 并命名为 <code>Space Journey</code></p>
+<p>同一文件夹下，右键 <code>Create - Yarn Spinner - Yarn Project</code> 并命名为 <code>Space Journey Project</code></p>
+<blockquote>
+<p>在构建更大型的项目时，会用到多个 yarn script，建议使用多个脚本而不是只使用一个脚本来进行更大规模故事的构建</p>
+</blockquote>
+<p>将刚刚创建的 script 加入到 刚创建的 project 中并点击右下角的  <code>Apply</code></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620213742.png"></p>
+<h5 id="添加对话系统"><a href="#添加对话系统" class="headerlink" title="添加对话系统"></a>添加对话系统</h5><p>找到 <code>Packages/Yarn Spinner/Prefabs/Dialogue System</code> 将其加入场景中</p>
+<p>将之前的 project 赋值给 <code>Dialogue System</code> 的相应位置</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620214055.png"></p>
+<h4 id="构建故事结构和逻辑"><a href="#构建故事结构和逻辑" class="headerlink" title="构建故事结构和逻辑"></a>构建故事结构和逻辑</h4><h5 id="故事背景"><a href="#故事背景" class="headerlink" title="故事背景"></a>故事背景</h5><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620212334.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620212837.png"></p>
+<ul>
+<li>在飞船上，可以和三人中的一个对话<ul>
+<li>工程师 - 会抱怨</li>
+<li>船员 - 谈论配给</li>
+<li>队长 - 谈到应对危机的准备情况<ul>
+<li>可以说服他你准备好了</li>
+<li>或者没能说服</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>警报声 - 飞船遇袭<ul>
+<li>要是前面说服队长你准备好了 - 就会派你去</li>
+<li>否则会派船员去</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>前面这小部分在视频中被放到 <code>创建基本的 yarn 脚本并 hook it up</code> 前面了，但我觉得应该放这里比较合适</p>
+</blockquote>
+</blockquote>
+<h5 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h5><p>用 vscode 打开脚本文件后开写！<br>注意设置 title 为 <code>Start</code><br>yarn 每次会读取一行</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620214722.png"></p>
+<ul>
+<li>预览<ul>
+<li>回到 unity 中，deactive 场景中的 <code>UI</code> 和 <code>Title Canvas</code></li>
+</ul>
+</li>
+<li>run!</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620215038.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620215100.png"></p>
+<h5 id="构建脚本"><a href="#构建脚本" class="headerlink" title="构建脚本"></a>构建脚本</h5><p><code>-&gt;</code> 在 yarn 脚本中意味着不同的选项分支</p>
+<pre class="line-numbers language-YarnScript" data-language="YarnScript"><code class="language-YarnScript">title: Start
+tags:
+---
+Player: Another day in Space Fleet. Might go have a chat...
+&#x2F;&#x2F; pick a person to speak to
+-&gt; Go see the Engineer as per orders
+  Engineer: Hello! I am the Engineer.
+-&gt; Meet up with your friend
+  Crewmate: Hello! I am your Cremate.
+-&gt; Go and talk to the Captain
+  Captain: Hello! I am the Captain.
+&#x3D;&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620215914.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620215931.png"><br><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620215950.png" alt="选择第二项"></p>
+<h5 id="采用-node-跳转"><a href="#采用-node-跳转" class="headerlink" title="采用 node 跳转"></a>采用 node 跳转</h5><blockquote>
+<blockquote>
+<p>个人感觉类似函数吧，可以让结构更加紧凑，调用更加方便</p>
+</blockquote>
+</blockquote>
+<pre class="line-numbers language-YarnScript" data-language="YarnScript"><code class="language-YarnScript">title: Start
+tags:
+---
+
+Player: Another day in Space Fleet. Might go have a chat...
+&#x2F;&#x2F; pick a person to speak to
+-&gt; Go see the Engineer as per orders
+  &lt;&lt;jump TalkToEngineer&gt;&gt;
+-&gt; Meet up with your friend
+  &lt;&lt;jump TalkToCremate&gt;&gt;
+-&gt; Go and talk to the Captain
+  &lt;&lt;jump TalkToCaptain&gt;&gt;
+&#x3D;&#x3D;&#x3D;
+
+title: TalkToEngineer
+---
+Engineer: Hello! I am the Engineer.
+&#x3D;&#x3D;&#x3D;
+title: TalkToCremate
+---
+Crewmate: Hello! I am your Cremate.
+&#x3D;&#x3D;&#x3D;
+title: TalkToCaptain
+---
+Captain: Hello! I am the Captain.
+&#x3D;&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="添加谈话后的跳转-敌袭！"><a href="#添加谈话后的跳转-敌袭！" class="headerlink" title="添加谈话后的跳转 - 敌袭！"></a>添加谈话后的跳转 - 敌袭！</h5><p>添加新的 node <code>BridgeEnding</code> 然后在之前的每个谈话分支后面加上 <code>&lt;&lt;jump BridgeEnding&gt;&gt;</code></p>
+<pre class="line-numbers language-YarnScript" data-language="YarnScript"><code class="language-YarnScript">title: Start
+tags:
+---
+
+Player: Another day in Space Fleet. Might go have a chat...
+&#x2F;&#x2F; pick a person to speak to
+-&gt; Go see the Engineer as per orders
+  &lt;&lt;jump TalkToEngineer&gt;&gt;
+-&gt; Meet up with your friend
+  &lt;&lt;jump TalkToCremate&gt;&gt;
+-&gt; Go and talk to the Captain
+  &lt;&lt;jump TalkToCaptain&gt;&gt;
+&#x3D;&#x3D;&#x3D;
+title: TalkToEngineer
+---
+Engineer: Hello! I am the Engineer.
+&lt;&lt;jump BridgeEnding&gt;&gt;
+&#x3D;&#x3D;&#x3D;
+title: TalkToCremate
+---
+Crewmate: Hello! I am your Cremate.
+&lt;&lt;jump BridgeEnding&gt;&gt;
+&#x3D;&#x3D;&#x3D;
+title: TalkToCaptain
+---
+Captain: Hello! I am the Captain.
+&lt;&lt;jump BridgeEnding&gt;&gt;
+&#x3D;&#x3D;&#x3D;
+title: BridgeEnding
+---
+&#x2F;&#x2F; everyone reports to the bridge
+Captain: Pirates!
+Player: Oh no!
+Captain: Cremate, go deal with those pirates!
+Cremate: Yes, Captain.
+&#x3D;&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620220910.png" alt="谈话结束后跳转到敌袭部分的文本"></p>
+<h5 id="添加不同分支结局"><a href="#添加不同分支结局" class="headerlink" title="添加不同分支结局"></a>添加不同分支结局</h5><ul>
+<li>若是选择和队长交谈 需要说服他你准备好了</li>
+<li>这里引入了变量的用法 <code>$away_mission_readiness</code><ul>
+<li>变量以 <code>$</code> 开头</li>
+<li>数值变量初始值为 0 </li>
+</ul>
+</li>
+<li>为节省篇幅，后面只展现有改动的部分</li>
+</ul>
+<pre class="line-numbers language-YarnScript" data-language="YarnScript"><code class="language-YarnScript">&#x3D;&#x3D;&#x3D;
+title: TalkToCaptain
+---
+Captain: Hello! I am the Captain.
+Player: I want to talk to go on more missions.
+Captain: Do you think you are ready?
+-&gt; Yes  
+  &lt;&lt;set $away_mission_readiness +&#x3D; 1&gt;&gt;
+  &#x2F;&#x2F; if so, ask again
+  Captain: Really?
+  -&gt; ..yes?
+    &lt;&lt;set $away_mission_readiness +&#x3D; 1&gt;&gt;
+  -&gt; Actually, no.
+-&gt; No
+&#x2F;&#x2F; now go to the ending
+&lt;&lt;jump BridgeEnding&gt;&gt;
+&#x3D;&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>设置不同结局<ul>
+<li>只有选择和船长谈话，并说服他你准备好了（变量值为 2）的情况下才会跳转到新结局</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">&#x3D;&#x3D;&#x3D;
+title: BridgeEnding
+---
+&#x2F;&#x2F; everyone reports to the bridge
+Captain: Pirates!
+Player: Oh no!
+&#x2F;&#x2F; now change who goes depending on player actions
+&lt;&lt;if $away_mission_readiness &lt; 2&gt;&gt;
+Captain: Cremate, go deal with those pirates!
+Cremate: Yes, Captain.
+&lt;&lt;else&gt;&gt;
+  Captain: Player, you were just telling me how ready for this you are. Go deal with those pirates!
+  Player: Hooray!
+&lt;&lt;endif&gt;&gt;
+&#x3D;&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="设置场景中的多个角色和地点"><a href="#设置场景中的多个角色和地点" class="headerlink" title="设置场景中的多个角色和地点"></a>设置场景中的多个角色和地点</h4><h5 id="设置摄像机"><a href="#设置摄像机" class="headerlink" title="设置摄像机"></a>设置摄像机</h5><p>利用 yarn spinner 的 <code>command</code> 特性来安排摄像机</p>
+<ul>
+<li>在场景中创建新的 gameobject 并命名为 <code>VisualNovel</code></li>
+<li>找到 <code>Scripts/VisualNovel</code> 并添加到刚创建的 obj 上</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220620223309.png"></p>
+<ul>
+<li>打开 <code>VisualNovel.cs</code> 取消第二步处的注释即可定义 command</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622104806.png"></p>
+<ul>
+<li>到 <code>Space Journey.yarn</code> 中添加切换摄像机的代码</li>
+</ul>
+<p>场景摄像机最开始的位置应该在 Corridor 处，所以添加代码</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;&lt;camera Corridor&gt;&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622105302.png"></p>
+<p>场景摄像机最后会在 Bridge 处，所以添加代码</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;&lt;camera Bridge&gt;&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622110028.png"></p>
+<h5 id="设置角色"><a href="#设置角色" class="headerlink" title="设置角色"></a>设置角色</h5><p>可以看到 <code>VisualNovel.cs</code> 中有关于放置角色的代码，这部分代码可以帮助我们在场景中创建角色 并放置到预设的位置：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622110324.png"></p>
+<p>然后需要在 <code>VisualNovel.cs</code> 的 <code>Awake</code> 部分中定义相关的 command，第一个 string 是你想要移动的角色模型，第二个 string 是想将其移动到的地点</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622110623.png"></p>
+<p>之后在各场景中放置角色模型</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622111124.png"></p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622111148.png"></p>
+<p>在使用之前 还需要为 Visual Novel 指定 Character List</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622111244.png"></p>
+<h5 id="让角色在不同情境呈现不同状态（表情）"><a href="#让角色在不同情境呈现不同状态（表情）" class="headerlink" title="让角色在不同情境呈现不同状态（表情）"></a>让角色在不同情境呈现不同状态（表情）</h5><p>这样细粒度的操作需要从角色上的脚本着手，<code>Character.cs</code> 中包含了设置位置和表情的函数</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622121127.png"></p>
+<p>这里对比了 yarn command 和 command handler 的区别<br>简言之就是 Yarn command 可以处理更细粒度的行为<br>command handler 更适用于处理更粗粒度 如场景中的整体变化</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622121154.png"></p>
+<p>所以在相应函数之前加上 yarn commend 的定义语句</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622121438.png"></p>
+<p>之后就可以在 yarn 脚本中调用了</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622122554.png"></p>
+<h4 id="润色"><a href="#润色" class="headerlink" title="润色"></a>润色</h4><h5 id="用淡入淡出方式来切换场景"><a href="#用淡入淡出方式来切换场景" class="headerlink" title="用淡入淡出方式来切换场景"></a>用淡入淡出方式来切换场景</h5><p>因为 fadein fadeout 是全局行为，所以将其添加为 command handler</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622122833.png"></p>
+<p>他们调用的是下面定义的相关函数</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622122854.png"></p>
+<p>然后在 yarn 脚本中相应位置来调用 fade 函数</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/Xnip-2022-06-22-12-32-45.jpg"></p>
+<p>记得把场景中之前 deactive 的 UI object 重新勾选出来</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622123607.png"></p>
+<h5 id="加入标题"><a href="#加入标题" class="headerlink" title="加入标题"></a>加入标题</h5><p>在 yarn 脚本最开始部分引入 展示标题部分的代码</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622124015.png"></p>
+<p><code>wait</code> 函数是 yarn 自带的函数，功能如其名，等待，其参数单位为秒</p>
+<p>记得把之前 deactive 的 title 重新勾选</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622124138.png"></p>
+<p>然后 play 时就可以看见帅气标题了</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622124218.png"></p>
+<h4 id="用最终的故事来替代对话框里的内容"><a href="#用最终的故事来替代对话框里的内容" class="headerlink" title="用最终的故事来替代对话框里的内容"></a>用最终的故事来替代对话框里的内容</h4><p>前面的都是机制教学 理解了前面的内容 就可以直接用他们构建好的故事来替代整个故事</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622124539.png"></p>
+<p>直接运行会有报错，对比了一下两个 yarn 文件 发现他们给的这个最终版本最前面少了一行 tags，加上之后就可以正常运行了：</p>
+<p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622132740.png"></p>
+<h3 id="where-to-next"><a href="#where-to-next" class="headerlink" title="where to next"></a>where to next</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622132829.png"></p>
+<h3 id="find-yarn-spinner"><a href="#find-yarn-spinner" class="headerlink" title="find yarn spinner"></a>find yarn spinner</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622132917.png"></p>
+<h3 id="thanks"><a href="#thanks" class="headerlink" title="thanks!"></a>thanks!</h3><p><img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220622132955.png"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer"></a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://medill-east.github.io/2022/06/22/20220622-gdc-yarnspinner/">https://medill-east.github.io/2022/06/22/20220622-gdc-yarnspinner/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank"></a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Game/">
+                                    <span class="chip bg-color">Game</span>
+                                </a>
+                            
+                                <a href="/tags/GDC/">
+                                    <span class="chip bg-color">GDC</span>
+                                </a>
+                            
+                                <a href="/tags/Learning-Notes/">
+                                    <span class="chip bg-color">Learning Notes</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">鼓励或是不鼓励 我都会继续努力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/07/03/20220703-toolsoflife/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220703210338.png" class="responsive-img" alt="20220703 - Tools of Life">
+                        
+                        <span class="card-title">20220703 - Tools of Life</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对游资网转载的姚勇大佬的知乎文章的笔记。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Life/" class="post-category">
+                                    Life
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/Life/">
+                        <span class="chip bg-color">Life</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/06/19/20220619-gmtk-ittakestwo/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Medill-East/IMGStorage/master/img/PicGo-Github-PicBed/20220619145331.png" class="responsive-img" alt="20220619 - Making one of the Best Levels of It Takes Two">
+                        
+                        <span class="card-title">20220619 - Making one of the Best Levels of It Takes Two</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观看 GMTK 视频后，向双人成行的关卡设计师学习关卡制作思路。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study-Game-Notes/" class="post-category">
+                                    Study-Game-Notes
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Game/">
+                        <span class="chip bg-color">Game</span>
+                    </a>
+                    
+                    <a href="/tags/Learning-Notes/">
+                        <span class="chip bg-color">Learning Notes</span>
+                    </a>
+                    
+                    <a href="/tags/GMTK/">
+                        <span class="chip bg-color">GMTK</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+<!--PC版-->
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+<script type="text/javascript">
+  window.changyan.api.config({
+    appid: 'cyvKzdPmz',
+    conf: 'prod_7376b8af4a89571f0af28ef94e7ec3e7'
+  });
+</script>
+
+</main>
+
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2026</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">555.8k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Medill-East" class="tooltipped" target="_blank" data-tooltip="Visit My GitHub :)" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+    <a href="mailto:haodong.liao@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail Me :)" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+<!-- 
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=931516831" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 931516831" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+ -->
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+
+</body>
+
+</html>
