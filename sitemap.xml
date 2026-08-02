@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://medill-east.github.io/2022/04/28/index-showcase/</loc>
+    
+    <lastmod>2026-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/2026/08/02/20260802-after-finishing-gmtk-game-jam-2026/</loc>
+    
+    <lastmod>2026-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://medill-east.github.io/2026/05/09/20260509-moving-yet-wandering/</loc>
     
     <lastmod>2026-06-28</lastmod>
@@ -149,15 +167,6 @@
     <loc>https://medill-east.github.io/2026/01/18/20260118-g12/</loc>
     
     <lastmod>2026-01-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/2022/04/28/index-showcase/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1397,7 +1406,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/09/06/20220906-bayonetta-toc/</loc>
+    <loc>https://medill-east.github.io/2022/09/06/20220906-bayonetta-design-document/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1406,7 +1415,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/09/06/20220906-bayonetta-design-document/</loc>
+    <loc>https://medill-east.github.io/2022/09/06/20220906-bayonetta-toc/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1469,7 +1478,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/10/30/20221030-bayonetta-difficulty/</loc>
+    <loc>https://medill-east.github.io/2022/10/16/20221016-bayonetta-audio/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1478,7 +1487,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/10/16/20221016-bayonetta-audio/</loc>
+    <loc>https://medill-east.github.io/2022/10/30/20221030-bayonetta-difficulty/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1514,7 +1523,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/11/27/20221127-bayonetta-hideki-kamiya/</loc>
+    <loc>https://medill-east.github.io/2022/12/11/20221211-bayonetta-future/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1523,7 +1532,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/12/11/20221211-bayonetta-future/</loc>
+    <loc>https://medill-east.github.io/2022/11/27/20221127-bayonetta-hideki-kamiya/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1856,7 +1865,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2023/03/12/20230312-g02/</loc>
+    <loc>https://medill-east.github.io/2023/05/14/20230514-g03/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -1865,7 +1874,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2023/05/14/20230514-g03/</loc>
+    <loc>https://medill-east.github.io/2023/03/12/20230312-g02/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -2162,15 +2171,6 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/05/09/20220509-comicjung-chap2/</loc>
-    
-    <lastmod>2024-01-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://medill-east.github.io/2022/05/10/20220510-comicjung-chap3/</loc>
     
     <lastmod>2024-01-07</lastmod>
@@ -2180,7 +2180,7 @@
   </url>
   
   <url>
-    <loc>https://medill-east.github.io/2022/05/13/20220513-comicjung-chap5/</loc>
+    <loc>https://medill-east.github.io/2022/05/09/20220509-comicjung-chap2/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -2190,6 +2190,15 @@
   
   <url>
     <loc>https://medill-east.github.io/2022/05/11/20220511-comicjung-chap4/</loc>
+    
+    <lastmod>2024-01-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/2022/05/13/20220513-comicjung-chap5/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -3010,7 +3019,7 @@
 
   <url>
     <loc>https://medill-east.github.io/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -3018,175 +3027,175 @@
   
   <url>
     <loc>https://medill-east.github.io/tags/Game/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Game-Design/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Game-Level-Design/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/GDC/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Learning-Notes/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Psychology/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Carl-Gustav-Jung/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Game-Engine/</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/tags/Writing/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Thinking/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Movie/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/tags/Writing/</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Portfolio/</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/tags/GMTK/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/GCORES/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/tags/GMTK/</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Life/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Masahiro-Sakurai-on-Creating-Games/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Platinum-Games/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Reading/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Mindmap/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/PKM/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Learning/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Notes/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/ComputerGraphics/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/Index/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/tags/blog-building/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -3195,119 +3204,119 @@
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-Notes/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-LevelDesign/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Psychology-Notes/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-GameEngine/</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://medill-east.github.io/categories/Study-Writing/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Thinking/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://medill-east.github.io/categories/Study-Writing/</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-Demo/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Life/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-Analysis/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-OnePageDesign/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/PKM/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-Thinking/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-CS-CG/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Blog-Index/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Blog/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-Proposal/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://medill-east.github.io/categories/Study-Game-ExperienceReport/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
