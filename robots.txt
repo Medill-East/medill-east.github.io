@@ -1,0 +1,14 @@
+# https://medill-east.github.io/
+#
+# 欢迎抓取，包括搜索引擎与生成式 AI 引擎。
+# 转载或引用请注明来源。
+#
+# 注：此处不单独列举 GPTBot / ClaudeBot / PerplexityBot / Google-Extended 等。
+# robots.txt 的规则是「命名的 User-agent 只读自己那一段、并忽略 *」，
+# 单独列举反而会让它们看不到将来加在 * 里的规则，是个维护陷阱。
+# 默认即为允许，下面这一条已覆盖全部爬虫。
+
+User-agent: *
+Allow: /
+
+Sitemap: https://medill-east.github.io/sitemap.xml
