@@ -8,3 +8,8 @@
   color: #34495e;
   font-style: normal;
 }
+
+/* About 页卡片等高排布：原模板用 float 网格，卡片高度不一时会卡住留空 */
+.my-demos .row, .my-projects .row, .my-gallery .row { display: flex; flex-wrap: wrap; }
+.my-demos .row > .col, .my-projects .row > .col, .my-gallery .row > .col { float: none; margin-left: 0; }
+.my-demos .row::after, .my-projects .row::after, .my-gallery .row::after { display: none; }
