@@ -1,3 +1,4 @@
+https://medill-east.github.io/2026/11/14/20261114-after-finishing-thatgamejam02/
 https://medill-east.github.io/2026/08/02/20260802-after-finishing-gmtk-game-jam-2026/
 https://medill-east.github.io/2022/04/28/index-showcase/
 https://medill-east.github.io/2026/05/09/20260509-moving-yet-wandering/
@@ -154,12 +155,12 @@ https://medill-east.github.io/2024/01/21/20240121-b08/
 https://medill-east.github.io/2024/01/14/20240114-a08/
 https://medill-east.github.io/2024/01/07/20240107-i04/
 https://medill-east.github.io/2022/09/24/20220924-yyy001-gundesign/
-https://medill-east.github.io/2022/09/06/20220906-bayonetta-design-document/
 https://medill-east.github.io/2022/09/06/20220906-bayonetta-toc/
+https://medill-east.github.io/2022/09/06/20220906-bayonetta-design-document/
 https://medill-east.github.io/2022/09/11/20220911-bayonetta-worldview/
 https://medill-east.github.io/2022/09/13/20220913-bayonetta-character/
-https://medill-east.github.io/2022/09/17/20220917-bayonetta-story/
 https://medill-east.github.io/2022/09/24/20220924-bayonetta-action/
+https://medill-east.github.io/2022/09/17/20220917-bayonetta-story/
 https://medill-east.github.io/2022/10/05/20221005-bayonetta-enemy/
 https://medill-east.github.io/2022/10/09/20221009-bayonetta-boss/
 https://medill-east.github.io/2022/10/16/20221016-bayonetta-audio/
@@ -167,8 +168,8 @@ https://medill-east.github.io/2022/10/30/20221030-bayonetta-difficulty/
 https://medill-east.github.io/2022/11/13/20221113-bayonetta-schedule/
 https://medill-east.github.io/2022/11/06/20221106-bayonetta-level/
 https://medill-east.github.io/2022/11/20/20221120-bayonetta-quality/
-https://medill-east.github.io/2022/12/11/20221211-bayonetta-future/
 https://medill-east.github.io/2022/11/27/20221127-bayonetta-hideki-kamiya/
+https://medill-east.github.io/2022/12/11/20221211-bayonetta-future/
 https://medill-east.github.io/2022/12/04/20221204-bayonetta-inaba-atsushi/
 https://medill-east.github.io/2023/12/24/20231224-a07/
 https://medill-east.github.io/2023/01/08/20230108-try-telling-that-to-the-player/
@@ -194,8 +195,8 @@ https://medill-east.github.io/2023/10/15/20231015-c07/
 https://medill-east.github.io/2022/09/01/20220901-stop-for-big-moments/
 https://medill-east.github.io/2023/12/03/20231203-c08/
 https://medill-east.github.io/2022/12/25/20221225-d02/
-https://medill-east.github.io/2023/07/30/20230730-d04/
 https://medill-east.github.io/2023/11/12/20231112-d05/
+https://medill-east.github.io/2023/07/30/20230730-d04/
 https://medill-east.github.io/2023/05/21/20230521-d03/
 https://medill-east.github.io/2023/07/02/20230702-e01/
 https://medill-east.github.io/2023/08/20/20230820-e02/
@@ -205,8 +206,8 @@ https://medill-east.github.io/2023/07/09/20230709-f03/
 https://medill-east.github.io/2023/03/26/20230326-f02/
 https://medill-east.github.io/2023/11/26/20231126-f04/
 https://medill-east.github.io/2022/11/20/20221120-assigning-animations/
-https://medill-east.github.io/2023/05/14/20230514-g03/
 https://medill-east.github.io/2023/03/12/20230312-g02/
+https://medill-east.github.io/2023/05/14/20230514-g03/
 https://medill-east.github.io/2023/08/13/20230813-g04/
 https://medill-east.github.io/2022/12/04/20221204-make-it-pop/
 https://medill-east.github.io/2023/11/19/20231119-g05/
@@ -366,13 +367,13 @@ https://medill-east.github.io/categories/Study-Game-GameEngine/
 https://medill-east.github.io/categories/Thinking/
 https://medill-east.github.io/categories/Study-Writing/
 https://medill-east.github.io/categories/Study-Game-Demo/
-https://medill-east.github.io/categories/Life/
 https://medill-east.github.io/categories/Study-Game-Analysis/
+https://medill-east.github.io/categories/Life/
 https://medill-east.github.io/categories/Study-Game-OnePageDesign/
 https://medill-east.github.io/categories/PKM/
 https://medill-east.github.io/categories/Study-Game-Thinking/
 https://medill-east.github.io/categories/Study-CS-CG/
 https://medill-east.github.io/categories/Blog-Index/
 https://medill-east.github.io/categories/Blog/
-https://medill-east.github.io/categories/Study-Game-Proposal/
 https://medill-east.github.io/categories/Study-Game-ExperienceReport/
+https://medill-east.github.io/categories/Study-Game-Proposal/
